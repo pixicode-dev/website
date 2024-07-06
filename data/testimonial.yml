@@ -1,9 +1,0 @@
-enable  : false
-title   : "OPINION FROM REAL PEOPLE"
-subtitle: "What clients says about our services."
-testimonial_item :
-  - thumb : "images/testimonial/user-thumb-one.jpg"
-    name  : "Simonns Hodge"
-    company_position: "CEO, Credito"
-    quote : > 
-            "Trust us we looked for a very long time and wasted thousands of dollars testing other teams, freelancers, and outsource companies." 

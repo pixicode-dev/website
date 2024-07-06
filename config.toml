@@ -16,6 +16,14 @@ summarylength = 25
     url     = "about"
     weight  = 2
   [[menu.nav]]
+    name    = "Portfolio"
+    url     = "portfolio"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Equipe"
+    url     = "team"
+    weight  = 3
+  [[menu.nav]]
     name    = "Contactez Nous"
     url     = "contact"
     weight  = 5
@@ -41,7 +49,7 @@ summarylength = 25
     placeholder_first_name        = "Prénom"
     placeholder_last_name         = "Nom"
     placeholder_email             = "Email"
-    send_message                  = "Message"
+    send_message                  = "Envoyer"
   
   # Navbar Action Button
   [params.navAction]
@@ -57,7 +65,7 @@ summarylength = 25
     heading               = "Des solutions informatiques de qualité, des tarifs équitables, une collaboration gagnante"
     tagline               = "WE WORK HARD, WE DEV HARD"
     primary_button        = "Nos réalisations"
-    primary_button_url    = ""
+    primary_button_url    = "portfolio"
     secondary_button      = "Contactez Nous"
     secondary_button_url  = "contact"
 
@@ -69,6 +77,14 @@ summarylength = 25
     title     = "OUR RECENT WORKS"
     subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
     view_project = "view project"
+    more_works = "MORE WORKS"
+    scroll_down = "scroll down"
+
+  [params.team]
+    enable    = true
+    title     = "OUR RECENT WORKS"
+    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+    view_team = "découvrez"
     more_works = "MORE WORKS"
     scroll_down = "scroll down"
 
@@ -87,7 +103,26 @@ summarylength = 25
     [params.footer.contactInfo]
       title   = "Contact"
       address = "2 Place Jean V, Bureau 3, 44000 Nantes"
-      phone   = "05 46 67 32 67"
+      phone   = "05 45 91 38 57"
       email   = "contact@pixicode.dev"
+      [params.footer.social]
+        title   = "Réseaux"
+        [[params.footer.social.link]]
+          name = "Linkedin"
+          url  = "https://www.linkedin.com/company/pixicode"
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "A propos"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Equipe"
+          url  = "team"
+        [[params.footer.sitemap.link]]
+          name = "Portfolio"
+          url  = "portfolio"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
       [params.footer.back_to_top]
         description = "I want to <br> visit again"
