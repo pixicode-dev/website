@@ -1,0 +1,3 @@
+[submodule "themes/roxo-hugo-pixicode"]
+	path = themes/roxo-hugo-pixicode
+	url = git@github.com:pixicode-dev/roxo-hugo.git
