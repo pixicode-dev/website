@@ -2,7 +2,7 @@
 title: "Emric Pichonnier"
 date: 2019-12-23T15:44:46+06:00
 type: portfolio
-image: "images/team/emric2.jpg"
+image: "images/team/emric2.JPG"
 category: ["FREELANCE"]
 project_images: []
 ---
