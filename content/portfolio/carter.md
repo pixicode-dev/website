@@ -9,22 +9,21 @@ project_images: []
 
 Projet : Développeur Freelance chez Carter
 
-Contexte :
-Dans le cadre d'une mission freelance chez Finaxy Group, un acteur majeur du courtage en assurance, notre consultant a rejoint l'équipe de développement pour soutenir divers projets stratégiques et améliorer les fonctionnalités du portail de l'entreprise.
+Dans le cadre d'une mission de prestation pour l'application Carter Coaching App, j'ai collaboré avec l'équipe de développement pour optimiser et enrichir l'application destinée aux directeurs sportifs, coachs et joueurs. Ce projet visait à améliorer l'expérience utilisateur et à introduire de nouvelles fonctionnalités pour mieux répondre aux besoins spécifiques des utilisateurs.
 
-Technologies utilisées :
+<https://cartercoachingapp.com/>
 
--Flutter 
+Technologies utilisées:
 
--Dart 
+- Flutter
+- Dart
+- C# .NET
+- Google Play Console
+- Apple Store Connect
 
--Google Play Console
+Contributions clés
 
--Apple Store Connect
-
-Contributions clés :
-
--  Ajout d'un overlay de tutoriel interactif sur l'application Flutter pour améliorer l'expérience utilisateur et faciliter la prise en main par les directeurs sportifs, coachs, et joueurs.
-Déploiement de la nouvelle version de l'application sur Google Play et l'Apple Store, incluant les dernières fonctionnalités et optimisations de performance.
-
--  Passionné par l'optimisation des applications mobiles et l'amélioration de l'expérience utilisateur, je suis fier d'avoir contribué à l'évolution de Carter Coaching App en apportant des fonctionnalités intuitives et performantes.
+- Ajout d'un overlay de tutoriel interactif dans l'application Flutter pour guider les utilisateurs et faciliter la prise en main de l'application.
+- Déploiement d'une nouvelle version sur Google Play et l'App Store, intégrant les dernières fonctionnalités et améliorations de performance.
+- Intégration d'un système d'abonnement via Stripe pour une gestion fluide et sécurisée des paiements.
+- Mises à jour continues et nouvelles fonctionnalités en développement pour optimiser davantage l'application.
