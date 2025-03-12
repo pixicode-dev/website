@@ -4,7 +4,6 @@ date: 2019-12-23T15:44:46+06:00
 type: portfolio
 image: "images/team/emric2.JPG"
 category: ["CEO | FREELANCE"]
-project_images: []
 ---
 
 Je suis Emric Pichonnier, un développeur fullstack freelance passionné par la création de solutions logicielles innovantes et performantes. Fort d'une expertise variée, de Java à Elixir en passant par JavaScript, Python et SQL, je maîtrise également les frameworks comme Spring, Elixir, Node.js / Express.js, et les bibliothèques Vue.js / React.js.
