@@ -1,26 +1,46 @@
 ---
-title: "Emric Pichonnier"
-date: 2019-12-23T15:44:46+06:00
-type: portfolio
+title: "Emric Pichonnier – Développeur Fullstack & Fondateur de PixiCode"
+date: 2025-07-01
+type: team
 image: "images/team/emric2.JPG"
-category: ["CEO | FREELANCE"]
+description: "Fondateur de PixiCode, Emric est un développeur fullstack basé à Angoulême. Il accompagne TPE, PME et grands groupes dans la conception de solutions web et mobiles robustes et sur mesure."
+keywords: "Emric Pichonnier, PixiCode, développeur freelance, développeur à Angoulême, expert Flutter, JavaScript, Python, applications web, applications mobiles"
+category: ["Développeur freelance", "Fondateur PixiCode"]
 ---
 
-Je suis Emric Pichonnier, un développeur fullstack freelance passionné par la création de solutions logicielles innovantes et performantes. Fort d'une expertise variée, de Java à Elixir en passant par JavaScript, Python et SQL, je maîtrise également les frameworks comme Spring, Elixir, Node.js / Express.js, et les bibliothèques Vue.js / React.js.
+Développeur fullstack freelance à **Angoulême** et fondateur de l’agence **PixiCode**, je conçois des applications web, mobiles et logicielles sur mesure, en mettant l’accent sur la performance, la qualité de code et l’accessibilité.
 
-En 2023, j'ai fondé PixiCode avec une vision claire : répondre aux défis financiers rencontrés par les entreprises dans le domaine des services informatiques. L'objectif était de proposer des solutions de développement à des tarifs transparents, tout en garantissant une rémunération équitable pour nos développeurs. Cette initiative découle de mon engagement à offrir des services de qualité supérieure tout en favorisant la compétitivité et la rentabilité de nos clients.
+### 💡 Mon parcours
 
-Compétences :
+Après plusieurs années d’expérience en tant que développeur backend et fullstack, j’ai fondé **PixiCode** en 2023 pour répondre aux besoins de mes clients avec une approche humaine, agile et techniquement solide.
 
-- Développement fullstack
-- Langages : Java, Elixir, JavaScript, Python, SQL
-- Frameworks : Spring, Node.js / Express.js
-- Bibliothèques : Vue.js, React.js
+Mon objectif : fournir des solutions efficaces, sans complexité inutile ni surfacturation, en garantissant une relation de confiance durable.
 
-N'hésitez pas à me contacter pour discuter de vos projets ou pour plus d'informations :
+---
 
-- Email : emric.pichonnier@pixicode.dev
-- LinkedIn : [profil LinkedIn](https://www.linkedin.com/in/emric-pichonnier/)
-- Website : [pichoemr.me](https://pichoemr.me)
-- Malt : [profil Malt](https://www.malt.fr/profile/emricpichonnier/)
-- Codeur : [profil Codeur](https://www.codeur.com/-emricp)
+### 🧠 Compétences techniques
+
+- **Développement fullstack**
+- **Langages** : Java, Elixir, JavaScript, Python, SQL
+- **Frameworks & outils** :
+  - Backend : Spring Boot, Node.js, Express.js
+  - Frontend : Vue.js, React.js
+  - DevOps / outils : Docker, Git, CI/CD
+- **Méthodologies** : agile, TDD, clean architecture
+
+---
+
+### 📬 Me contacter
+
+Je suis ouvert aux missions freelance, partenariats et projets techniques ambitieux.
+
+- ✉️ Email : [emric.pichonnier@pixicode.dev](mailto:emric.pichonnier@pixicode.dev)
+- 💼 LinkedIn : [Profil LinkedIn](https://www.linkedin.com/in/emric-pichonnier/)
+- 🌐 Portfolio : [pichoemr.me](https://pichoemr.me)
+- 🤝 Plateformes :
+  - [Malt](https://www.malt.fr/profile/emricpichonnier)
+  - [Codeur.com](https://www.codeur.com/-emricp)
+
+---
+
+Merci pour votre visite, au plaisir d’échanger !

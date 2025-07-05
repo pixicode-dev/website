@@ -1,49 +1,68 @@
 ---
-title: "Finaxy"
-date: 2025-03-12
+title: "Mission Freelance Java chez Finaxy Group – Développement & TMA"
+date: 2025-07-01
 type: portfolio
 image: "images/projects/finaxy_group.jpg"
-category: ["FREELANCE"]
+category: ["Développement Java", "Freelance"]
+description: "PixiCode a accompagné Finaxy Group en freelance sur le développement de son portail assurance. Mission Java Spring axée sur la TMA, les évolutions fonctionnelles et l'automatisation de processus métiers."
+keywords: "Finaxy Group, PixiCode, freelance Java, Spring Boot, portail assurance, TMA Java, maintenance applicative, automatisation Java, développeur Java Angoulême, développement JSP"
 ---
 
-##### **Projet : Développeur Freelance chez Finaxy Group**
+## 🏢 Finaxy Group  
 
-Dans le cadre d’une mission freelance chez **Finaxy Group**, acteur majeur du courtage en assurance, j'ai rejoint l’équipe de développement pour soutenir divers projets stratégiques et améliorer les fonctionnalités du portail de l’entreprise.
+**Mission freelance Java – Développement et maintenance applicative**
 
----
+**Finaxy Group**, acteur majeur du courtage en assurance en France, a fait appel à **PixiCode** pour renforcer son équipe technique dans le cadre d’une mission freelance spécialisée en **Java / Spring**.
 
-##### **Technologies utilisées :**
-
-- **Java Spring**
-- **SQL**
-- **JavaScript (JS)**
-- **JavaServer Pages (JSP)**
+Objectif : accompagner l'évolution de leur **portail assurance**, tout en assurant sa **maintenance corrective et évolutive**.
 
 ---
 
-##### **Contributions clés :**
+### 🎯 Objectifs de la mission
 
-- **Développement et implémentation de nouvelles fonctionnalités**  
-  J'ai participé à la conception et à l’implémentation de nouvelles fonctionnalités visant à enrichir le portail de Finaxy Group, en tenant compte des besoins évolutifs des utilisateurs.
-
-- **Optimisation et amélioration des produits existants**  
-  J'ai contribué à l'optimisation des fonctionnalités existantes en améliorant les performances, l'interface utilisateur et l'expérience globale afin d'assurer une satisfaction client optimale.
-
-- **Maintenance applicative et support technique**  
-  J'ai assuré la maintenance continue des applications (**TMA**) pour garantir leur fiabilité et leur stabilité. Mon intervention rapide lors de problèmes techniques a permis de maintenir une continuité de service.
-
-- **Automatisation des processus clés**  
-  J'ai développé des solutions pour automatiser des processus essentiels tels que la **génération de documents**, l'**envoi de notifications par e-mail** et la **création de pages dynamiques**, permettant ainsi de réduire les tâches manuelles et d'améliorer l'efficacité.
+- Développer de nouvelles fonctionnalités métiers côté portail extranet
+- Optimiser les performances applicatives
+- Automatiser plusieurs processus métiers récurrents
+- Assurer la **TMA (Tierce Maintenance Applicative)** sur les modules internes et clients
 
 ---
 
-##### **Bénéfices pour Finaxy Group :**
+### 🛠️ Stack technique
 
-- **Amélioration de l’efficacité opérationnelle** grâce à l’ajout et à l’optimisation de fonctionnalités clés.  
-- **Expérience utilisateur enrichie** avec une interface plus intuitive et une navigation simplifiée.  
-- **Renforcement de la fiabilité et de la performance** des systèmes grâce à une maintenance proactive et un support technique réactif.  
-- **Automatisation accrue des processus**, offrant des gains de temps considérables et une réduction des erreurs manuelles.  
+| Backend        | Frontend          | Outils & Infra         |
+|----------------|-------------------|------------------------|
+| Java / Spring MVC | JSP / JavaScript | SQL • Git • Docker     |
 
 ---
 
-En collaborant avec **PixiCode**, Finaxy Group a pu bénéficier d’une expertise technique pointue, d’une flexibilité dans la gestion des projets et d’une qualité de service optimale. Cette approche a permis d’améliorer la satisfaction des utilisateurs et d’accroître la performance globale du portail.
+### 💼 Interventions réalisées
+
+- ✅ **Développement de modules métiers** dédiés aux courtiers et gestionnaires
+- ✅ **Optimisation du code** et des requêtes SQL pour un portail plus rapide et stable
+- ✅ **Maintenance applicative** (bugfixes, mises à jour de dépendances, documentation)
+- ✅ **Automatisation** de tâches clés : génération de documents PDF, notifications e-mail, traitements back-office
+
+---
+
+### 📊 Bénéfices pour Finaxy
+
+- 🚀 **Gain de performance et de stabilité** sur les applications métier
+- 🧠 **Automatisation des tâches répétitives**, réduction du temps opérationnel
+- 👥 **Expérience utilisateur améliorée** côté client et côté équipes internes
+- 🔧 **Soutien TMA fiable** avec une capacité à intervenir rapidement sur les incidents
+
+---
+
+### 🤝 Un accompagnement freelance structuré et réactif
+
+Grâce à une expertise pointue en Java et aux bonnes pratiques TMA, **PixiCode** a su s'intégrer rapidement dans l’équipe Finaxy, tout en conservant l’agilité d’un freelance.  
+Notre capacité à livrer rapidement des évolutions tout en garantissant la qualité du code a été un facteur clé de réussite.
+
+---
+
+### 🧩 Besoin d’un renfort technique freelance ?
+
+PixiCode vous accompagne sur vos projets **Java / Spring**, qu’il s’agisse de TMA, d’évolutions ou de missions spécifiques.  
+Nous intervenons en **freelance structuré**, avec un vrai engagement de résultat.
+
+📩 [Discutons de votre besoin](/contact)

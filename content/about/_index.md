@@ -1,38 +1,71 @@
 ---
-title: "A propos - PixiCode"
-keywords: "services informatiques, développement sur mesure, solutions personnalisées, technologies numériques, expertise technique"
-date: 2018-07-12T18:19:33+06:00
-heading : "À Propos de PixiCode"
-description : "Notre entreprise est fondée sur une vision claire : offrir des services de développement de premier ordre tout en garantissant une rémunération juste pour nos consultants, sans imposer de charges excessives à nos clients."
+title: "À propos – PixiCode, agence de développement sur mesure à Angoulême"
+description: "PixiCode est une agence de développement indépendante qui propose des services sur mesure en développement web, mobile et logiciel. Nous nous engageons sur la transparence, l’expertise technique et un accompagnement client humain et agile."
+keywords: "PixiCode, agence de développement, développement sur mesure, services numériques, technologies web, application mobile, freelance développeur, accompagnement technique, transformation digitale"
+date: 2025-07-01
+heading: "Qui sommes-nous ? Agence de développement à Angoulême"
 ---
 
-Bienvenue chez **PixiCode**, une agence de développement spécialisée dans la création de solutions numériques sur mesure. Notre mission est claire : offrir des services de développement informatique de qualité tout en garantissant des tarifs justes et transparents, adaptés à vos besoins.
+## Notre ADN
 
-### Notre Vision
+Bienvenue chez **PixiCode**, une agence de développement basée à **Angoulême**, spécialisée dans la création de solutions numériques **web**, **mobile** et **logiciel**.
 
-Le monde du numérique évolue rapidement et chaque projet présente des besoins uniques. Chez **PixiCode**, nous avons à cœur de proposer des solutions adaptées, en mettant l'accent sur la performance, la simplicité et la rentabilité.
+Nous allions **expertise technique**, **souplesse organisationnelle** et **tarification transparente** pour répondre efficacement aux besoins des entreprises modernes.  
+Notre approche : simple, humaine, efficace.
 
-Nous avons constaté que de nombreuses entreprises font face à des coûts élevés et des démarches complexes dans la mise en place de leurs projets digitaux. **PixiCode** a été fondée pour simplifier cette expérience en offrant des solutions flexibles et transparentes, sans compromis sur la qualité.
+---
 
-### Nos Engagements
+## Notre mission
+  
+### Rendre le développement accessible, clair et fiable
+  
+Nous accompagnons nos clients  **startups**, **TPE**, **PME** ou **indépendants**  dans la **conception**, le **développement** et le **suivi technique** de leurs projets digitaux.
 
-En nous choisissant comme partenaire, vous bénéficiez de plusieurs atouts clés :
+> Chaque projet est pensé sur mesure, selon vos enjeux métiers, vos ressources et vos priorités.
 
-- **💰 Tarifs compétitifs et transparents**  
-   Nous croyons en une tarification claire et équitable. Aucun frais caché ni mauvaise surprise — nos tarifs sont conçus pour refléter la valeur réelle de nos services.
+---
 
-- **👨‍💻 Experts qualifiés et passionnés**  
-   Notre équipe est composée de développeurs expérimentés et dévoués, prêts à relever vos défis techniques. Nous nous engageons à fournir des solutions fiables et efficaces pour garantir la réussite de chaque projet.
+## Nos convictions
 
-- **🤝 Collaboration étroite**  
-   Votre projet est unique, et nous le traitons comme tel. Nous travaillons en étroite collaboration avec vous à chaque étape du processus pour que vos besoins soient parfaitement pris en compte.
+Nous pensons que le développement informatique ne doit pas être une boîte noire.  
+PixiCode a été fondée avec une vision claire :
 
-- **🔄 Flexibilité et adaptabilité**  
-   Que vous ayez besoin d’une intervention ponctuelle ou d’un accompagnement à long terme, nous nous adaptons à vos attentes pour vous offrir des solutions personnalisées.
+- ✅ Démocratiser l’accès à des outils numériques performants,
+- ✅ Offrir des solutions stables sans complexité inutile,
+- ✅ Créer une **relation de confiance durable** avec chaque client.
 
-### Contactez-Nous
+---
 
-Nous serions ravis d’échanger avec vous sur vos besoins et vos projets numériques.  
-N’hésitez pas à nous contacter pour discuter de la meilleure façon dont **PixiCode** peut contribuer à votre réussite.
+## Nos engagements
 
-Merci pour votre intérêt pour **PixiCode** — nous avons hâte de collaborer avec vous !
+### 💰 Tarifs compétitifs et transparents  
+
+Des devis **clairs**, **ajustables**, **sans surprise**. La qualité reste au cœur, quel que soit le budget.
+
+### 👨‍💻 Expertise technique complète  
+
+Du **frontend** au **backend**, de **Flutter** à **React**, nous maîtrisons les technologies modernes les plus robustes.
+
+### 🔁 Méthodologie agile  
+
+Chaque étape de développement est **co-construite** avec vous, validée et livrée en continu.
+
+### 🛠️ Pérennité et évolutivité  
+
+Nous concevons des **architectures maintenables**, **scalables** et prêtes à évoluer avec votre activité.
+
+---
+
+## Présence locale, service global
+
+Installés à **Angoulême**, nous travaillons à distance avec des clients partout en **France**.  
+Nous restons disponibles pour des échanges en présentiel dans la région **Nouvelle-Aquitaine**, mais aussi pour des missions à **Paris**, **Lyon**, ou à l’**international**.
+
+---
+
+## Envie d'en savoir plus ?
+
+Découvrez [notre équipe](/team/), [nos projets](/portfolio) pour mieux comprendre notre approche.  
+Et si vous êtes déjà prêt à passer à l’action :
+
+👉 [Contactez-nous dès maintenant](/contact) pour discuter de votre projet.
