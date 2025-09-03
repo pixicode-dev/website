@@ -3,16 +3,17 @@ title: "Carter Coaching App – Application mobile Flutter pour coachs et sporti
 date: 2025-07-01
 type: portfolio
 image: "images/projects/carter.jpg"
-project_images: [
-  "images/projects/carter/Select role.png",
-  "images/projects/carter/Tutorial-1.png"
-]
+project_images:
+  [
+    "images/projects/carter/Select-role.webp",
+    "images/projects/carter/Tutorial-1.webp",
+  ]
 category: ["Développement mobile", "Application Flutter"]
 description: "PixiCode assure le développement, le déploiement et la maintenance de Carter Coaching App, une application mobile multiplateforme conçue pour les coachs sportifs, joueurs et directeurs techniques. Développée avec Flutter et .NET."
 keywords: "application mobile Flutter, PixiCode, développement application sportive, coaching numérique, application coach sportif, abonnement Stripe, backend .NET, agence développement mobile, digitalisation club sportif"
 ---
 
-## 📱 Carter Coaching App  
+## 📱 Carter Coaching App
 
 **Application mobile Flutter pour coachs sportifs, joueurs et directeurs**
 
@@ -50,10 +51,10 @@ PixiCode a été sélectionné pour :
 
 ### 🧰 Stack technique utilisée
 
-| Frontend              | Backend        | Infrastructure           |
-|-----------------------|----------------|---------------------------|
-| Flutter (Dart)        | .NET C# / REST | Docker • Stripe • Firebase |
-| App Store / Play Store |                | Monitoring & Sécurité     |
+| Frontend               | Backend        | Infrastructure             |
+| ---------------------- | -------------- | -------------------------- |
+| Flutter (Dart)         | .NET C# / REST | Docker • Stripe • Firebase |
+| App Store / Play Store |                | Monitoring & Sécurité      |
 
 ---
 

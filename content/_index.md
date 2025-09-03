@@ -18,9 +18,11 @@ expertise_sectors:
   [
     "Nous accompagnons nos clients dans la conception de :",
     "**Sites web :** vitrines, plateformes administrables, sites optimisés SEO.",
-    "**Applications mobiles :** iOS et Android en Flutter",
+    "**Applications mobiles :** iOS et Android en Flutter.",
     "**Logiciels sur mesure :** outils internes, automatisation, gestion métier.",
-  ]
+    "**APIs et interconnexions :** pour fluidifier vos systèmes existants.",
+    "**Hébergement & déploiement :** configuration, supervision et maintenance si besoin.",
+]
 ---
 
 Chez **PixiCode**, nous croyons que le développement logiciel ne doit pas être un casse-tête technique.
