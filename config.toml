@@ -147,7 +147,7 @@ disableKinds = ["taxonomy", "term"]
           url  = "legal"
         [[params.footer.legal.link]]
           name = "Politique de Confidentialité (PDF)"
-          url  = "privacy"
+          url  = "politique-confidentialite"
         [[params.footer.legal.link]]
           name = "Conditions Générales (PDF)"
           url  = "cgv"

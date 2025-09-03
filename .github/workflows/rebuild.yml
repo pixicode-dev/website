@@ -1,0 +1,45 @@
+name: Rebuild & Deploy (manual / Strapi webhook)
+
+on:
+  repository_dispatch:
+    types: [rebuild-site]
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (with submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install sync deps
+        run: npm i node-fetch@3
+
+      - name: Sync Strapi → Hugo
+        run: node tools/strapi-to-hugo.mjs
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.128.2"
+          extended: true
+
+      - name: Build site
+        run: hugo
+
+      - name: Deploy to OVH (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./public/
+          server-dir: ./www/
+          dangerous-clean-slate: true
