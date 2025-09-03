@@ -24,7 +24,6 @@ Nous construisons des sites rapides, accessibles et adaptés aux moteurs de rech
 
 ## Options
 
-- Rédaction SEO optimisée
 - Gestion de contenus multilingues
 - Hébergement et TMA (Tierce Maintenance Applicative)
 
