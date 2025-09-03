@@ -20,7 +20,7 @@ jobs:
       - name: Install sync deps
         run: npm i node-fetch@3
       - name: Sync Strapi → Hugo (blog)
-        run: node tools/strapi-to-hugo-v3.mjs
+        run: node tools/strapi-to-hugo.mjs
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
