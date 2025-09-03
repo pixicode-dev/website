@@ -32,7 +32,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy to OVH (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
