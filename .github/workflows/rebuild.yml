@@ -5,10 +5,11 @@ on:
     types: [rebuild-site]
 
 jobs:
-  rebuild:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout (with submodules)
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: true
@@ -17,11 +18,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
       - name: Install sync deps
         run: npm i node-fetch@3
-
-      - name: Sync Strapi → Hugo
+      - name: Sync Strapi → Hugo (blog)
         run: node tools/strapi-to-hugo.mjs
 
       - name: Setup Hugo
@@ -34,7 +33,7 @@ jobs:
         run: hugo
 
       - name: Deploy to OVH (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@4.3.6
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
