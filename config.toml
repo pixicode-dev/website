@@ -47,7 +47,7 @@ disableKinds = ["taxonomy", "term"]
   dateFormat = "26 FEB 1994"
   description = "PixiCode | Entreprise de service numérique"
   author = "PixiCode"
-  action  = "https://n8n.pixicode.dev/webhook-test/contact"
+  action  = "https://n8n.pixicode.dev/webhook/contact"
   
   # Contact Form
   [params.contactForm]
