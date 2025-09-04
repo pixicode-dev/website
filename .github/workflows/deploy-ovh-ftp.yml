@@ -39,7 +39,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
+          protocol: ftp
           local-dir: ./public/
           server-dir: ./www/
           delete: true
