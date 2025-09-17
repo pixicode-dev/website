@@ -2,70 +2,77 @@
 title: "Services — Développement web, mobile, API & DevOps"
 heading: "Nos services"
 description: "De la conception au run : sites web, apps Flutter, API/backends et DevOps/hébergement. Performance, accessibilité et sécurité par défaut."
+date: 2025-09-17
 ---
 
-## Ce que l’on fait
+## 🚀 Nos services de développement digital
 
-### Sites web
-
-Sites vitrines, landings et portails métier. **SEO on-page**, **Core Web Vitals**, **RGPD**.
-
-- Architecture de contenu & maquette fonctionnelle
-- Développement (Hugo/Next.js/WordPress selon besoin)
-- Analytics (Matomo), formulaires conformes RGPD
-- Durcissement sécurité (CSP/HSTS), sauvegardes
-
-👉 **[Découvrir le service « Site internet »](/services/site-internet/)**
+Du prototype à la mise en production, on conçoit des solutions web & mobile sur mesure, prêtes pour la performance.
 
 ---
 
-### Applications mobiles
+### 🌐 Sites web performants et durables
 
-Apps **iOS & Android** avec une seule base de code. _Store-ready, crash-free, mesurables._
+Landing page, site vitrine ou portail métier : on développe des sites **rapides**, **SEO-friendly** et **conformes RGPD**, sans compromis sur l’expérience utilisateur.
 
-- Prototype interactif, TestFlight/Play Console
-- Auth, paiements, notifications, offline
-- CI/CD, suivi crash & analytics
+- ✅ Contenu structuré & design fonctionnel
+- ✅ Dév sur mesure (Hugo, Next.js, WordPress)
+- ✅ Statistiques (Matomo), formulaires RGPD
+- ✅ Sécurité renforcée (CSP, HSTS), sauvegardes automatiques
 
-👉 **[Découvrir le service « Application mobile »](/services/application-mobile/)**
-
----
-
-### API & backends
-
-Des API documentées et robustes, prêtes pour la charge.
-
-- Spécification, tests automatiques
-- Auth/OAuth2, rate-limiting, cache
-- Observabilité : logs, métriques, tableaux de bord
-
-👉 **[Découvrir le service « API & backend »](/services/api-et-backend/)**
+👉 **[Voir le service « Site internet »](/services/site-internet/)**
 
 ---
 
-### Hébergement & DevOps
+### 📱 Applications mobiles Flutter
 
-Du code en production, sereinement.
+Une seule base de code pour toucher tout le monde, sur iOS & Android. On s’occupe de tout : de l’idée à l’App Store.
 
-- Pipelines Git (CI/CD), déploiements blue/green
-- Monitoring , alerting
-- Backups chiffrés, PRA, durcissement sécurité
+- ✅ Prototype cliquable pour tester rapidement
+- ✅ Authentification, paiement, push, mode offline
+- ✅ CI/CD, suivi des crashs & analytics intégrés
 
-👉 **[Découvrir le service « Hébergement & DevOps »](/services/devops-hebergement/)**
-
----
-
-## Notre méthode (simple et efficace)
-
-1. **Atelier** — objectifs, priorités, KPI
-2. **MVP** — livrer l’essentiel en premier
-3. **Itérations** — feedbacks courts, améliorations ciblées
-4. **Recette & a11y** — tests, accessibilité, sécurité
-5. **Déploiement & run** — monitoring, sauvegardes, évolutions
+👉 **[Voir le service « Application mobile »](/services/application-mobile/)**
 
 ---
 
-## Prêt à démarrer ?
+### 🔌 API & backends robustes
 
-**Parlons de votre projet** : un message suffit, on vous répond sous 24–48 h ouvrées.  
-**[Demander un devis](/contact/)**
+Des fondations solides pour vos apps. Nos API sont conçues pour **tenir la charge**, être **documentées** et **monitorées**.
+
+- ✅ Spécifications claires, tests automatisés
+- ✅ Authentification OAuth2, cache & rate limiting
+- ✅ Observabilité complète : logs, dashboards, alerting
+
+👉 **[Voir le service « API & backend »](/services/api-et-backend/)**
+
+---
+
+### ☁️ DevOps & hébergement sécurisé
+
+Du code au cloud, on automatise vos déploiements pour un run fluide et sans surprises. La fiabilité par défaut.
+
+- ✅ CI/CD, déploiements blue/green
+- ✅ Monitoring, alerting, PRA & sauvegardes chiffrées
+- ✅ Sécurité durcie à chaque étape
+
+👉 **[Voir le service « Hébergement & DevOps »](/services/devops-hebergement/)**
+
+---
+
+## 🔍 Notre méthode, étape par étape
+
+On reste agiles, mais carrés : une approche itérative et transparente, axée sur vos priorités.
+
+1. **Atelier de cadrage** — objectifs, KPIs, contraintes
+2. **MVP rapide** — livrer ce qui compte, vite
+3. **Itérations** — retours fréquents, ajustements ciblés
+4. **Recette & accessibilité** — tests qualité & sécurité
+5. **Mise en production** — suivi, monitoring & évolutions
+
+---
+
+## 🎯 Prêt à lancer votre projet ?
+
+Discutons-en ! Un message suffit.  
+📩 **[Demander un devis](/contact/)** — réponse sous 48h max

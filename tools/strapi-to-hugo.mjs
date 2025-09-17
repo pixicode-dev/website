@@ -1,23 +1,33 @@
-// tools/strapi-to-hugo-v3.mjs
-// Strapi v3 → Hugo blog sync (create/update + delete removed articles)
-// Requires: node-fetch@3 (npm i node-fetch@3)
-//
-// ENV:
-//   STRAPI_URL=https://cms.pixicode.dev
-//   DRY_RUN=true|false (default false)
-//   PRUNE_MEDIA=true|false (default false)
-
+// strapi-to-hugo-v3.mjs
 import fs from "node:fs/promises";
 import path from "node:path";
 import fetch from "node-fetch";
 
-const STRAPI_URL = "https://cms.pixicode.dev";
-const ROOT = process.cwd();
-const BLOG_DIR = path.join(ROOT, "content", "blog");
-const MEDIA_DIR = path.join(ROOT, "static", "uploads", "blog");
+// ENV config
+const STRAPI_URL = process.env.STRAPI_URL || "https://cms.pixicode.dev";
 const DRY_RUN = (process.env.DRY_RUN || "false").toLowerCase() === "true";
 const PRUNE_MEDIA =
   (process.env.PRUNE_MEDIA || "false").toLowerCase() === "true";
+
+// CLI args
+const TYPE = process.argv[2]?.replace("--type=", "") || "articles";
+if (!["articles", "projets"].includes(TYPE)) {
+  console.error("❌ Usage: node strapi-to-hugo-v3.mjs --type=articles|projets");
+  process.exit(1);
+}
+
+const ROOT = process.cwd();
+const CONTENT_DIR = path.join(
+  ROOT,
+  "content",
+  TYPE === "projets" ? "portfolio" : "blog"
+);
+const MEDIA_DIR = path.join(
+  ROOT,
+  "static",
+  "uploads",
+  TYPE === "projets" ? "portfolio" : "blog"
+);
 
 function log(step, msg) {
   console.log(`[${step}] ${msg}`);
@@ -58,22 +68,6 @@ async function download(url, destRel) {
   return `/${destRel.replace(/\\/g, "/")}`;
 }
 
-async function fetchAllArticles() {
-  const pageSize = 100;
-  let start = 0;
-  const all = [];
-  for (;;) {
-    const qs = `?_start=${start}&_limit=${pageSize}&_sort=published_at:desc`;
-    const res = await fetch(`${STRAPI_URL}/articles${qs}`);
-    if (!res.ok) throw new Error(`Fetch failed ${res.status}`);
-    const batch = await res.json();
-    all.push(...batch);
-    if (batch.length < pageSize) break;
-    start += pageSize;
-  }
-  return all;
-}
-
 function strToSlug(s) {
   return (s || "")
     .toLowerCase()
@@ -83,8 +77,8 @@ function strToSlug(s) {
     .replace(/(^-|-$)/g, "");
 }
 
-function pickCover(article) {
-  const c = article.cover;
+function pickCover(entry) {
+  const c = entry.cover;
   if (!c || !c.url) return null;
   const preferred =
     c.formats?.medium?.url ||
@@ -110,58 +104,109 @@ async function listFiles(dir, extFilter = null) {
   }
 }
 
-async function syncArticles() {
-  await ensureDir(BLOG_DIR);
+async function fetchAllEntries() {
+  const pageSize = 100;
+  let start = 0;
+  const all = [];
+  for (;;) {
+    const qs = `?_start=${start}&_limit=${pageSize}&_sort=published_at:desc`;
+    const res = await fetch(`${STRAPI_URL}/${TYPE}${qs}`);
+    if (!res.ok) throw new Error(`Fetch failed ${res.status}`);
+    const batch = await res.json();
+    all.push(...batch);
+    if (batch.length < pageSize) break;
+    start += pageSize;
+  }
+  return all;
+}
+
+async function syncEntries() {
+  await ensureDir(CONTENT_DIR);
   await ensureDir(MEDIA_DIR);
 
-  log("FETCH", "Reading articles from Strapi v3 (public)...");
-  const articles = await fetchAllArticles();
-  log("FETCH", `Got ${articles.length} article(s).`);
+  log("FETCH", `Fetching ${TYPE} from Strapi…`);
+  const entries = await fetchAllEntries();
+  log("FETCH", `Got ${entries.length} ${TYPE}.`);
 
-  // Track what's expected after this run
-  const expectedMd = new Set(); // e.g. slug.md
-  const expectedMedia = new Set(); // e.g. uploads/blog/slug-cover.jpg (rel path from /static)
+  const expectedMd = new Set();
+  const expectedMedia = new Set();
 
-  for (const a of articles) {
-    const title = a.title || "Sans titre";
-    const slug = a.slug || strToSlug(title);
-    const description = a.description || "";
-    const body = (a.content || "").trim();
-    const date = a.published_at || a.updated_at || a.created_at;
+  for (const entry of entries) {
+    const title = entry.title || "Sans titre";
+    const slug = entry.slug || strToSlug(title);
+    const description = entry.description || "";
+    const body = (entry.content || "").trim();
+    const date = entry.published_at || entry.updated_at || entry.created_at;
+    const keywords = entry.keywords || "";
 
-    const categories =
-      Array.isArray(a.categories) && a.categories.length
-        ? a.categories.map((x) =>
-            typeof x === "string" ? x : x.name || x.title || ""
-          )
-        : ["Web"];
-    const tags = Array.isArray(a.tags) ? a.tags : [];
+    let categories = ["Web"]; // fallback
+    if (entry.category && typeof entry.category === "string") {
+      categories = entry.category
+        .split(",")
+        .map((c) => c.trim())
+        .filter((c) => c.length > 0);
+    } else if (Array.isArray(entry.category)) {
+      categories = entry.category.map((x) =>
+        typeof x === "string" ? x : x.name || ""
+      );
+    }
 
-    // cover
+    let tags = [];
+    if (entry.tags && typeof entry.tags === "string") {
+      tags = entry.tags
+        .split(",")
+        .map((t) => t.trim())
+        .filter((t) => t.length > 0);
+    } else if (Array.isArray(entry.tags)) {
+      tags = entry.tags.map((x) => (typeof x === "string" ? x : x.name || ""));
+    }
+
+    // Cover image
     let cover = null;
-    const cov = pickCover(a);
+    const cov = pickCover(entry);
     if (cov) {
-      const mediaRel = `uploads/blog/${slug}-cover${cov.ext}`;
-      expectedMedia.add(mediaRel.replace(/\\/g, "/"));
+      const mediaRel = `uploads/${TYPE}/${slug}-cover${cov.ext}`;
+      expectedMedia.add(mediaRel);
       cover = await download(cov.absolute, mediaRel);
     }
 
-    const fm = frontMatter({
+    // Project images
+    let project_images = [];
+    if (TYPE === "projets" && Array.isArray(entry.project_images)) {
+      for (const [i, img] of entry.project_images.entries()) {
+        if (!img || !img.url) continue;
+        const src = img.url.startsWith("http")
+          ? img.url
+          : `${STRAPI_URL}${img.url}`;
+        const ext = path.extname(img.url) || ".jpg";
+        const destRel = `uploads/${TYPE}/${slug}/${i}${ext}`;
+        expectedMedia.add(destRel);
+        const localPath = await download(src, destRel);
+        project_images.push(localPath);
+      }
+    }
+
+    const front = {
       title,
       date,
       draft: false,
       description,
+      cover,
       categories,
       tags,
-      cover,
-    });
-    const mdContent = `${fm}\n${body}\n`;
+      keywords,
+      ...(TYPE === "projets" && {
+        image: cover,
+        project_images,
+      }),
+    };
 
+    const fm = frontMatter(front);
+    const mdContent = `${fm}\n${body}\n`;
     const mdName = `${slug}.md`;
     expectedMd.add(mdName);
-    const outPath = path.join(BLOG_DIR, mdName);
+    const outPath = path.join(CONTENT_DIR, mdName);
 
-    // Upsert (always overwrite to keep in sync)
     if (DRY_RUN) {
       log("DRY", `Would write ${path.relative(ROOT, outPath)}`);
     } else {
@@ -170,13 +215,13 @@ async function syncArticles() {
     }
   }
 
-  // Delete Markdown files that are no longer present in Strapi
-  const existingMd = (await listFiles(BLOG_DIR, ".md")).filter(
+  // Clean up obsolete markdown files
+  const existingMd = (await listFiles(CONTENT_DIR, ".md")).filter(
     (n) => n !== "_index.md"
   );
   const toDeleteMd = existingMd.filter((n) => !expectedMd.has(n));
   for (const f of toDeleteMd) {
-    const p = path.join(BLOG_DIR, f);
+    const p = path.join(CONTENT_DIR, f);
     if (DRY_RUN) {
       log("DRY", `Would delete ${path.relative(ROOT, p)}`);
     } else {
@@ -185,11 +230,11 @@ async function syncArticles() {
     }
   }
 
-  // Optionally prune media not referenced anymore
+  // Clean up unused media
   if (PRUNE_MEDIA) {
     const existingMedia = await listFiles(MEDIA_DIR);
     const toDeleteMedia = existingMedia.filter((n) => {
-      const rel = `uploads/blog/${n}`.replace(/\\/g, "/");
+      const rel = `uploads/${TYPE}/${n}`.replace(/\\/g, "/");
       return !expectedMedia.has(rel);
     });
     for (const f of toDeleteMedia) {
@@ -203,13 +248,13 @@ async function syncArticles() {
     }
   }
 
-  log("DONE", `Synced ${articles.length} article(s).`);
+  log("DONE", `Synced ${entries.length} ${TYPE}.`);
 }
 
 (async () => {
   try {
-    await syncArticles();
-    console.log("✅ Strapi v3 → Hugo blog sync complete.");
+    await syncEntries();
+    console.log(`✅ Sync complete for ${TYPE}.`);
   } catch (e) {
     console.error("❌ Sync failed:", e);
     process.exit(1);
