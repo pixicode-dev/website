@@ -1,6 +1,6 @@
 ---
-title: "PixiCode – Agence web & mobile à taille humaine, spécialisée dans le sur-mesure"
-description: "PixiCode est une agence de développement basée à Angoulême. Nous créons des sites web, applications mobiles et logiciels métiers pensés pour les indépendants, PME et startups. Une approche simple, humaine et technique, pour un résultat qui vous ressemble."
+title: "PixiCode – Agence web & mobile sur mesure à Angoulême"
+description: "PixiCode, agence web et mobile à Angoulême, crée des sites, apps et logiciels sur mesure pour startups, PME et indépendants."
 keywords: "agence web Angoulême, développement sur mesure, site internet, app mobile, freelance développeur, logiciel métier, création de site, PixiCode, transformation digitale"
 date: 2025-09-17
 heading: "Bienvenue chez PixiCode – Des solutions numériques claires, robustes et à votre image."

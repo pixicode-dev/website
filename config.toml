@@ -14,27 +14,27 @@ disableKinds = ["taxonomy", "term"]
     weight  = 1
   [[menu.nav]]
     name    = "Services"
-    url     = "services"
+    url     = "services/"
     weight  = 2
   [[menu.nav]]
     name    = "A propos"
-    url     = "about"
+    url     = "about/"
     weight  = 3
   [[menu.nav]]
     name    = "Blog"
-    url     = "blog"
+    url     = "blog/"
     weight  = 4
   [[menu.nav]]
     name    = "Portfolio"
-    url     = "portfolio"
+    url     = "portfolio/"
     weight  = 5
   [[menu.nav]]
     name    = "Equipe"
-    url     = "team"
+    url     = "team/"
     weight  = 6
   [[menu.nav]]
     name    = "Contactez Nous"
-    url     = "contact"
+    url     = "contact/"
     weight  = 7
 
 # Site Params
@@ -125,31 +125,31 @@ disableKinds = ["taxonomy", "term"]
                url  = "https://www.instagram.com/pixicode_dev/"
               [[params.footer.social.link]]
                name = "Notre fiche Google"
-               url  = "https://g.co/kgs/m5Dfytp"
+               url  = "https://www.google.com/search?sca_esv=8382d0de9abbe68c&hl=fr&authuser=1&kgmid=/g/11vqzs6fyb&q=PixiCode&shndl=30&shem=lcuae,lspt8,uaasie&source=sh/x/loc/uni/m1/1&kgs=c85961deea9437e6"
       [params.footer.sitemap]
         title   = "Sitemap"
         [[params.footer.sitemap.link]]
           name = "A propos"
-          url  = "about"
+          url  = "about/"
         [[params.footer.sitemap.link]]
           name = "Equipe"
-          url  = "team"
+          url  = "team/"
         [[params.footer.sitemap.link]]
           name = "Portfolio"
-          url  = "portfolio"
+          url  = "portfolio/"
         [[params.footer.sitemap.link]]
           name = "Contact"
-          url  = "contact"
+          url  = "contact/"
       [params.footer.legal]
         title   = "Légal"
         [[params.footer.legal.link]]
           name = "Mentions légales"
-          url  = "legal"
+          url  = "legal/"
         [[params.footer.legal.link]]
           name = "Politique de Confidentialité (PDF)"
-          url  = "politique-confidentialite"
+          url  = "politique-confidentialite/"
         [[params.footer.legal.link]]
           name = "Conditions Générales (PDF)"
-          url  = "cgv"
+          url  = "cgv/"
       [params.footer.back_to_top]
         description = "I want to <br> visit again"

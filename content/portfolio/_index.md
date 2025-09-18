@@ -1,6 +1,6 @@
 ---
-title: "Nos projets parlent pour nous : <span>des solutions sur mesure</span> au service de votre <span>croissance digitale</span>"
-description: "Découvrez les réalisations de PixiCode : des applications web et mobiles conçues pour répondre aux enjeux concrets de nos clients. Innovation, performance et sur-mesure au cœur de chaque projet."
+title: "Portfolio – Projets web et mobiles sur mesure | PixiCode"
+description: "Découvrez les projets web et mobiles de PixiCode, pensés pour répondre aux enjeux métiers de nos clients."
 keywords: "portfolio PixiCode, projets web, application mobile, développement sur mesure, réalisation site internet, app mobile, agence numérique"
 date: 2025-07-01
 ---

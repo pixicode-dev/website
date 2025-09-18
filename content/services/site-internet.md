@@ -1,7 +1,7 @@
 ---
 title: "Création de site internet professionnel"
 heading: "Sites web rapides qui convertissent"
-description: "Vitrines, landings ou portails métier : performance, clarté et SEO dès le départ."
+description: "PixiCode crée des sites vitrines, landings et portails métier alliant design, performance et SEO pour booster votre présence en ligne."
 ---
 
 ## 🌍 Pourquoi choisir PixiCode ?

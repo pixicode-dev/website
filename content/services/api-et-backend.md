@@ -1,7 +1,7 @@
 ---
 title: "Développement d’API et backends performants"
 heading: "Des API qui encaissent la charge"
-description: "Des backends robustes, sécurisés et scalables pour faire tourner vos services sans friction."
+description: "PixiCode conçoit des API et backends performants : robustes, sécurisés, scalables et pensés pour soutenir vos services sans friction."
 ---
 
 ## 🔌 Pourquoi une API sur mesure ?

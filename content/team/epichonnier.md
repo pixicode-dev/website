@@ -3,7 +3,7 @@ title: "Emric Pichonnier – Développeur Fullstack & Fondateur de PixiCode"
 date: 2025-07-01
 type: team
 image: "images/team/emric2.webp"
-description: "Fondateur de PixiCode, Emric est un développeur fullstack basé à Angoulême. Il accompagne TPE, PME et grands groupes dans la conception de solutions web et mobiles robustes et sur mesure."
+description: "Emric Pichonnier, fondateur de PixiCode, développe des solutions web et mobiles sur mesure pour TPE, PME et grands groupes."
 keywords: "Emric Pichonnier, PixiCode, développeur freelance, développeur à Angoulême, expert Flutter, JavaScript, Python, applications web, applications mobiles"
 category: ["Développeur freelance", "Fondateur PixiCode"]
 ---

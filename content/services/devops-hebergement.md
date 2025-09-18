@@ -1,7 +1,7 @@
 ---
 title: "DevOps & hébergement managé"
 heading: "Du code en prod, sereinement"
-description: "Une infrastructure stable, supervisée et sécurisée. Vous codez, on gère la production."
+description: "PixiCode assure un hébergement managé et un support DevOps : infrastructure stable, sécurisée et supervisée pour vos projets."
 ---
 
 ## ☁️ Pourquoi externaliser le DevOps ?

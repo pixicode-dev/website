@@ -1,6 +1,6 @@
 ---
 title: "À propos – PixiCode, agence de développement sur mesure à Angoulême"
-description: "PixiCode est une agence de développement indépendante qui propose des services sur mesure en développement web, mobile et logiciel. Nous nous engageons sur la transparence, l’expertise technique et un accompagnement client humain et agile."
+description: "PixiCode est une agence de développement sur mesure : web, mobile et logiciel. Transparence, expertise et accompagnement humain."
 keywords: "PixiCode, agence de développement, développement sur mesure, services numériques, technologies web, application mobile, freelance développeur, accompagnement technique, transformation digitale"
 date: 2025-07-01
 heading: "Qui sommes-nous ? Agence de développement à Angoulême"
@@ -16,10 +16,10 @@ Notre approche : simple, humaine, efficace.
 ---
 
 ## Notre mission
-  
+
 ### Rendre le développement accessible, clair et fiable
-  
-Nous accompagnons nos clients  **startups**, **TPE**, **PME** ou **indépendants**  dans la **conception**, le **développement** et le **suivi technique** de leurs projets digitaux.
+
+Nous accompagnons nos clients **startups**, **TPE**, **PME** ou **indépendants** dans la **conception**, le **développement** et le **suivi technique** de leurs projets digitaux.
 
 > Chaque projet est pensé sur mesure, selon vos enjeux métiers, vos ressources et vos priorités.
 
@@ -38,19 +38,19 @@ PixiCode a été fondée avec une vision claire :
 
 ## Nos engagements
 
-### 💰 Tarifs compétitifs et transparents  
+### 💰 Tarifs compétitifs et transparents
 
 Des devis **clairs**, **ajustables**, **sans surprise**. La qualité reste au cœur, quel que soit le budget.
 
-### 👨‍💻 Expertise technique complète  
+### 👨‍💻 Expertise technique complète
 
 Du **frontend** au **backend**, de **Flutter** à **React**, nous maîtrisons les technologies modernes les plus robustes.
 
-### 🔁 Méthodologie agile  
+### 🔁 Méthodologie agile
 
 Chaque étape de développement est **co-construite** avec vous, validée et livrée en continu.
 
-### 🛠️ Pérennité et évolutivité  
+### 🛠️ Pérennité et évolutivité
 
 Nous concevons des **architectures maintenables**, **scalables** et prêtes à évoluer avec votre activité.
 

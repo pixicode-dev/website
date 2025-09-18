@@ -1,5 +1,5 @@
 ---
-title: "Notre équipe – <span>Experts</span> en <span>développement</span> web et mobile | PixiCode."
+title: "Notre équipe – Experts web et mobile | PixiCode"
 description: "Découvrez l’équipe PixiCode : des experts du développement web, mobile et logiciel, prêts à concrétiser vos projets avec passion, rigueur et créativité."
 keywords: "équipe PixiCode, développeur web Angoulême, freelance, application sur mesure, solutions numériques, agence de développement, équipe technique"
 date: 2025-07-01

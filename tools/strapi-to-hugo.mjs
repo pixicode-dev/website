@@ -136,7 +136,8 @@ async function syncEntries() {
     const slug = entry.slug || strToSlug(title);
     const description = entry.description || "";
     const body = (entry.content || "").trim();
-    const date = entry.published_at || entry.updated_at || entry.created_at;
+    const date = entry.published_at || entry.created_at;
+    const lastmod = entry.updated_at;
     const keywords = entry.keywords || "";
 
     let categories = ["Web"]; // fallback
@@ -189,6 +190,7 @@ async function syncEntries() {
     const front = {
       title,
       date,
+      lastmod,
       draft: false,
       description,
       cover,

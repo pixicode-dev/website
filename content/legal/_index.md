@@ -1,6 +1,7 @@
 ---
 title: "Mentions légales"
-date: 2025-07-01
+date: 2025-09-18
+description: "Consultez les mentions légales de PixiCode : informations légales, propriété intellectuelle et responsabilités du site."
 ---
 
 ## Éditeur du site
