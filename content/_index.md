@@ -13,16 +13,6 @@ valor_sectors:
     "**Une collaboration fluide et transparente :** Vous êtes dans la boucle à chaque étape. Communication directe, livraisons régulières, écoute réelle.",
     "**Un esprit local, une portée nationale :** Installés à Angoulême, on accompagne des clients partout en France – toujours avec la même réactivité.",
   ]
-expertise_title: "Ce qu’on fait pour vous"
-expertise_sectors:
-  [
-    "Nous intervenons sur des projets variés, toujours pensés sur-mesure :",
-    "**Sites web :** vitrines, sites administrables, refontes optimisées pour le SEO.",
-    "**Applications mobiles :** iOS et Android avec Flutter, du prototype au store.",
-    "**Logiciels métiers :** automatisation, gestion interne, outils spécifiques à votre activité.",
-    "**APIs & interconnexions :** pour connecter vos outils entre eux sans friction.",
-    "**Hébergement & maintenance :** on peut aussi vous aider à mettre en ligne et à garder votre outil performant.",
-  ]
 ---
 
 Chez **PixiCode**, on est convaincus que le développement logiciel ne devrait jamais être un casse-tête.
@@ -33,6 +23,15 @@ Aujourd’hui, PixiCode, c’est une expertise solide en développement web, mob
 
 🎯 On accompagne des **PME**, des **startups** et des **indépendants** dans leur transformation digitale, avec des outils pensés pour **simplifier leur quotidien**, **automatiser ce qui peut l’être**, et **faire gagner du temps**.
 
+Nos domaines d’expertise couvrent l’ensemble du cycle de développement :
+
+- 🌐 [Création de sites internet performants](/services/site-internet/) : vitrines, sites administrables, refontes SEO et portails métiers.
+- 📱 [Développement d’applications mobiles Flutter](/services/application-mobile/) : une seule base de code pour iOS et Android.
+- 🔌 [Conception d’API et backends robustes](/services/api-et-backend/) : sécurisés, documentés et monitorés.
+- ☁️ [DevOps, hébergement & maintenance](/services/devops-hebergement/) : déploiements automatisés, sauvegardes, supervision et sécurité.
+
+👉 Découvrez l’ensemble de [nos services sur mesure](/services/) pour en savoir plus.
+
 Notre priorité : créer des solutions **robustes**, **compréhensibles**, et **vraiment adaptées à vos enjeux métier.**
 
 Vous avez une idée mais vous ne savez pas par où commencer ?  
@@ -40,5 +39,3 @@ Vous avez une idée mais vous ne savez pas par où commencer ?
 🔍 Ou jetez un œil à [nos réalisations](/portfolio) et [notre équipe](/team)
 
 On vous accompagne pas à pas, avec sérieux… mais sans se prendre trop au sérieux.
-
----
