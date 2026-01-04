@@ -1,0 +1,12 @@
+enable: true
+title: "NOS SERVICES"
+items:
+  - number: "01"
+    title: "SITES INTERNET"
+    image: "images/services/site.webp"
+  - number: "02"
+    title: "APPLICATIONS MOBILES"
+    image: "images/services/mobile.webp"
+  - number: "03"
+    title: "LOGICIELS MÉTIERS"
+    image: "images/services/software.webp"

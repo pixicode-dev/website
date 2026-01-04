@@ -1,18 +1,26 @@
 ---
-title: "Portfolio – Projets web et mobiles sur mesure | PixiCode"
-description: "Découvrez les projets web et mobiles de PixiCode, pensés pour répondre aux enjeux métiers de nos clients."
-keywords: "portfolio PixiCode, projets web, application mobile, développement sur mesure, réalisation site internet, app mobile, agence numérique"
-date: 2025-07-01
+title: "NOS RÉALISATIONS"
+description: "Découvrez nos derniers projets web, mobile et logiciels."
+layout: "list" # Utilise le layout de liste
+
+# Définition des filtres (Doivent correspondre aux catégories des projets)
+filters:
+  - name: "TOUT"
+    filter: "all"
+  - name: "SITES INTERNET"
+    filter: "web"
+  - name: "APPLICATIONS MOBILES"
+    filter: "mobile"
+  - name: "API & BACKENDS"
+    filter: "backend"
+  - name: "HÉBERGEMENT & DEVOPS"
+    filter: "devops"
+
+# CTA du bas
+cta_app:
+  title: "VOUS AVEZ UN BESOIN ?"
+  subtitle: "CONTACTEZ-NOUS"
+  button_text: "DÉMARRER UN PROJET"
+  button_link: "/contact"
+  image: "images/app-hand.png"
 ---
-
-Nos projets illustrent notre double expertise :
-
-- ✅ Le **développement web et mobile sur mesure**, pour les TPE/PME et startups souhaitant lancer un outil ou un service digital.
-- 🤝 Des **missions freelance ciblées** chez des grands groupes, pour renforcer leurs équipes tech de manière agile et experte.
-
-Chaque projet est unique, mais ils ont tous un point commun : répondre précisément aux besoins métiers, avec une approche technique rigoureuse et humaine.
-
-<!--SPLIT-->
-
-Vous cherchez une équipe pour créer votre app, ou un renfort freelance pour votre SI ?  
-[Contactez-nous](../contact) nous serons ravis d’en discuter.

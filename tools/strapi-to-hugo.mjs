@@ -9,24 +9,38 @@ const DRY_RUN = (process.env.DRY_RUN || "false").toLowerCase() === "true";
 const PRUNE_MEDIA =
   (process.env.PRUNE_MEDIA || "false").toLowerCase() === "true";
 
-// CLI args
+// CLI args - UPDATED to include 'testimonials'
 const TYPE = process.argv[2]?.replace("--type=", "") || "articles";
-if (!["articles", "projets"].includes(TYPE)) {
-  console.error("❌ Usage: node strapi-to-hugo-v3.mjs --type=articles|projets");
+if (!["articles", "projets", "testimonials"].includes(TYPE)) {
+  console.error(
+    "❌ Usage: node strapi-to-hugo-v3.mjs --type=articles|projets|testimonials"
+  );
   process.exit(1);
 }
 
 const ROOT = process.cwd();
-const CONTENT_DIR = path.join(
-  ROOT,
-  "content",
-  TYPE === "projets" ? "portfolio" : "blog"
-);
+
+// PATH CONFIGURATION - UPDATED
+// If testimonials, we write to /data/testimonials.yml, otherwise /content/TYPE/
+let CONTENT_DIR;
+let DATA_FILE_PATH;
+
+if (TYPE === "testimonials") {
+  CONTENT_DIR = path.join(ROOT, "data"); // We will store the YAML here
+  DATA_FILE_PATH = path.join(CONTENT_DIR, "testimonials.yml");
+} else {
+  CONTENT_DIR = path.join(
+    ROOT,
+    "content",
+    TYPE === "projets" ? "portfolio" : "blog"
+  );
+}
+
 const MEDIA_DIR = path.join(
   ROOT,
   "static",
   "uploads",
-  TYPE === "projets" ? "portfolio" : "blog"
+  TYPE === "projets" ? "portfolio" : TYPE // 'testimonials' or 'blog'
 );
 
 function log(step, msg) {
@@ -40,8 +54,11 @@ async function ensureDir(p) {
 function yamlEscape(v) {
   if (v == null) return "";
   const s = String(v);
+  // Simple escape for YAML strings
   return /[:\-\n"]/.test(s) ? `"${s.replace(/"/g, '\\"')}"` : s;
 }
+
+// Existing FrontMatter function (for MD files)
 function frontMatter(obj) {
   const lines = Object.entries(obj)
     .filter(([, v]) => v !== undefined)
@@ -61,6 +78,10 @@ function frontMatter(obj) {
 async function download(url, destRel) {
   const destAbs = path.join(ROOT, "static", destRel);
   await ensureDir(path.dirname(destAbs));
+
+  // Check if file exists to avoid redownloading (optional optimization)
+  // try { await fs.access(destAbs); return `/${destRel.replace(/\\/g, "/")}`; } catch {}
+
   const r = await fetch(url);
   if (!r.ok) throw new Error(`Download failed ${r.status} ${url}`);
   const buf = Buffer.from(await r.arrayBuffer());
@@ -77,14 +98,14 @@ function strToSlug(s) {
     .replace(/(^-|-$)/g, "");
 }
 
-function pickCover(entry) {
-  const c = entry.cover;
-  if (!c || !c.url) return null;
+// Helper to pick image (cover or logo)
+function pickImage(imageObj) {
+  if (!imageObj || !imageObj.url) return null;
   const preferred =
-    c.formats?.medium?.url ||
-    c.formats?.large?.url ||
-    c.formats?.small?.url ||
-    c.url;
+    imageObj.formats?.medium?.url ||
+    imageObj.formats?.small?.url ||
+    imageObj.url;
+
   const absolute = preferred.startsWith("http")
     ? preferred
     : `${STRAPI_URL}${preferred}`;
@@ -108,16 +129,34 @@ async function fetchAllEntries() {
   const pageSize = 100;
   let start = 0;
   const all = [];
+
+  // Strapi collection name logic
+  const apiEndpoint = TYPE;
+
   for (;;) {
     const qs = `?_start=${start}&_limit=${pageSize}&_sort=published_at:desc`;
-    const res = await fetch(`${STRAPI_URL}/${TYPE}${qs}`);
-    if (!res.ok) throw new Error(`Fetch failed ${res.status}`);
+    const res = await fetch(`${STRAPI_URL}/${apiEndpoint}${qs}`);
+    if (!res.ok)
+      throw new Error(`Fetch failed ${res.status} for ${apiEndpoint}`);
     const batch = await res.json();
     all.push(...batch);
     if (batch.length < pageSize) break;
     start += pageSize;
   }
   return all;
+}
+
+// --- NEW FUNCTION: Generate YAML for Data File ---
+function generateDataYaml(title, items) {
+  let yaml = `title: ${yamlEscape(title)}\nitems:\n`;
+
+  for (const item of items) {
+    yaml += `  - company: ${yamlEscape(item.company)}\n`;
+    if (item.logo) yaml += `    logo: ${yamlEscape(item.logo)}\n`;
+    yaml += `    quote: ${yamlEscape(item.quote)}\n`;
+    if (item.color) yaml += `    color: ${yamlEscape(item.color)}\n`;
+  }
+  return yaml;
 }
 
 async function syncEntries() {
@@ -128,124 +167,190 @@ async function syncEntries() {
   const entries = await fetchAllEntries();
   log("FETCH", `Got ${entries.length} ${TYPE}.`);
 
-  const expectedMd = new Set();
   const expectedMedia = new Set();
 
-  for (const entry of entries) {
-    const title = entry.title || "Sans titre";
-    const slug = entry.slug || strToSlug(title);
-    const description = entry.description || "";
-    const body = (entry.content || "").trim();
-    const date = entry.published_at || entry.created_at;
-    const lastmod = entry.updated_at;
-    const keywords = entry.keywords || "";
+  // ==========================================
+  // LOGIC FOR TESTIMONIALS (Data File)
+  // ==========================================
+  if (TYPE === "testimonials") {
+    const processedItems = [];
 
-    let categories = ["Web"]; // fallback
-    if (entry.category && typeof entry.category === "string") {
-      categories = entry.category
-        .split(",")
-        .map((c) => c.trim())
-        .filter((c) => c.length > 0);
-    } else if (Array.isArray(entry.category)) {
-      categories = entry.category.map((x) =>
-        typeof x === "string" ? x : x.name || ""
-      );
+    for (const entry of entries) {
+      const companyName = entry.company || entry.title || "Client";
+      const slug = strToSlug(companyName);
+
+      // Handle Logo
+      let logoPath = "";
+      const imgData = pickImage(entry.logo);
+
+      if (imgData) {
+        const mediaRel = `uploads/${TYPE}/${slug}-logo${imgData.ext}`;
+        expectedMedia.add(mediaRel);
+        logoPath = await download(imgData.absolute, mediaRel);
+      }
+
+      processedItems.push({
+        company: companyName,
+        logo: logoPath,
+        quote: entry.quote || entry.content || "", // Adjust based on Strapi field name
+        color: entry.color || "#cccccc", // Adjust based on Strapi field name
+      });
     }
 
-    let tags = [];
-    if (entry.tags && typeof entry.tags === "string") {
-      tags = entry.tags
-        .split(",")
-        .map((t) => t.trim())
-        .filter((t) => t.length > 0);
-    } else if (Array.isArray(entry.tags)) {
-      tags = entry.tags.map((x) => (typeof x === "string" ? x : x.name || ""));
+    // Generate YAML Content
+    const yamlContent = generateDataYaml("TÉMOIGNAGES", processedItems);
+
+    if (DRY_RUN) {
+      log("DRY", `Would write ${path.relative(ROOT, DATA_FILE_PATH)}`);
+    } else {
+      await fs.writeFile(DATA_FILE_PATH, yamlContent, "utf8");
+      log("WRITE", path.relative(ROOT, DATA_FILE_PATH));
     }
 
-    // Cover image
-    let cover = null;
-    const cov = pickCover(entry);
-    if (cov) {
-      const mediaRel = `uploads/${TYPE}/${slug}-cover${cov.ext}`;
-      expectedMedia.add(mediaRel);
-      cover = await download(cov.absolute, mediaRel);
-    }
+    // ==========================================
+    // LOGIC FOR ARTICLES & PROJECTS (MD Files)
+    // ==========================================
+  } else {
+    const expectedMd = new Set();
 
-    // Project images
-    let project_images = [];
-    if (TYPE === "projets" && Array.isArray(entry.project_images)) {
-      for (const [i, img] of entry.project_images.entries()) {
-        if (!img || !img.url) continue;
-        const src = img.url.startsWith("http")
-          ? img.url
-          : `${STRAPI_URL}${img.url}`;
-        const ext = path.extname(img.url) || ".jpg";
-        const destRel = `uploads/${TYPE}/${slug}/${i}${ext}`;
-        expectedMedia.add(destRel);
-        const localPath = await download(src, destRel);
-        project_images.push(localPath);
+    for (const entry of entries) {
+      const title = entry.title || "Sans titre";
+      const slug = entry.slug || strToSlug(title);
+      const description = entry.description || "";
+      const body = (entry.content || "").trim();
+      const date = entry.published_at || entry.created_at;
+      const lastmod = entry.updated_at;
+      const keywords = entry.keywords || "";
+
+      // Categories
+      let categories = ["Web"];
+      if (entry.category && typeof entry.category === "string") {
+        categories = entry.category
+          .split(",")
+          .map((c) => c.trim())
+          .filter((c) => c.length > 0);
+      } else if (Array.isArray(entry.category)) {
+        categories = entry.category.map((x) =>
+          typeof x === "string" ? x : x.name || ""
+        );
+      }
+
+      // Tags
+      let tags = [];
+      if (entry.tags && typeof entry.tags === "string") {
+        tags = entry.tags
+          .split(",")
+          .map((t) => t.trim())
+          .filter((t) => t.length > 0);
+      } else if (Array.isArray(entry.tags)) {
+        tags = entry.tags.map((x) =>
+          typeof x === "string" ? x : x.name || ""
+        );
+      }
+
+      // Cover image
+      let cover = null;
+      const cov = pickImage(entry.cover); // reused pickImage
+      if (cov) {
+        const mediaRel = `uploads/${TYPE}/${slug}-cover${cov.ext}`;
+        expectedMedia.add(mediaRel);
+        cover = await download(cov.absolute, mediaRel);
+      }
+
+      // Project images
+      let project_images = [];
+      if (TYPE === "projets" && Array.isArray(entry.project_images)) {
+        for (const [i, img] of entry.project_images.entries()) {
+          if (!img || !img.url) continue;
+          const src = img.url.startsWith("http")
+            ? img.url
+            : `${STRAPI_URL}${img.url}`;
+          const ext = path.extname(img.url) || ".jpg";
+          const destRel = `uploads/${TYPE}/${slug}/${i}${ext}`;
+          expectedMedia.add(destRel);
+          const localPath = await download(src, destRel);
+          project_images.push(localPath);
+        }
+      }
+
+      const front = {
+        title,
+        date,
+        lastmod,
+        draft: false,
+        description,
+        cover,
+        categories,
+        tags,
+        keywords,
+        ...(TYPE === "projets" && {
+          image: cover,
+          project_images,
+        }),
+      };
+
+      const fm = frontMatter(front);
+      const mdContent = `${fm}\n${body}\n`;
+      const mdName = `${slug}.md`;
+      expectedMd.add(mdName);
+      const outPath = path.join(CONTENT_DIR, mdName);
+
+      if (DRY_RUN) {
+        log("DRY", `Would write ${path.relative(ROOT, outPath)}`);
+      } else {
+        await fs.writeFile(outPath, mdContent, "utf8");
+        log("WRITE", path.relative(ROOT, outPath));
       }
     }
 
-    const front = {
-      title,
-      date,
-      lastmod,
-      draft: false,
-      description,
-      cover,
-      categories,
-      tags,
-      keywords,
-      ...(TYPE === "projets" && {
-        image: cover,
-        project_images,
-      }),
-    };
-
-    const fm = frontMatter(front);
-    const mdContent = `${fm}\n${body}\n`;
-    const mdName = `${slug}.md`;
-    expectedMd.add(mdName);
-    const outPath = path.join(CONTENT_DIR, mdName);
-
-    if (DRY_RUN) {
-      log("DRY", `Would write ${path.relative(ROOT, outPath)}`);
-    } else {
-      await fs.writeFile(outPath, mdContent, "utf8");
-      log("WRITE", path.relative(ROOT, outPath));
-    }
-  }
-
-  // Clean up obsolete markdown files
-  const existingMd = (await listFiles(CONTENT_DIR, ".md")).filter(
-    (n) => n !== "_index.md"
-  );
-  const toDeleteMd = existingMd.filter((n) => !expectedMd.has(n));
-  for (const f of toDeleteMd) {
-    const p = path.join(CONTENT_DIR, f);
-    if (DRY_RUN) {
-      log("DRY", `Would delete ${path.relative(ROOT, p)}`);
-    } else {
-      await fs.unlink(p);
-      log("DELETE", path.relative(ROOT, p));
-    }
-  }
-
-  // Clean up unused media
-  if (PRUNE_MEDIA) {
-    const existingMedia = await listFiles(MEDIA_DIR);
-    const toDeleteMedia = existingMedia.filter((n) => {
-      const rel = `uploads/${TYPE}/${n}`.replace(/\\/g, "/");
-      return !expectedMedia.has(rel);
-    });
-    for (const f of toDeleteMedia) {
-      const p = path.join(MEDIA_DIR, f);
+    // Clean up obsolete markdown files (Only for articles/projects)
+    const existingMd = (await listFiles(CONTENT_DIR, ".md")).filter(
+      (n) => n !== "_index.md"
+    );
+    const toDeleteMd = existingMd.filter((n) => !expectedMd.has(n));
+    for (const f of toDeleteMd) {
+      const p = path.join(CONTENT_DIR, f);
       if (DRY_RUN) {
         log("DRY", `Would delete ${path.relative(ROOT, p)}`);
       } else {
         await fs.unlink(p);
         log("DELETE", path.relative(ROOT, p));
+      }
+    }
+  }
+
+  // ==========================================
+  // MEDIA CLEANUP (Common for all types)
+  // ==========================================
+  if (PRUNE_MEDIA) {
+    // If scanning nested folders for projects, this simple listFiles might need recursion
+    // For now, it works for flat folders like testimonials/blog
+
+    // Note: Project images are nested in subfolders, listFiles doesn't check subfolders deeply
+    // without modification, but this logic maintains existing behavior.
+    const existingMedia = await listFiles(MEDIA_DIR);
+
+    const toDeleteMedia = existingMedia.filter((n) => {
+      // Logic for flat files
+      const rel = `uploads/${TYPE}/${n}`.replace(/\\/g, "/");
+      return !expectedMedia.has(rel);
+    });
+
+    for (const f of toDeleteMedia) {
+      const p = path.join(MEDIA_DIR, f);
+      // Extra safety check: ensure we are not deleting directories if listFiles returned them
+      try {
+        const stat = await fs.stat(p);
+        if (stat.isDirectory()) continue;
+
+        if (DRY_RUN) {
+          log("DRY", `Would delete ${path.relative(ROOT, p)}`);
+        } else {
+          await fs.unlink(p);
+          log("DELETE", path.relative(ROOT, p));
+        }
+      } catch (e) {
+        /* ignore */
       }
     }
   }

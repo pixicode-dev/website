@@ -1,0 +1,9 @@
+enable: true
+title_line1: "VOTRE PROJET, NOTRE CODE : L'AGENCE WEB & MOBILE SUR MESURE"
+background_image: "images/Background.svg"
+description: "Basée à Angoulême, PixiCode conçoit des sites et applications sur mesure. Nous transformons vos besoins techniques en solutions numériques robustes, évolutives et performantes."
+cta_primary_text: "EN SAVOIR PLUS"
+cta_primary_link: "/about"
+cta_secondary_text: "CONTACTEZ-NOUS"
+cta_secondary_link: "/contact"
+img: "images/screens.webp"
