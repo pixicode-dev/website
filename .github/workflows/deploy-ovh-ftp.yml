@@ -2,7 +2,7 @@ name: Build & Deploy (OVH FTP)
 
 on:
   push:
-    branches: [main]
+    branches: [rework]
   workflow_dispatch:
   repository_dispatch:
     types: [rebuild-site]
@@ -47,5 +47,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           local-dir: ./public/
-          server-dir: ./www/
+          server-dir: ./pixicode/
           delete: true

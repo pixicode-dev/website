@@ -5,6 +5,7 @@ theme        = "roxo-hugo-pixicode"
 summaryLength = 25
 hasCJKLanguage = true
 disableKinds = ["taxonomy", "term"]
+removePathAccents = true
 
 # --- MENUS ---
 [menu]

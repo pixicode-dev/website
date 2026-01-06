@@ -219,6 +219,7 @@ async function syncEntries() {
       const description = entry.description || "";
       const body = (entry.content || "").trim();
       const date = entry.published_at || entry.created_at;
+      const external_link = entry.external_link;
       const lastmod = entry.updated_at;
       const keywords = entry.keywords || "";
 
@@ -278,6 +279,7 @@ async function syncEntries() {
         date,
         lastmod,
         draft: false,
+        external_link,
         description,
         cover,
         categories,

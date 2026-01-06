@@ -249,7 +249,6 @@ h3,
   top: 0;
   z-index: 0;
 
-  /* --- MOBILE (Portrait) : On force une taille géante pour voir le motif --- */
   height: 100%; /* Prend toute la hauteur */
   width: auto; /* La largeur s'adapte (sera très large) */
   max-width: none; /* On autorise le dépassement */
@@ -265,7 +264,7 @@ h3,
   /* --- DESKTOP --- */
   @media (min-width: 992px) {
     width: 100%; /* Prend toute la largeur */
-    height: auto; /* La hauteur s'adapte pour garder les proportions */
+    height: auto;
     left: 0;
     transform: none;
   }
@@ -297,7 +296,6 @@ h3,
     top: -10%; /* Petit ajustement vertical si besoin */
   }
 
-  /* --- SPÉCIFIQUE PORTRAIT (Ajustement fin) --- */
   @media (orientation: portrait) and (min-width: 992px) {
     height: 45vh;
     min-width: 150%;
@@ -1393,6 +1391,8 @@ h3,
    ======================== */
 
 .section-padding {
+  position: relative;
+  z-index: 10;
   padding: 100px 0;
   font-size: var(--fs-body);
   overflow: hidden;
@@ -1426,6 +1426,8 @@ h3,
     padding-right: var(--site-margin);
     margin-left: calc(var(--site-margin) * -1);
     overflow: visible;
+    z-index: 10;
+    position: relative;
   }
 
   .team-section {
@@ -1999,137 +2001,288 @@ h3,
 }
 
 /* ========================
-   PAGE PORTFOLIO
+   PORTFOLIO FILTRES & GRID
    ======================== */
 
-/* --- 1. FILTRES --- */
+/* --- 1. FILTRES (Boutons) --- */
 .portfolio-filters {
+  position: relative;
+  z-index: 20;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn-filter {
   background: transparent;
-  border: 1px solid #ddd;
-  padding: 10px 20px;
-  font-size: 0.85rem;
-  font-weight: 700;
+  border: 1px solid var(--clr-yellow-dark); /* Bordure Jaune */
+  color: var(--clr-black);
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #555;
-  border-radius: 4px; /* Carré légèrement arrondi */
   cursor: pointer;
+  border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .btn-filter:hover,
 .btn-filter.active {
-  background-color: var(--clr-yellow-btn); /* Jaune Pixi */
-  border-color: var(--clr-yellow-btn);
-  color: var(--clr-black);
+  background-color: var(--clr-yellow-dark); /* Fond Jaune au survol/actif */
+  color: var(
+    --clr-black
+  ); /* Texte reste noir ou devient blanc selon vos gouts */
 }
 
-/* --- 2. GRILLE & CARTE --- */
+/* RESPONSIVE BOUTONS (Mobile : Empilés et pleine largeur) */
+@media (max-width: 768px) {
+  .portfolio-filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-filter {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(
+      255,
+      204,
+      0,
+      0.1
+    ); /* Légèrement jaune par défaut sur mobile pour visibilité */
+  }
+
+  .btn-filter.active {
+    background-color: var(--clr-yellow-dark);
+  }
+}
+
+/* --- 2. CARTE PROJET --- */
 .project-card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  height: 300px; /* Hauteur fixe pour uniformiser */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.5s ease;
 }
 
-/* --- 3. OVERLAY (Bleu) --- */
+/* Zoom image au survol */
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* --- 3. OVERLAY (Le cache bleu) --- */
 .project-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(29, 93, 155, 0.9); /* Bleu Pixi semi-transparent */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(
+    53,
+    122,
+    184,
+    0.9
+  ); /* Bleu PixiCode avec transparence */
   opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  padding: 20px;
-}
+  transition: opacity 0.3s ease;
 
-.project-title {
-  font-family: var(--ff-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  transform: translateY(20px);
-  transition: transform 0.3s ease;
-}
-
-/* BOUTONS RONDS DANS L'OVERLAY */
-.btn-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  /* Flex pour centrer le contenu */
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  transition: all 0.2s ease;
-  transform: translateY(20px); /* Pour animation */
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
-.btn-icon:hover {
-  background-color: white;
-  color: var(--clr-blue-dark);
-}
-
-/* CATEGORIE EN BAS */
-.project-cat {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-/* --- 4. INTERACTIONS (HOVER & CLICK MOBILE) --- */
-
-/* Au survol (Desktop) OU Classe active (Mobile JS) */
+/* Affichage Overlay : Hover (Desktop) OU Classe Active (Mobile) */
 .project-card:hover .project-overlay,
 .project-card.mobile-active .project-overlay {
   opacity: 1;
-  visibility: visible;
 }
 
-.project-card:hover .project-img,
-.project-card.mobile-active .project-img {
-  transform: scale(1.1); /* Zoom léger de l'image */
+/* --- 4. ÉLÉMENTS DE L'OVERLAY --- */
+.overlay-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  transform: translateY(20px); /* Animation entrée */
+  transition: transform 0.3s ease;
 }
 
-/* Animation des éléments internes (Titre, Boutons) */
-.project-card:hover .project-title,
-.project-card.mobile-active .project-title,
-.project-card:hover .btn-icon,
-.project-card.mobile-active .btn-icon {
+.project-card:hover .overlay-icons,
+.project-card.mobile-active .overlay-icons {
   transform: translateY(0);
 }
 
-/* Effet cascade pour les boutons */
-.project-card:hover .btn-icon:nth-child(2) {
-  transition-delay: 0.1s;
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-/* Transition Item Isotope (Animation JS) */
+.icon-circle:hover {
+  background-color: white;
+  color: var(--clr-blue-dark); /* L'icône devient bleue */
+}
+
+.project-title {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Petit fond léger sous le titre comme sur l'image */
+  border-radius: 4px;
+  transform: translateY(20px);
+  transition: transform 0.3s ease 0.1s; /* Petit délai */
+}
+
+.project-card:hover .project-title,
+.project-card.mobile-active .project-title {
+  transform: translateY(0);
+}
+
+/* --- 5. ANIMATION FILTRE JS --- */
 .portfolio-item {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Classe pour CACHER l'élément (ajoutée par JS) */
+.portfolio-item.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none; /* Empêche de cliquer quand c'est invisible */
+
+  /* Astuce : on le retire du flux après l'animation via JS, 
+       mais ici on prépare le terrain */
+}
+
+/* ========================
+   GALERIE PROJET (SINGLE)
+   ======================== */
+.project-gallery {
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+#project-carousel {
+  position: relative;
+  padding: 0 50px; /* Espace pour les boutons */
+}
+
+/* C'est ici que se fait le "hide other if overflow" */
+#project-carousel .embla__viewport {
+  overflow: hidden;
+}
+
+#project-carousel .embla__container {
+  display: flex;
+  gap: 20px; /* Espace entre les images */
+}
+
+/* --- MODIFICATION ICI : TOUJOURS 2 SLIDES --- */
+.project-slide {
+  /* 50% de largeur = 2 images visibles */
+  /* On utilise calc() pour soustraire la moitié de l'espace du gap (10px)
+       afin que deux images tiennent exactement côte à côte */
+  flex: 0 0 calc(50% - 10px);
+  min-width: 0;
+}
+
+/* --- MODIFICATION ICI : TAILLE FIXE --- */
+.project-slide img {
+  width: 100%;
+  /* Hauteur fixe unique pour mobile ET desktop */
+  height: 400px;
+
+  /* Garantit que l'image remplit la zone sans être déformée */
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* --- RESPONSIVE DESKTOP (Nettoyé) --- */
+@media (min-width: 992px) {
+  /* Nous n'avons plus besoin de changer la taille ici car
+      c'est désormais 50% et 400px de haut partout. */
+}
+
+/* --- BOUTONS DE NAVIGATION --- */
+.gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--clr-yellow-dark);
+  color: var(--clr-black);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.gallery-nav-btn:hover {
+  background-color: var(--clr-yellow-light);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-prev {
+  left: 0;
+}
+.gallery-next {
+  right: 0;
+}
+
+/* Sur mobile, on resserre un peu les boutons */
+@media (max-width: 768px) {
+  #project-carousel {
+    padding: 0 10px;
+  }
+  .gallery-nav-btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 204, 0, 0.9);
+  }
+  .gallery-prev {
+    left: 5px;
+  }
+  .gallery-next {
+    right: 5px;
+  }
 }
 
 /* ========================
@@ -2480,4 +2633,66 @@ h3,
 
 .tag-btn:hover {
   background-color: var(--clr-blue-dark); /* Bleu foncé au survol */
+}
+
+/* ========================
+   CTA SVG SWITCHER
+   ======================== */
+
+.cta-link {
+  display: inline-block; /* S'adapte à la taille de l'image */
+  text-decoration: none;
+  border: none;
+  line-height: 0; /* Évite les espaces fantômes sous l'image */
+
+  @media (min-width: 768px) {
+    width: 100vw;
+    margin-left: calc(var(--site-margin) * -1);
+  }
+}
+
+.cta-img {
+  width: auto;
+  height: auto;
+  display: block;
+  user-select: none;
+  cursor: none;
+}
+
+/* --- LOGIQUE RESPONSIVE --- */
+
+.cta-desktop {
+  /* CURSEUR POINTER (Demandé) */
+  cursor: pointer;
+
+  display: none; /* On cache la version PC */
+}
+.cta-mobile {
+  /* CURSEUR POINTER (Demandé) */
+  cursor: pointer;
+
+  display: block; /* On affiche la version PHONE */
+  max-width: 60px; /* Ajustez selon la taille voulue sur mobile */
+}
+
+@media (min-width: 768px) {
+  .cta-desktop {
+    display: block; /* On affiche la version PC */
+    width: 50%;
+    margin-left: 25%;
+  }
+  .cta-mobile {
+    display: none; /* On cache la version PHONE */
+  }
+}
+
+.cta-link.has-bg-gradient {
+  /* Exemple de dégradé (Bleu vers Jaune PixiCode) */
+  background-color: var(--clr-yellow-light);
+
+  /* Un peu d'espace autour du SVG pour voir le dégradé */
+  padding: 10px 20px;
+
+  /* Ombre portée pour faire ressortir le bouton */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }

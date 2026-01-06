@@ -43,19 +43,19 @@ approach:
   items:
     - title: "1. Immersion & Architecture"
       description: "Pas de développement à l'aveugle. Nous analysons votre besoin métier et définissons l'architecture technique la plus pérenne pour votre budget."
-      icon: "images/icon-transparence.svg"
+      icon: "images/architecture.svg"
 
     - title: "2. Développement Agile"
       description: "Nous construisons votre projet brique par brique (MVP). Vous validez chaque étape via des démos régulières pour éviter l'effet tunnel."
-      icon: "images/icon-agile.svg"
+      icon: "images/code.svg"
 
     - title: "3. Qualité & Sécurité"
       description: "Le code est testé, optimisé et sécurisé avant tout déploiement. Nous traquons les bugs et assurons la conformité (Accessibilité, RGPD)."
-      icon: "images/icon-audit.svg"
+      icon: "images/security.svg"
 
     - title: "4. Livraison & Indépendance"
       description: "Le moment clé : la mise en ligne. Nous vous formons à l'outil et, surtout, nous vous remettons l'intégralité du code source. Vous êtes libre."
-      icon: "images/icon-scale.svg"
+      icon: "images/online.svg"
 
 # 3. FAQ (Optimisée pour rassurer sur la propriété et le local)
 faq:
