@@ -1,4 +1,4 @@
-baseURL      = "https://pixicode.dev/"
+baseURL      = "https://dev.pixicode.dev/"
 languageCode = "fr-fr"
 title        = "PixiCode"
 theme        = "roxo-hugo-pixicode"
