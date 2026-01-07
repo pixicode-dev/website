@@ -28,7 +28,10 @@ jobs:
         run: node tools/strapi-to-hugo.mjs --type=articles
 
       - name: Sync Strapi → Hugo (portfolio projects)
-        run: node tools/strapi-to-hugo.mjs --type=projets
+        run: node tools/strapi-to-hugo.mjs --type=projects
+
+      - name: Sync Strapi → Hugo (portfolio projects)
+        run: node tools/strapi-to-hugo.mjs --type=testimonials
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

@@ -1,4 +1,4 @@
-// strapi-to-hugo-v3.mjs
+// strapi-to-hugo-v5.mjs
 import fs from "node:fs/promises";
 import path from "node:path";
 import fetch from "node-fetch";
@@ -9,30 +9,31 @@ const DRY_RUN = (process.env.DRY_RUN || "false").toLowerCase() === "true";
 const PRUNE_MEDIA =
   (process.env.PRUNE_MEDIA || "false").toLowerCase() === "true";
 
-// CLI args - UPDATED to include 'testimonials'
+// CLI args
 const TYPE = process.argv[2]?.replace("--type=", "") || "articles";
-if (!["articles", "projets", "testimonials"].includes(TYPE)) {
+const VALID_TYPES = ["articles", "projects", "testimonials"];
+
+if (!VALID_TYPES.includes(TYPE)) {
   console.error(
-    "❌ Usage: node strapi-to-hugo-v3.mjs --type=articles|projets|testimonials"
+    `❌ Usage: node strapi-to-hugo-v5.mjs --type=${VALID_TYPES.join("|")}`
   );
   process.exit(1);
 }
 
 const ROOT = process.cwd();
 
-// PATH CONFIGURATION - UPDATED
-// If testimonials, we write to /data/testimonials.yml, otherwise /content/TYPE/
+// PATH CONFIGURATION
 let CONTENT_DIR;
 let DATA_FILE_PATH;
 
 if (TYPE === "testimonials") {
-  CONTENT_DIR = path.join(ROOT, "data"); // We will store the YAML here
+  CONTENT_DIR = path.join(ROOT, "data");
   DATA_FILE_PATH = path.join(CONTENT_DIR, "testimonials.yml");
 } else {
   CONTENT_DIR = path.join(
     ROOT,
     "content",
-    TYPE === "projets" ? "portfolio" : "blog"
+    TYPE === "projects" ? "portfolio" : "blog"
   );
 }
 
@@ -40,7 +41,7 @@ const MEDIA_DIR = path.join(
   ROOT,
   "static",
   "uploads",
-  TYPE === "projets" ? "portfolio" : TYPE // 'testimonials' or 'blog'
+  TYPE === "projects" ? "portfolio" : TYPE
 );
 
 function log(step, msg) {
@@ -54,11 +55,10 @@ async function ensureDir(p) {
 function yamlEscape(v) {
   if (v == null) return "";
   const s = String(v);
-  // Simple escape for YAML strings
   return /[:\-\n"]/.test(s) ? `"${s.replace(/"/g, '\\"')}"` : s;
 }
 
-// Existing FrontMatter function (for MD files)
+// FrontMatter Generator
 function frontMatter(obj) {
   const lines = Object.entries(obj)
     .filter(([, v]) => v !== undefined)
@@ -79,12 +79,10 @@ async function download(url, destRel) {
   const destAbs = path.join(ROOT, "static", destRel);
   await ensureDir(path.dirname(destAbs));
 
-  // Check if file exists to avoid redownloading (optional optimization)
-  // try { await fs.access(destAbs); return `/${destRel.replace(/\\/g, "/")}`; } catch {}
-
   const r = await fetch(url);
   if (!r.ok) throw new Error(`Download failed ${r.status} ${url}`);
   const buf = Buffer.from(await r.arrayBuffer());
+
   if (!DRY_RUN) await fs.writeFile(destAbs, buf);
   return `/${destRel.replace(/\\/g, "/")}`;
 }
@@ -98,17 +96,22 @@ function strToSlug(s) {
     .replace(/(^-|-$)/g, "");
 }
 
-// Helper to pick image (cover or logo)
+// Helper to pick image (Updated for Strapi v5 structure)
 function pickImage(imageObj) {
-  if (!imageObj || !imageObj.url) return null;
+  if (!imageObj) return null;
+
+  // Handle case where relation might be an array or single object
+  const img = Array.isArray(imageObj) ? imageObj[0] : imageObj;
+
+  if (!img || !img.url) return null;
+
   const preferred =
-    imageObj.formats?.medium?.url ||
-    imageObj.formats?.small?.url ||
-    imageObj.url;
+    img.formats?.medium?.url || img.formats?.small?.url || img.url;
 
   const absolute = preferred.startsWith("http")
     ? preferred
     : `${STRAPI_URL}${preferred}`;
+
   const ext = path.extname(preferred) || ".jpg";
   return { absolute, ext };
 }
@@ -125,31 +128,42 @@ async function listFiles(dir, extFilter = null) {
   }
 }
 
+// --- UPDATED FETCHING LOGIC FOR STRAPI V5 ---
 async function fetchAllEntries() {
   const pageSize = 100;
-  let start = 0;
+  let page = 1;
   const all = [];
-
-  // Strapi collection name logic
-  const apiEndpoint = TYPE;
+  const apiEndpoint = TYPE; // "articles", "projets", etc.
 
   for (;;) {
-    const qs = `?_start=${start}&_limit=${pageSize}&_sort=published_at:desc`;
-    const res = await fetch(`${STRAPI_URL}/${apiEndpoint}${qs}`);
-    if (!res.ok)
-      throw new Error(`Fetch failed ${res.status} for ${apiEndpoint}`);
-    const batch = await res.json();
+    // Strapi v5 Pagination & Sorting & Population
+    // Note: 'populate=*' is essential in v5 to get images/relations
+    const qs = `?populate=*&sort=publishedAt:desc&pagination[pageSize]=${pageSize}&pagination[page]=${page}`;
+    const url = `${STRAPI_URL}/api/${apiEndpoint}${qs}`;
+
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Fetch failed ${res.status} for ${url}`);
+
+    const json = await res.json();
+
+    // In v5, data is an array of objects directly (no more .attributes wrapper)
+    const batch = json.data;
+
+    if (!batch || batch.length === 0) break;
+
     all.push(...batch);
-    if (batch.length < pageSize) break;
-    start += pageSize;
+
+    // Check pagination meta to see if we need to continue
+    const pageCount = json.meta?.pagination?.pageCount || 1;
+    if (page >= pageCount) break;
+
+    page++;
   }
   return all;
 }
 
-// --- NEW FUNCTION: Generate YAML for Data File ---
 function generateDataYaml(title, items) {
   let yaml = `title: ${yamlEscape(title)}\nitems:\n`;
-
   for (const item of items) {
     yaml += `  - company: ${yamlEscape(item.company)}\n`;
     if (item.logo) yaml += `    logo: ${yamlEscape(item.logo)}\n`;
@@ -163,9 +177,9 @@ async function syncEntries() {
   await ensureDir(CONTENT_DIR);
   await ensureDir(MEDIA_DIR);
 
-  log("FETCH", `Fetching ${TYPE} from Strapi…`);
+  log("FETCH", `Fetching ${TYPE} from Strapi v5...`);
   const entries = await fetchAllEntries();
-  log("FETCH", `Got ${entries.length} ${TYPE}.`);
+  log("FETCH", `Got ${entries.length} entries.`);
 
   const expectedMedia = new Set();
 
@@ -176,12 +190,13 @@ async function syncEntries() {
     const processedItems = [];
 
     for (const entry of entries) {
+      // Direct access (no .attributes)
       const companyName = entry.company || entry.title || "Client";
       const slug = strToSlug(companyName);
 
       // Handle Logo
       let logoPath = "";
-      const imgData = pickImage(entry.logo);
+      const imgData = pickImage(entry.logo); // entry.logo is usually direct object now
 
       if (imgData) {
         const mediaRel = `uploads/${TYPE}/${slug}-logo${imgData.ext}`;
@@ -192,12 +207,11 @@ async function syncEntries() {
       processedItems.push({
         company: companyName,
         logo: logoPath,
-        quote: entry.quote || entry.content || "", // Adjust based on Strapi field name
-        color: entry.color || "#cccccc", // Adjust based on Strapi field name
+        quote: entry.quote || entry.content || "",
+        color: entry.color || "#cccccc",
       });
     }
 
-    // Generate YAML Content
     const yamlContent = generateDataYaml("TÉMOIGNAGES", processedItems);
 
     if (DRY_RUN) {
@@ -214,60 +228,65 @@ async function syncEntries() {
     const expectedMd = new Set();
 
     for (const entry of entries) {
+      // Direct access (no .attributes)
       const title = entry.title || "Sans titre";
       const slug = entry.slug || strToSlug(title);
       const description = entry.description || "";
-      const body = (entry.content || "").trim();
-      const date = entry.published_at || entry.created_at;
+      const body = (entry.content || "").trim(); // Assuming Markdown field
+
+      // v5 uses camelCase for system fields
+      const date = entry.publishedAt || entry.createdAt;
+      const lastmod = entry.updatedAt;
+
       const external_link = entry.external_link;
-      const lastmod = entry.updated_at;
       const keywords = entry.keywords || "";
 
-      // Categories
+      // Categories (Handle v5 relation array)
       let categories = ["Web"];
-      if (entry.category && typeof entry.category === "string") {
-        categories = entry.category
-          .split(",")
-          .map((c) => c.trim())
-          .filter((c) => c.length > 0);
-      } else if (Array.isArray(entry.category)) {
-        categories = entry.category.map((x) =>
-          typeof x === "string" ? x : x.name || ""
-        );
+      if (
+        entry.category &&
+        Array.isArray(entry.category) &&
+        entry.category.length > 0
+      ) {
+        categories = entry.category.map((c) => c.name);
+      } else if (entry.category && entry.category.name) {
+        // Handle single relation case
+        categories = [entry.category.name];
       }
 
-      // Tags
+      // Tags (Handle v5 relation array)
       let tags = [];
-      if (entry.tags && typeof entry.tags === "string") {
-        tags = entry.tags
-          .split(",")
-          .map((t) => t.trim())
-          .filter((t) => t.length > 0);
-      } else if (Array.isArray(entry.tags)) {
-        tags = entry.tags.map((x) =>
-          typeof x === "string" ? x : x.name || ""
-        );
+      if (entry.tags && Array.isArray(entry.tags)) {
+        tags = entry.tags.map((t) => t.name);
       }
 
       // Cover image
       let cover = null;
-      const cov = pickImage(entry.cover); // reused pickImage
+      const cov = pickImage(entry.cover);
       if (cov) {
         const mediaRel = `uploads/${TYPE}/${slug}-cover${cov.ext}`;
         expectedMedia.add(mediaRel);
         cover = await download(cov.absolute, mediaRel);
       }
 
-      // Project images
+      // Project images (Gallery)
       let project_images = [];
-      if (TYPE === "projets" && Array.isArray(entry.project_images)) {
-        for (const [i, img] of entry.project_images.entries()) {
+      if (TYPE === "projects" && entry.project_images) {
+        // v5 returns array directly
+        const imgs = Array.isArray(entry.project_images)
+          ? entry.project_images
+          : [entry.project_images];
+
+        for (const [i, img] of imgs.entries()) {
           if (!img || !img.url) continue;
+
           const src = img.url.startsWith("http")
             ? img.url
             : `${STRAPI_URL}${img.url}`;
+
           const ext = path.extname(img.url) || ".jpg";
           const destRel = `uploads/${TYPE}/${slug}/${i}${ext}`;
+
           expectedMedia.add(destRel);
           const localPath = await download(src, destRel);
           project_images.push(localPath);
@@ -279,17 +298,20 @@ async function syncEntries() {
         date,
         lastmod,
         draft: false,
-        external_link,
         description,
         cover,
         categories,
         tags,
         keywords,
-        ...(TYPE === "projets" && {
-          image: cover,
-          project_images,
-        }),
       };
+
+      // Add extra fields only if valid
+      if (external_link) front.external_link = external_link;
+
+      if (TYPE === "projects") {
+        front.image = cover; // often used in portfolio themes
+        front.project_images = project_images;
+      }
 
       const fm = frontMatter(front);
       const mdContent = `${fm}\n${body}\n`;
@@ -305,7 +327,7 @@ async function syncEntries() {
       }
     }
 
-    // Clean up obsolete markdown files (Only for articles/projects)
+    // Clean up obsolete markdown files
     const existingMd = (await listFiles(CONTENT_DIR, ".md")).filter(
       (n) => n !== "_index.md"
     );
@@ -322,25 +344,20 @@ async function syncEntries() {
   }
 
   // ==========================================
-  // MEDIA CLEANUP (Common for all types)
+  // MEDIA CLEANUP
   // ==========================================
   if (PRUNE_MEDIA) {
-    // If scanning nested folders for projects, this simple listFiles might need recursion
-    // For now, it works for flat folders like testimonials/blog
-
-    // Note: Project images are nested in subfolders, listFiles doesn't check subfolders deeply
-    // without modification, but this logic maintains existing behavior.
+    // Note: This cleanup logic assumes flat structure for most,
+    // it skips folder deletion to avoid breaking project subfolders logic in this simple script.
     const existingMedia = await listFiles(MEDIA_DIR);
 
     const toDeleteMedia = existingMedia.filter((n) => {
-      // Logic for flat files
       const rel = `uploads/${TYPE}/${n}`.replace(/\\/g, "/");
       return !expectedMedia.has(rel);
     });
 
     for (const f of toDeleteMedia) {
       const p = path.join(MEDIA_DIR, f);
-      // Extra safety check: ensure we are not deleting directories if listFiles returned them
       try {
         const stat = await fs.stat(p);
         if (stat.isDirectory()) continue;
