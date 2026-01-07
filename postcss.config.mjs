@@ -1,5 +1,7 @@
 import autoprefixer from "autoprefixer";
-import purgecss from "@fullhuman/postcss-purgecss";
+import _purgecss from "@fullhuman/postcss-purgecss";
+
+const purgecss = _purgecss.default || _purgecss;
 
 export default {
   plugins: [
@@ -16,7 +18,7 @@ export default {
                 ...(els.ids || []),
               ];
             },
-            safelist: [], // Ajoutez ici les classes dynamiques si besoin
+            safelist: [],
           }),
         ]
       : []),
