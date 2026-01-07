@@ -46,38 +46,57 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
 
     // --- LA LISTE DE SÉCURITÉ ---
     include: [
-      // 1. LES FONDATIONS & VARIABLES (Indispensable pour vos marges --site-margin)
+      // 1. LES FONDATIONS
       /:root/,
       /--site-margin/,
       /html/,
-      /body/,
+      /body/, // Contient souvent le padding-top pour le menu fixe
 
-      // 2. LA GRILLE & STRUCTURE (Pour éviter que tout soit à gauche)
+      // 2. STRUCTURE & GRILLE
       /\.container/,
       /\.row/,
       /\.col-/,
-      /\.d-block/, // Utilitaires d'affichage
-      /\.d-none/, // Vital pour cacher le menu mobile sur desktop
+      /\.d-block/,
+      /\.d-none/,
       /\.d-lg-/,
-      /\.img-fluid/, // Pour que les images ne débordent pas
+      /\.img-fluid/,
+      /\.position-relative/, // TRES IMPORTANT pour vos éléments absolus
+      /\.z-/, // Les z-index (z-1, z-2...)
 
-      // 3. LA NAVIGATION (Pour éviter le "Flash" du menu déconstruit)
+      // 3. NAVIGATION (Menu Fixe)
       /\.navbar/,
       /\.nav/,
-      /\.site-navigation/,
-      /\.icon-bar/, // Le burger menu
-      /\.collapse/, // L'état fermé du menu
+      /\.site-navigation/, // Contient position: fixed
+      /\.icon-bar/,
+      /\.collapse/,
+      /\.scrolled/, // Si vous avez une classe quand on scroll
 
-      // 4. LE HERO (Le haut de page visible immédiatement)
+      // 4. HERO SECTION
       /\.site-hero/,
-      /\.site-hero::before/, // Souvent utilisé pour l'overlay sombre sur l'image
+      /\.site-hero::before/,
       /\.grand-titre/,
       /\.hero-description/,
       /\.hero-actions/,
-      /\.btn-pixi/, // Vos boutons personnalisés
-      /\.btn/, // Boutons Bootstrap
+      /\.btn-pixi/,
+      /\.btn/,
 
-      /\.cookie-banner/, // Si la bannière s'affiche vite
+      // 5. SECTION APPROCHE (C'est ici que le SVG sautait !)
+      /\.approach-section/, // Le conteneur global
+      /\.approach-wrapper/, // Wrapper
+      /\.approach-container/, // Le parent RELATIF du SVG (VITAL)
+      /\.connecting-line-svg/, // Le SVG lui-même
+      /\.bg-hashtag/, // Le gros # en fond
+      /\.approach-card/, // Les cartes
+      /\.icon-wrapper/, // Les icônes
+      /\.section-headline/, // Les titres de section
+
+      // 6. ÉLÉMENTS DYNAMIQUES
+      /\.embla/,
+      /\.embla__container/,
+      /\.embla__slide/,
+      /\.card/,
+      /\.testimonial/,
+      /\.cookie-banner/,
     ],
   });
 })();
