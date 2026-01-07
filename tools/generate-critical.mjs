@@ -31,6 +31,11 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
 
     css: localCssFiles,
 
+    penthouse: {
+      keepLargerMediaQueries: true,
+      forceInclude: [".site-hero", ".navbar", ".grand-titre"],
+    },
+
     dimensions: [
       { height: 800, width: 375 },
       { height: 900, width: 1440 },
