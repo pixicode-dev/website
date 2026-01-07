@@ -21,5 +21,7 @@ import { generate } from "critical";
         width: 1920,
       },
     ],
+
+    include: [/\.card/, /\.testimonial/, /\.embla/, /\.row/, /\.col-/],
   });
 })();
