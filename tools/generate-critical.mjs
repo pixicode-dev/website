@@ -27,7 +27,7 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
     src: "index.html",
     target: "index.html",
     inline: true,
-    extract: false, // Sécurité
+    extract: false,
 
     css: localCssFiles,
 
@@ -36,5 +36,7 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
       { height: 900, width: 1440 },
       { height: 1080, width: 1920 },
     ],
+
+    include: [/:root/, /--site-margin/],
   });
 })();
