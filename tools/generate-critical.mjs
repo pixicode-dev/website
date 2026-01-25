@@ -2,7 +2,6 @@ import { generate } from "critical";
 import fs from "node:fs";
 import path from "node:path";
 
-// Fonction pour trouver les CSS générés par Hugo
 function getCssFiles(dir) {
   try {
     const files = fs.readdirSync(dir);
@@ -28,80 +27,57 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
     target: "index.html",
     inline: true,
     extract: false,
-
     css: localCssFiles,
 
     penthouse: {
       keepLargerMediaQueries: true,
       blockJSRequests: false,
       forceInclude: [
+        // 1. NAVIGATION & LOGO (Vital pour le score CLS)
         ".navbar",
-        ".site-navigation",
         ".navbar-brand",
-        ".navbar-brand img",
+        ".navbar-brand img", // Force le style du logo
+        ".site-navigation",
+        ".navbar-collapse",
+        ".navbar-nav",
+
+        // 2. HERO IMAGE & TEXTE
         ".site-hero",
-        ".site-hero *", // Force tout le contenu interne (titre, img, description)
+        ".site-hero img", // Force le style de l'image hero (aspect-ratio)
         ".grand-titre",
-        ".column-section",
         ".hero-description",
-        ".btn",
-        ".btn-area", // Pour l'effet de survol du bouton
-        ".approach-container",
-        ".connecting-line-svg",
-        ".about-section", // Stabilise la section suivante
+        ".hero-actions",
+
+        // 3. ABOUT IMAGE
+        ".about-section",
+        ".about-decor-img", // Force le style de l'image about
+
+        // 4. CLASSES UTILITAIRES
+        ".img-fluid",
+        ".d-block",
+        ".d-none",
       ],
     },
 
-    // ON AUGMENTE LA HAUTEUR (height) pour que Penthouse "voie" bien tout le hero
+    // On garde les grandes dimensions pour bien capturer le layout desktop
     dimensions: [
-      { height: 1200, width: 375 }, // Mobile (plus haut pour capturer le flux)
-      { height: 1200, width: 1440 }, // Desktop
-      { height: 1200, width: 1920 }, // Ultra-wide
+      { height: 1200, width: 375 },
+      { height: 1200, width: 1440 },
+      { height: 1200, width: 1920 },
     ],
 
     include: [
-      // 1. FONDATIONS & TYPO
       /:root/,
       /html/,
       /body/,
-      /\.grand-titre/,
-      /line-height/, // Force la conservation des hauteurs de ligne
-
-      // 2. STRUCTURE (VITAL POUR LE REBOND)
+      // Regex pour capturer toutes les règles d'aspect-ratio
+      /aspect-ratio/,
+      /\.site-hero/,
+      /\.about-section/,
+      /\.navbar/,
       /\.container/,
       /\.row/,
       /\.col-/,
-      /\.d-flex/,
-      /\.d-block/,
-      /\.position-relative/,
-      /\.about-section/, // Sécurité pour empêcher la remontée
-
-      // 3. NAVIGATION & LOGO
-      /\.site-navigation/,
-      /\.navbar/,
-      /\.navbar-brand/,
-      /\.nav-link/,
-      /\.btn-sm-rounded/,
-
-      // 4. HERO SECTION (Correction précise)
-      /\.site-hero/,
-      /\.site-hero img/,
-      /\.column-section/,
-      /\.hero-description/,
-      /\.hero-actions/,
-      /\.btn-pixi/,
-
-      // 5. SECTION APPROCHE
-      /\.approach-wrapper/,
-      /\.approach-container/,
-      /\.connecting-line-svg/,
-      /\.approach-card/,
-      /\.icon-wrapper/,
-
-      // 6. ÉLÉMENTS DYNAMIQUES
-      /\.embla/,
-      /\.embla__container/,
-      /\.cookie-banner/,
     ],
   });
 })();

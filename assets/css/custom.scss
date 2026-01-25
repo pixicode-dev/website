@@ -327,6 +327,28 @@ h3,
   }
 }
 
+.navbar-brand img {
+  /* On fige la taille du logo AVANT le chargement de l'image */
+  width: 150px;
+  height: 40px; /* Mets ici la hauteur réelle de ton logo SVG */
+  aspect-ratio: 150 / 40; /* Adapte selon ton vrai ratio */
+  display: block;
+}
+
+/* On réserve la place du menu pour éviter qu'il ne s'écrase */
+.navbar-collapse {
+  min-height: 40px;
+}
+
+@media (min-width: 992px) {
+  /* Sur desktop, on s'assure que le menu a une hauteur fixe */
+  .site-navigation {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* ======================================
     SECTION HERO
     ====================================== */
@@ -361,6 +383,9 @@ h3,
 
   img {
     width: 70%;
+    height: auto; /* Indispensable */
+    aspect-ratio: 800 / 750;
+    display: block; /* Évite les espaces fantômes sous l'image */
   }
 
   // Overlay pour lisibilité mobile (éco-conception : opacité légère)
@@ -483,6 +508,7 @@ h3,
     max-width: 90%;
     margin: 40px auto 0;
     height: auto;
+    aspect-ratio: 600 / 400;
   }
 
   .section-who-we-are {
