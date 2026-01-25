@@ -68,18 +68,21 @@ removePathAccents = true
   enable           = true
   background_image = "images/Background.svg"
   
-  # TITRE PUISSANT ET CLAIR
-  title = "WEB, MOBILE, LOGICIEL : LA PUISSANCE DU SUR-MESURE."
-  description = "De la startup à la PME, PixiCode développe vos outils numériques avec une exigence absolue. Profitez d'une technologie de pointe (Flutter, Node.js) et d'une propriété totale de votre code source."
-  image            = "images/screens.webp"
-  image_alt        = "Interfaces Web et Mobile développées par PixiCode"
+  # TITRE : On allie l'expertise technique à la valeur "Durable"
+  title = "DÉVELOPPEMENT WEB & MOBILE SUR MESURE : LA PERFORMANCE DURABLE."
   
-  # BOUTONS D'ACTION
-  primary_btn      = "Voir nos réalisations"
+  # DESCRIPTION : On cible les décideurs (PME/Startup) avec les preuves techniques (Hugo, Flutter) et éthiques (INR)
+  description = "Basée à Angoulême, PixiCode forge des solutions numériques éco-conçues (Label INR). De l'architecture Hugo au développement Flutter, nous garantissons un code propriétaire ultra-performant et une transparence totale."
+  
+  image            = "images/screens.webp"
+  image_alt        = "Aperçu d'applications mobiles Flutter et sites web éco-conçus par PixiCode"
+  
+  # BOUTONS D'ACTION : Plus orientés "Partenaire" que "Prestataire"
+  primary_btn      = "Découvrir nos projets"
   primary_link     = "portfolio/"
-  secondary_btn    = "Demander un devis"
+  secondary_btn    = "Échanger sur votre projet"
   secondary_link   = "contact/"
-
+  
 # --- AUTRES SECTIONS ---
 [params.contactForm]
   action = "https://n8n.pixicode.dev/webhook/831edf69-f3b5-4d4f-8d73-00fb9afaaa0d"

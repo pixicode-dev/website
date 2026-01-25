@@ -1,85 +1,109 @@
 ---
-title: "DÉVELOPPEMENT D'APPLICATIONS MOBILES FLUTTER"
-description: "Créez votre application native iOS et Android avec une seule base de code. Expertise Flutter à Angoulême pour des apps performantes et rentables."
+# --- SEO & METADATA (Système) ---
+title: "Développement Application Mobile Flutter à Angoulême | PixiCode"
+description: "Expertise mobile Flutter à Angoulême : créez votre app iOS et Android avec une seule base de code performante. Éco-conception, code propriétaire et accompagnement sur les Stores."
+keywords: "développement application mobile angoulême, agence flutter france, expert ios android charente, création app mobile sur mesure, maintenance application mobile, expert numérique responsable"
+date: 2026-01-25
+
+# --- AFFICHAGE PAGE ---
+title_content: "Une application mobile performante, intuitive et éco-conçue"
+description_content: "L'agence PixiCode déploie vos idées sur l'App Store et Google Play. Grâce à Flutter, nous divisons vos coûts de développement par deux sans jamais sacrifier la fluidité ni l'expérience utilisateur native."
 type: "services"
 layout: "single"
 
 # 1. INTRO SERVICE
 service_intro:
-  title: "Une App, deux plateformes, zéro compromis"
-  text: "Pourquoi payer deux fois le développement ? Avec la technologie **Flutter** (Google), nous créons une application unique qui fonctionne nativement sur iPhone (iOS) et Android. C'est deux fois moins de complexité à gérer, une maintenance simplifiée et une mise sur le marché accélérée. Vous obtenez une expérience utilisateur fluide (60fps), indistinguable d'une app native classique."
+  title: "Un code unique, deux plateformes, aucun compromis"
+  text: |
+    Pourquoi doubler vos investissements ? Avec la technologie **Flutter** (propulsée par Google), notre agence conçoit une base de code unique capable de s'exécuter nativement sur **iPhone (iOS) et Android**. 
+
+    Ce choix stratégique permet une mise sur le marché accélérée et une maintenance simplifiée. Vous bénéficiez d'une expérience utilisateur ultra-fluide (60fps), d'interfaces sur mesure et d'une performance identique au développement natif classique. Avec PixiCode, vous investissez dans un outil pérenne qui s'adapte à l'évolution de vos besoins.
   image: "images/code.webp"
 
-# 2. BÉNÉFICES
+# 2. BÉNÉFICES (Expertise & Éthique)
 service_benefits:
-  title: "LA PUISSANCE DU NATIF"
-  headline: "L'agilité et l'économie en plus"
+  title: "L'EXCELLENCE MOBILE"
+  headline: "L'agilité technologique au service de votre projet"
   items:
     - number: "01"
-      title: "Cross-Platform (iOS & Android)"
-      description: "Une seule base de code pour toucher 100% de vos utilisateurs sur l'App Store et le Google Play Store."
+      title: "Cross-Platform & ROI"
+      description: "Optimisez votre budget en touchant 100% de vos utilisateurs. Une seule équipe, une seule technologie, pour une présence totale sur tous les smartphones."
       icon: "images/papper_note.svg"
 
     - number: "02"
-      title: "Performance & Fluidité"
-      description: "Pas de ralentissements type 'app web'. Flutter compile en code machine natif pour une fluidité parfaite et des animations complexes."
+      title: "Éco-conception Mobile"
+      description: "Une application légère consomme moins de batterie et de données. L'agence optimise chaque fonctionnalité pour réduire l'empreinte environnementale de votre service."
       icon: "images/papper_note.svg"
 
     - number: "03"
-      title: "Fonctionnalités Avancées"
-      description: "Géolocalisation, Caméra, Notifications Push, Paiements (Stripe/Apple Pay) et Mode Hors-ligne (Offline first)."
+      title: "Fonctionnalités Critiques"
+      description: "Nous intégrons le meilleur du matériel : Géolocalisation, Notifications Push, Biométrie, Paiements (Stripe/Apple Pay) et mode Offline pour une utilisation partout."
       icon: "images/papper_note.svg"
 
     - number: "04"
-      title: "Publication Gérée"
-      description: "Nous gérons le processus fastidieux de validation, de certificats et de publication sur les Stores Apple et Google."
+      title: "Accompagnement Stores"
+      description: "De la gestion des certificats à la validation Apple/Google, l'agence s'occupe de tout le processus de publication pour garantir un lancement sans stress."
       icon: "images/papper_note.svg"
 
 # 3. APPROCHE SERVICE
 service_process:
-  title: "DU PROTOTYPE AU STORE"
-  text: "Nous ne codons pas à l'aveugle. Nous commençons par un prototype interactif (maquette cliquable) pour valider l'UX. Ensuite, nous développons par itérations avec des versions de test régulières (TestFlight). Enfin, nous configurons les outils d'analytics et de suivi de crashs pour surveiller la santé de votre app après le lancement."
+  title: "DU CONCEPT À LA POCHE DE VOS UTILISATEURS"
+  text: |
+    L'agence PixiCode ne code pas à l'aveugle. Nous commençons par une phase d'UX Design pour créer un prototype interactif cliquable. 
+    Ensuite, nous développons par cycles agiles : vous testez les versions bêtas via TestFlight ou Google Play Console au fur et à mesure. Enfin, nous installons des outils d'analytics éco-conçus pour surveiller la performance et les retours utilisateurs dès le premier jour.
   image: "images/image_team.webp"
 
-# 4. TARIFS (Estimations SEO pour qualifier les leads)
+# 4. TARIFS (Qualification des Leads)
 pricing:
-  title: "QUEL EST VOTRE PROJET MOBILE ?"
-  headline: "Des solutions adaptées à votre stade de maturité"
+  title: "VOTRE PROJET MOBILE"
+  headline: "Des forfaits clairs pour une vision à long terme"
   items:
-    - title: "Pack MVP Start"
+    - title: "Pack Mobile MVP"
       price: "Dès 4 500€ HT"
       features:
-        - "App iOS & Android (Code unique)"
-        - "Fonctionnalités essentielles (MVP)"
-        - "Design standard (Material/Cupertino)"
-        - "Publication sur les Stores"
-      button_text: "Lancer mon idée (6-8 sem.)"
+        - "App iOS & Android (Flutter)"
+        - "Fonctionnalités essentielles"
+        - "Design épuré & performant"
+        - "Publication sur les Stores incluse"
+        - "Code 100% propriétaire"
+      button_text: "Lancer mon MVP (6-8 sem.)"
       button_link: "/contact?pack=mobile-mvp"
 
-    - title: "Pack Custom / Pro"
+    - title: "Pack App Custom"
       price: "Dès 8 000€ HT"
       features:
-        - "Design UI/UX sur mesure"
+        - "Design UI/UX personnalisé"
         - "Intégrations API & Paiements"
-        - "Mode Offline & Push Notifs"
-        - "Analytics & Suivi avancés"
-      button_text: "Créer une app complète"
+        - "Système de Push & Offline"
+        - "Architecture scalable & sécurisée"
+        - "Optimisation Green IT (INR)"
+      button_text: "Créer une app sur mesure"
       button_link: "/contact?pack=mobile-pro"
 
-    - title: "Maintenance App (TMA)"
+    - title: "Maintenance & TMA"
       price: "Sur devis"
       features:
-        - "Mises à jour iOS/Android obligatoires"
-        - "Suivi des crashs & bugs"
+        - "Mises à jour OS obligatoires"
+        - "Suivi des crashs & Correctifs"
         - "Évolutions fonctionnelles"
-        - "Support prioritaire"
-      button_text: "Sécuriser mon app"
+        - "Support technique prioritaire"
+        - "Hébergement backend sécurisé"
+      button_text: "Sécuriser mon application"
       button_link: "/contact?pack=mobile-tma"
 
 # 5. CTA SERVICE
 service_cta:
-  title: "VOTRE PARTENAIRE MOBILE"
-  headline: "DU CODE AUX STORES, SANS STRESS"
-  text: "Lancer une application mobile peut sembler complexe : règles Apple, fragmentation Android, certificats... PixiCode prend en charge toute la partie technique. Vous vous concentrez sur le marketing et vos utilisateurs, nous nous assurons que l'application tourne parfaitement dans leurs poches."
+  title: "L'EXPERTISE MOBILE SANS LA COMPLEXITÉ"
+  headline: "VOTRE IDÉE MÉRITE UNE EXÉCUTION PARFAITE"
+  text: |
+    Lancer une application mobile est un défi technique et administratif (règles Apple, fragmentation Android). L'agence PixiCode sécurise votre projet en prenant en charge l'intégralité de la chaîne technique. Concentrez-vous sur vos utilisateurs, nous nous occupons du reste.
   image: "images/collaborate.webp"
+
+cta_block:
+  title: "Bâtissons votre application mobile : éco-conçue, performante et 100% souveraine."
+  button_text: "DÉMARRER MON PROJET"
+  button_link: "/contact"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.png"
 ---

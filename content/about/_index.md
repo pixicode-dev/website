@@ -1,74 +1,83 @@
 ---
-title: "À propos de PixiCode : Agence Web Transparente & Experte à Angoulême"
-description: "Découvrez PixiCode, votre partenaire digital à Angoulême. Transparence totale, expertise technique (Web & Mobile Flutter) et approche artisanale pour des projets durables."
+title: "À propos de PixiCode : Agence de Développement & Expertise Numérique Responsable"
+title_content: "L'Agence qui réconcilie Performance Tech et Impact Durable"
+description: "Découvrez PixiCode, agence spécialisée en éco-conception à Angoulême. Nous créons des solutions web et mobiles sur mesure, performantes et 100% propriétaires pour les entreprises exigeantes."
 keywords:
-  - "Agence web Angoulême"
-  - "Développement mobile Flutter"
-  - "Expert technique web"
-  - "Création site internet Charente"
-  - "Emric Pichonnier"
-date: 2025-01-03T09:00:00+02:00
-image: "images/team/emric2.webp"
+  - "Agence développement informatique Angoulême"
+  - "agence éco-conception logicielle"
+  - "Expertise Flutter et Jamstack"
+  - "Numérique responsable Nouvelle-Aquitaine"
+  - "Développement sur mesure PME"
+date: 2026-01-25
+image: "images/pixicode-team-banner.webp"
 
 layout: "about"
 background_image: "images/Background2.svg"
 
 # 1. Section Qui Sommes-nous
 intro:
-  title: "Plus qu'un prestataire : un partenaire technique de proximité"
+  title: "PixiCode : L'agence qui mise sur l'artisanat numérique"
   text: |
-    Basé à **Angoulême**, PixiCode n'est pas une "usine à sites". Nous sommes un studio technique à taille humaine qui allie la rigueur de l'ingénierie logicielle à la flexibilité d'un artisan.
+    Basée à **Angoulême**, PixiCode est une agence de développement informatique dédiée à la création d'outils numériques à haute valeur ajoutée. Nous nous positionnons comme un partenaire technique de confiance, privilégiant la qualité de conception et la durabilité du code.
 
-    Si nos racines sont en Nouvelle-Aquitaine, notre expertise s'exporte partout en France. Nous avons banni les intermédiaires inutiles : chez nous, vous parlez directement à ceux qui codent votre projet. Cette proximité garantit une réactivité totale et une compréhension fine de vos enjeux business.
+    Notre agence s'est construite sur une vision exigeante : le numérique doit être un levier de croissance robuste et responsable. Nous accompagnons les entreprises et les porteurs de projets innovants partout en France, en apportant une expertise pointue et une transparence totale sur chaque projet que nous livrons.
   image: "images/image_pc.webp"
 
 # 2. Section Notre Histoire
 history:
-  title: "Notre ADN : Remettre le code au service du client"
+  title: "Notre ADN : Souveraineté technique et performance durable"
   text: |
-    PixiCode est née d'un constat frustrant : le marché du web est devenu une jungle opaque. Clients enfermés dans des contrats obscurs, sites techniquement obsolètes à la livraison, développeurs remplacés par des IA mal pilotées...
+    L'agence PixiCode est née d'un constat simple : les entreprises ont besoin de reprendre le contrôle sur leur patrimoine numérique. Nous refusons les solutions génériques et les abonnements qui verrouillent les clients.
 
-    Nous avons créé PixiCode pour **démocratiser l'accès à la haute technologie**. Notre philosophie est radicale : **Transparence Technique + Propriété Intellectuelle.** Que ce soit pour automatiser une tâche métier complexe ou lancer une application grand public, nous mettons la même énergie à produire un code élégant, performant et qui vous appartient vraiment.
+    En tant qu'**agence engagée** dans la démarche de l'**Institut du Numérique Responsable (INR)**, l'éco-conception est au cœur de notre métier. Nous concevons des architectures légères et performantes qui garantissent une vitesse d'exécution optimale et une empreinte environnementale réduite. Chez PixiCode, chaque client est propriétaire de son code source : c'est notre garantie de liberté et de transparence.
   image: "images/image_team.webp"
 
 # 3. Section Approche
 approach:
-  title: "NOS VALEURS"
-  headline: "L'exigence technique comme standard"
+  title: "NOS PILIERS"
+  headline: "L'exigence d'une agence, la précision d'un artisan"
   items:
-    - title: "Pédagogie & Clarté"
-      description: "Pas de jargon pour masquer le vide. Nous vous expliquons chaque choix technique. Vous restez maître de votre projet, nous sommes les artisans qui le concrétisent."
+    - title: "Pédagogie & Transparence"
+      description: "Pour l'agence PixiCode, l'informatique ne doit pas être une boîte noire. Nous vulgarisons chaque étape technique pour vous permettre de prendre des décisions stratégiques éclairées. Un partenaire qui explique est un partenaire qui rassure."
       icon: "images/icon_papper.svg"
-      link_text: "Discuter de votre besoin"
+      link_text: "Parlons de votre vision"
       url: "/contact/"
 
-    - title: "Stack Technique de Pointe"
-      description: "Nous ne suivons pas la mode, nous choisissons la robustesse. Flutter pour le mobile unifié, Node.js/Python pour la flexibilité, et Elixir/C# pour la haute performance critique."
-      icon: "images/icone_screen.svg"
-      link_text: "Nos technos"
+    - title: "Éco-conception Native"
+      description: "Certifiée par l'INR, notre agence place la sobriété numérique au cœur de son code. Moins de requêtes, des actifs optimisés et des langages performants (Hugo, Rust, Go) pour des solutions ultra-rapides et durables."
+      icon: "images/icone_parameter.svg"
+      link_text: "Notre engagement Green IT"
       url: "/services/"
 
-    - title: "Co-construction Agile"
-      description: "Fini l'effet tunnel. Nous avançons par itérations, main dans la main avec vous. Vous validez chaque étape, nous ajustons le tir en temps réel."
-      icon: "images/icone_svg.svg"
-      link_text: ""
-      url: ""
+    - title: "Développement 100% Sur-Mesure"
+      description: "Nous bannissons les templates et les solutions pré-faites. L'agence conçoit des architectures uniques (Flutter, API personnalisées) qui s'adaptent strictement à vos processus métiers, et non l'inverse."
+      icon: "images/icone_screen.svg"
+      link_text: "Découvrir nos solutions"
+      url: "/services/application-mobile/"
 
-    - title: "Qualité Artisanale (Clean Code)"
-      description: "Nous considérons le code comme de l'artisanat d'art : il doit être propre, durable, sécurisé et éco-conçu dès la première ligne."
-      icon: "images/icone_parameter.svg"
+    - title: "Souveraineté & Propriété"
+      description: "Chez PixiCode, vous êtes l'unique propriétaire de votre code source. Pas de frais de licence cachés, pas de CMS verrouillé : nous bâtissons pour vous des actifs numériques libres, évolutifs et totalement indépendants."
+      icon: "images/icone_svg.svg"
       link_text: "Démarrer un projet"
       url: "/contact/"
 
 # 4. Données Équipe
 team:
-  title: "L'ÉQUIPE"
-  subtitle: "Un interlocuteur unique, une expertise plurielle"
-  description: "Derrière PixiCode, il y a un expert technique dédié à 100% à la réussite de votre projet, capable de mobiliser un réseau de spécialistes si nécessaire."
+  title: "VOTRE EXPERT DÉDIÉ"
+  subtitle: "Une vision d'architecte, une exécution d'artisan"
+  description: "À la tête de PixiCode, un interlocuteur unique pour garantir la cohérence technique et stratégique de votre projet."
   members:
     - name: "Emric Pichonnier"
-      role: "Fondateur & Architecte Logiciel"
-      bio: "Développeur passionné par la performance et l'architecture logicielle. Ma mission : transformer votre complexité métier en une solution numérique simple, robuste et durable."
+      role: "Fondateur & Architecte Logiciel Certifié INR"
+      bio: "Développeur passionné par l'optimisation et les architectures bas carbone. Mon rôle est de transformer vos besoins métiers en solutions numériques élégantes, rapides et surtout, rentables sur le long terme."
       photo: "images/team/emric2.webp"
       linkedin: "epichonnier"
+
+cta_block:
+  title: "Prêt à bâtir un actif numérique durable qui vous appartient vraiment ? Collaborons sur vos défis métiers."
+  button_text: "CONTACTEZ-NOUS"
+  button_link: "/contact"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.png"
 ---

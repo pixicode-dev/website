@@ -17,10 +17,11 @@ filters:
     filter: "devops"
 
 # CTA du bas
-cta_app:
-  title: "VOUS AVEZ UN BESOIN ?"
-  subtitle: "CONTACTEZ-NOUS"
-  button_text: "DÉMARRER UN PROJET"
+cta_block:
+  title: "Prêt à investir dans un actif numérique qui vous appartient vraiment ? Collaborons pour transformer vos défis métiers en solutions éco-conçues, performantes et sans compromis technique."
+  button_text: "CONTACTEZ-NOUS"
   button_link: "/contact"
-  image: "images/app-hand.png"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.png"
 ---

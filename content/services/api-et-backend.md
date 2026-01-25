@@ -1,88 +1,106 @@
 ---
-title: "LOGICIELS MÉTIERS & DÉVELOPPEMENT SUR MESURE"
-description: "Développement d'outils internes, applications desktop (Windows/Mac) et API robustes pour digitaliser vos processus métiers."
+# --- SEO & METADATA (Système) ---
+title: "Logiciel Métier Sur Mesure & API à Angoulême | PixiCode"
+description: "Développement de logiciels internes, applications desktop (Flutter) et architectures API à Angoulême. Digitalisez vos processus avec des outils éco-conçus et 100% propriétaires."
+keywords: "développement logiciel sur mesure angoulême, création api rest, logiciel métier charente, application desktop flutter, erp sur mesure pme, saas éco-conçu"
+date: 2026-01-25
+
+# --- AFFICHAGE PAGE ---
+title_content: "Digitalisez votre expertise avec des outils logiciels sur mesure"
+description_content: "L'agence PixiCode transforme vos flux de travail en leviers de croissance. Nous concevons des architectures logicielles robustes, du backend haute performance à l'application desktop native."
 type: "services"
 layout: "single"
 
 # 1. INTRO SERVICE
 service_intro:
-  title: "Vos outils, vos règles"
+  title: "La technologie doit s'adapter à votre métier, pas l'inverse"
   text: |
-    Excel a ses limites et les logiciels standards ne collent jamais à 100% à votre réalité.
-    Chez PixiCode, nous concevons des **logiciels métiers sur mesure** et des **architectures API** qui s'adaptent à vos processus, et non l'inverse.
-    Qu'il s'agisse d'automatiser des tâches, de connecter vos services entre eux ou de créer une interface de gestion native pour vos collaborateurs, nous créons l'outil exact dont vous avez besoin.
+    Excel a ses limites et les logiciels "sur étagère" sont souvent soit trop complexes, soit incomplets pour votre réalité quotidienne. 
+
+    Chez **PixiCode**, nous développons des **logiciels métiers sur mesure** et des **architectures API** pensés pour vos processus spécifiques. Que vous souhaitiez automatiser des tâches redondantes, connecter vos outils existants (CRM, ERP, Compta) ou créer une plateforme SaaS innovante, notre agence bâtit l'outil exact dont vos équipes ont besoin pour performer.
   image: "images/code.webp"
 
-# 2. BÉNÉFICES
+# 2. BÉNÉFICES (Expertise Technique & Pédagogie)
 service_benefits:
-  title: "POURQUOI LE SUR-MESURE ?"
-  headline: "Performance, Sécurité et Gain de temps"
+  title: "L'INGÉNIERIE SUR MESURE"
+  headline: "Performance brute, sécurité totale et gain de productivité"
   items:
     - number: "01"
-      title: "Applications Natives Desktop"
-      description: "Grâce à Flutter, nous déployons vos logiciels métiers nativement sur **Windows, macOS et Linux** avec une performance maximale."
+      title: "Apps Desktop Natives (Flutter)"
+      description: "Grâce à notre expertise Flutter, nous déployons vos logiciels nativement sur Windows, macOS et Linux. Une seule base de code pour une performance maximale et des coûts de maintenance maîtrisés."
       icon: "images/papper_note.svg"
 
     - number: "02"
-      title: "Automatisation & API"
-      description: "Fini la double saisie. Nous connectons vos outils existants (CRM, ERP, Compta) via des API robustes pour fluidifier vos données."
+      title: "API & Interopérabilité"
+      description: "Cassez les silos de données. Nous concevons des API robustes (REST, GraphQL) pour faire communiquer vos outils entre eux et fluidifier la circulation de l'information dans votre entreprise."
       icon: "images/papper_note.svg"
 
     - number: "03"
-      title: "Sécurité & Contrôle"
-      description: "Vos données vous appartiennent. Gestion fine des droits utilisateurs (RBAC), logs d'activité et hébergement souverain si nécessaire."
+      title: "Sécurité & Souveraineté"
+      description: "Gestion fine des droits (RBAC), chiffrement des données et logs d'activité. L'agence vous livre un logiciel sécurisé dont vous possédez 100% de la propriété intellectuelle."
       icon: "images/papper_note.svg"
 
     - number: "04"
-      title: "Scalabilité Cloud"
-      description: "Architecture prête à encaisser la charge (Docker/Kubernetes) et technologies modernes (Node.js, Elixir, Go) pour une réactivité immédiate."
+      title: "Architecture Eco-conçue"
+      description: "Nous utilisons des technologies performantes (Go, Node.js, Docker) pour garantir une scalabilité optimale. Un code optimisé réduit la charge serveur et accélère les temps de réponse."
       icon: "images/papper_note.svg"
 
 # 3. APPROCHE SERVICE
 service_process:
-  title: "DU BESOIN À L'OUTIL"
-  text: "Un logiciel métier réussi, c'est d'abord une bonne compréhension de votre quotidien. Nous commençons par analyser vos flux de travail pour identifier les goulots d'étranglement. Ensuite, nous développons par itérations : vous testez l'outil régulièrement pour valider qu'il répond parfaitement à l'usage réel de vos équipes."
+  title: "VOTRE MÉTIER, NOTRE CODE"
+  text: |
+    Un logiciel réussi commence par une immersion dans votre quotidien. L'agence analyse vos flux de travail pour identifier les points de friction. 
+    Nous avançons ensuite par itérations (méthode Agile) : vos collaborateurs testent régulièrement l'outil pour s'assurer qu'il répond parfaitement à l'usage terrain. Cette co-construction garantit l'adoption immédiate du logiciel par vos équipes.
   image: "images/image_team.webp"
 
-# 4. TYPOLOGIES DE PROJETS (Sur devis, pour le SEO)
+# 4. TYPOLOGIES DE PROJETS (Réassurance Expert)
 pricing:
-  title: "QUEL EST VOTRE PROJET ?"
-  headline: "Des solutions techniques pour chaque ambition"
+  title: "VOTRE PROJET LOGICIEL"
+  headline: "Des solutions techniques taillées pour vos ambitions"
   items:
-    - title: "API & Microservices"
+    - title: "API & Connectivité"
       price: "Sur Devis"
       features:
-        - "Conception API REST / GraphQL"
-        - "Connexion BDD & Services Tiers"
-        - "Documentation Swagger / OpenAPI"
-        - "Haute performance & Cache"
+        - "Conception d'API REST / GraphQL"
+        - "Documentation OpenAPI (Swagger)"
+        - "Synchronisation de bases de données"
+        - "Micro-optimisation des performances"
       button_text: "Connecter mes données"
       button_link: "/contact?pack=api"
 
-    - title: "App Métier Native"
+    - title: "Logiciel Interne Native"
       price: "Sur Devis"
       features:
-        - "Logiciel Windows / Mac / Linux"
-        - "Technologie Flutter Desktop"
+        - "Application Windows / Mac / Linux"
+        - "Architecture Flutter Desktop"
         - "Mode Hors-ligne (Offline First)"
-        - "Gestion de stock, RH, ERP..."
+        - "Automatisation de processus RH/Stock"
       button_text: "Créer mon outil interne"
       button_link: "/contact?pack=logiciel"
 
-    - title: "Plateforme SaaS"
+    - title: "Plateforme SaaS & Cloud"
       price: "Sur Devis"
       features:
-        - "Architecture Multi-tenant"
-        - "Paiements (Stripe) & Facturation"
-        - "Tableaux de bord analytiques"
-        - "Scalabilité Cloud Native"
+        - "Architecture Cloud Native (Docker)"
+        - "Gestion Multi-tenant sécurisée"
+        - "Tableaux de bord & Analytics"
+        - "Paiements récurrents (Stripe)"
       button_text: "Lancer mon SaaS"
       button_link: "/contact?pack=saas"
 
 # 5. CTA SERVICE
 service_cta:
-  title: "DIGITALISEZ VOS PROCESSUS"
-  headline: "VOS OUTILS VOUS RALENTISSENT ?"
-  text: "Ne laissez pas des processus manuels ou des logiciels vieillissants freiner votre croissance. Discutons de vos flux de travail et imaginons l'outil qui fera gagner des heures à vos équipes."
+  title: "TRANSFORMEZ VOTRE FAÇON DE TRAVAILLER"
+  headline: "VOS OUTILS ACTUELS VOUS RALENTISSENT ?"
+  text: |
+    Ne laissez pas des processus manuels ou des logiciels obsolètes freiner votre croissance. L'agence PixiCode vous accompagne pour auditer vos besoins et bâtir l'écosystème logiciel qui fera passer votre entreprise à l'étape supérieure.
   image: "images/collaborate.webp"
+
+cta_block:
+  title: "Une technologie au service de votre métier. Bâtissons un logiciel performant, éco-conçu et 100% souverain."
+  button_text: "DEMANDER UNE ÉTUDE"
+  button_link: "/contact"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.png"
 ---

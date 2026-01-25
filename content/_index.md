@@ -1,47 +1,53 @@
 ---
-title: "PixiCode – Agence Web & Mobile sur mesure à Angoulême | Transparence & Performance"
-description: "PixiCode conçoit vos sites web, applications mobiles (Flutter) et logiciels métiers avec une approche artisanale. Code propriétaire, éco-conçu et performant. Basé à Angoulême."
-keywords: "développement web Angoulême, expert Flutter, création logiciel sur mesure, agence digitale transparente, éco-conception web, PixiCode"
-date: 2025-01-03
+title: "PixiCode – Agence de Développement Web & Mobile Éco-conçus à Angoulême"
+title_content: "PixiCode : Architecture Logicielle Durable & Sur-Mesure"
+description_content: "Expert en éco-conception numérique à Angoulême. PixiCode développe vos sites Web (Hugo), apps mobiles (Flutter) et logiciels métiers sans template. Performance, code propriétaire et certification INR."
+keywords: "agence web angoulême, éco-conception web, expert flutter france, développement logiciel sur mesure, hugo strapi, numérique responsable, développement mobile charente"
+date: 2026-01-25
 
-# Note: La section Hero est gérée dans le config.toml
-
-# Section Présentation (Storytelling & Valeurs)
 intro:
-  title: "La passion du code, la force de la transparence"
+  title: "Le numérique responsable au service de votre croissance"
   text: |
-    Chez **PixiCode**, le code est une passion avant d'être un métier. Née à **Angoulême**, notre agence s'est construite sur une conviction forte : la technologie doit être un levier de liberté, pas une contrainte.
+    Chez **PixiCode**, nous refusons le jetable. Basée à **Angoulême**, notre agence redonne ses lettres de noblesse au développement informatique. Nous ne vendons pas de templates Wordpress lourds et énergivores ; nous forgeons des outils **100% sur mesure**.
 
-    Nous concevons vos outils numériques comme un artisan travaille sa matière : avec précision, durabilité et fierté. Loin des usines à sites standardisés, nous prenons le temps de comprendre votre métier pour bâtir une solution qui vous ressemble vraiment.
+    Notre approche repose sur l'**éco-conception logicielle**. En tant qu'expert certifié par l'**Institut du Numérique Responsable (INR)**, nous optimisons chaque ligne de code pour réduire l'empreinte carbone de vos services tout en boostant leur vitesse.
 
-    Notre différence ? **Une relation de confiance absolue.** Pas de jargon pour masquer la réalité, pas d'abonnement forcé. Nous vous livrons un outil performant, éco-conçu, et surtout : **un code qui vous appartient totalement**.
+    **La transparence est notre ADN :** Pas de frais cachés, pas de jargon pour vous perdre. Que vous soyez un porteur de projet innovant ou un dirigeant souhaitant numériser son métier, nous vous livrons un code robuste, documenté et **dont vous êtes l'unique propriétaire**.
 
 # Section Approche (Expertises)
 approach:
-  title: "NOS TERRAINS DE JEU"
-  headline: "Une expertise technique au service de votre projet"
+  title: "NOS EXPERTISES"
+  headline: "La performance technique au service de l'impact durable"
   items:
-    - title: "Sites & Web Apps"
-      description: "Nous créons des interfaces rapides, intuitives et sécurisées. Que ce soit un site vitrine ou une application complexe, nous visons la performance et l'impact."
+    - title: "Web & Éco-conception"
+      description: "Sites vitrines et Web Apps ultra-rapides. Nous privilégions l'architecture Jamstack (Hugo + Strapi) pour garantir une sécurité maximale et un impact environnemental minimal."
       icon: "images/site_icone.svg"
-      link_text: "Découvrir le Web"
+      link_text: "L'avantage du statique"
       url: "/services/site-internet/"
 
-    - title: "Applications Mobiles (Flutter)"
-      description: "Votre application sur iPhone et Android, sans multiplier les coûts. Experts Flutter, nous développons une solution unique, fluide et facile à maintenir."
+    - title: "Applications Mobiles"
+      description: "Développement cross-platform avec Flutter. Une seule base de code pour iOS et Android, offrant une expérience native fluide avec une maintenance simplifiée et durable."
       icon: "images/mobile_icone.svg"
-      link_text: "Découvrir le Mobile"
+      link_text: "Découvrir Flutter"
       url: "/services/application-mobile/"
 
-    - title: "Logiciels Métiers"
-      description: "Gagnez du temps sur vos tâches quotidiennes. Nous développons des outils sur mesure (CRM, ERP, API) qui s'adaptent parfaitement à vos processus internes."
+    - title: "Logiciels Métiers & API"
+      description: "Automatisez vos processus avec des outils ERP/CRM sur mesure. Nous concevons des back-ends robustes (Java, C#) et des API scalables qui s'intègrent à votre écosystème."
       icon: "images/pai_icone.svg"
-      link_text: "Découvrir le Logiciel"
+      link_text: "Optimiser mon métier"
       url: "/services/api-et-backend/"
 
-    - title: "Infrastructures & DevOps"
-      description: "Un beau code mérite une belle maison. Nous déployons vos projets sur des serveurs robustes et sécurisés, dimensionnés pour accompagner votre croissance."
+    - title: "DevOps & Cloud Green"
+      description: "Déploiement continu (CI/CD) et conteneurisation via Docker. Nous hébergeons vos projets sur des infrastructures optimisées pour une consommation énergétique maîtrisée."
       icon: "images/hebergement_icone.svg"
-      link_text: "Découvrir le DevOps"
+      link_text: "Infrastructures durables"
       url: "/services/devops-hebergement/"
+
+cta_block:
+  title: "Bâtissons votre solution performante, éco-conçue et 100% à votre main. Parlons-en."
+  button_text: "CONTACTEZ-NOUS"
+  button_link: "/contact"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.png"
 ---

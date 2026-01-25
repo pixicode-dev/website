@@ -1,83 +1,91 @@
 ---
-# --- SEO & METADATA ---
-title: "Nos Services : Expertise Web, Mobile & Logiciel à Angoulême"
-description: "Sites web rapides, applications Flutter et logiciels métiers. PixiCode vous accompagne avec une méthodologie transparente : code propriétaire, éco-conception et zéro dette technique."
-keywords: "création site web Angoulême, développement application mobile, agence Flutter, logiciel sur mesure, refonte site internet, DevOps, PixiCode"
-date: 2025-01-03
+# --- SEO & METADATA (Balises système) ---
+title: "Expertise Web, Mobile & Logiciel éco-conçus à Angoulême | PixiCode"
+description: "Découvrez les services de PixiCode : création de sites web ultra-rapides (Hugo), applications mobiles Flutter et logiciels métiers sur mesure. Performance durable et propriété totale du code."
+keywords: "agence web angoulême, développement mobile flutter, logiciel sur mesure charente, éco-conception web, expert hugo strapi, devops docker, création api"
+date: 2026-01-25
+
+# --- CONTENU DE LA PAGE (Affichage corps de page) ---
+title_content: "L'excellence technique au service de votre impact numérique"
+description_content: "De la startup à la PME, PixiCode transforme vos défis métiers en solutions numériques robustes. Pas de templates, pas de dettes techniques : uniquement du code propriétaire, éco-conçu et performant."
 
 layout: "services"
 
-# 1. LISTE DES SERVICES
+# 1. LISTE DES SERVICES (Expertise & Vulgarisation)
 services_list:
-  title: "DÉVELOPPEMENT DIGITAL"
-  subtitle: "Des solutions techniques taillées pour votre croissance"
+  title: "NOS EXPERTISES"
+  subtitle: "Des solutions sur mesure pour chaque étape de votre croissance"
   items:
-    - title: "Sites Web & Éco-conception"
-      description: "Plus qu'un simple site vitrine : un outil performant. Nous développons des sites ultra-rapides (Hugo, Next.js) et sécurisés. Optimisés pour le SEO, conformes RGPD et sans abonnement mensuel caché."
+    - title: "Web & Éco-conception"
+      description: "L'agence conçoit des sites et Web Apps avec l'architecture Jamstack (Hugo, Strapi). Résultat : une vitesse de chargement instantanée, une sécurité maximale et une empreinte carbone divisée par trois. Zéro abonnement, 100% performance."
       icon: "images/site_icone.svg"
-      link_text: "Voir le service Site Internet"
+      link_text: "Optimiser mon Web"
       link_url: "site-internet"
 
     - title: "Applications Mobiles (Flutter)"
-      description: "La puissance du natif, le coût du cross-platform. Nous déployons votre application sur iOS et Android à partir d'un code unique. Fluidité parfaite, maintenance simplifiée et fonctionnalités avancées (Offline, Push, Paiement)."
+      description: "Dominez iOS et Android avec une base de code unique. Grâce à Flutter, notre agence développe des applications fluides et intuitives, réduisant vos coûts de maintenance tout en offrant une expérience utilisateur native haut de gamme."
       icon: "images/mobile_icone.svg"
-      link_text: "Voir le service Mobile"
+      link_text: "Lancer mon App"
       link_url: "application-mobile"
 
     - title: "Logiciels Métiers & API"
-      description: "Ne changez pas vos processus pour un logiciel, nous créons le logiciel pour vos processus. CRM, ERP, API sur mesure... Des backends robustes (Python, Node.js) capables de traiter vos données critiques."
+      description: "Digitalisez vos processus avec des outils ERP, CRM ou des API sur mesure. Nous bâtissons des backends robustes et scalables (Node.js, C#, Java) capables de traiter vos flux de données critiques en toute sécurité."
       icon: "images/pai_icone.svg"
-      link_text: "Voir le service Logiciel"
+      link_text: "Automatiser mon métier"
       link_url: "api-et-backend"
 
-    - title: "DevOps & Hébergement"
-      description: "Dormez sur vos deux oreilles. Nous gérons l'infrastructure, les sauvegardes automatisées et la sécurité. Votre projet est hébergé sur des serveurs dimensionnés pour tenir la charge."
+    - title: "DevOps & Cloud Durable"
+      description: "Sécurisez et scalisez vos services. L'agence gère votre infrastructure via Docker et le déploiement continu (CI/CD). Nous optimisons l'hébergement pour garantir haute disponibilité et sobriété énergétique."
       icon: "images/hebergement_icone.svg"
-      link_text: "Voir le service DevOps"
+      link_text: "Sécuriser mes services"
       link_url: "devops-hebergement"
 
-# 2. APPROCHE (Réduite à 4 étapes clés)
+# 2. APPROCHE (Le Manifeste de l'Agence)
 approach:
   title: "NOTRE MÉTHODE"
-  headline: "Rigueur artisanale, agilité moderne"
+  headline: "L'artisanat numérique : rigueur technique et transparence totale"
   items:
-    - title: "1. Immersion & Architecture"
-      description: "Pas de développement à l'aveugle. Nous analysons votre besoin métier et définissons l'architecture technique la plus pérenne pour votre budget."
+    - title: "1. Architecture Éco-conçue"
+      description: "Chaque projet commence par une phase d'analyse profonde. Nous définissons une structure technique légère et durable pour éviter toute dette technique future."
       icon: "images/architecture.svg"
 
-    - title: "2. Développement Agile"
-      description: "Nous construisons votre projet brique par brique (MVP). Vous validez chaque étape via des démos régulières pour éviter l'effet tunnel."
+    - title: "2. Itérations Agiles"
+      description: "Fini l'effet tunnel. Nous développons par cycles courts (Sprints) avec des démos régulières. Vous pilotez l'évolution de votre produit en temps réel."
       icon: "images/code.svg"
 
-    - title: "3. Qualité & Sécurité"
-      description: "Le code est testé, optimisé et sécurisé avant tout déploiement. Nous traquons les bugs et assurons la conformité (Accessibilité, RGPD)."
+    - title: "3. Qualité & Green IT"
+      description: "Le code produit par l'agence respecte les critères du label INR. Tests automatisés, optimisation du DOM et limitation des requêtes pour une fluidité absolue."
       icon: "images/security.svg"
 
-    - title: "4. Livraison & Indépendance"
-      description: "Le moment clé : la mise en ligne. Nous vous formons à l'outil et, surtout, nous vous remettons l'intégralité du code source. Vous êtes libre."
+    - title: "4. Livraison & Souveraineté"
+      description: "Nous vous livrons un actif numérique complet : code source documenté, accès serveurs et formation. Chez PixiCode, vous restez maître de votre technologie."
       icon: "images/online.svg"
 
-# 3. FAQ (Optimisée pour rassurer sur la propriété et le local)
+# 3. FAQ (Optimisée SEO & Réassurance)
 faq:
   title: "FAQ"
-  subtitle: "Questions fréquentes"
+  subtitle: "Transparence technique et business"
   items:
-    # --- QUESTIONS BUSINESS ---
-    - question: "Suis-je vraiment propriétaire de mon site web ?"
-      answer: "**Oui, totalement.** C'est l'engagement n°1 de PixiCode. Contrairement aux agences qui louent votre site ou utilisent des plateformes fermées (Wix, Shopify), nous vous livrons le code source, la base de données et les accès complets. Vous êtes libre de changer d'hébergeur ou de prestataire quand vous le souhaitez."
+    - question: "Pourquoi PixiCode refuse l'utilisation de templates ?"
+      answer: "Un template bride votre évolution et alourdit votre code. En développant sur mesure, l'agence garantit une solution unique, plus sécurisée et parfaitement alignée sur vos besoins réels, sans fioritures énergivores."
 
-    - question: "Quel est le budget pour un projet sur mesure ?"
-      answer: "Chaque projet est unique. Un site vitrine performant démarre généralement autour de **1 500€**, tandis qu'une application métier demande une étude plus poussée. Notre promesse : **un devis transparent et forfaitaire**. Pas de mauvaise surprise à la facturation, tout est détaillé avant de commencer."
+    - question: "Propriété du code : Suis-je réellement indépendant ?"
+      answer: "**Oui.** Contrairement aux solutions SaaS (Wix, Shopify) ou aux agences pratiquant la location de sites, PixiCode vous cède l'intégralité des droits de propriété intellectuelle. Le code source est à vous, vous êtes libre."
 
-    - question: "Pourquoi choisir Flutter pour mon application ?"
-      answer: "Pour le ROI (Retour sur Investissement). Avec **Flutter** (technologie Google), nous développons une seule fois pour deux plateformes (**iOS et Android**). Vous réduisez les coûts de développement et de maintenance de 40% sans sacrifier la performance ni l'expérience utilisateur."
+    - question: "Flutter est-il adapté pour une application d'envergure ?"
+      answer: "Absolument. **Flutter** est utilisé par les plus grands (Google, Alibaba). Il permet d'atteindre des performances proches du natif tout en divisant les coûts de maintenance par deux, ce qui en fait le choix stratégique pour les Start-ups et PME."
 
-    - question: "Faites-vous la maintenance de sites existants ?"
-      answer: "Oui. Nous intervenons pour la **refonte**, la sécurisation ou l'évolution de sites existants (WordPress ou sur mesure). Nous commençons toujours par un **audit technique** pour identifier les failles et les opportunités d'optimisation (vitesse, SEO)."
+    - question: "Quel est l'impact réel de l'éco-conception sur mon SEO ?"
+      answer: "Google privilégie les sites rapides et légers (Core Web Vitals). Un site éco-conçu par notre agence charge plus vite, offrant un meilleur taux de conversion et un meilleur classement dans les résultats de recherche."
 
-    - question: "Travaillez-vous uniquement à Angoulême ?"
-      answer: "Notre cœur bat à **Angoulême (Charente)**, ce qui nous permet d'offrir une proximité réelle à nos clients locaux. Cependant, nos outils et méthodes de travail (Slack, Notion, Visio) nous permettent d'accompagner efficacement des entreprises partout en France."
+    - question: "Accompagnez-vous des clients hors d'Angoulême ?"
+      answer: "Si notre agence rayonne localement en **Charente**, notre méthodologie 100% digitale nous permet de collaborer avec des entreprises dans toute la France et à l'étranger avec la même efficacité et proximité."
 
-    - question: "Comment être sûr que mon site sera rapide ?"
-      answer: "La vitesse n'est pas une option, c'est une fonctionnalité. Nous utilisons des technologies modernes (Hugo, Next.js, Caching avancé) et pratiquons l'**éco-conception**. Résultat : des sites légers qui chargent instantanément, ce qui plaît autant à vos utilisateurs qu'à Google."
+cta_block:
+  title: "Bâtissons votre actif numérique : une solution éco-conçue, performante et 100% souveraine."
+  button_text: "DÉMARRER MON PROJET"
+  button_link: "/contact"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.png"
 ---

@@ -1,9 +1,9 @@
 enable: true
-title_line1: "VOTRE PROJET, NOTRE CODE : L'AGENCE WEB & MOBILE SUR MESURE"
+title_line1: "L'ARTISANAT NUMÉRIQUE : UN CODE SUR MESURE, PERFORMANT ET DURABLE."
 background_image: "images/Background.svg"
-description: "Basée à Angoulême, PixiCode conçoit des sites et applications sur mesure. Nous transformons vos besoins techniques en solutions numériques robustes, évolutives et performantes."
-cta_primary_text: "EN SAVOIR PLUS"
+description: "Basée à Angoulême, PixiCode conçoit des solutions éco-conçues (Label INR) pour start-ups et PME. Du site ultra-rapide sous Hugo à l'application mobile Flutter, nous bâtissons des outils qui durent, sans compromis sur la performance."
+cta_primary_text: "NOTRE APPROCHE GREEN IT"
 cta_primary_link: "/about"
-cta_secondary_text: "CONTACTEZ-NOUS"
+cta_secondary_text: "PARLONS DE VOTRE PROJET"
 cta_secondary_link: "/contact"
 img: "images/screens.webp"

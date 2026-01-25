@@ -174,7 +174,9 @@ h3,
   font-weight: var(--fw-bold);
   text-decoration: none;
   border-radius: 4px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   display: inline-block;
 
   &.primary {
@@ -1072,7 +1074,7 @@ h3,
    SECTION ACTUALITÉS (News)
    ====================================== */
 .news-section {
-  padding: 80px 0;
+  padding: 80px 0 0px 0px;
   background: linear-gradient(180deg, rgba(251, 238, 172, 0) 0%, #fbeeac 77.4%);
   overflow: hidden;
 }
@@ -1532,20 +1534,110 @@ h3,
   text-transform: uppercase;
 }
 
-/* 4. CTA APP SECTION */
-.cta-app-section {
-  background-color: var(--clr-blue-light); /* Le même bleu ciel que le header */
-  padding-top: 80px;
-  /* padding-bottom: 0; car l'image touche le bas */
-  overflow: hidden;
-}
+.cta-phone-section {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(var(--site-margin) * -1);
 
-.cta-app-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: -5px; /* Pour coller au bas de la section */
-  /* Optionnel : petit effet d'ombre */
-  filter: drop-shadow(0px -10px 20px rgba(0, 0, 0, 0.1));
+  .cta-box {
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    // --- CHANGEMENT ICI ---
+    // La boîte est maintenant TOUJOURS bleue
+    background-color: #75c2f6;
+    // ---------------------
+
+    &.shadow-none {
+      box-shadow: none !important;
+    }
+
+    @media (min-width: 992px) {
+      min-height: 40vh;
+    }
+  }
+
+  // Le petit séparateur jaune (peut-être le mettre en noir si le fond est bleu ?)
+  .small-separator {
+    width: 40px;
+    height: 4px;
+    background-color: #f4d160;
+    display: inline-block;
+  }
+
+  .btn-cta {
+    color: var(--clr-black);
+    background-color: var(--clr-yellow-dark);
+
+    font-family: Montserrat;
+    font-size: 22px;
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cta-text {
+    font-size: var(--fs-grand-titre) !important;
+  }
+
+  @media (min-width: 992px) {
+    .cta-container {
+      padding-top: 10vh;
+    }
+  }
+
+  // ... Le reste du CSS pour le téléphone ne change pas ...
+  .phone-composition {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: -50px auto 0;
+
+    @media (min-width: 992px) {
+      margin: -80px auto -80px;
+      transform: translateX(20px);
+    }
+
+    // Rappel pour que les images s'affichent bien
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .screen-content {
+      position: absolute;
+      z-index: 1;
+      // Vos réglages de calage :
+      bottom: 10%;
+      left: 28%;
+      width: 45%;
+      height: 75%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .hand-frame {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    pointer-events: none;
+    margin-left: 5vw;
+    @media (min-width: 992px) {
+      width: 20%;
+      transform: translateX(20px);
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+    }
+  }
 }
 
 /* ========================
@@ -1560,7 +1652,9 @@ h3,
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
@@ -2170,7 +2264,9 @@ h3,
   display: block;
   opacity: 1;
   transform: scale(1);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
 
 /* Classe pour CACHER l'élément (ajoutée par JS) */

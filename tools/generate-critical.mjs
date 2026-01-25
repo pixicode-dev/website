@@ -35,7 +35,15 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
     // Configuration avancée pour le moteur de rendu
     penthouse: {
       keepLargerMediaQueries: true, // Garde les règles Desktop même si on scanne en mobile
-      forceInclude: [".site-hero", ".navbar", ".grand-titre"],
+      forceInclude: [
+        ".site-hero",
+        ".navbar",
+        ".navbar-brand",
+        ".site-navigation",
+        ".grand-titre",
+        ".container",
+        ".row",
+      ],
     },
 
     dimensions: [
