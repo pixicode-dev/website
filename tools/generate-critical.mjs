@@ -44,8 +44,7 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
         ".grand-titre",
         ".column-section",
         ".hero-description",
-        ".btn-primary",
-        ".btn-pixi",
+        ".btn",
         ".btn-area", // Pour l'effet de survol du bouton
         ".approach-container",
         ".connecting-line-svg",
