@@ -43,9 +43,12 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
         ".navbar-brand",
         ".navbar-collapse",
         ".site-hero",
+        ".site-hero *",
         ".grand-titre",
         ".btn-primary",
         ".btn-sm",
+        ".approach-container",
+        ".connecting-line-svg",
       ],
     },
 
