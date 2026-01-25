@@ -2,7 +2,7 @@ import { generate } from "critical";
 import fs from "node:fs";
 import path from "node:path";
 
-// Fonction pour trouver les CSS générés par Hugo (avec le hash)
+// Fonction pour trouver les CSS générés par Hugo
 function getCssFiles(dir) {
   try {
     const files = fs.readdirSync(dir);
@@ -14,7 +14,6 @@ function getCssFiles(dir) {
   }
 }
 
-// On récupère TOUS les CSS locaux pour éviter les erreurs 404 pendant le build
 const localCssFiles = [
   ...getCssFiles("public/css/"),
   ...getCssFiles("public/scss/"),
@@ -28,96 +27,82 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
     src: "index.html",
     target: "index.html",
     inline: true,
-    extract: false, // On ne touche PAS au fichier CSS original (sécurité maximale)
+    extract: false,
 
     css: localCssFiles,
 
-    // Configuration avancée pour le moteur de rendu
     penthouse: {
-      keepLargerMediaQueries: true, // Garde les règles Desktop même si on scanne en mobile
+      keepLargerMediaQueries: true,
+      blockJSRequests: false,
       forceInclude: [
         ".navbar",
-        ".navbar-expand-lg",
         ".site-navigation",
-        ".fixed-top",
         ".navbar-brand",
-        ".navbar-collapse",
+        ".navbar-brand img",
         ".site-hero",
-        ".site-hero *",
+        ".site-hero *", // Force tout le contenu interne (titre, img, description)
         ".grand-titre",
+        ".column-section",
+        ".hero-description",
         ".btn-primary",
-        ".btn-sm",
+        ".btn-pixi",
+        ".btn-area", // Pour l'effet de survol du bouton
         ".approach-container",
         ".connecting-line-svg",
+        ".about-section", // Stabilise la section suivante
       ],
     },
 
+    // ON AUGMENTE LA HAUTEUR (height) pour que Penthouse "voie" bien tout le hero
     dimensions: [
-      { height: 800, width: 375 }, // Mobile
-      { height: 900, width: 1440 }, // Laptop
-      { height: 1080, width: 1920 }, // Grand écran
+      { height: 1200, width: 375 }, // Mobile (plus haut pour capturer le flux)
+      { height: 1200, width: 1440 }, // Desktop
+      { height: 1200, width: 1920 }, // Ultra-wide
     ],
 
-    // --- LA LISTE DE SÉCURITÉ ---
     include: [
-      // 1. LES FONDATIONS
+      // 1. FONDATIONS & TYPO
       /:root/,
-      /--site-margin/,
       /html/,
-      /body/, // Contient souvent le padding-top pour le menu fixe
+      /body/,
+      /\.grand-titre/,
+      /line-height/, // Force la conservation des hauteurs de ligne
 
-      // 2. STRUCTURE & GRILLE
+      // 2. STRUCTURE (VITAL POUR LE REBOND)
       /\.container/,
       /\.row/,
       /\.col-/,
+      /\.d-flex/,
       /\.d-block/,
-      /\.d-none/,
-      /\.d-lg-/,
-      /\.img-fluid/,
-      /\.position-relative/, // TRES IMPORTANT pour vos éléments absolus
-      /\.z-/, // Les z-index (z-1, z-2...)
+      /\.position-relative/,
+      /\.about-section/, // Sécurité pour empêcher la remontée
 
-      // 3. NAVIGATION (Menu Fixe)
+      // 3. NAVIGATION & LOGO
+      /\.site-navigation/,
       /\.navbar/,
-      /\.nav/,
-      /\.site-navigation/, // Contient position: fixed
-      /\.icon-bar/,
-      /\.collapse/,
-      /\.scrolled/, // Si vous avez une classe quand on scroll
+      /\.navbar-brand/,
+      /\.nav-link/,
+      /\.btn-sm-rounded/,
 
-      // 4. HERO SECTION
+      // 4. HERO SECTION (Correction précise)
       /\.site-hero/,
-      /\.site-hero::before/,
-      /\.grand-titre/,
+      /\.site-hero img/,
+      /\.column-section/,
       /\.hero-description/,
       /\.hero-actions/,
       /\.btn-pixi/,
-      /\.btn/,
 
-      // 5. SECTION APPROCHE (C'est ici que le SVG sautait !)
-      /\.approach-section/, // Le conteneur global
-      /\.approach-wrapper/, // Wrapper
-      /\.approach-container/, // Le parent RELATIF du SVG (VITAL)
-      /\.connecting-line-svg/, // Le SVG lui-même
-      /\.bg-hashtag/, // Le gros # en fond
-      /\.approach-card/, // Les cartes
-      /\.icon-wrapper/, // Les icônes
-      /\.section-headline/, // Les titres de section
+      // 5. SECTION APPROCHE
+      /\.approach-wrapper/,
+      /\.approach-container/,
+      /\.connecting-line-svg/,
+      /\.approach-card/,
+      /\.icon-wrapper/,
 
       // 6. ÉLÉMENTS DYNAMIQUES
       /\.embla/,
       /\.embla__container/,
-      /\.embla__slide/,
-      /\.card/,
-      /\.testimonial/,
       /\.cookie-banner/,
-
-      /\.approach-section/,
-      /\.approach-wrapper/,
-      /\.approach-container/,
-      /\.connecting-line-svg/,
-      /overflow-hidden/, // Si tu l'utilises
-      /position-relative/,
     ],
   });
 })();
