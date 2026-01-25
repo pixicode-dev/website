@@ -36,13 +36,16 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
     penthouse: {
       keepLargerMediaQueries: true, // Garde les règles Desktop même si on scanne en mobile
       forceInclude: [
-        ".site-hero",
         ".navbar",
-        ".navbar-brand",
+        ".navbar-expand-lg",
         ".site-navigation",
+        ".fixed-top",
+        ".navbar-brand",
+        ".navbar-collapse",
+        ".site-hero",
         ".grand-titre",
-        ".container",
-        ".row",
+        ".btn-primary",
+        ".btn-sm",
       ],
     },
 
@@ -105,6 +108,13 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
       /\.card/,
       /\.testimonial/,
       /\.cookie-banner/,
+
+      /\.approach-section/,
+      /\.approach-wrapper/,
+      /\.approach-container/,
+      /\.connecting-line-svg/,
+      /overflow-hidden/, // Si tu l'utilises
+      /position-relative/,
     ],
   });
 })();
