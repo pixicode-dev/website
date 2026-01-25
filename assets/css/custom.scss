@@ -345,18 +345,18 @@ h3,
 
   /* Laptop / Desktop standard */
   @media (min-width: 992px) {
-    min-height: 800px;
+    min-height: 900px;
     margin-top: -80px; /* Compensation du menu fixe en pixels plutôt qu'en vh */
   }
 
   /* Écrans 2K / Grandes résolutions (QHD) */
   @media (min-width: 1400px) {
-    min-height: 1000px;
+    min-height: 1200px;
   }
 
   /* Écrans 4K ou très grands écrans */
   @media (min-width: 1900px) {
-    min-height: 1200px;
+    min-height: 1500px;
   }
 
   img {
