@@ -39,16 +39,6 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
         ".container",
         ".row",
 
-        // 2. NAVIGATION & LOGO (Fixe la barre du haut)
-        ".navbar",
-        ".navbar-brand",
-        ".navbar-brand img",
-        ".site-navigation",
-        ".navbar-collapse",
-        ".navbar-nav",
-        ".nav-item",
-        ".nav-link",
-
         // 3. HERO SECTION (Fixe l'image 'screens.webp' et le texte)
         ".site-hero",
         ".site-hero img",

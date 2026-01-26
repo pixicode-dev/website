@@ -82,7 +82,7 @@ removePathAccents = true
   primary_link     = "portfolio/"
   secondary_btn    = "Échanger sur votre projet"
   secondary_link   = "contact/"
-  
+
 # --- AUTRES SECTIONS ---
 [params.contactForm]
   action = "https://n8n.pixicode.dev/webhook/831edf69-f3b5-4d4f-8d73-00fb9afaaa0d"
@@ -129,8 +129,8 @@ removePathAccents = true
       name = "A propos"
       url = "about/"
     [[params.footer.sitemap.link]]
-      name = "Equipe"
-      url = "team/"
+      name = "Nos services"
+      url = "services/"
     [[params.footer.sitemap.link]]
       name = "Portfolio"
       url = "portfolio/"

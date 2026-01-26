@@ -595,6 +595,7 @@ h3,
   overflow: hidden;
   width: 100vw;
   margin-left: calc(var(--site-margin) * -1);
+  margin-top: 30px;
 
   .section-headline {
     font-family: var(--ff-body) !important;
@@ -1244,7 +1245,7 @@ h3,
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    var(--clr-blue-dark) 100%
+    var(--clr-blue-dark) 50%
   );
 }
 
