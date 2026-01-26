@@ -57,17 +57,6 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
         ".hero-description",
         ".hero-actions",
 
-        // 4. ABOUT SECTION (Fixe l'image '2screen.svg')
-        ".about-section",
-        ".about-decor-img",
-
-        // 5. PORTFOLIO (Supprime le décalage 'Élément d'image de taille inconnue')
-        ".portfolio-section",
-        ".portfolio-card",
-        ".card-bg-img",
-        ".card-bg-img img", // Très important pour l'aspect-ratio des projets
-        ".portfolio-container",
-
         // 6. CLASSES UTILITAIRES
         ".img-fluid",
         ".d-block",
