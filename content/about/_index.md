@@ -79,5 +79,5 @@ cta_block:
   button_link: "/contact"
   cta_background: "#fbeeac"
   cta_image: "/images/app-screen-example.jpg"
-  hand_frame: "/images/hand.png"
+  hand_frame: "/images/hand.webp"
 ---
