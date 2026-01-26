@@ -33,50 +33,69 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
       keepLargerMediaQueries: true,
       blockJSRequests: false,
       forceInclude: [
-        // 1. NAVIGATION & LOGO (Vital pour le score CLS)
+        // 1. STRUCTURE GLOBALE (Empêche le tag <main> de sauter)
+        "body",
+        "main",
+        ".container",
+        ".row",
+
+        // 2. NAVIGATION & LOGO (Fixe la barre du haut)
         ".navbar",
         ".navbar-brand",
-        ".navbar-brand img", // Force le style du logo
+        ".navbar-brand img",
         ".site-navigation",
         ".navbar-collapse",
         ".navbar-nav",
+        ".nav-item",
+        ".nav-link",
 
-        // 2. HERO IMAGE & TEXTE
+        // 3. HERO SECTION (Fixe l'image 'screens.webp' et le texte)
         ".site-hero",
-        ".site-hero img", // Force le style de l'image hero (aspect-ratio)
+        ".site-hero img",
+        ".column-section",
         ".grand-titre",
         ".hero-description",
         ".hero-actions",
 
-        // 3. ABOUT IMAGE
+        // 4. ABOUT SECTION (Fixe l'image '2screen.svg')
         ".about-section",
-        ".about-decor-img", // Force le style de l'image about
+        ".about-decor-img",
 
-        // 4. CLASSES UTILITAIRES
+        // 5. PORTFOLIO (Supprime le décalage 'Élément d'image de taille inconnue')
+        ".portfolio-section",
+        ".portfolio-card",
+        ".card-bg-img",
+        ".card-bg-img img", // Très important pour l'aspect-ratio des projets
+        ".portfolio-container",
+
+        // 6. CLASSES UTILITAIRES
         ".img-fluid",
         ".d-block",
-        ".d-none",
+        ".d-flex",
+        ".position-relative",
       ],
     },
 
-    // On garde les grandes dimensions pour bien capturer le layout desktop
+    // Dimensions augmentées pour capturer le layout sur écrans 2K et stabiliser le flux
     dimensions: [
-      { height: 1200, width: 375 },
-      { height: 1200, width: 1440 },
-      { height: 1200, width: 1920 },
+      { height: 900, width: 375 }, // Mobile
+      { height: 1200, width: 1440 }, // Desktop FHD
+      { height: 1440, width: 2560 }, // Écran 2K
     ],
 
     include: [
       /:root/,
       /html/,
       /body/,
-      // Regex pour capturer toutes les règles d'aspect-ratio
+      /main/,
+      // Force la capture des règles de dimensionnement critique
       /aspect-ratio/,
+      /padding-top/, // Vital pour compenser le menu fixe
+      /min-height/,
       /\.site-hero/,
       /\.about-section/,
+      /\.portfolio-card/,
       /\.navbar/,
-      /\.container/,
-      /\.row/,
       /\.col-/,
     ],
   });
