@@ -133,7 +133,7 @@ h3,
   line-height: 1.2;
 }
 
-.btn {
+.btn-contact {
   background-color: var(--clr-yellow-dark);
   color: var(--clr-blue-dark) !important;
   border-radius: 4px;
@@ -366,6 +366,9 @@ h3,
   align-items: center;
   min-height: 600px;
   width: 100%;
+  overflow: hidden;
+  content-visibility: auto;
+  contain: layout size;
 
   /* Laptop / Desktop standard */
   @media (min-width: 992px) {
