@@ -73,6 +73,7 @@ console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
         ".d-block",
         ".d-flex",
         ".position-relative",
+        ".background-size",
       ],
     },
 
