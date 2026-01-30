@@ -153,7 +153,6 @@ async function syncEntries() {
   const expectedMedia = new Set();
 
   if (TYPE === "testimonials") {
-    // ... (Logique testimonials inchangée)
   } else {
     const expectedMd = new Set();
     for (const entry of entries) {

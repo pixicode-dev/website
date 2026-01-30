@@ -2,6 +2,7 @@
 title: "PixiCode – Agence de Développement Web & Mobile Éco-conçus à Angoulême"
 title_content: "PixiCode : Architecture Logicielle Durable & Sur-Mesure"
 description_content: "Expert en éco-conception numérique à Angoulême. PixiCode développe vos sites Web (Hugo), apps mobiles (Flutter) et logiciels métiers sans template. Performance, code propriétaire et certification INR."
+description: "PixiCode : ingénierie numérique et éco-conception à Angoulême. Bâtissons vos solutions web et mobiles sur mesure, performantes et souveraines."
 keywords: "agence web angoulême, éco-conception web, expert flutter france, développement logiciel sur mesure, hugo strapi, numérique responsable, développement mobile charente"
 date: 2026-01-25
 

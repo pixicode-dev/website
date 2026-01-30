@@ -401,7 +401,7 @@ h3,
     z-index: 2;
     width: 70%;
     height: auto;
-    aspect-ratio: 800 / 750;
+    aspect-ratio: 800 / 800;
     display: block;
 
     @media (min-width: 992px) {
@@ -811,7 +811,7 @@ h3,
 }
 
 .btn-approach {
-  background-color: var(--clr-blue-light);
+  background-color: var(--clr-blue-dark);
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
@@ -821,7 +821,7 @@ h3,
   transition: 0.3s;
 }
 .btn-approach:hover {
-  background-color: #59b2e6;
+  background-color: var(--clr-blue-light);
   transform: translateY(-2px);
 }
 
@@ -2097,6 +2097,7 @@ h3,
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  margin-top: 10vh !important;
 }
 
 .form-title {
@@ -2135,8 +2136,10 @@ h3,
 
 /* 5. Support Client & Texte Droite */
 .contact-text-box {
+  background-color: var(--clr-white);
   line-height: 1.6;
   color: #555;
+  margin-top: 2vh;
 }
 
 .contact-support {
@@ -2159,13 +2162,18 @@ h3,
 }
 
 /* Responsive adjustments */
-@media (max-width: 991px) {
+@media (min-width: 991px) {
   .contact-header-bg {
     padding-bottom: 100px;
   }
 
   .contact-form-card {
     padding: 25px;
+    margin-top: 0px !important;
+  }
+
+  .contact-text-box {
+    margin-top: 0px;
   }
 }
 
@@ -2866,4 +2874,8 @@ h3,
 
   /* Ombre portée pour faire ressortir le bouton */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-text p {
+  color: var(--clr-white) !important;
 }
