@@ -2,6 +2,7 @@ import { generate } from "critical";
 import fs from "node:fs";
 import path from "node:path";
 
+// 1. Fonction pour trouver les fichiers CSS (Style & Bootstrap)
 function getCssFiles(dir) {
   try {
     const files = fs.readdirSync(dir);
@@ -13,70 +14,116 @@ function getCssFiles(dir) {
   }
 }
 
+// 2. NOUVEAU : Fonction pour trouver TOUS les fichiers HTML récursivement
+// (Cherche dans public/, public/blog/, public/contact/, etc.)
+const getAllHtmlFiles = (dirPath, arrayOfFiles) => {
+  const files = fs.readdirSync(dirPath);
+  arrayOfFiles = arrayOfFiles || [];
+
+  files.forEach((file) => {
+    const fullPath = path.join(dirPath, "/", file);
+    if (fs.statSync(fullPath).isDirectory()) {
+      arrayOfFiles = getAllHtmlFiles(fullPath, arrayOfFiles);
+    } else {
+      if (file.endsWith(".html")) {
+        // On garde le chemin relatif par rapport à 'public/' pour la config Critical
+        // Ex: "blog/mon-article/index.html"
+        arrayOfFiles.push(
+          fullPath.replace("public/", "").replace("public\\", ""),
+        );
+      }
+    }
+  });
+
+  return arrayOfFiles;
+};
+
+// Exécution
 const localCssFiles = [
   ...getCssFiles("public/css/"),
   ...getCssFiles("public/scss/"),
 ];
 
-console.log("🎨 Fichiers CSS locaux trouvés :", localCssFiles);
+// On récupère la liste de toutes les pages
+const allPages = getAllHtmlFiles("public/");
+
+console.log("🎨 Fichiers CSS locaux :", localCssFiles);
+console.log(`🚀 Génération du CSS Critique pour ${allPages.length} pages...`);
 
 (async () => {
-  await generate({
-    base: "public/",
-    src: "index.html",
-    target: "index.html",
-    inline: true,
-    extract: false,
-    css: localCssFiles,
+  // On boucle sur chaque page trouvée
+  for (const page of allPages) {
+    // Petit log pour suivre la progression (c'est satisfaisant à voir)
+    console.log(`Processing: ${page}`);
 
-    penthouse: {
-      keepLargerMediaQueries: true,
-      blockJSRequests: false,
-      forceInclude: [
-        // 1. STRUCTURE GLOBALE (Empêche le tag <main> de sauter)
-        "body",
-        "main",
-        ".container",
-        ".row",
+    try {
+      await generate({
+        base: "public/",
+        src: page,
+        target: page, // Écrase le fichier original avec la version optimisée
+        inline: true,
+        extract: false,
+        css: localCssFiles,
 
-        // 3. HERO SECTION (Fixe l'image 'screens.webp' et le texte)
-        ".site-hero",
-        ".site-hero img",
-        ".column-section",
-        ".grand-titre",
-        ".hero-description",
-        ".hero-actions",
+        penthouse: {
+          keepLargerMediaQueries: true,
+          blockJSRequests: false,
+          forceInclude: [
+            // 1. STRUCTURE GLOBALE (Vital pour toutes les pages)
+            "body",
+            "main",
+            ".container",
+            ".row",
+            ".navbar",
+            ".site-navigation",
+            ".footer", // Important pour les pages courtes
 
-        // 6. CLASSES UTILITAIRES
-        ".img-fluid",
-        ".d-block",
-        ".d-flex",
-        ".position-relative",
-        ".background-size",
-      ],
-    },
+            // 2. HERO SECTION (Surtout pour l'accueil, mais ne gêne pas ailleurs)
+            ".site-hero",
+            ".site-hero img",
+            ".column-section",
+            ".grand-titre",
+            ".hero-description",
+            ".hero-actions",
 
-    // Dimensions augmentées pour capturer le layout sur écrans 2K et stabiliser le flux
-    dimensions: [
-      { height: 900, width: 375 }, // Mobile
-      { height: 1200, width: 1440 }, // Desktop FHD
-      { height: 1440, width: 2560 }, // Écran 2K
-    ],
+            // 3. CLASSES UTILITAIRES
+            ".img-fluid",
+            ".d-block",
+            ".d-flex",
+            ".position-relative",
+            ".background-size",
+          ],
+        },
 
-    include: [
-      /:root/,
-      /html/,
-      /body/,
-      /main/,
-      // Force la capture des règles de dimensionnement critique
-      /aspect-ratio/,
-      /padding-top/, // Vital pour compenser le menu fixe
-      /min-height/,
-      /\.site-hero/,
-      /\.about-section/,
-      /\.portfolio-card/,
-      /\.navbar/,
-      /\.col-/,
-    ],
-  });
+        // Dimensions augmentées pour couvrir tous les cas
+        dimensions: [
+          { height: 900, width: 375 },
+          { height: 1200, width: 1440 },
+          { height: 1440, width: 2560 },
+        ],
+
+        include: [
+          /:root/,
+          /--site-margin/, // TRES IMPORTANT pour votre layout responsive
+          /html/,
+          /body/,
+          /main/,
+          /aspect-ratio/,
+          /padding-top/, // Pour compenser le menu fixe
+          /min-height/,
+          /\.site-hero/,
+          /\.about-section/,
+          /\.portfolio-card/,
+          /\.navbar/,
+          /\.nav/, // Souvent utilisé par Bootstrap
+          /\.col-/,
+          /\.btn/, // Boutons présents partout
+        ],
+      });
+    } catch (err) {
+      console.error(`❌ Erreur sur ${page}:`, err);
+      // On continue la boucle même si une page échoue
+    }
+  }
+  console.log("✅ Terminé ! Tout le site est optimisé.");
 })();
