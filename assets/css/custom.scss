@@ -1475,6 +1475,7 @@ h3,
   padding: 100px 0;
   font-size: var(--fs-body);
   overflow: hidden;
+  min-height: 800px;
 }
 
 /* 1. PAGE HEADER (Forme biseautée) */
@@ -1609,6 +1610,7 @@ h3,
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: var(--clr-blue-light);
 }
 
 .cta-phone-section {

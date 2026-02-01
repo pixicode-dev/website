@@ -92,6 +92,7 @@ console.log(`🚀 Génération du CSS Critique pour ${allPages.length} pages...`
             ".d-flex",
             ".position-relative",
             ".background-size",
+            ".section-padding",
           ],
         },
 
