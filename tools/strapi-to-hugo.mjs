@@ -153,6 +153,45 @@ async function syncEntries() {
   const expectedMedia = new Set();
 
   if (TYPE === "testimonials") {
+    const items = [];
+
+    for (const entry of entries) {
+      // 1. Map Strapi fields to YAML fields
+      const company = entry.company;
+      const quote = entry.content || entry.quote || entry.text || "";
+      const color = entry.color;
+
+      // 2. Handle Image (Avatar/Logo)
+      let imagePath = "";
+      const imgObj = pickImage(entry.logo);
+
+      if (imgObj) {
+        const slug = strToSlug(company);
+        const destRel = `uploads/testimonials/${slug}${imgObj.ext}`;
+
+        // Add to Set to prevent deletion during cleanup
+        expectedMedia.add(destRel);
+
+        imagePath = await download(imgObj.absolute, destRel);
+      }
+
+      items.push({ company, color, quote, image: imagePath });
+    }
+
+    // 3. Generate YAML Content manually
+    let yamlContent = `title: "TÉMOIGNAGES"\nitems:\n`;
+
+    items.forEach((item) => {
+      yamlContent += `  - company: ${yamlEscape(item.company)}\n`;
+      if (item.role) yamlContent += `    role: ${yamlEscape(item.role)}\n`;
+      if (item.color) yamlContent += `    color: ${yamlEscape(item.color)}\n`;
+      yamlContent += `    quote: ${yamlEscape(item.quote)}\n`;
+      if (item.image) yamlContent += `    image: "${item.image}"\n`;
+    });
+
+    // 4. Write to data/testimonials.yml
+    if (!DRY_RUN) await fs.writeFile(DATA_FILE_PATH, yamlContent, "utf8");
+    log("WRITE", path.relative(ROOT, DATA_FILE_PATH));
   } else {
     const expectedMd = new Set();
     for (const entry of entries) {

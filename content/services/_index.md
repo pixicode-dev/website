@@ -63,23 +63,32 @@ approach:
 
 # 3. FAQ (Optimisée SEO & Réassurance)
 faq:
-  title: "FAQ"
-  subtitle: "Transparence technique et business"
+  title: "Questions fréquentes"
+  subtitle: "Transparence technique & business"
   items:
-    - question: "Pourquoi PixiCode refuse l'utilisation de templates ?"
-      answer: "Un template bride votre évolution et alourdit votre code. En développant sur mesure, l'agence garantit une solution unique, plus sécurisée et parfaitement alignée sur vos besoins réels, sans fioritures énergivores."
+    - question: "Pourquoi choisir le sur-mesure plutôt qu'un CMS classique (WordPress, Wix) ?"
+      answer: "Le sur-mesure avec PixiCode, c'est l'assurance d'un code propriétaire, léger et sans dette technique. Là où un template alourdit votre site de scripts inutiles, notre architecture (JAMstack/Hugo) garantit une vitesse d'affichage instantanée, un SEO natif et une sécurité totale sans plugins tiers."
 
-    - question: "Propriété du code : Suis-je réellement indépendant ?"
-      answer: "**Oui.** Contrairement aux solutions SaaS (Wix, Shopify) ou aux agences pratiquant la location de sites, PixiCode vous cède l'intégralité des droits de propriété intellectuelle. Le code source est à vous, vous êtes libre."
+    - question: "Comment PixiCode m'aide-t-il à financer mon innovation numérique ?"
+      answer: "Grâce à notre agrément **Crédit d’Impôt Innovation (CII)** obtenu pour la période 2026-2030, nos clients PME peuvent récupérer un crédit d'impôt de **20%** sur les dépenses de conception de produits innovants. C'est un levier majeur pour réduire vos coûts de R&D tout en exigeant une ingénierie d'élite."
 
-    - question: "Flutter est-il adapté pour une application d'envergure ?"
-      answer: "Absolument. **Flutter** est utilisé par les plus grands (Google, Alibaba). Il permet d'atteindre des performances proches du natif tout en divisant les coûts de maintenance par deux, ce qui en fait le choix stratégique pour les Start-ups et PME."
+    - question: "Propriété du code : Suis-je réellement souverain ?"
+      answer: "**Totalement.** Chez PixiCode, nous défendons la souveraineté numérique : vous êtes l'unique propriétaire du code source et de vos données. Pas d'abonnement captif, pas de frais de licence cachés. Vous restez libre de faire évoluer votre actif avec nous ou de manière indépendante."
 
-    - question: "Quel est l'impact réel de l'éco-conception sur mon SEO ?"
-      answer: "Google privilégie les sites rapides et légers (Core Web Vitals). Un site éco-conçu par notre agence charge plus vite, offrant un meilleur taux de conversion et un meilleur classement dans les résultats de recherche."
+    - question: "L'éco-conception numérique est-elle vraiment rentable pour mon business ?"
+      answer: "Oui, car l'éco-conception est avant tout une quête d'efficience. Un site sobre est un site qui charge plus vite, consomme moins de batterie sur mobile et offre une expérience utilisateur (UX) fluide. Résultat : un meilleur classement Google (Core Web Vitals) et un taux de conversion plus élevé."
 
-    - question: "Accompagnez-vous des clients hors d'Angoulême ?"
-      answer: "Si notre agence rayonne localement en **Charente**, notre méthodologie 100% digitale nous permet de collaborer avec des entreprises dans toute la France et à l'étranger avec la même efficacité et proximité."
+    - question: "Puis-je avoir une application unique pour le Web, iOS et Android ?"
+      answer: "C'est notre spécialité avec le framework **Flutter**. Nous développons une base de code unique pour toutes vos plateformes. Cela permet de diviser vos coûts de maintenance par deux tout en offrant des performances identiques aux applications natives. Un choix stratégique pour les entreprises qui visent une scalabilité rapide."
+
+    - question: "Que comprend votre offre d'hébergement géré ?"
+      answer: "Nous proposons un hébergement optimisé à partir de **10€ HT/mois**. Contrairement aux hébergeurs classiques, nous gérons pour vous le nom de domaine, les certificats de sécurité SSL et la maintenance technique pour garantir une disponibilité maximale de vos services."
+
+    - question: "Travailler avec PixiCode, c'est travailler avec qui ?"
+      answer: "Vous collaborez avec une équipe humaine, réactive et complémentaire. Nous proposons un accompagnement de A à Z, de la phase de brief à la mise en ligne, pour garantir une solution 100% personnalisée qui répond à vos enjeux métiers réels."
+
+    - question: "Combien de temps faut-il pour concevoir un site ou une application ?"
+      answer: "Le délai dépend de la complexité du projet (ex: blog dynamique vs landing page). En moyenne, une Formule Essentielle est déployée rapidement, tandis qu'un projet Premium ou une application métier demande un cycle de développement plus long pour garantir la qualité et les tests de performance."
 
 cta_block:
   title: "Bâtissons votre actif numérique : une solution éco-conçue, performante et 100% souveraine."

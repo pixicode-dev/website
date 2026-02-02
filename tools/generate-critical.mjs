@@ -93,6 +93,16 @@ console.log(`🚀 Génération du CSS Critique pour ${allPages.length} pages...`
             ".position-relative",
             ".background-size",
             ".section-padding",
+
+            // 5. SECTION APPROCHE (C'est ici que le SVG sautait !)
+            /\.approach-section/, // Le conteneur global
+            /\.approach-wrapper/, // Wrapper
+            /\.approach-container/, // Le parent RELATIF du SVG (VITAL)
+            /\.connecting-line-svg/, // Le SVG lui-même
+            /\.bg-hashtag/, // Le gros # en fond
+            /\.approach-card/, // Les cartes
+            /\.icon-wrapper/, // Les icônes
+            /\.section-headline/, // Les titres de section
           ],
         },
 
