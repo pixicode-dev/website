@@ -6,19 +6,31 @@ description: "Consultez les mentions légales de PixiCode : informations légale
 
 ## Éditeur du site
 
-**PixiCode**  
-2 Place Jean V, 44000 Nantes  
-SIRET : 980 083 786 00023  
-Email : <contact@pixicode.dev>
+Le site pixicode.dev est édité par :
 
-Directeur de la publication : Emric Pichonnier
+Dénomination sociale : PIXICODE  
+Forme juridique : EURL (Entreprise Unipersonnelle à Responsabilité Limitée)  
+Capital social : 1 000 €  
+Siège social : 2 Place Jean V, 44000 Nantes, France  
+RCS : Inscrite au RCS de Nantes sous le numéro 980 083 786
+
+Directeur de la publication : Emric Pichonnier  
+Contact : contact@pixicode.dev
 
 ## Hébergeur
 
-Nom : OVH  
-Adresse : 2 Rue Kellermann, 59100 Roubaix, France  
-Site web : <https://www.ovh.com>
+Le site est hébergé par la société OVH SAS :
+
+Adresse : 2 Rue Kellermann, 59100 Roubaix, France
+
+Téléphone : 1007
+
+Site web : https://www.ovhcloud.com
 
 ## Propriété intellectuelle
 
-Tous les contenus présents sur le site pixicode.dev sont la propriété exclusive de PixiCode, sauf mention contraire.
+L’ensemble de ce site relève de la législation française et internationale sur le droit d’auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques. La reproduction de tout ou partie de ce site sur un support électronique quel qu’il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
+
+## Données personnelles
+
+Le traitement de vos données personnelles est régi par notre [Politique de Confidentialité](/politique-confidentialite) conformément au Règlement Général sur la Protection des Données (RGPD).

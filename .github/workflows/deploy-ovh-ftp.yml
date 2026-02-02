@@ -22,13 +22,16 @@ jobs:
         with:
           node-version: 20
       - name: Install sync deps
-        run: npm i node-fetch@3
+        run: npm i node-fetch@3 critical postcss postcss-cli autoprefixer @fullhuman/postcss-purgecss jquery popper.js
 
       - name: Sync Strapi → Hugo (blog articles)
         run: node tools/strapi-to-hugo.mjs --type=articles
 
       - name: Sync Strapi → Hugo (portfolio projects)
-        run: node tools/strapi-to-hugo.mjs --type=projets
+        run: node tools/strapi-to-hugo.mjs --type=projects
+
+      - name: Sync Strapi → Hugo (portfolio projects)
+        run: node tools/strapi-to-hugo.mjs --type=testimonials
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -36,8 +39,10 @@ jobs:
           hugo-version: "0.128.2"
           extended: true
 
-      - name: Build site
-        run: hugo
+      - name: Build site & Generate Critical CSS
+        run: |
+          hugo --minify
+          node tools/generate-critical.mjs
 
       - name: Deploy to OVH (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
@@ -47,5 +52,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           local-dir: ./public/
-          server-dir: ./www/
+          server-dir: ./pixicode/
           delete: true

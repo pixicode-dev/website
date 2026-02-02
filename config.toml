@@ -1,155 +1,152 @@
-baseURL       = "https://pixicode.dev/"
-languageCode  = "fr"
-title         = "PixiCode"
-theme         = "roxo-hugo-pixicode"
-summarylength = 25
+baseURL      = "https://dev.pixicode.dev/"
+languageCode = "fr-fr"
+title        = "PixiCode"
+theme        = "roxo-hugo-pixicode"
+summaryLength = 25
+hasCJKLanguage = true
 disableKinds = ["taxonomy", "term"]
-
-# Site Menus
+removePathAccents = true
+[build] 
+  writeStats = true
+  
+# --- MENUS ---
 [menu]
-  # Navbar Menus
   [[menu.nav]]
-    name    = "Home"
-    url     = ""
-    weight  = 1
+    name = "A propos"
+    url = "about/"
+    weight = 1
   [[menu.nav]]
-    name    = "Services"
-    url     = "services/"
-    weight  = 2
+    name = "Nos Services"
+    url = "services/"
+    weight = 2
   [[menu.nav]]
-    name    = "A propos"
-    url     = "about/"
-    weight  = 3
+    name = "Portfolio"
+    url = "portfolio/"
+    weight = 3
   [[menu.nav]]
-    name    = "Blog"
-    url     = "blog/"
-    weight  = 4
+    name = "Blog"
+    url = "blog/"
+    weight = 4
   [[menu.nav]]
-    name    = "Portfolio"
-    url     = "portfolio/"
-    weight  = 5
-  [[menu.nav]]
-    name    = "Equipe"
-    url     = "team/"
-    weight  = 6
-  [[menu.nav]]
-    name    = "Contactez Nous"
-    url     = "contact/"
-    weight  = 7
+    name = "Contact"
+    url = "contact/"
+    weight = 5
 
-# Site Params
+# --- PARAMÈTRES GLOBAUX ---
 [params]
+  description = "PixiCode | Agence Web & Mobile sur mesure à Angoulême."
+  author      = "PixiCode"
+  # Images par défaut
   logo = "images/logo.svg"
-  logo_footer = "images/logo-bottom.svg"
   favicon_icon = "images/favicon.ico"
   favicon_shortcut_icon = "images/favicon.png"
-  custom_stylesheets = []   #[ "scss/my_1.scss", "scss/my_2.scss" ]
-  dateFormat = "26 FEB 1994"
-  description = "PixiCode | Entreprise de service numérique"
-  author = "PixiCode"
-  action  = "https://n8n.pixicode.dev/webhook/831edf69-f3b5-4d4f-8d73-00fb9afaaa0d"
+  image = "images/og-default.jpg" # Pour le partage réseaux sociaux
+
+  # Tracking Matomo
+  matomo_url = "https://matomo.pixicode.dev/"
+  matomo_id  = "1"
+
+  # Styles
+  custom_stylesheets = ["css/custom.scss"]
+
+# --- IDENTITÉ CLIENT (Le propriétaire du site) ---
+[params.client]
+  name    = "pixicode"
+  url     = "https://pixicode.dev"
+  email   = "contact@pixicode.dev"
+  phone   = "05 45 91 38 57"
+  address = "16000 Angoulême"
+
+# --- IDENTITÉ AGENCE (Toi) ---
+[params.agency]
+  name   = "Pixicode"
+  url    = "https://pixicode.dev"
+  slogan = "Expert en éco-conception web"
+
+# --- SECTION HERO (Accueil) ---
+[params.hero]
+  enable           = true
+  background_image = "images/Background.svg"
   
-  # Contact Form
-  [params.contactForm]
-    placeholder_first_name        = "Prénom"
-    placeholder_last_name         = "Nom"
-    placeholder_email             = "Email"
-    placeholder_about_the_project = "Racontez nous votre projet..."
-    send_message                  = "🚀 Lancer mon projet"
-    captcha_key                   = "6Lda03EqAAAAAJLVnbQpaUz_PzgYZEy0Acz68icf"
+  # TITRE : On allie l'expertise technique à la valeur "Durable"
+  title = "DÉVELOPPEMENT WEB & MOBILE SUR MESURE : LA PERFORMANCE DURABLE."
   
-  # Navbar Action Button
-  [params.navAction]
-    status  = true
-    name    = "Contactez Nous"
-    url     = "contact"
+  # DESCRIPTION : On cible les décideurs (PME/Startup) avec les preuves techniques (Hugo, Flutter) et éthiques (INR)
+  description = "Basée à Angoulême, PixiCode forge des solutions numériques éco-conçues (Label INR). De l'architecture Hugo au développement Flutter, nous garantissons un code propriétaire ultra-performant et une transparence totale."
   
+  image            = "images/screens.webp"
+  image_alt        = "Aperçu d'applications mobiles Flutter et sites web éco-conçus par PixiCode"
+  
+  # BOUTONS D'ACTION : Plus orientés "Partenaire" que "Prestataire"
+  primary_btn      = "Découvrir nos projets"
+  primary_link     = "portfolio/"
+  secondary_btn    = "Échanger sur votre projet"
+  secondary_link   = "contact/"
 
-  # Banner Section
-  [params.banner]
-    enable                = true
-    background_image      = "images/backgrounds/hero-background.svg"
-    heading               = "Votre projet, notre code : PixiCode, l’agence de développement qui donne vie à vos idées digitales"
-    tagline               = "WE WORK HARD, WE DEV HARD"
-    primary_button        = "Nos réalisations"
-    primary_button_url    = "portfolio"
-    secondary_button      = "Contactez Nous"
-    secondary_button_url  = "contact"
+# --- AUTRES SECTIONS ---
+[params.contactForm]
+  action = "https://n8n.pixicode.dev/webhook/831edf69-f3b5-4d4f-8d73-00fb9afaaa0d"
+  placeholder_first_name = "Prénom"
+  placeholder_last_name = "Nom"
+  placeholder_email = "Email"
+  placeholder_about_the_project = "Racontez nous votre projet..."
+  captcha_key = "6Lda03EqAAAAAJLVnbQpaUz_PzgYZEy0Acz68icf"
 
-  [params.blog]
-    read_more             = "read more"
+# --- FOOTER ---
+[params.footer]
+  qr_print = false
+  
+  # 1. Contact
+  [params.footer.contactInfo]
+    title = "Contact"
+    address = "16000 Angoulême"
+    phone = "05 45 91 38 57"
+    email = "contact@pixicode.dev"
 
-  [params.portfolio]
-    enable    = true
-    title     = "OUR RECENT WORKS"
-    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
-    view_project = "voir le projet"
-    more_works = "MORE WORKS"
-    scroll_down = "scroll down"
+  # 2. Réseaux Sociaux (Complet)
+  [params.footer.social]
+    title = "Réseaux"
+    [[params.footer.social.link]]
+      name = "Linkedin"
+      url = "https://www.linkedin.com/company/pixicode"
+    [[params.footer.social.link]]
+      name = "Tik Tok"
+      url = "https://www.tiktok.com/@pixicode"
+    [[params.footer.social.link]]
+      name = "Instagram"
+      url = "https://www.instagram.com/pixicode_dev/"
+    [[params.footer.social.link]]
+      name = "Notre fiche Google"
+      url = "https://www.google.com/search?sca_esv=8382d0de9abbe68c&hl=fr&authuser=1&kgmid=/g/11vqzs6fyb&q=PixiCode&shndl=30&shem=lcuae,lspt8,uaasie&source=sh/x/loc/uni/m1/1&kgs=c85961deea9437e6"
+    [[params.footer.social.link]]
+      name = "Discord"
+      url = "https://discord.gg/tzgBnm3dAc"
 
-  [params.team]
-    enable    = true
-    title     = "OUR RECENT WORKS"
-    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
-    view_team = "découvrez"
-    more_works = "MORE WORKS"
-    scroll_down = "scroll down"
+  # 3. Sitemap Footer
+  [params.footer.sitemap]
+    title = "Sitemap"
+    [[params.footer.sitemap.link]]
+      name = "A propos"
+      url = "about/"
+    [[params.footer.sitemap.link]]
+      name = "Nos services"
+      url = "services/"
+    [[params.footer.sitemap.link]]
+      name = "Portfolio"
+      url = "portfolio/"
+    [[params.footer.sitemap.link]]
+      name = "Contact"
+      url = "contact/"
 
-  [params.call_to_action]
-    enable              = true
-    background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "ET SI NOUS TRAVAILLONS ENSEMBLE ?"
-    primary_button      = "Voir nos réalisations"
-    primary_button_url  = "portfolio"
-    secondary_button    = "Contactez Nous"
-    secondary_button_url = "contact"
-
-  [params.footer]
-    params.footer.qr_print = false
-    # Footer Contact Info
-    [params.footer.contactInfo]
-      title   = "Contact"
-      address = "16000 Angoulême"
-      phone   = "05 45 91 38 57"
-      email   = "contact@pixicode.dev"
-      [params.footer.social]
-        title   = "Réseaux"
-        [[params.footer.social.link]]
-          name = "Linkedin"
-          url  = "https://www.linkedin.com/company/pixicode"
-          [[params.footer.social.link]]
-           name = "Tik Tok"
-           url  = "https://www.tiktok.com/@pixicode"
-             [[params.footer.social.link]]
-               name = "Instagram"
-               url  = "https://www.instagram.com/pixicode_dev/"
-              [[params.footer.social.link]]
-               name = "Notre fiche Google"
-               url  = "https://www.google.com/search?sca_esv=8382d0de9abbe68c&hl=fr&authuser=1&kgmid=/g/11vqzs6fyb&q=PixiCode&shndl=30&shem=lcuae,lspt8,uaasie&source=sh/x/loc/uni/m1/1&kgs=c85961deea9437e6"
-      [params.footer.sitemap]
-        title   = "Sitemap"
-        [[params.footer.sitemap.link]]
-          name = "A propos"
-          url  = "about/"
-        [[params.footer.sitemap.link]]
-          name = "Equipe"
-          url  = "team/"
-        [[params.footer.sitemap.link]]
-          name = "Portfolio"
-          url  = "portfolio/"
-        [[params.footer.sitemap.link]]
-          name = "Contact"
-          url  = "contact/"
-      [params.footer.legal]
-        title   = "Légal"
-        [[params.footer.legal.link]]
-          name = "Mentions légales"
-          url  = "legal/"
-        [[params.footer.legal.link]]
-          name = "Politique de Confidentialité (PDF)"
-          url  = "politique-confidentialite/"
-        [[params.footer.legal.link]]
-          name = "Conditions Générales (PDF)"
-          url  = "cgv/"
-      [params.footer.back_to_top]
-        description = "I want to <br> visit again"
+  # 4. Mentions Légales & CGV
+  [params.footer.legal]
+    title = "Légal"
+    [[params.footer.legal.link]]
+      name = "Mentions légales"
+      url = "legal/"
+    [[params.footer.legal.link]]
+      name = "CGV"
+      url = "cgv/"
+    [[params.footer.legal.link]]
+      name = "Politique de Confidentialité"
+      url = "politique-confidentialite/"

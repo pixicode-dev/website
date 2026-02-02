@@ -1,41 +1,54 @@
 ---
-title: "PixiCode – Agence web & mobile sur mesure à Angoulême"
-description: "PixiCode, agence web et mobile à Angoulême, crée des sites, apps et logiciels sur mesure pour startups, PME et indépendants."
-keywords: "agence web Angoulême, développement sur mesure, site internet, app mobile, freelance développeur, logiciel métier, création de site, PixiCode, transformation digitale"
-date: 2025-09-17
-heading: "Bienvenue chez PixiCode – Des solutions numériques claires, robustes et à votre image."
-details: "Nous aidons les entreprises à passer le cap du digital avec des solutions techniques fiables, évolutives et surtout alignées avec leurs objectifs. Chez PixiCode, pas de jargon inutile, pas de surprise dans les devis : juste une vraie collaboration, un bon code, et des projets menés avec le sourire."
-valor_title: "Notre manière de faire les choses"
-valor_sectors:
-  [
-    "**Des tarifs justes, sans mauvaise surprise :** Des devis clairs, adaptés à votre budget, sans rogner sur la qualité.",
-    "**Des développeurs impliqués et à jour :** On code en React, Flutter, Python, Node.js... mais surtout, on choisit la bonne techno pour chaque besoin.",
-    "**Une collaboration fluide et transparente :** Vous êtes dans la boucle à chaque étape. Communication directe, livraisons régulières, écoute réelle.",
-    "**Un esprit local, une portée nationale :** Installés à Angoulême, on accompagne des clients partout en France – toujours avec la même réactivité.",
-  ]
+title: "PixiCode – Agence de Développement Web & Mobile Éco-conçus à Angoulême"
+title_content: "PixiCode : Architecture Logicielle Durable & Sur-Mesure"
+description_content: "Expert en éco-conception numérique à Angoulême. PixiCode développe vos sites Web (Hugo), apps mobiles (Flutter) et logiciels métiers sans template. Performance, code propriétaire et certification INR."
+description: "PixiCode : ingénierie numérique et éco-conception à Angoulême. Bâtissons vos solutions web et mobiles sur mesure, performantes et souveraines."
+keywords: "agence web angoulême, éco-conception web, expert flutter france, développement logiciel sur mesure, hugo strapi, numérique responsable, développement mobile charente"
+date: 2026-01-25
+
+intro:
+  title: "Le numérique responsable au service de votre croissance"
+  text: |
+    Chez **PixiCode**, nous refusons le jetable. Basée à **Angoulême**, notre agence redonne ses lettres de noblesse au développement informatique. Nous ne vendons pas de templates Wordpress lourds et énergivores ; nous forgeons des outils **100% sur mesure**.
+
+    Notre approche repose sur l'**éco-conception logicielle**. En tant qu'expert certifié par l'**Institut du Numérique Responsable (INR)**, nous optimisons chaque ligne de code pour réduire l'empreinte carbone de vos services tout en boostant leur vitesse.
+
+    **La transparence est notre ADN :** Pas de frais cachés, pas de jargon pour vous perdre. Que vous soyez un porteur de projet innovant ou un dirigeant souhaitant numériser son métier, nous vous livrons un code robuste, documenté et **dont vous êtes l'unique propriétaire**.
+
+# Section Approche (Expertises)
+approach:
+  title: "NOS EXPERTISES"
+  headline: "La performance technique au service de l'impact durable"
+  items:
+    - title: "Web & Éco-conception"
+      description: "Sites vitrines et Web Apps ultra-rapides. Nous privilégions l'architecture Jamstack (Hugo + Strapi) pour garantir une sécurité maximale et un impact environnemental minimal."
+      icon: "images/site_icone.svg"
+      link_text: "L'avantage du statique"
+      url: "/services/site-internet/"
+
+    - title: "Applications Mobiles"
+      description: "Développement cross-platform avec Flutter. Une seule base de code pour iOS et Android, offrant une expérience native fluide avec une maintenance simplifiée et durable."
+      icon: "images/mobile_icone.svg"
+      link_text: "Découvrir Flutter"
+      url: "/services/application-mobile/"
+
+    - title: "Logiciels Métiers & API"
+      description: "Automatisez vos processus avec des outils ERP/CRM sur mesure. Nous concevons des back-ends robustes (Java, C#) et des API scalables qui s'intègrent à votre écosystème."
+      icon: "images/pai_icone.svg"
+      link_text: "Optimiser mon métier"
+      url: "/services/api-et-backend/"
+
+    - title: "DevOps & Cloud Green"
+      description: "Déploiement continu (CI/CD) et conteneurisation via Docker. Nous hébergeons vos projets sur des infrastructures optimisées pour une consommation énergétique maîtrisée."
+      icon: "images/hebergement_icone.svg"
+      link_text: "Infrastructures durables"
+      url: "/services/devops-hebergement/"
+
+cta_block:
+  title: "Bâtissons votre solution performante, éco-conçue et 100% à votre main. Parlons-en."
+  button_text: "CONTACTEZ-NOUS"
+  button_link: "/contact"
+  cta_background: "#fbeeac"
+  cta_image: "/images/app-screen-example.jpg"
+  hand_frame: "/images/hand.webp"
 ---
-
-Chez **PixiCode**, on est convaincus que le développement logiciel ne devrait jamais être un casse-tête.
-
-Née à **Angoulême**, l’agence est avant tout le projet d’un développeur passionné, avec une idée simple : proposer une alternative plus agile, plus humaine et plus transparente que les agences classiques.
-
-Aujourd’hui, PixiCode, c’est une expertise solide en développement web, mobile et logiciel sur mesure et une équipe flexible qui s’entoure de partenaires fiables quand le projet le demande.
-
-🎯 On accompagne des **PME**, des **startups** et des **indépendants** dans leur transformation digitale, avec des outils pensés pour **simplifier leur quotidien**, **automatiser ce qui peut l’être**, et **faire gagner du temps**.
-
-Nos domaines d’expertise couvrent l’ensemble du cycle de développement :
-
-- 🌐 [Création de sites internet performants](/services/site-internet/) : vitrines, sites administrables, refontes SEO et portails métiers.
-- 📱 [Développement d’applications mobiles Flutter](/services/application-mobile/) : une seule base de code pour iOS et Android.
-- 🔌 [Conception d’API et backends robustes](/services/api-et-backend/) : sécurisés, documentés et monitorés.
-- ☁️ [DevOps, hébergement & maintenance](/services/devops-hebergement/) : déploiements automatisés, sauvegardes, supervision et sécurité.
-
-👉 Découvrez l’ensemble de [nos services sur mesure](/services/) pour en savoir plus.
-
-Notre priorité : créer des solutions **robustes**, **compréhensibles**, et **vraiment adaptées à vos enjeux métier.**
-
-Vous avez une idée mais vous ne savez pas par où commencer ?  
-📩 [Contactez-nous](/contact)  
-🔍 Ou jetez un œil à [nos réalisations](/portfolio) et [notre équipe](/team)
-
-On vous accompagne pas à pas, avec sérieux… mais sans se prendre trop au sérieux.
