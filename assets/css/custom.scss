@@ -1717,7 +1717,7 @@ h3,
     pointer-events: none;
     margin-left: 5vw;
     @media (min-width: 992px) {
-      width: 30%;
+      width: 26%;
       transform: translateX(20px);
       position: absolute;
       left: 50%;
@@ -1725,7 +1725,7 @@ h3,
     }
 
     @media (min-width: 1400px) {
-      width: 20%;
+      width: 18%;
     }
   }
 }
@@ -2898,4 +2898,191 @@ h3,
 .cookie-text h4 {
   font-size: 22px !important;
   color: var(--clr-yellow-light) !important;
+}
+
+/* =========================================
+   2. EN-TÊTE DE PAGE (H1 + Fil d'ariane)
+   ========================================= */
+.legal-header {
+  position: relative;
+  z-index: 1; /* Au-dessus de l'image de fond */
+  padding-top: 160px; /* Espace pour la Navbar fixe */
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.legal-header h1 {
+  font-family: var(--ff-heading); /* Josefin Sans */
+  color: var(--clr-blue-dark); /* #1d5d9b */
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Le petit trait jaune sous le titre */
+.header-decoration {
+  width: 60px;
+  height: 5px;
+  background-color: var(--clr-yellow-dark); /* #f4d160 */
+  border-radius: 3px;
+  margin: 0 auto; /* Centrage */
+}
+
+.breadcrumb-text {
+  font-family: var(--ff-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--clr-black);
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* =========================================
+   3. SECTION PRINCIPALE & "PAPIER"
+   ========================================= */
+.legal-section {
+  position: relative;
+  z-index: 2; /* Au-dessus du header */
+  padding-bottom: 100px;
+  width: 100vw;
+  margin-left: calc(var(--site-margin) * -1);
+}
+
+/* Dégradé de fond subtil pour la partie basse */
+.bg-light-gradient {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--clr-yellow-light) 100%
+  );
+}
+
+/* La carte blanche "Effet Document" */
+.legal-paper {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 60px 80px; /* Marges intérieures larges */
+  box-shadow: 0 20px 60px rgba(29, 93, 155, 0.1); /* Ombre douce bleutée */
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  margin-top: 20px; /* Petit espacement avec le titre */
+}
+
+/* =========================================
+   4. TYPOGRAPHIE DU CONTENU (Article)
+   ========================================= */
+.legal-content {
+  font-family: var(--ff-body); /* Montserrat */
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333333; /* Gris foncé confortable */
+}
+
+/* --- Titres H2 (ex: Éditeur, Hébergeur) --- */
+.legal-content h2 {
+  font-family: var(--ff-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--clr-blue-dark);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--clr-yellow-light); /* Ligne jaune fine */
+  position: relative;
+}
+
+/* --- Titres H3 --- */
+.legal-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--clr-black);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* --- Paragraphes --- */
+.legal-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* --- Liens --- */
+.legal-content a {
+  color: var(--clr-blue-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--clr-yellow-dark); /* Soulignement jaune */
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+}
+
+.legal-content a:hover {
+  background-color: var(--clr-yellow-light);
+  color: var(--clr-black);
+  text-decoration: none;
+}
+
+/* --- Listes à puces --- */
+.legal-content ul {
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.legal-content li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Puce personnalisée carrée */
+.legal-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--clr-yellow-dark);
+  border-radius: 1px;
+}
+
+/* =========================================
+   5. RESPONSIVE (Mobile)
+   ========================================= */
+@media (max-width: 991px) {
+  .legal-paper {
+    padding: 40px; /* Réduction du padding sur tablette */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajustement de l'image de fond */
+  .bg-header {
+    height: 50vh;
+  }
+
+  /* Ajustement du header */
+  .legal-header {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .legal-header h1 {
+    font-size: 2rem; /* Titre plus petit */
+  }
+
+  /* La carte papier devient plus simple sur mobile */
+  .legal-paper {
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .legal-content h2 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+  }
 }
