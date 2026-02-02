@@ -295,7 +295,11 @@ h3,
     height: auto; /* Hauteur proportionnelle */
     left: 0;
     transform: none;
-    top: -10%; /* Petit ajustement vertical si besoin */
+    top: -5%; /* Petit ajustement vertical si besoin */
+  }
+
+  @media (min-width: 1400px) {
+    top: -10%;
   }
 
   @media (orientation: portrait) and (min-width: 992px) {
@@ -566,7 +570,7 @@ h3,
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    gap: 10vw;
+    gap: 5vw;
 
     .container {
       order: 2;
@@ -575,8 +579,8 @@ h3,
 
     .about-decor-img {
       order: 1;
-      width: 50%;
-      margin-left: 10vw;
+      width: 60%;
+      margin-left: 8vw;
     }
   }
 }
@@ -679,11 +683,11 @@ h3,
   top: 50px; /* Centre de l'icône */
   left: 50%;
   width: 110%;
-  height: 2px;
+  height: 3px;
   background: repeating-linear-gradient(
     90deg,
-    #6ca6d9,
-    #6ca6d9 6px,
+    var(--clr-blue-dark),
+    var(--clr-blue-dark) 6px,
     transparent 6px,
     transparent 12px
   );
@@ -719,11 +723,6 @@ h3,
 
   .approach-wrapper {
     overflow: visible;
-  }
-
-  /* 1. Reset : On cache les lignes CSS du mobile */
-  .approach-card::after {
-    display: none;
   }
 
   /* 2. On affiche le SVG Desktop */
@@ -1440,6 +1439,11 @@ h3,
   font-size: var(--fs-grand-titre);
   font-family: var(--ff-body);
   width: 80%;
+
+  @media (min-width: 992px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 /* Ajustement Desktop pour aligner à droite */
 @media (min-width: 768px) {
