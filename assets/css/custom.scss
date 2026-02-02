@@ -52,14 +52,6 @@
 
 @font-face {
   font-family: "Josefin Sans";
-  src: url("/fonts/josefin-sans-latin-400-italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Josefin Sans";
   src: url("/fonts/josefin-sans-latin-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -80,14 +72,6 @@
   src: url("/fonts/montserrat-latin-400-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/montserrat-latin-400-italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -1399,12 +1383,16 @@ h3,
   border-top: 2px dotted var(--clr-blue-dark); /* Pointillés gris moyen */
   margin: 50px 0 30px 0;
   opacity: 0.5;
+  margin-left: var(--site-margin);
+  margin-right: var(--site-margin);
 }
 
 /* --- 6. BAS DE PAGE (COPYRIGHT & LÉGAL) --- */
 .footer-bottom {
   font-size: 0.85rem;
   color: var(--clr-blue-dark); /* Texte du bas en bleu */
+  padding-left: var(--site-margin);
+  padding-right: var(--site-margin);
 }
 
 .copyright {
@@ -2613,6 +2601,14 @@ h3,
   margin-bottom: 20px;
 }
 
+.post-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-black);
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
 /* Listes à puces dans l'article */
 .post-content ul,
 .post-content ol {
@@ -3086,4 +3082,239 @@ h3,
     font-size: 1.4rem;
     margin-top: 30px;
   }
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espace entre les logos */
+  align-items: center;
+}
+
+.badge-img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  /* Optionnel : fond blanc si vos logos sont transparents et sombres */
+  /* background: white; padding: 5px; border-radius: 4px; */
+}
+
+.badge-img:hover {
+  opacity: 1;
+}
+
+/* --- PAGE 404 --- */
+
+.error-page {
+  min-height: 80vh; /* Prend presque tout l'écran */
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.error-code {
+  font-family: var(--ff-heading);
+  font-size: 8rem;
+  font-weight: 900;
+  color: var(--clr-blue-dark);
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+}
+
+/* --- EFFET GLITCH (Pure CSS - 0 requête) --- */
+.error-code::before,
+.error-code::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.error-code::before {
+  left: 2px;
+  text-shadow: -1px 0 var(--clr-yellow-dark);
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+.error-code::after {
+  left: -2px;
+  text-shadow: -1px 0 var(--clr-blue-light);
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+
+/* Animations Clés pour l'effet de bug visuel */
+@keyframes glitch-anim {
+  0% {
+    clip: rect(12px, 9999px, 42px, 0);
+  }
+  20% {
+    clip: rect(74px, 9999px, 86px, 0);
+  }
+  40% {
+    clip: rect(32px, 9999px, 20px, 0);
+  }
+  60% {
+    clip: rect(89px, 9999px, 5px, 0);
+  }
+  80% {
+    clip: rect(24px, 9999px, 100px, 0);
+  }
+  100% {
+    clip: rect(5px, 9999px, 60px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip: rect(65px, 9999px, 100px, 0);
+  }
+  20% {
+    clip: rect(30px, 9999px, 20px, 0);
+  }
+  40% {
+    clip: rect(12px, 9999px, 5px, 0);
+  }
+  60% {
+    clip: rect(54px, 9999px, 89px, 0);
+  }
+  80% {
+    clip: rect(5px, 9999px, 20px, 0);
+  }
+  100% {
+    clip: rect(10px, 9999px, 60px, 0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 5rem;
+  }
+}
+
+/* =========================================
+   DESIGN TABLEAUX (Ciblage automatique)
+   ========================================= */
+
+/* On cible tous les tableaux dans vos articles */
+.post-content table {
+  width: min-content;
+  max-width: 100%;
+  border-collapse: separate; /* Permet les border-radius */
+  border-spacing: 0;
+  margin: 2rem 0;
+  font-family: var(--ff-body); /* Montserrat */
+  font-size: 0.95rem;
+  background-color: #fff;
+  border-radius: 8px; /* Coins arrondis globaux */
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Ombre douce */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  /* --- ASTUCE RESPONSIVE SANS DIV WRAPPER --- */
+  display: block; /* Le tableau se comporte comme un bloc */
+  overflow-x: auto; /* Scroll horizontal si ça dépasse */
+  white-space: nowrap; /* Évite que le texte se coupe mochement */
+}
+
+/* --- EN-TÊTE (THEAD) --- */
+.post-content thead th {
+  background-color: var(--clr-blue-dark); /* Votre Bleu #1d5d9b */
+  color: #fff;
+  font-family: var(--ff-heading); /* Josefin Sans */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 18px 25px;
+  text-align: left;
+  border: none;
+}
+
+/* --- CORPS (TBODY) --- */
+.post-content tbody td {
+  padding: 16px 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #555;
+  vertical-align: middle;
+}
+
+/* Suppression de la bordure du bas pour la dernière ligne */
+.post-content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- EFFET ZÉBRÉ & SURVOL --- */
+
+/* Ligne paire légèrement grisée (optionnel, pour lisibilité) */
+.post-content tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Survol de la ligne en Jaune très pâle */
+.post-content tbody tr:hover {
+  background-color: rgba(244, 209, 96, 0.15); /* Votre jaune à 15% d'opacité */
+  transition: background-color 0.2s ease;
+}
+
+/* =========================================
+   DESIGN CITATIONS (BLOCKQUOTE)
+   ========================================= */
+
+.post-content blockquote {
+  position: relative;
+  margin: 2.5rem 0; /* Espace vertical */
+  padding: 30px 40px 30px 50px; /* Marges internes */
+  background-color: #f9fbfd; /* Fond bleu très très pâle (presque blanc) */
+  border-left: 4px solid var(--clr-blue-dark); /* Ligne verticale bleue */
+  border-radius: 0 8px 8px 0; /* Arrondi à droite uniquement */
+
+  /* Typographie */
+  font-family: var(--ff-body); /* Montserrat */
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Le gros guillemet jaune décoratif */
+.post-content blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-family: var(--ff-heading); /* Josefin Sans pour le style */
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--clr-yellow-dark); /* Votre jaune */
+  opacity: 0.8;
+}
+
+/* Nettoyage des paragraphes à l'intérieur pour éviter les doubles marges */
+.post-content blockquote p {
+  margin: 0;
+  display: inline; /* Permet au texte de couler naturellement */
+}
+
+/* (Optionnel) Style pour la source/auteur si vous ajoutez une balise <cite> */
+.post-content blockquote cite {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--clr-blue-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-content blockquote cite::before {
+  content: "— "; /* Tiret cadratin avant l'auteur */
+  color: var(--clr-yellow-dark);
 }
