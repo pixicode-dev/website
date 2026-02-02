@@ -58,7 +58,7 @@ pricing:
   title: "NOS OFFRES SITES WEB"
   headline: "L'investissement dans un outil numérique durable"
   items:
-    - title: "Pack Essentiel"
+    - title: "Formule Essentiel"
       price: "750€ HT"
       features:
         - "**Landing Page** haute performance"
@@ -67,9 +67,9 @@ pricing:
         - "Adaptation à votre identité visuelle"
         - "Hébergement éco-responsable"
       button_text: "Lancer ma Landing Page"
-      button_link: "/contact?pack=essentiel"
+      button_link: "https://evokea.pixicode.dev/"
 
-    - title: "Pack Visibilité"
+    - title: "Formule Pro"
       price: "2 800€ HT"
       features:
         - "**Site Vitrine 4 pages**"
@@ -78,9 +78,9 @@ pricing:
         - "Interface d'administration (CMS)"
         - "Conformité RGPD & Accessibilité"
       button_text: "Commander mon site Pro"
-      button_link: "/contact?pack=pro"
+      button_link: "https://evokea.pixicode.dev/"
 
-    - title: "Pack Stratégique"
+    - title: "Formule Premium"
       price: "Dès 3 500€ HT"
       features:
         - "**Site complet 6 pages + Blog**"
@@ -89,7 +89,7 @@ pricing:
         - "Fonctionnalités métier spécifiques"
         - "Formation complète à l'autonomie"
       button_text: "Demander une étude"
-      button_link: "/contact?pack=premium"
+      button_link: "https://evokea.pixicode.dev/"
 
 # 5. CTA SERVICE
 service_cta:
