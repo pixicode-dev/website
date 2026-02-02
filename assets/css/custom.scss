@@ -713,9 +713,8 @@ h3,
 
 @media (min-width: 992px) {
   .approach-section {
-    margin-top: 0;
     overflow: visible;
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 
   .approach-wrapper {
@@ -1475,6 +1474,9 @@ h3,
   padding: 100px 0;
   font-size: var(--fs-body);
   overflow: hidden;
+}
+
+.section-padding-services {
   min-height: 800px;
 }
 
@@ -1608,9 +1610,9 @@ h3,
 
 .team-role {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--clr-blue-light);
+  color: var(--clr-yellow-dark);
 }
 
 .cta-phone-section {

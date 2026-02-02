@@ -93,6 +93,7 @@ console.log(`🚀 Génération du CSS Critique pour ${allPages.length} pages...`
             ".position-relative",
             ".background-size",
             ".section-padding",
+            ".section-padding-services",
 
             // 5. SECTION APPROCHE (C'est ici que le SVG sautait !)
             /\.approach-section/, // Le conteneur global
