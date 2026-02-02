@@ -2,7 +2,7 @@ name: Build & Deploy (OVH FTP)
 
 on:
   push:
-    branches: [rework]
+    branches: [main]
   workflow_dispatch:
   repository_dispatch:
     types: [rebuild-site]
