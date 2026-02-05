@@ -1,6 +1,6 @@
 ---
 title: "NOS RÉALISATIONS"
-description: "Découvrez nos derniers projets web, mobile et logiciels."
+description: "Explorez les réalisations de PixiCode : sites web performants, applications mobiles et logiciels SaaS sur-mesure. Une approche technique alliant design et éco-conception."
 layout: "list" # Utilise le layout de liste
 
 # Définition des filtres (Doivent correspondre aux catégories des projets)
