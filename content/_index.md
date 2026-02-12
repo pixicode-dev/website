@@ -1,20 +1,21 @@
 ---
-title: "PixiCode – Agence de Développement Web & Mobile Éco-conçus à Angoulême"
-title_content: "PixiCode : Architecture Logicielle Durable & Sur-Mesure"
+title: "Ingénierie Logicielle & Développement Sur-Mesure à Angoulême"
+title_content: "L'Artisanat Logiciel pour digitaliser et optimiser votre métier"
 description_content: "Expert en éco-conception numérique à Angoulême. PixiCode développe vos sites Web (Hugo), apps mobiles (Flutter) et logiciels métiers sans template. Performance, code propriétaire et certification INR."
-description: "PixiCode : ingénierie numérique et éco-conception à Angoulême. Bâtissons vos solutions web et mobiles sur mesure, performantes et souveraines."
+description: "PixiCode : ingénierie logicielle et développement sur mesure à Angoulême. Bâtissons vos outils métiers, applications et systèmes performants. Agréé CII 2026-2030."
 keywords: "agence web angoulême, éco-conception web, expert flutter france, développement logiciel sur mesure, hugo strapi, numérique responsable, développement mobile charente"
 date: 2026-01-25
 
 intro:
-  title: "Le numérique responsable au service de votre croissance"
+  title: "Concevons l'outil numérique dont votre entreprise a réellement besoin"
   text: |
-    Chez **PixiCode**, nous refusons le jetable. Basée à **Angoulême**, notre agence redonne ses lettres de noblesse au développement informatique. Nous ne vendons pas de templates Wordpress lourds et énergivores ; nous forgeons des outils **100% sur mesure**.
+    Chez **PixiCode**, nous ne créons pas seulement des interfaces, nous forgeons des **solutions logicielles**. Automatisation de processus, outil métier spécifique ou application de rupture : notre approche privilégie l’**ingénierie sur mesure** au "prêt-à-porter" numérique. 
 
-    Notre approche repose sur l'**éco-conception logicielle**. En tant qu'expert certifié par l'**Institut du Numérique Responsable (INR)**, nous optimisons chaque ligne de code pour réduire l'empreinte carbone de vos services tout en boostant leur vitesse.
+    Basée à Angoulême, notre agence développe des architectures robustes et souveraines dont **vous restez l'unique propriétaire**.
 
-    **La transparence est notre ADN :** Pas de frais cachés, pas de jargon pour vous perdre. Que vous soyez un porteur de projet innovant ou un dirigeant souhaitant numériser son métier, nous vous livrons un code robuste, documenté et **dont vous êtes l'unique propriétaire**.
-
+    * **Performance & Éco-conception :** Expert certifié **INR** (Institut du Numérique Responsable), nous optimisons chaque brique logique pour une efficience maximale.
+    * **Innovation financée :** Prestataire agréé **CII (2026-2030)**, nos interventions permettent aux PME de récupérer **20%** de leurs dépenses de conception.
+    * **Souveraineté totale :** Pas d'abonnement captif ni de frais cachés. Nous livrons un actif numérique qui appartient à votre patrimoine.
 # Section Approche (Expertises)
 approach:
   title: "NOS EXPERTISES"

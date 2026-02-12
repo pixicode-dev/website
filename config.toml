@@ -34,7 +34,7 @@ removePathAccents = true
 
 # --- PARAMÈTRES GLOBAUX ---
 [params]
-  description = "PixiCode | Agence Web & Mobile sur mesure à Angoulême."
+  description = "PixiCode : Ingénierie Logicielle & Développement Sur-Mesure à Angoulême."
   author      = "PixiCode"
   # Images par défaut
   logo = "images/logo.svg"
@@ -69,10 +69,10 @@ removePathAccents = true
   background_image = "images/Background.svg"
   
   # TITRE : On allie l'expertise technique à la valeur "Durable"
-  title = "DÉVELOPPEMENT WEB & MOBILE SUR MESURE : LA PERFORMANCE DURABLE."
+  title = "INGÉNIERIE LOGICIELLE SUR MESURE : LA PERFORMANCE DURABLE."
   
   # DESCRIPTION : On cible les décideurs (PME/Startup) avec les preuves techniques (Hugo, Flutter) et éthiques (INR)
-  description = "Basée à Angoulême, PixiCode forge des solutions numériques éco-conçues (Label INR). De l'architecture Hugo au développement Flutter, nous garantissons un code propriétaire ultra-performant et une transparence totale."
+  description = "Basée à Angoulême, PixiCode forge des solutions numériques sur mesure alliant ingénierie de pointe et éco-conception. Nous concevons des systèmes performants et souverains, vous garantissant un code propriétaire robuste et une transparence totale dans chaque ligne produite."
   
   image            = "images/screens.webp"
   image_alt        = "Aperçu d'applications mobiles Flutter et sites web éco-conçus par PixiCode"
