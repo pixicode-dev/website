@@ -1,6 +1,6 @@
 ---
 # --- SEO & METADATA (Balises système) ---
-title: "Expertise Web, Mobile & Logiciel éco-conçus à Angoulême | PixiCode"
+title: "Expertise Web, Mobile & Logiciel éco-conçus à Angoulême"
 description: "Découvrez les services de PixiCode : création de sites web ultra-rapides (Hugo), applications mobiles Flutter et logiciels métiers sur mesure. Performance durable et propriété totale du code."
 keywords: "agence web angoulême, développement mobile flutter, logiciel sur mesure charente, éco-conception web, expert hugo strapi, devops docker, création api"
 date: 2026-01-25
