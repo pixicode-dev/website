@@ -3,7 +3,7 @@ name: Build & Deploy (OVH FTP)
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+  workflow_dispatch: {}
   repository_dispatch:
     types: [rebuild-site]
 
