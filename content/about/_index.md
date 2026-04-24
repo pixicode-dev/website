@@ -72,6 +72,14 @@ team:
       bio: "Développeur passionné par l'optimisation et les architectures bas carbone. Mon rôle est de transformer vos besoins métiers en solutions numériques élégantes, rapides et surtout, rentables sur le long terme."
       photo: "images/team/emric2.webp"
       linkedin: "epichonnier"
+#ajout de laura    
+    - name: "Laura Lamiau"
+      role: "Web Designer"
+      bio: "Spécialiste en UI design et éco-conception graphique. Laura conçoit des interfaces élégantes et intuitives tout en minimisant l'empreinte énergétique des actifs visuels."
+      photo: "images/team/laura-lamiau.jpg"
+      linkedin: ""
+
+      
 
 cta_block:
   title: "Prêt à bâtir un actif numérique durable qui vous appartient vraiment ? Collaborons sur vos défis métiers."
