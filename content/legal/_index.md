@@ -1,5 +1,6 @@
 ---
 title: "Mentions légales"
+breadcrumb_label: "Mentions Légales"
 date: 2025-09-18
 description: "Consultez les mentions légales de PixiCode : informations légales, propriété intellectuelle et responsabilités du site."
 ---

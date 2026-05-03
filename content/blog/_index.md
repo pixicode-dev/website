@@ -1,5 +1,6 @@
 ---
 title: "Blog — Conseils & Ressources"
+breadcrumb_label: "Blog"
 description: "Guides pratiques, retours d’expérience et bonnes pratiques pour vos projets web, mobiles et API. Un blog signé PixiCode, l’agence tech basée à Angoulême."
 url: "/blog/"
 type: "list"

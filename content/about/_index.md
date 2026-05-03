@@ -1,5 +1,6 @@
 ---
 title: "À propos de PixiCode : Agence de Développement & Expertise Numérique Responsable"
+breadcrumb_label: "À Propos"
 title_content: "L'Agence qui réconcilie Performance Tech et Impact Durable"
 description: "Découvrez PixiCode, agence spécialisée en éco-conception à Angoulême. Nous créons des solutions web et mobiles sur mesure, performantes et 100% propriétaires pour les entreprises exigeantes."
 keywords:
@@ -71,6 +72,11 @@ team:
       role: "Fondateur & Architecte Logiciel Certifié INR"
       bio: "Développeur passionné par l'optimisation et les architectures bas carbone. Mon rôle est de transformer vos besoins métiers en solutions numériques élégantes, rapides et surtout, rentables sur le long terme."
       photo: "images/team/emric2.webp"
+      linkedin: "epichonnier"
+    - name: "Laura Lamiau"
+      role: "Web Designer"
+      bio: ""
+      photo: "images/team/laura.webp"
       linkedin: "epichonnier"
 
 cta_block:

@@ -1,5 +1,6 @@
 ---
 title: "Contactez PixiCode – Agence web & mobile à Angoulême"
+breadcrumb_label: "Contact"
 description: "Besoin d'une assistance pour votre projet informatique ? Contactez PixiCode pour des solutions sur mesure, un accompagnement humain et un service client réactif."
 keywords: "contact PixiCode, assistance projet digital, service client développement, agence numérique, solutions personnalisées, conseil informatique"
 date: 2025-07-01

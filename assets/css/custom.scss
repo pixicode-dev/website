@@ -353,8 +353,6 @@ h3,
   min-height: 1000px;
   width: 100%;
   overflow: hidden;
-  content-visibility: auto;
-  contain: layout size;
 
   /* Laptop / Desktop standard */
   @media (min-width: 992px) {
@@ -384,7 +382,6 @@ h3,
     z-index: 0;
     pointer-events: none;
     aspect-ratio: 1920 / 1080;
-    content-visibility: auto;
   }
 
   /* --- Tes images de premier plan --- */
@@ -971,7 +968,7 @@ h3,
 
   .portfolio-slide {
     /* 50% = 2 cartes visibles */
-    flex: 0 0 50%;
+    flex: 0 0 30%;
     padding-right: 40px;
   }
 }
@@ -1533,6 +1530,37 @@ h3,
   color: var(--clr-black);
 }
 
+.breadcrumb-trail ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.breadcrumb-trail li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-trail li + li::before {
+  content: "/";
+  margin-right: 0.4rem;
+  opacity: 0.6;
+}
+
+.breadcrumb-trail a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb-trail a:hover,
+.breadcrumb-trail a:focus {
+  text-decoration: underline;
+}
+
 /* Images arrondies */
 .img-wrapper-rounded img {
   border-radius: 12px;
@@ -1567,6 +1595,20 @@ h3,
   font-family: var(--ff-body);
 }
 
+.team-section .portfolio-container {
+  align-items: stretch;
+}
+
+.team-section .portfolio-slide {
+  padding-right: 12px;
+}
+
+@media (min-width: 992px) {
+  .team-section .portfolio-slide {
+    padding-right: 16px;
+  }
+}
+
 .team-card {
   background-color: white;
   border-radius: 8px;
@@ -1587,13 +1629,14 @@ h3,
   overflow: hidden;
   margin-bottom: 20px;
   border: 5px solid #f0f8ff;
+  flex-shrink: 0;
 }
 
 .team-photo img {
-  width: 300px;
-  margin-left: -56px;
-  margin-bottom: -30px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .team-name {

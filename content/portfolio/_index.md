@@ -1,5 +1,6 @@
 ---
 title: "NOS RÉALISATIONS"
+breadcrumb_label: "Portfolio"
 description: "Explorez les réalisations de PixiCode : sites web performants, applications mobiles et logiciels SaaS sur-mesure. Une approche technique alliant design et éco-conception."
 layout: "list" # Utilise le layout de liste
 

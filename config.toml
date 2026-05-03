@@ -95,6 +95,7 @@ removePathAccents = true
 # --- FOOTER ---
 [params.footer]
   qr_print = false
+  tagline = "Ingénierie logicielle sur mesure & éco-conception.<br>Performance durable, code propriétaire, transparence totale."
   
   # 1. Contact
   [params.footer.contactInfo]

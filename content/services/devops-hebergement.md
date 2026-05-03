@@ -1,12 +1,13 @@
 ---
 # --- SEO & METADATA (Système) ---
-title: "Hébergement Managé, Infogérance & DevOps à Angoulême | PixiCode"
+title: "Hébergement Managé, Infogérance & DevOps à Angoulême"
+breadcrumb_label: "DevOps & Hébergement"
 description: "Confiez votre infrastructure à l'agence PixiCode : hébergement haute performance, déploiement continu (CI/CD) et sécurité durcie. Expertise DevOps éco-responsable à Angoulême."
 keywords: "hébergement managé angoulême, infogérance charente, expert devops france, maintenance serveur docker, déploiement continu cicd, sécurité cloud pme, hébergement éco-responsable"
 date: 2026-01-25
 
 # --- AFFICHAGE PAGE ---
-title_content: "Une infrastructure invisible, robuste et éco-responsable"
+title_content: "DevOps & hébergement managé : une infrastructure invisible, robuste et éco-responsable"
 description_content: "L'agence PixiCode sécurise la disponibilité de vos services 24h/24. Nous gérons la complexité technique de vos serveurs pour vous offrir une sérénité totale et une performance durable."
 type: "services"
 layout: "single"
@@ -15,10 +16,10 @@ layout: "single"
 service_intro:
   title: "Le DevOps au service de votre sérénité opérationnelle"
   text: |
-    Mettre un logiciel en production est une étape critique, mais garantir sa disponibilité constante est le véritable défi. Chez **PixiCode**, nous levons les barrières entre le développement et l'exploitation.
-
-    Notre agence prend en charge l'intégralité de votre infrastructure (Serveurs, Docker, Sécurité) pour transformer vos serveurs en un actif agile et sécurisé. En automatisant vos déploiements, nous éliminons l'erreur humaine et garantissons que votre service reste rapide, même en cas de forte affluence. Fini le stress des mises à jour : nous veillons, vous développez.
-  image: "images/code.webp"
+    Mettre un logiciel en production est une étape critique — mais garantir sa disponibilité constante est le véritable défi. Les pannes arrivent quand l'infrastructure est traitée comme une afterthought, ajoutée à la fin d'un projet. Chez PixiCode, nous faisons du DevOps une priorité dès la conception.
+      
+    Notre agence prend en charge l'intégralité de votre infrastructure (serveurs, Docker, sécurité, monitoring) pour transformer vos serveurs en un actif agile, sécurisé et sobre en énergie. Fini le stress des déploiements : nous automatisons, nous surveillons, vous développez votre activité.
+  image: "images/cloud.webp"
 
 # 2. BÉNÉFICES (Technique & Green IT)
 service_benefits:
@@ -27,30 +28,35 @@ service_benefits:
   items:
     - number: "01"
       title: "Automatisation CI/CD"
-      description: "L'agence déploie des pipelines de déploiement continu (GitLab/GitHub). Chaque modification est testée et intégrée automatiquement pour une fiabilité totale sans coupure de service."
+      description: "Nous déployons des pipelines de déploiement continu (GitHub Actions, GitLab CI). Chaque modification de code est testée et intégrée automatiquement avant d'atteindre la production. L'erreur humaine est éliminée du processus de déploiement."
       icon: "images/papper_note.svg"
 
     - number: "02"
-      title: "Sécurité & Hardening"
-      description: "Nous appliquons des protocoles de sécurité stricts (HSTS, CSP, Pare-feu applicatif). Vos certificats SSL sont automatisés et vos patchs de sécurité sont appliqués en temps réel."
+      title: "Conteneurisation Docker"
+      description: 'Chaque application est conteneurisée avec Docker pour une portabilité totale et une reproductibilité parfaite entre les environnements de développement, de staging et de production. Fini le syndrome "ça marche sur ma machine".'
       icon: "images/papper_note.svg"
 
     - number: "03"
       title: "Green Ops & Monitoring"
-      description: "Une infrastructure bien dimensionnée est une infrastructure sobre. Nous surveillons vos ressources (Grafana/Prometheus) pour optimiser la consommation énergétique de vos serveurs."
+      description: "Nous hébergeons sur des infrastructures certifiées The Green Web Foundation (énergie renouvelable). Le monitoring Grafana / Prometheus surveille vos ressources 24/7 et détecte les anomalies avant qu'elles impactent vos utilisateurs."
       icon: "images/papper_note.svg"
 
     - number: "04"
       title: "Résilience & Backups"
-      description: "Nous mettons en place des Plans de Reprise d'Activité (PRA) et des sauvegardes chiffrées quotidiennes. Vos données critiques sont protégées contre tout incident majeur."
+      description: "Plans de Reprise d'Activité (PRA), sauvegardes chiffrées quotidiennes déportées, définition des RTO et RPO selon vos exigences de continuité. Vos données critiques sont protégées contre tout incident majeur."
       icon: "images/papper_note.svg"
 
 # 3. APPROCHE SERVICE (Expertise Agence)
 service_process:
   title: "L'INFRASTRUCTURE AS CODE (IaC)"
   text: |
-    L'agence PixiCode applique les standards les plus élevés du DevOps moderne. Nous traitons l'infrastructure comme du logiciel : tout est versionné, documenté et réplicable. 
-    Nous commençons par conteneuriser vos applications avec **Docker** pour garantir une portabilité totale. Qu'il s'agisse de serveurs dédiés ou de Cloud, nous configurons des environnements qui évoluent au rythme de votre croissance.
+    PixiCode applique les standards du DevOps moderne : l'infrastructure est traitée comme du code — versionnée, documentée et reproductible. Nous commençons par conteneuriser vos applications avec Docker pour garantir une portabilité totale sur tout type d'environnement.
+      
+    Les pipelines CI/CD automatisent ensuite chaque déploiement : du commit au serveur de production, chaque étape est testée, tracée et réversible. Vous gagnez en fiabilité sans perdre en agilité.
+      
+    Pour les projets qui le nécessitent, nous configurons des environnements multi-services avec orchestration, base de données managée, stockage objet et CDN. Qu'il s'agisse d'un VPS dédié, d'un Cloud public ou d'une infrastructure hybride, nous choisissons l'architecture adaptée à votre usage réel pas à la mode du moment.
+      
+    À la livraison, l'infrastructure est documentée et les accès vous appartiennent. Vous pouvez la reprendre en interne, la confier à un autre prestataire ou continuer avec nous en TMA. Vous gardez les clés.
   image: "images/image_team.webp"
 
 # 4. TARIFS (Infogérance & Expertise)
