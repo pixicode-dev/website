@@ -51,7 +51,7 @@
   </ol>
 </details>
 
-To read this document in French, [click here](README_.md).
+To read this document in French, [click here](README.md).
 
 ---
 
