@@ -72,12 +72,10 @@ team:
       role: "Fondateur & Architecte Logiciel Certifié INR"
       bio: "Développeur passionné par l'optimisation et les architectures bas carbone. Mon rôle est de transformer vos besoins métiers en solutions numériques élégantes, rapides et surtout, rentables sur le long terme."
       photo: "images/team/emric2.webp"
-      linkedin: "epichonnier"
     - name: "Laura Lamiau"
       role: "Web Designer"
       bio: ""
       photo: "images/team/laura.webp"
-      linkedin: "epichonnier"
 
 cta_block:
   title: "Prêt à bâtir un actif numérique durable qui vous appartient vraiment ? Collaborons sur vos défis métiers."
