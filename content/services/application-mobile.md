@@ -2,12 +2,12 @@
 # --- SEO & METADATA (Système) ---
 title: "Développement Application Mobile Flutter iOS & Android"
 breadcrumb_label: "Application Mobile"
-description: "PixiCode développe vos applications mobiles iOS et Android avec Flutter. Un seul code, deux plateformes, performances natives. Agréé CII : 20% récupérables. Référence Carter Coaching."
+description: "Application iOS & Android avec Flutter. Un seul codebase, performances natives, code propriétaire. Agréé CII — PixiCode, Angoulême."
 keywords: "développement application mobile angoulême, agence flutter france, expert ios android charente, création app mobile sur mesure, maintenance application mobile, expert numérique responsable"
 date: 2026-01-25
 
 # --- AFFICHAGE PAGE ---
-title_content: "Un code unique, deux plateformes, aucun compromis"
+title_content: "Développement Application Mobile Flutter — iOS & Android sur mesure"
 description_content: "L'agence PixiCode déploie vos idées sur l'App Store et Google Play. Grâce à Flutter, nous divisons vos coûts de développement par deux sans jamais sacrifier la fluidité ni l'expérience utilisateur native."
 type: "services"
 layout: "single"
@@ -28,17 +28,17 @@ service_benefits:
   items:
     - number: "01"
       title: "Cross-Platform & ROI"
-      description: "Optimisez votre budget en touchant 100% de vos utilisateurs. Une seule base de code Flutter pour iOS et Android divise vos coûts de développement et de maintenance par deux, sans sacrifier la performance ni l'expérience utilisateur."
+      description: "Une seule base de code pour iOS et Android. Cela réduit le budget de développement initial d'environ 40%, et divise par deux les coûts de maintenance sur le long terme. Chaque fonctionnalité développée est disponible sur les deux plateformes sans surcoût."
       icon: "images/papper_note.svg"
 
     - number: "02"
       title: "Éco-conception Mobile"
-      description: "Une application légère consomme moins de batterie et de données. PixiCode certifié INR optimise chaque fonctionnalité pour réduire l'empreinte environnementale de votre service et améliore mécaniquement la rétention utilisateur."
+      description: "Flutter compile en code natif — pas en WebView, pas en interpréteur. Les applications consomment moins de batterie et de données qu'une app hybride classique. Nous appliquons en plus les principes INR à l'architecture backend pour réduire l'empreinte des appels serveur."
       icon: "images/papper_note.svg"
 
     - number: "03"
       title: "Fonctionnalités Critiques"
-      description: "Géolocalisation, notifications push, authentification biométrique, paiements récurrents (Stripe / Apple Pay), mode offline, gestion fine des droits (RBAC). Ces briques techniques complexes sont notre quotidien, pas notre terrain d'expérimentation."
+      description: "Géolocalisation, notifications push, authentification biométrique, paiements Stripe et Apple Pay, mode hors-ligne — nous intégrons les fonctionnalités mobiles avancées avec les standards de sécurité appropriés à chaque cas."
       icon: "images/papper_note.svg"
 
     - number: "04"

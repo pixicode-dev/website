@@ -1,13 +1,13 @@
 ---
 # --- SEO & METADATA (Balises système) ---
-title: "Expertise Web, Mobile & Logiciel éco-conçus à Angoulême"
+title: "Services — Développement Web, Mobile & Logiciel"
 breadcrumb_label: "Services"
-description: "Découvrez les services de PixiCode : création de sites web ultra-rapides (Hugo), applications mobiles Flutter et logiciels métiers sur mesure. Performance durable et propriété totale du code."
+description: "Sites JAMstack, apps Flutter, logiciels métiers Java et .NET. PixiCode développe sur mesure — agréé CII, certifié INR, code propriétaire."
 keywords: "agence web angoulême, développement mobile flutter, logiciel sur mesure charente, éco-conception web, expert hugo strapi, devops docker, création api"
 date: 2026-01-25
 
 # --- CONTENU DE LA PAGE (Affichage corps de page) ---
-title_content: "L'excellence technique au service de votre impact numérique"
+title_content: "Développement sur mesure — Web, Mobile, Logiciel Métier"
 description_content: "De la startup à la PME, PixiCode transforme vos défis métiers en solutions numériques robustes. Pas de templates, pas de dettes techniques : uniquement du code propriétaire, éco-conçu et performant."
 
 layout: "services"
@@ -86,10 +86,10 @@ faq:
       answer: "Nous proposons un hébergement optimisé à partir de **10€ HT/mois**. Contrairement aux hébergeurs classiques, nous gérons pour vous le nom de domaine, les certificats de sécurité SSL et la maintenance technique pour garantir une disponibilité maximale de vos services."
 
     - question: "Travailler avec PixiCode, c'est travailler avec qui ?"
-      answer: "Vous collaborez avec une équipe humaine, réactive et complémentaire. Nous proposons un accompagnement de A à Z, de la phase de brief à la mise en ligne, pour garantir une solution 100% personnalisée qui répond à vos enjeux métiers réels."
+      answer: "Vous travaillez directement avec les personnes qui conçoivent et codent votre projet. Pas de chef de projet intermédiaire qui relaie des informations déformées. Chaque décision technique est expliquée, chaque choix est justifié."
 
     - question: "Combien de temps faut-il pour concevoir un site ou une application ?"
-      answer: "Le délai dépend de la complexité du projet (ex: blog dynamique vs landing page). En moyenne, une Formule Essentielle est déployée rapidement, tandis qu'un projet Premium ou une application métier demande un cycle de développement plus long pour garantir la qualité et les tests de performance."
+      answer: "Le délai dépend de la complexité du projet (ex: blog dynamique vs landing page). Une landing page ou un site vitrine : 3 à 6 semaines selon le contenu fourni. Une application mobile ou un logiciel métier : 2 à 4 mois selon la complexité fonctionnelle. Chaque projet commence par un cadrage qui fixe le périmètre et le délai — rien n'est lancé sans cette étape."
 
 cta_block:
   title: "Bâtissons votre actif numérique : une solution éco-conçue, performante et 100% souveraine."
