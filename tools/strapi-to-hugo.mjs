@@ -5,9 +5,14 @@ import fetch from "node-fetch";
 
 // ENV config
 const STRAPI_URL = process.env.STRAPI_URL || "https://cms.pixicode.dev";
+const STRAPI_TOKEN = process.env.STRAPI_TOKEN || "";
 const DRY_RUN = (process.env.DRY_RUN || "false").toLowerCase() === "true";
 const PRUNE_MEDIA =
   (process.env.PRUNE_MEDIA || "false").toLowerCase() === "true";
+
+const authHeaders = STRAPI_TOKEN
+  ? { Authorization: `Bearer ${STRAPI_TOKEN}` }
+  : {};
 
 // CLI args
 const TYPE = process.argv[2]?.replace("--type=", "") || "articles";
@@ -82,7 +87,8 @@ function frontMatter(obj) {
 async function download(url, destRel) {
   const destAbs = path.join(ROOT, "static", destRel);
   await ensureDir(path.dirname(destAbs));
-  const r = await fetch(url);
+  const isStrapi = url.startsWith(STRAPI_URL);
+  const r = await fetch(url, isStrapi ? { headers: authHeaders } : undefined);
   if (!r.ok) throw new Error(`Download failed ${r.status} ${url}`);
   const buf = Buffer.from(await r.arrayBuffer());
   if (!DRY_RUN) await fs.writeFile(destAbs, buf);
@@ -131,7 +137,7 @@ async function fetchAllEntries() {
   for (;;) {
     const qs = `?populate=*&sort=publishedAt:desc&pagination[pageSize]=${pageSize}&pagination[page]=${page}`;
     const url = `${STRAPI_URL}/api/${apiEndpoint}${qs}`;
-    const res = await fetch(url);
+    const res = await fetch(url, { headers: authHeaders });
     if (!res.ok) throw new Error(`Fetch failed ${res.status} for ${url}`);
     const json = await res.json();
     const batch = json.data;
