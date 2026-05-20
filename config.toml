@@ -139,7 +139,17 @@ removePathAccents = true
       name = "Contact"
       url = "contact/"
 
-  # 4. Mentions Légales & CGV
+  # 4. Partenaires
+  [params.footer.partners]
+    title = "Partenaires"
+    [[params.footer.partners.link]]
+      name = "Evokea Studio"
+      url = "https://evokeastudio.fr/"
+    [[params.footer.partners.link]]
+      name = "Je suis numérique"
+      url = "https://www.jesuisnumerique.fr"
+
+  # 5. Mentions Légales & CGV
   [params.footer.legal]
     title = "Légal"
     [[params.footer.legal.link]]
