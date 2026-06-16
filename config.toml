@@ -100,7 +100,7 @@ removePathAccents = true
   # 1. Contact
   [params.footer.contactInfo]
     title = "Contact"
-    address = "16000 Angoulême"
+    address = "Technoparc Krysalide<br>70 Rue Jean Doucet<br>16470 Saint-Michel"
     phone = "05 45 91 38 57"
     email = "contact@pixicode.dev"
 

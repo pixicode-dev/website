@@ -21,25 +21,25 @@ services_list:
       description: "L'agence conçoit des sites et Web Apps avec l'architecture Jamstack (Hugo, Strapi). Résultat : une vitesse de chargement instantanée, une sécurité maximale et une empreinte carbone divisée par trois. Zéro abonnement, 100% performance."
       icon: "images/site_icone.svg"
       link_text: "Optimiser mon Web"
-      link_url: "site-internet"
+      link_url: "site-internet/"
 
     - title: "Applications Mobiles (Flutter)"
       description: "Dominez iOS et Android avec une base de code unique. Grâce à Flutter, notre agence développe des applications fluides et intuitives, réduisant vos coûts de maintenance tout en offrant une expérience utilisateur native haut de gamme."
       icon: "images/mobile_icone.svg"
       link_text: "Lancer mon App"
-      link_url: "application-mobile"
+      link_url: "application-mobile/"
 
     - title: "Logiciels Métiers & API"
       description: "Digitalisez vos processus avec des outils ERP, CRM ou des API sur mesure. Nous bâtissons des backends robustes et scalables (Node.js, C#, Java) capables de traiter vos flux de données critiques en toute sécurité."
       icon: "images/pai_icone.svg"
       link_text: "Automatiser mon métier"
-      link_url: "api-et-backend"
+      link_url: "api-et-backend/"
 
     - title: "DevOps & Cloud Durable"
       description: "Sécurisez et scalisez vos services. L'agence gère votre infrastructure via Docker et le déploiement continu (CI/CD). Nous optimisons l'hébergement pour garantir haute disponibilité et sobriété énergétique."
       icon: "images/hebergement_icone.svg"
       link_text: "Sécuriser mes services"
-      link_url: "devops-hebergement"
+      link_url: "devops-hebergement/"
 
 # 2. APPROCHE (Le Manifeste de l'Agence)
 approach:
