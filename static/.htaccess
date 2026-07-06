@@ -1,0 +1,21 @@
+# --- Redirections & normalisation d'URL (SEO) ---
+# Ce fichier est copié tel quel dans public/ par Hugo puis déployé sur OVH.
+
+RewriteEngine On
+
+# 1. www -> apex (prendra effet quand l'entrée DNS www existera)
+RewriteCond %{HTTP_HOST} ^www\.pixicode\.dev$ [NC]
+RewriteRule ^(.*)$ https://pixicode.dev/$1 [R=301,L]
+
+# 2. Slash final manquant -> ajout propre (sans :443 parasite)
+#    Uniquement pour les URLs sans extension de fichier.
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ https://pixicode.dev/$1/ [R=301,L]
+
+# 3. Anciennes URLs indexées par Google (slugs Strapi modifiés sans redirection)
+#    Compléter au besoin depuis Search Console > Pages > Introuvable (404).
+Redirect 301 /portfolio/carter-coaching-app/ https://pixicode.dev/portfolio/carter-coaching/
+Redirect 301 /blog/faux-sites-and-faux-mails/ https://pixicode.dev/blog/phishing-and-ingenierie-sociale-comprendre-la-mecanique-pour-ne-plus-se-faire-pieger/
+Redirect 301 /blog/nom-de-domaine-tout-ce-que-vous-devez-savoir-avant-de-lancer-votre-site/ https://pixicode.dev/blog/noms-de-domaine-le-guide-strategique-pour-ne-pas-se-faire-pieger/

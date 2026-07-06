@@ -20,26 +20,26 @@ services_list:
     - title: "Web & Éco-conception"
       description: "L'agence conçoit des sites et Web Apps avec l'architecture Jamstack (Hugo, Strapi). Résultat : une vitesse de chargement instantanée, une sécurité maximale et une empreinte carbone divisée par trois. Zéro abonnement, 100% performance."
       icon: "images/site_icone.svg"
-      link_text: "Optimiser mon Web"
-      link_url: "site-internet/"
+      link_text: "Créer mon site web éco-conçu"
+      link_url: "/services/site-internet/"
 
     - title: "Applications Mobiles (Flutter)"
       description: "Dominez iOS et Android avec une base de code unique. Grâce à Flutter, notre agence développe des applications fluides et intuitives, réduisant vos coûts de maintenance tout en offrant une expérience utilisateur native haut de gamme."
       icon: "images/mobile_icone.svg"
-      link_text: "Lancer mon App"
-      link_url: "application-mobile/"
+      link_text: "Lancer mon application mobile Flutter"
+      link_url: "/services/application-mobile/"
 
     - title: "Logiciels Métiers & API"
       description: "Digitalisez vos processus avec des outils ERP, CRM ou des API sur mesure. Nous bâtissons des backends robustes et scalables (Node.js, C#, Java) capables de traiter vos flux de données critiques en toute sécurité."
       icon: "images/pai_icone.svg"
-      link_text: "Automatiser mon métier"
-      link_url: "api-et-backend/"
+      link_text: "Concevoir mon logiciel métier ou mon API"
+      link_url: "/services/api-et-backend/"
 
     - title: "DevOps & Cloud Durable"
       description: "Sécurisez et scalisez vos services. L'agence gère votre infrastructure via Docker et le déploiement continu (CI/CD). Nous optimisons l'hébergement pour garantir haute disponibilité et sobriété énergétique."
       icon: "images/hebergement_icone.svg"
-      link_text: "Sécuriser mes services"
-      link_url: "devops-hebergement/"
+      link_text: "Sécuriser mon hébergement et mon infrastructure"
+      link_url: "/services/devops-hebergement/"
 
 # 2. APPROCHE (Le Manifeste de l'Agence)
 approach:
@@ -94,7 +94,7 @@ faq:
 cta_block:
   title: "Bâtissons votre actif numérique : une solution éco-conçue, performante et 100% souveraine."
   button_text: "DÉMARRER MON PROJET"
-  button_link: "/contact"
+  button_link: "/contact/"
   cta_background: "#fbeeac"
   cta_image: "/images/app-screen-example.jpg"
   hand_frame: "/images/hand.webp"

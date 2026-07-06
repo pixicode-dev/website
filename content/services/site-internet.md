@@ -107,10 +107,52 @@ service_cta:
   text: "Votre projet dépasse les cadres classiques ? L'agence PixiCode réalise des développements spécifiques (API, E-commerce éco-conçu, outils SaaS). Nous analysons votre cahier des charges pour concevoir une architecture logicielle robuste et évolutive."
   image: "images/collaborate.webp"
 
+# 6. FAQ (SEO / GEO — rich results FAQPage)
+faq:
+  title: "FAQ SITE WEB"
+  subtitle: "Vos questions sur la création de site"
+  items:
+    - question: "Combien coûte la création d'un site web sur mesure ?"
+      answer: >-
+        Nos formules démarrent à **750 € HT** pour une landing page haute
+        performance, **2 800 € HT** pour un site vitrine 4 pages avec CMS, et
+        **dès 3 500 € HT** pour un site complet avec blog et stratégie SEO. Pour
+        les projets innovants, notre **agrément CII 2026-2030** permet aux PME
+        éligibles de récupérer 20 % des dépenses de conception.
+
+    - question: "En combien de temps mon site sera-t-il en ligne ?"
+      answer: >-
+        Comptez **3 à 6 semaines** pour une landing page ou un site vitrine, selon
+        la rapidité de validation des contenus. Chaque projet démarre par un
+        cadrage qui fixe le périmètre et le calendrier avant tout développement.
+
+    - question: "Pourquoi choisir l'architecture JAMstack (Hugo) plutôt que WordPress ?"
+      answer: >-
+        Un site statique Hugo est **pré-calculé avant la visite** : chargement
+        quasi instantané, aucune base de données exposée aux attaques, aucun
+        plugin à mettre à jour chaque semaine, et une empreinte énergétique
+        réduite. Résultat concret : des Core Web Vitals au vert et un meilleur
+        positionnement Google.
+
+    - question: "Pourrai-je modifier mon contenu moi-même ?"
+      answer: >-
+        Oui. Nous installons **Strapi**, un CMS headless avec une interface
+        d'administration simple : vous modifiez textes et images sans toucher au
+        code, et la publication reconstruit automatiquement le site. Une
+        formation à l'outil est incluse à la livraison.
+
+    - question: "Le référencement (SEO) est-il inclus ?"
+      answer: >-
+        La structure technique SEO est native sur tous nos sites : balisage
+        sémantique, données structurées Schema.org, sitemap, temps de chargement
+        optimaux. La formule Premium ajoute une **stratégie de contenu et un SEO
+        sémantique avancé**. L'hébergement et le suivi peuvent ensuite être
+        confiés à notre offre [DevOps & hébergement managé](/services/devops-hebergement/).
+
 cta_block:
   title: "Votre site actuel vous appartient-il vraiment ? Parlons de votre projet web."
   button_text: "Parlons de votre projet"
-  button_link: "/contact"
+  button_link: "/contact/"
   cta_background: "#fbeeac"
   cta_image: "/images/app-screen-example.jpg"
   hand_frame: "/images/hand.webp"

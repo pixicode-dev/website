@@ -59,7 +59,9 @@ async function ensureDir(p) {
 function yamlEscape(v) {
   if (v == null) return "";
   const s = String(v);
-  return /[:\-\n"]/.test(s) ? `"${s.replace(/"/g, '\\"')}"` : s;
+  // JSON.stringify produit un scalaire YAML double-quoted valide
+  // (échappe aussi les retours à la ligne, contrairement à un simple replace)
+  return /[:\-\n"#]/.test(s) ? JSON.stringify(s) : s;
 }
 
 // FrontMatter Generator - AMÉLIORÉ
@@ -102,6 +104,39 @@ function strToSlug(s) {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
+}
+
+// ==========================================
+// HISTORIQUE DES SLUGS \u2192 ALIASES HUGO
+// ==========================================
+// Quand un slug change dans Strapi, l'ancienne URL renverrait 404 (perte SEO).
+// On persiste l'historique des slugs par documentId dans tools/slug-history.json
+// (committ\u00e9 par le workflow) et on \u00e9met des `aliases` Hugo pour chaque ancien
+// slug : Hugo g\u00e9n\u00e8re alors une page de redirection (meta refresh + canonical).
+const SLUG_HISTORY_PATH = path.join(ROOT, "tools", "slug-history.json");
+
+async function loadSlugHistory() {
+  try {
+    return JSON.parse(await fs.readFile(SLUG_HISTORY_PATH, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+async function saveSlugHistory(history) {
+  const sorted = {};
+  for (const type of Object.keys(history).sort()) {
+    sorted[type] = {};
+    for (const key of Object.keys(history[type]).sort()) {
+      sorted[type][key] = history[type][key];
+    }
+  }
+  if (!DRY_RUN)
+    await fs.writeFile(
+      SLUG_HISTORY_PATH,
+      JSON.stringify(sorted, null, 2) + "\n",
+      "utf8",
+    );
 }
 
 function pickImage(imageObj) {
@@ -200,9 +235,22 @@ async function syncEntries() {
     log("WRITE", path.relative(ROOT, DATA_FILE_PATH));
   } else {
     const expectedMd = new Set();
+    const sectionUrl = TYPE === "projects" ? "portfolio" : "blog";
+    const history = await loadSlugHistory();
+    history[TYPE] = history[TYPE] || {};
+
     for (const entry of entries) {
       const title = entry.title || "Sans titre";
       const slug = entry.slug || strToSlug(title);
+
+      // Historique des slugs (aliases) — clé stable Strapi v5 : documentId
+      const historyKey = String(entry.documentId ?? entry.id ?? slug);
+      const knownSlugs = history[TYPE][historyKey] || [];
+      if (!knownSlugs.includes(slug)) knownSlugs.push(slug);
+      history[TYPE][historyKey] = knownSlugs;
+      const aliases = knownSlugs
+        .filter((s) => s !== slug)
+        .map((s) => `/${sectionUrl}/${s}/`);
       const description = entry.description || "";
       const body = (entry.content || "").trim();
       const date = entry.publishedAt || entry.createdAt;
@@ -259,6 +307,7 @@ async function syncEntries() {
         categories,
         tags,
         keywords,
+        aliases,
       };
 
       if (external_link) front.external_link = external_link;
@@ -280,6 +329,9 @@ async function syncEntries() {
       if (!DRY_RUN) await fs.writeFile(outPath, mdContent, "utf8");
       log("WRITE", path.relative(ROOT, outPath));
     }
+
+    await saveSlugHistory(history);
+    log("HISTORY", path.relative(ROOT, SLUG_HISTORY_PATH));
 
     // Clean up obsolete markdown files
     const existingMd = (await listFiles(CONTENT_DIR, ".md")).filter(

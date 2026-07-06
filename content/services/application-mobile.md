@@ -18,7 +18,7 @@ service_intro:
   text: |
     Lancer une application mobile, c'est choisir une technologie pour les cinq prochaines années. Ce choix conditionne vos coûts de maintenance, votre vitesse de mise sur le marché et la qualité d'expérience de vos utilisateurs. Avec Flutter (propulsé par Google), PixiCode conçoit une base de code unique qui s'exécute nativement sur iPhone et Android, interfaces sur mesure, expérience identique au développement natif, pour un budget maîtrisé.
 
-    Notre référence : Carter Coaching, un écosystème SaaS mobile complet livré en production, avec gestion multi-rôles, abonnements Stripe et publication sur les deux stores.
+    Notre référence : [Carter Coaching](/portfolio/carter-coaching/), un écosystème SaaS mobile complet livré en production, avec gestion multi-rôles, abonnements Stripe et publication sur les deux stores.
   image: "images/app.avif"
 
 # 2. BÉNÉFICES (Expertise & Éthique)
@@ -60,6 +60,8 @@ service_process:
     Le développement se fait par cycles de deux semaines (sprints Agile). Vous testez des versions bêta via TestFlight (iOS) ou Google Play Console (Android) à chaque itération. Vous voyez votre application prendre forme et vous orientez les priorités en temps réel.
       
     De la gestion des certificats Apple à la validation Google Play, nous gérons l'intégralité du processus de publication — y compris les règles qui changent plusieurs fois par an. À la livraison, vous recevez le code source complet et les accès aux comptes développeurs. L'application vous appartient, vous êtes libre de la faire évoluer avec nous ou indépendamment.
+      
+    Le backend qui alimente votre application (comptes utilisateurs, paiements, données) relève de notre expertise [logiciels métiers & API](/services/api-et-backend/), et son hébergement de notre offre [DevOps & hébergement managé](/services/devops-hebergement/).
   image: "images/image_team.webp"
 
 # 4. TARIFS (Qualification des Leads)
@@ -76,7 +78,7 @@ pricing:
         - "Publication sur les Stores incluse"
         - "Code 100% propriétaire"
       button_text: "Lancer mon MVP (6-8 sem.)"
-      button_link: "/contact?pack=mobile-mvp"
+      button_link: "/contact/?pack=mobile-mvp"
 
     - title: "Pack App Custom"
       price: "Dès 8 000€ HT"
@@ -87,7 +89,7 @@ pricing:
         - "Architecture scalable & sécurisée"
         - "Optimisation Green IT (INR)"
       button_text: "Créer une app sur mesure"
-      button_link: "/contact?pack=mobile-pro"
+      button_link: "/contact/?pack=mobile-pro"
 
     - title: "Maintenance & TMA"
       price: "Sur devis"
@@ -98,7 +100,7 @@ pricing:
         - "Support technique prioritaire"
         - "Hébergement backend sécurisé"
       button_text: "Sécuriser mon application"
-      button_link: "/contact?pack=mobile-tma"
+      button_link: "/contact/?pack=mobile-tma"
 
 # 5. CTA SERVICE
 service_cta:
@@ -108,10 +110,51 @@ service_cta:
     Lancer une application mobile est un défi technique et administratif (règles Apple, fragmentation Android). L'agence PixiCode sécurise votre projet en prenant en charge l'intégralité de la chaîne technique. Concentrez-vous sur vos utilisateurs, nous nous occupons du reste.
   image: "images/collaborate.webp"
 
+# 6. FAQ (SEO / GEO — rich results FAQPage)
+faq:
+  title: "FAQ APP MOBILE"
+  subtitle: "Vos questions sur le développement Flutter"
+  items:
+    - question: "Combien coûte le développement d'une application mobile ?"
+      answer: >-
+        Le **Pack Mobile MVP** démarre à **4 500 € HT** (fonctionnalités
+        essentielles, publication sur les deux stores incluse) et le **Pack App
+        Custom** à **8 000 € HT** (design sur mesure, paiements, push, offline).
+        Grâce à notre **agrément CII 2026-2030**, une PME éligible récupère 20 %
+        de ces dépenses — soit 900 € sur un MVP à 4 500 €.
+
+    - question: "Quel est le délai pour lancer une application mobile ?"
+      answer: >-
+        Un MVP est livré en **6 à 8 semaines** après le cadrage. Le développement
+        avance par sprints de deux semaines : vous testez des versions bêta via
+        TestFlight (iOS) et Google Play Console (Android) à chaque itération.
+
+    - question: "Pourquoi Flutter plutôt qu'un développement natif iOS + Android ?"
+      answer: >-
+        Flutter compile en **code natif** à partir d'une base unique : mêmes
+        performances qu'un développement natif, mais un seul code à écrire et à
+        maintenir. Budget initial réduit d'environ 40 %, coûts de maintenance
+        divisés par deux, et chaque fonctionnalité disponible sur les deux
+        plateformes sans surcoût.
+
+    - question: "Vous occupez-vous de la publication sur l'App Store et Google Play ?"
+      answer: >-
+        Oui, la publication est **incluse** : certificats Apple, validation
+        Google Play, fiches stores et conformité aux règles des deux plateformes.
+        À la livraison, les comptes développeurs et le code source vous
+        appartiennent intégralement.
+
+    - question: "Que se passe-t-il après la mise en ligne (maintenance, évolutions) ?"
+      answer: >-
+        Notre offre **Maintenance & TMA** couvre les mises à jour d'OS
+        obligatoires, le suivi des crashs et les évolutions fonctionnelles. Le
+        backend de l'application peut être supervisé 24/7 via notre offre
+        [DevOps & hébergement managé](/services/devops-hebergement/).
+
 cta_block:
   title: "Bâtissons votre application mobile : éco-conçue, performante et 100% souveraine."
   button_text: "DÉMARRER MON PROJET"
-  button_link: "/contact"
+  button_link: "/contact/"
   cta_background: "#fbeeac"
   cta_image: "/images/app-screen-example.jpg"
   hand_frame: "/images/hand.webp"

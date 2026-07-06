@@ -2,7 +2,7 @@
 # --- SEO & METADATA (Système) ---
 title: "Hébergement Managé, Infogérance & DevOps à Angoulême"
 breadcrumb_label: "DevOps & Hébergement"
-description: "Confiez votre infrastructure à l'agence PixiCode : hébergement haute performance, déploiement continu (CI/CD) et sécurité durcie. Expertise DevOps éco-responsable à Angoulême."
+description: "Hébergement managé, infogérance et CI/CD : Docker, monitoring 24/7, sauvegardes chiffrées. Expertise DevOps éco-responsable — PixiCode, Angoulême."
 keywords: "hébergement managé angoulême, infogérance charente, expert devops france, maintenance serveur docker, déploiement continu cicd, sécurité cloud pme, hébergement éco-responsable"
 date: 2026-01-25
 
@@ -57,6 +57,8 @@ service_process:
     Pour les projets qui le nécessitent, nous configurons des environnements multi-services avec orchestration, base de données managée, stockage objet et CDN. Qu'il s'agisse d'un VPS dédié, d'un Cloud public ou d'une infrastructure hybride, nous choisissons l'architecture adaptée à votre usage réel pas à la mode du moment.
       
     À la livraison, l'infrastructure est documentée et les accès vous appartiennent. Vous pouvez la reprendre en interne, la confier à un autre prestataire ou continuer avec nous en TMA. Vous gardez les clés.
+      
+    Cette expertise héberge aussi les [sites web éco-conçus](/services/site-internet/) et les backends des [applications mobiles](/services/application-mobile/) que nous développons — un seul interlocuteur du code à la production.
   image: "images/image_team.webp"
 
 # 4. TARIFS (Infogérance & Expertise)
@@ -72,7 +74,7 @@ pricing:
         - "WAF & Protection Anti-DDoS"
         - "Sauvegardes quotidiennes déportées"
       button_text: "Héberger mon site"
-      button_link: "/contact?pack=hosting-wp"
+      button_link: "/contact/?pack=hosting-wp"
 
     - title: "Infogérance App & Cloud"
       price: "Dès 150€ HT /mois"
@@ -82,7 +84,7 @@ pricing:
         - "Gestion de base de données managée"
         - "Support technique prioritaire"
       button_text: "Confier mon application"
-      button_link: "/contact?pack=hosting-app"
+      button_link: "/contact/?pack=hosting-app"
 
     - title: "Architecture & DevOps"
       price: "Forfait dès 950€ HT"
@@ -92,7 +94,7 @@ pricing:
         - "Conteneurisation Docker complète"
         - "Optimisation des coûts Cloud"
       button_text: "Audit de mon infrastructure"
-      button_link: "/contact?pack=audit-ops"
+      button_link: "/contact/?pack=audit-ops"
 
 # 5. CTA SERVICE
 service_cta:
@@ -102,10 +104,52 @@ service_cta:
     Ne laissez pas une panne serveur ou une faille de sécurité mettre en péril votre activité. L'agence PixiCode devient votre direction technique externalisée. En nous déléguant votre DevOps, vous gagnez des experts qui veillent sur votre business pendant que vous vous concentrez sur l'essentiel.
   image: "images/collaborate.webp"
 
+# 6. FAQ (SEO / GEO — rich results FAQPage)
+faq:
+  title: "FAQ DEVOPS"
+  subtitle: "Vos questions sur l'hébergement et l'infogérance"
+  items:
+    - question: "Que comprend votre offre d'hébergement managé ?"
+      answer: >-
+        Contrairement à un hébergeur classique qui loue un serveur nu, nous
+        gérons tout : mises à jour techniques, certificats SSL, protection
+        anti-DDoS, **sauvegardes quotidiennes chiffrées et déportées**, et
+        monitoring proactif. L'offre Hosting WordPress Pro démarre à
+        **75 € HT/mois**, l'infogérance applicative à **150 € HT/mois**.
+
+    - question: "Mon site ou mon application sera-t-il surveillé en continu ?"
+      answer: >-
+        Oui. Le monitoring **Grafana / Prometheus** surveille vos ressources
+        **24h/24, 7j/7** et détecte les anomalies (charge, mémoire, certificats,
+        disponibilité) avant qu'elles n'impactent vos utilisateurs.
+
+    - question: "Qu'est-ce qu'un pipeline CI/CD et pourquoi en ai-je besoin ?"
+      answer: >-
+        Le déploiement continu (CI/CD) automatise le chemin entre le code et la
+        production : chaque modification est **testée puis déployée
+        automatiquement** (GitHub Actions, GitLab CI), de façon tracée et
+        réversible. L'erreur humaine est éliminée des mises en production. La
+        mise en place est facturée en forfait, **dès 950 € HT**.
+
+    - question: "L'hébergement est-il réellement éco-responsable ?"
+      answer: >-
+        Nous hébergeons sur des infrastructures certifiées **The Green Web
+        Foundation** (énergie renouvelable) et appliquons les principes de
+        sobriété de l'**INR** : dimensionnement au besoin réel plutôt que
+        surprovisionnement.
+
+    - question: "Suis-je captif de PixiCode pour mon infrastructure ?"
+      answer: >-
+        Non. L'infrastructure est **documentée, versionnée (Infrastructure as
+        Code)** et les accès vous appartiennent. Vous pouvez à tout moment la
+        reprendre en interne ou la confier à un autre prestataire — c'est le
+        même principe de souveraineté que pour le code de nos
+        [sites](/services/site-internet/) et [logiciels](/services/api-et-backend/).
+
 cta_block:
   title: "Infrastructure & DevOps : performance, sécurité et impact durable. Gardez les clés de votre environnement."
   button_text: "SÉCURISER MON INFRA"
-  button_link: "/contact"
+  button_link: "/contact/"
   cta_background: "#fbeeac"
   cta_image: "/images/app-screen-example.jpg"
   hand_frame: "/images/hand.webp"

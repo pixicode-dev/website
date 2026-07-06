@@ -1,12 +1,18 @@
 baseURL      = "https://pixicode.dev/"
-languageCode = "fr-fr"
+languageCode = "fr-FR"
 title        = "PixiCode"
 theme        = "roxo-hugo-pixicode"
 summaryLength = 25
-hasCJKLanguage = true
 disableKinds = ["taxonomy", "term"]
 removePathAccents = true
-[build] 
+# lastmod réels dans le sitemap (dérivés de l'historique git, nécessite
+# fetch-depth: 0 dans le workflow de déploiement)
+enableGitInfo = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[build]
   writeStats = true
   
 # --- MENUS ---
@@ -50,12 +56,23 @@ removePathAccents = true
   custom_stylesheets = ["css/custom.scss"]
 
 # --- IDENTITÉ CLIENT (Le propriétaire du site) ---
+# NAP officiel (aligner la fiche Google Business et les annuaires sur ces valeurs)
 [params.client]
-  name    = "pixicode"
+  name    = "PixiCode"
   url     = "https://pixicode.dev"
   email   = "contact@pixicode.dev"
   phone   = "05 45 91 38 57"
-  address = "16000 Angoulême"
+  street      = "Technoparc Krysalide, 70 Rue Jean Doucet"
+  city        = "Saint-Michel"
+  postal_code = "16470"
+  region      = "Nouvelle-Aquitaine"
+  # latitude / longitude : à renseigner depuis Google Maps (clic droit sur le
+  # bureau → copier les coordonnées) pour activer le bloc geo du LocalBusiness
+  # latitude  = 45.64
+  # longitude = 0.10
+  founder       = "Emric Pichonnier"
+  founding_date = "2023"
+  price_range   = "€€"
 
 # --- IDENTITÉ AGENCE (Toi) ---
 [params.agency]
@@ -132,6 +149,18 @@ removePathAccents = true
     [[params.footer.sitemap.link]]
       name = "Nos services"
       url = "services/"
+    [[params.footer.sitemap.link]]
+      name = "Création de site web"
+      url = "services/site-internet/"
+    [[params.footer.sitemap.link]]
+      name = "Application mobile Flutter"
+      url = "services/application-mobile/"
+    [[params.footer.sitemap.link]]
+      name = "Logiciel métier & API"
+      url = "services/api-et-backend/"
+    [[params.footer.sitemap.link]]
+      name = "DevOps & hébergement"
+      url = "services/devops-hebergement/"
     [[params.footer.sitemap.link]]
       name = "Portfolio"
       url = "portfolio/"

@@ -18,7 +18,19 @@ export default {
                 ...(els.ids || []),
               ];
             },
-            safelist: [],
+            // hugo_stats.json ne contient que les classes émises par les
+            // templates : les classes ajoutées dynamiquement en JS doivent
+            // être safelistées pour ne pas être purgées.
+            safelist: [
+              /^embla__/, // puces/état des carrousels Embla (ajoutés en JS)
+              "show", // Bootstrap collapse (menu mobile ouvert)
+              "collapsing",
+              "collapsed",
+              "active", // filtres portfolio, pagination
+              "fade",
+              /^variant-/, // variantes de couleur des cartes blog (JS)
+              "btn-page", // pagination JS du blog
+            ],
           }),
         ]
       : []),

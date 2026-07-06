@@ -13,10 +13,11 @@ Dénomination sociale : PIXICODE
 Forme juridique : EURL (Entreprise Unipersonnelle à Responsabilité Limitée)  
 Capital social : 1 000 €  
 Siège social : 2 Place Jean V, 44000 Nantes, France  
+Bureau & adresse de correspondance : Technoparc Krysalide, 70 Rue Jean Doucet, 16470 Saint-Michel (Grand Angoulême), France  
 RCS : Inscrite au RCS de Nantes sous le numéro 980 083 786
 
 Directeur de la publication : Emric Pichonnier  
-Contact : contact@pixicode.dev
+Contact : contact@pixicode.dev — 05 45 91 38 57
 
 ## Hébergeur
 

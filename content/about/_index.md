@@ -10,7 +10,7 @@ keywords:
   - "Numérique responsable Nouvelle-Aquitaine"
   - "Développement sur mesure PME"
 date: 2026-01-25
-image: "images/pixicode-team-banner.webp"
+image: "images/image_team.webp"
 
 layout: "about"
 background_image: "images/Background2.svg"

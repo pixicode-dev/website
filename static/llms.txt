@@ -1,0 +1,36 @@
+# PixiCode
+
+> Agence d'ingénierie logicielle et de développement sur mesure basée au
+> Technoparc Krysalide (Saint-Michel, Grand Angoulême, Charente, France).
+> Fondée en 2023 par Emric Pichonnier. PixiCode conçoit des sites web
+> éco-conçus (JAMstack : Hugo + Strapi), des applications mobiles Flutter
+> (iOS & Android), des logiciels métiers et API (Java, C#, .NET, Python,
+> Node.js) et gère l'infrastructure DevOps (Docker, CI/CD, hébergement managé).
+> Agréée Crédit Impôt Innovation (CII) 2026-2030 : les PME peuvent récupérer
+> 20 % de leurs dépenses de conception éligibles. Membre de la démarche
+> Institut du Numérique Responsable (INR) : éco-conception systématique.
+> Les clients sont propriétaires de 100 % du code source livré, sans
+> abonnement captif.
+
+Contact : contact@pixicode.dev — 05 45 91 38 57 — https://pixicode.dev/contact/
+
+## Services
+
+- [Nos services (vue d'ensemble + FAQ)](https://pixicode.dev/services/) : les 4 expertises, méthode de travail, questions fréquentes
+- [Création de site web sur mesure](https://pixicode.dev/services/site-internet/) : sites vitrines et web apps JAMstack (Hugo + Strapi), éco-conçus, dès 750 € HT
+- [Application mobile Flutter](https://pixicode.dev/services/application-mobile/) : iOS & Android avec une seule base de code, MVP dès 4 500 € HT
+- [Logiciels métiers & API](https://pixicode.dev/services/api-et-backend/) : ERP, CRM, backends et API sur mesure (Java, C#, Python, Node.js)
+- [DevOps & hébergement managé](https://pixicode.dev/services/devops-hebergement/) : infogérance dès 75 € HT/mois, CI/CD, Docker, monitoring 24/7
+
+## Entreprise
+
+- [À propos](https://pixicode.dev/about/) : histoire, équipe, certifications INR et agrément CII 2026-2030
+- [Portfolio](https://pixicode.dev/portfolio/) : réalisations clients (Carter Coaching, Finaxy Group, Evokea Studio…)
+- [Blog](https://pixicode.dev/blog/) : guides pratiques (CII, Flutter, éco-conception, sécurité)
+- [Contact](https://pixicode.dev/contact/) : formulaire de contact et coordonnées
+
+## Ressources clés
+
+- [CII 2026-2030 : le guide complet pour les PME](https://pixicode.dev/blog/cii-2026-2030-le-guide-complet-pour-les-pme/)
+- [Flutter : le choix stratégique pour votre application mobile](https://pixicode.dev/blog/flutter-le-choix-strategique-pour-developper-votre-application-mobile/)
+- [Green IT : mesurer l'impact carbone de vos outils numériques](https://pixicode.dev/blog/green-it-comment-mesurer-l-impact-carbone-de-vos-outils-numeriques/)

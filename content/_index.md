@@ -1,5 +1,7 @@
 ---
-title: "Ingénierie Logicielle Sur Mesure à Angoulême — PixiCode"
+# Le template ajoute déjà le préfixe "PixiCode | " sur la home — ne pas
+# remettre la marque ici (sinon elle apparaît deux fois dans le <title>)
+title: "Ingénierie Logicielle & Développement Sur Mesure à Angoulême"
 title_content: "L'Artisanat Logiciel pour digitaliser et optimiser votre métier"
 description_content: "Expert en éco-conception numérique à Angoulême. PixiCode développe vos sites Web (Hugo), apps mobiles (Flutter) et logiciels métiers sans template. Performance, code propriétaire et certification INR."
 description: "Développement logiciel sur mesure à Angoulême. Sites, apps mobiles, logiciels métiers. Code propriétaire, agréé CII — PixiCode."
@@ -26,31 +28,31 @@ approach:
     - title: "Web & Éco-conception"
       description: "Nous concevons des sites et Web Apps sur architecture JAMstack — Hugo + Strapi. Chaque page est pré-calculée avant votre arrivée : pas de base de données exposée, chargement quasi instantané, empreinte énergétique réduite. Vous hébergez, vous possédez."
       icon: "images/site_icone.svg"
-      link_text: "L'avantage du statique"
+      link_text: "Créer un site web éco-conçu"
       url: "/services/site-internet/"
 
     - title: "Applications Mobiles"
       description: "Un seul codebase pour iOS et Android grâce à Flutter. Des performances identiques au natif, une seule base à maintenir, des coûts divisés par deux sur le long terme."
       icon: "images/mobile_icone.svg"
-      link_text: "Découvrir Flutter"
+      link_text: "Créer une application mobile Flutter"
       url: "/services/application-mobile/"
 
     - title: "Logiciels Métiers & API"
       description: "Vos process métiers méritent un outil construit pour eux — pas l'inverse. Nous concevons des ERP, CRM et API sur mesure en Java, C# et Python, capables de s'intégrer à votre écosystème existant sans le fragiliser."
       icon: "images/pai_icone.svg"
-      link_text: "Optimiser mon métier"
+      link_text: "Concevoir mon logiciel métier ou API"
       url: "/services/api-et-backend/"
 
     - title: "DevOps & Cloud Green"
-      description: "Votre projet mérite une fondation solide. Parlons de ce que vous voulez construire."
+      description: "Nous prenons en charge vos serveurs de bout en bout : conteneurisation Docker, déploiement continu (CI/CD), monitoring 24/7 et sauvegardes chiffrées, sur un hébergement sobre en énergie."
       icon: "images/hebergement_icone.svg"
-      link_text: "Infrastructures durables"
+      link_text: "Sécuriser mon hébergement et mon DevOps"
       url: "/services/devops-hebergement/"
 
 cta_block:
   title: "Bâtissons votre solution performante, éco-conçue et 100% à votre main. Parlons-en."
   button_text: "Parlons de votre projet "
-  button_link: "/contact"
+  button_link: "/contact/"
   cta_background: "#fbeeac"
   cta_image: "/images/app-screen-example.jpg"
   hand_frame: "/images/hand.webp"
