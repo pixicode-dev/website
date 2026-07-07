@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write # commit de tools/slug-history.json (aliases SEO)
+      contents: write # push de tools/slug-history.json sur la branche slug-history (aliases SEO)
 
     env:
       STRAPI_TOKEN: ${{ secrets.STRAPI_TOKEN }}
@@ -32,6 +32,15 @@ jobs:
       - name: Install sync deps
         run: npm i node-fetch@3 critical postcss postcss-cli autoprefixer @fullhuman/postcss-purgecss jquery popper.js
 
+      # L'historique des slugs vit sur la branche dédiée `slug-history` :
+      # main est protégée (PR obligatoire), le CI ne peut pas y pousser.
+      # Le fichier commité sur main ne sert que de seed au premier run.
+      - name: Restore slug history (aliases SEO)
+        run: |
+          if git fetch origin +slug-history:refs/remotes/origin/slug-history 2>/dev/null; then
+            git checkout origin/slug-history -- tools/slug-history.json || true
+          fi
+
       - name: Sync Strapi → Hugo (blog articles)
         run: node tools/strapi-to-hugo.mjs --type=articles
 
@@ -43,12 +52,24 @@ jobs:
 
       # Persiste l'historique des slugs : si un slug change dans Strapi,
       # l'ancien devient un alias Hugo (redirection) au lieu d'un 404.
+      # Poussé sur la branche `slug-history` (non protégée), jamais sur main.
       - name: Persist slug history (aliases SEO)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tools/slug-history.json
-          git diff --cached --quiet || { git commit -m "chore: update slug history [skip ci]"; git push; }
+          WT="$RUNNER_TEMP/slug-history-wt"
+          if git rev-parse -q --verify origin/slug-history >/dev/null; then
+            git worktree add "$WT" origin/slug-history
+            git -C "$WT" switch -c slug-history
+          else
+            git worktree add --detach "$WT"
+            git -C "$WT" switch --orphan slug-history
+          fi
+          mkdir -p "$WT/tools"
+          cp tools/slug-history.json "$WT/tools/slug-history.json"
+          git -C "$WT" add tools/slug-history.json
+          git -C "$WT" diff --cached --quiet || git -C "$WT" commit -m "chore: update slug history"
+          git -C "$WT" push origin slug-history
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
