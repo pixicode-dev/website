@@ -72,6 +72,25 @@
       "bg-light-gradient",
       "big-t-letter",
       "black-title",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+      "blog",
+      "blog-card",
+      "blog-card-body",
+      "blog-card-img",
+      "blog-excerpt",
+      "blog-list",
+      "blog-meta",
+=======
+      "blog-card",
+      "blog-card-body",
+      "blog-card-img",
+>>>>>>> Stashed changes
+      "blog-sidebar",
+      "blog-title",
+      "border-top",
+>>>>>>> Stashed changes
       "breadcrumb-text",
       "breadcrumb-trail",
       "btn-approach",
@@ -167,6 +186,16 @@
       "g-3",
       "g-4",
       "g-recaptcha",
+<<<<<<< Updated upstream
+=======
+      "gallery-nav-btn",
+      "gallery-next",
+      "gallery-prev",
+<<<<<<< Updated upstream
+      "gap-2",
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       "gap-3",
       "glitch-wrapper",
       "grand-titre",
@@ -206,6 +235,16 @@
       "mb-lg-0",
       "mb-md-0",
       "me-3",
+<<<<<<< Updated upstream
+=======
+      "me-4",
+<<<<<<< Updated upstream
+      "meta-cat",
+      "meta-date",
+      "meta-sep",
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       "methode-section",
       "ml-auto",
       "mt-3",
@@ -251,10 +290,39 @@
       "pricing-section",
       "pricing-slide",
       "primary",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+      "project",
+=======
+>>>>>>> Stashed changes
+      "project-card",
+      "project-cat",
+      "project-gallery",
+      "project-img",
+      "project-overlay",
+      "project-slide",
+      "project-title",
+>>>>>>> Stashed changes
       "propos-title",
       "px-4",
       "py-3",
+<<<<<<< Updated upstream
       "related-services",
+=======
+      "quote-icon",
+      "recent-date",
+      "recent-info",
+      "recent-item",
+      "recent-posts-list",
+      "recent-thumb",
+      "recent-title",
+      "related-posts",
+<<<<<<< Updated upstream
+=======
+      "related-services",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       "rounded",
       "row",
       "secondary",
@@ -299,16 +367,34 @@
       "z-2"
     ],
     "ids": [
+<<<<<<< Updated upstream
       "1-qui-est-responsable-de-vos-données-",
       "2-quelles-données-collectons-nous-",
       "3-pourquoi-utilisons-nous-vos-données-",
       "4-pixicode-en-tant-que-sous-traitant-hébergement-client",
+=======
+<<<<<<< Updated upstream
+=======
+      "1-définissez-vos-utilisateurs-et-ce-quils-font-concrètement",
+      "1-qui-est-responsable-de-vos-données-",
+      "2-quelles-données-collectons-nous-",
+      "2-séparez-ce-qui-est-indispensable-de-ce-qui-peut-attendre",
+      "3-listez-ce-que-vous-avez-déjà-et-ce-qui-doit-sy-connecter",
+      "3-pourquoi-utilisons-nous-vos-données-",
+      "4-pixicode-en-tant-que-sous-traitant-hébergement-client",
+      "4-posez-une-enveloppe-budgétaire-réelle",
+>>>>>>> Stashed changes
       "5-qui-a-accès-à-vos-données-",
       "6-combien-de-temps-conservons-nous-vos-données-",
       "7-sécurité-des-données",
       "8-vos-droits",
       "9-cookies",
       "a-données-collectées-via-le-site-internet-formulaires--navigation",
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+      "accès-à-la-bêta",
+>>>>>>> Stashed changes
       "approach-carousel",
       "article-1--champ-dapplication-et-clientèle",
       "article-10--responsabilité-et-assurances",
@@ -333,7 +419,43 @@
       "benefits-carousel",
       "btn-accept",
       "btn-decline",
+<<<<<<< Updated upstream
       "c-données-liées-à-nos-applications",
+=======
+<<<<<<< Updated upstream
+      "carter-coaching--un-exemple-concret",
+      "ce-que-ce-partenariat-permet-de-livrer",
+      "ce-que-flutter-ne-règle-pas",
+      "ce-que-vous-trouverez-ici",
+      "ce-que-ça-change-sur-le-budget",
+      "ce-quon-a-livré",
+      "cest-quoi-une-sitemap-techniquement-",
+      "comment-la-générer-proprement",
+      "comment-ça-fonctionne",
+=======
+      "c-données-liées-à-nos-applications",
+      "carter-coaching--un-exemple-concret",
+      "ce-que-ce-partenariat-permet-de-livrer",
+      "ce-que-coûte-un-logiciel-sur-mesure",
+      "ce-que-coûte-vraiment-un-saas",
+      "ce-que-flutter-ne-règle-pas",
+      "ce-que-le-sur-mesure-donne-que-le-saas-ne-peut-pas",
+      "ce-que-les-mesures-révèlent",
+      "ce-que-vous-trouverez-ici",
+      "ce-que-ça-change-sur-le-budget",
+      "ce-quest-le-cii",
+      "ce-qui-change",
+      "ce-qui-est-couvert--et-ce-qui-ne-lest-pas",
+      "ce-qui-ne-change-pas",
+      "ce-quon-a-livré",
+      "ce-quon-peut-mesurer-concrètement",
+      "cest-quoi-une-sitemap-techniquement-",
+      "comment-la-générer-proprement",
+      "comment-ça-fonctionne",
+      "comment-ça-fonctionne-en-pratique",
+>>>>>>> Stashed changes
+      "comparatif",
+>>>>>>> Stashed changes
       "contact-form",
       "contact-form-button",
       "contact-form-status",
@@ -351,13 +473,77 @@
       "firstname",
       "gdprCheck",
       "hébergeur",
+<<<<<<< Updated upstream
       "lastname",
+=======
+<<<<<<< Updated upstream
+      "jsPagination",
+=======
+>>>>>>> Stashed changes
+      "la-réutilisation--la-faille-numéro-un",
+      "la-sécurité-est-une-culture-pas-un-produit",
+      "la-validation--google-search-console",
+      "lastname",
+<<<<<<< Updated upstream
+=======
+      "le-calcul-du-point-de-bascule",
+>>>>>>> Stashed changes
+      "le-constat--un-web-qui-sessouffle",
+      "le-dns--laiguillage-de-vos-services",
+      "le-mfa--votre-vrai-bouclier",
+      "le-modèle-dynamique-classique-et-ses-limites",
+      "le-piège-de-la-propriété",
+      "le-registrar--le-notaire-de-votre-nom",
+      "le-renouvellement--ne-jamais-rater-léchéance",
+      "le-site-miroir--dépasser-lillusion-visuelle",
+      "lentropie--la-longueur-bat-la-complexité",
+      "lurgence-comme-arme-psychologique",
+>>>>>>> Stashed changes
       "message",
       "news-carousel",
+<<<<<<< Updated upstream
       "portfolio-carousel",
       "portfolio-grid",
+=======
+<<<<<<< Updated upstream
+      "noResultsMessage",
+      "nos-formules",
+      "notre-engagement-security-by-design",
+      "notre-mission",
+      "notre-stack--trois-outils-une-logique",
+      "portfolio-carousel",
+      "portfolio-grid",
+      "pourquoi-cest-vital-pour-votre-seo",
+      "pourquoi-participer-à-cette-phase-de-test-",
+=======
+      "nos-formules",
+      "notre-approche",
+      "notre-engagement-security-by-design",
+      "notre-mission",
+      "notre-position",
+      "notre-stack--trois-outils-une-logique",
+      "portfolio-carousel",
+      "portfolio-grid",
+      "pourquoi-cest-rarement-mesuré",
+      "pourquoi-cest-vital-pour-votre-seo",
+      "pourquoi-participer-à-cette-phase-de-test-",
+      "pourquoi-peu-de-pme-lutilisent",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       "pricing-carousel",
       "propriété-intellectuelle",
+<<<<<<< Updated upstream
+=======
+      "quels-projets-sont-éligibles-",
+      "quest-ce-que-le-crédit-dimpôt-innovation-",
+<<<<<<< Updated upstream
+=======
+      "qui-est-éligible",
+>>>>>>> Stashed changes
+      "qui-fait-quoi",
+      "résultats",
+      "searchInput",
+>>>>>>> Stashed changes
       "sitenavbar",
       "team-carousel",
       "testimonials-carousel",
