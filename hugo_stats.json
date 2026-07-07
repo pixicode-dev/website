@@ -3,10 +3,12 @@
     "tags": [
       "a",
       "article",
+      "blockquote",
       "body",
       "br",
       "button",
       "circle",
+      "code",
       "div",
       "em",
       "footer",
@@ -15,6 +17,7 @@
       "h2",
       "h3",
       "h4",
+      "h5",
       "head",
       "hr",
       "html",
@@ -33,6 +36,7 @@
       "path",
       "polygon",
       "polyline",
+      "pre",
       "rect",
       "script",
       "section",
@@ -40,8 +44,14 @@
       "strong",
       "style",
       "svg",
+      "table",
+      "tbody",
+      "td",
       "textarea",
+      "th",
+      "thead",
       "title",
+      "tr",
       "ul"
     ],
     "classes": [
@@ -72,25 +82,12 @@
       "bg-light-gradient",
       "big-t-letter",
       "black-title",
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-      "blog",
       "blog-card",
       "blog-card-body",
       "blog-card-img",
-      "blog-excerpt",
-      "blog-list",
-      "blog-meta",
-=======
-      "blog-card",
-      "blog-card-body",
-      "blog-card-img",
->>>>>>> Stashed changes
       "blog-sidebar",
       "blog-title",
       "border-top",
->>>>>>> Stashed changes
       "breadcrumb-text",
       "breadcrumb-trail",
       "btn-approach",
@@ -102,9 +99,16 @@
       "btn-nav-arrow",
       "btn-nav-arrow-mobile",
       "btn-nav-arrow-news",
+      "btn-news",
       "btn-pixi",
+      "btn-portfolio",
       "btn-sm",
+      "card-bg-img",
+      "card-category",
+      "card-content",
+      "card-overlay",
       "card-text",
+      "card-text-group",
       "card-title",
       "col-12",
       "col-6",
@@ -155,6 +159,7 @@
       "embla__next",
       "embla__prev",
       "embla__slide",
+      "embla__viewport",
       "error-code",
       "error-page",
       "faq-body",
@@ -186,16 +191,9 @@
       "g-3",
       "g-4",
       "g-recaptcha",
-<<<<<<< Updated upstream
-=======
       "gallery-nav-btn",
       "gallery-next",
       "gallery-prev",
-<<<<<<< Updated upstream
-      "gap-2",
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "gap-3",
       "glitch-wrapper",
       "grand-titre",
@@ -204,6 +202,8 @@
       "gy-5",
       "h-100",
       "h2",
+      "h4",
+      "h6",
       "hand-frame",
       "header-bg-overlay",
       "header-decoration",
@@ -213,6 +213,7 @@
       "hero-foreground-img",
       "icon-bar",
       "icon-box-small",
+      "icon-circle",
       "icon-wrapper",
       "img-fluid",
       "img-wrapper-rounded",
@@ -234,19 +235,13 @@
       "mb-5",
       "mb-lg-0",
       "mb-md-0",
+      "me-1",
+      "me-2",
       "me-3",
-<<<<<<< Updated upstream
-=======
       "me-4",
-<<<<<<< Updated upstream
-      "meta-cat",
-      "meta-date",
-      "meta-sep",
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "methode-section",
       "ml-auto",
+      "ms-2",
       "mt-3",
       "mt-4",
       "mt-5",
@@ -259,29 +254,45 @@
       "navbar-expand-lg",
       "navbar-nav",
       "navbar-toggler",
+      "news-bg-img",
+      "news-card",
       "news-container",
+      "news-content",
       "news-nav-desktop",
       "news-nav-mobile",
       "news-section",
+      "news-slide",
+      "news-title",
+      "object-fit-cover",
       "offset-lg-1",
       "opacity-75",
       "order-1",
       "order-2",
       "order-lg-1",
       "order-lg-2",
+      "overflow-hidden",
+      "overlay-icons",
       "overline-dash",
+      "p-3",
       "p-4",
       "p-lg-5",
       "page-header",
+      "page-header-bg",
       "page-header2-bg",
       "pixi-input",
+      "portfolio-card",
       "portfolio-container",
       "portfolio-filters",
+      "portfolio-item",
       "portfolio-nav-desktop",
       "portfolio-nav-mobile",
       "portfolio-section",
       "portfolio-slide",
       "position-relative",
+      "post-content",
+      "post-content-body",
+      "post-footer",
+      "post-nav",
       "pricing-body",
       "pricing-features",
       "pricing-notice",
@@ -290,12 +301,6 @@
       "pricing-section",
       "pricing-slide",
       "primary",
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-      "project",
-=======
->>>>>>> Stashed changes
       "project-card",
       "project-cat",
       "project-gallery",
@@ -303,13 +308,11 @@
       "project-overlay",
       "project-slide",
       "project-title",
->>>>>>> Stashed changes
       "propos-title",
+      "ps-lg-5",
+      "pt-4",
       "px-4",
       "py-3",
-<<<<<<< Updated upstream
-      "related-services",
-=======
       "quote-icon",
       "recent-date",
       "recent-info",
@@ -318,13 +321,14 @@
       "recent-thumb",
       "recent-title",
       "related-posts",
-<<<<<<< Updated upstream
-=======
       "related-services",
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "rounded",
+      "rounded-3",
+      "rounded-4",
       "row",
+      "search-btn",
+      "search-form-design",
+      "search-input",
       "secondary",
       "section-founder-word",
       "section-headline",
@@ -338,18 +342,28 @@
       "service-card-title",
       "service-icon-wrapper",
       "shadow-sm",
+      "sidebar-widget",
+      "single-post",
+      "single-post-img",
       "site-footer",
       "site-footer-logo",
       "site-hero",
       "site-navigation",
       "small",
       "support-list",
+      "tag-btn",
+      "tag-cloud-design",
       "team-card",
       "team-name",
       "team-photo",
       "team-role",
       "team-section",
       "team-subtitle",
+      "testimonial-content-wrapper",
+      "testimonial-logo-box",
+      "testimonial-quote",
+      "testimonial-slide",
+      "testimonial-text-box",
       "testimonials-section",
       "text-blue",
       "text-center",
@@ -363,18 +377,13 @@
       "text-white",
       "text-yellow",
       "w-100",
+      "widget-dash",
+      "widget-list",
+      "widget-title",
       "wrap-on-desktop",
       "z-2"
     ],
     "ids": [
-<<<<<<< Updated upstream
-      "1-qui-est-responsable-de-vos-données-",
-      "2-quelles-données-collectons-nous-",
-      "3-pourquoi-utilisons-nous-vos-données-",
-      "4-pixicode-en-tant-que-sous-traitant-hébergement-client",
-=======
-<<<<<<< Updated upstream
-=======
       "1-définissez-vos-utilisateurs-et-ce-quils-font-concrètement",
       "1-qui-est-responsable-de-vos-données-",
       "2-quelles-données-collectons-nous-",
@@ -383,18 +392,13 @@
       "3-pourquoi-utilisons-nous-vos-données-",
       "4-pixicode-en-tant-que-sous-traitant-hébergement-client",
       "4-posez-une-enveloppe-budgétaire-réelle",
->>>>>>> Stashed changes
       "5-qui-a-accès-à-vos-données-",
       "6-combien-de-temps-conservons-nous-vos-données-",
       "7-sécurité-des-données",
       "8-vos-droits",
       "9-cookies",
       "a-données-collectées-via-le-site-internet-formulaires--navigation",
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
       "accès-à-la-bêta",
->>>>>>> Stashed changes
       "approach-carousel",
       "article-1--champ-dapplication-et-clientèle",
       "article-10--responsabilité-et-assurances",
@@ -419,20 +423,6 @@
       "benefits-carousel",
       "btn-accept",
       "btn-decline",
-<<<<<<< Updated upstream
-      "c-données-liées-à-nos-applications",
-=======
-<<<<<<< Updated upstream
-      "carter-coaching--un-exemple-concret",
-      "ce-que-ce-partenariat-permet-de-livrer",
-      "ce-que-flutter-ne-règle-pas",
-      "ce-que-vous-trouverez-ici",
-      "ce-que-ça-change-sur-le-budget",
-      "ce-quon-a-livré",
-      "cest-quoi-une-sitemap-techniquement-",
-      "comment-la-générer-proprement",
-      "comment-ça-fonctionne",
-=======
       "c-données-liées-à-nos-applications",
       "carter-coaching--un-exemple-concret",
       "ce-que-ce-partenariat-permet-de-livrer",
@@ -453,9 +443,7 @@
       "comment-la-générer-proprement",
       "comment-ça-fonctionne",
       "comment-ça-fonctionne-en-pratique",
->>>>>>> Stashed changes
       "comparatif",
->>>>>>> Stashed changes
       "contact-form",
       "contact-form-button",
       "contact-form-status",
@@ -473,21 +461,11 @@
       "firstname",
       "gdprCheck",
       "hébergeur",
-<<<<<<< Updated upstream
-      "lastname",
-=======
-<<<<<<< Updated upstream
-      "jsPagination",
-=======
->>>>>>> Stashed changes
       "la-réutilisation--la-faille-numéro-un",
       "la-sécurité-est-une-culture-pas-un-produit",
       "la-validation--google-search-console",
       "lastname",
-<<<<<<< Updated upstream
-=======
       "le-calcul-du-point-de-bascule",
->>>>>>> Stashed changes
       "le-constat--un-web-qui-sessouffle",
       "le-dns--laiguillage-de-vos-services",
       "le-mfa--votre-vrai-bouclier",
@@ -498,24 +476,9 @@
       "le-site-miroir--dépasser-lillusion-visuelle",
       "lentropie--la-longueur-bat-la-complexité",
       "lurgence-comme-arme-psychologique",
->>>>>>> Stashed changes
       "message",
+      "ne-pas-oublier-le-robotstxt",
       "news-carousel",
-<<<<<<< Updated upstream
-      "portfolio-carousel",
-      "portfolio-grid",
-=======
-<<<<<<< Updated upstream
-      "noResultsMessage",
-      "nos-formules",
-      "notre-engagement-security-by-design",
-      "notre-mission",
-      "notre-stack--trois-outils-une-logique",
-      "portfolio-carousel",
-      "portfolio-grid",
-      "pourquoi-cest-vital-pour-votre-seo",
-      "pourquoi-participer-à-cette-phase-de-test-",
-=======
       "nos-formules",
       "notre-approche",
       "notre-engagement-security-by-design",
@@ -528,25 +491,26 @@
       "pourquoi-cest-vital-pour-votre-seo",
       "pourquoi-participer-à-cette-phase-de-test-",
       "pourquoi-peu-de-pme-lutilisent",
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       "pricing-carousel",
+      "project-carousel",
       "propriété-intellectuelle",
-<<<<<<< Updated upstream
-=======
       "quels-projets-sont-éligibles-",
       "quest-ce-que-le-crédit-dimpôt-innovation-",
-<<<<<<< Updated upstream
-=======
       "qui-est-éligible",
->>>>>>> Stashed changes
       "qui-fait-quoi",
       "résultats",
       "searchInput",
->>>>>>> Stashed changes
       "sitenavbar",
+      "stack--architecture",
+      "sécurité-par-architecture",
       "team-carousel",
       "testimonials-carousel",
+      "un-engagement-envers-la-qualité",
+      "un-seul-codebase-deux-plateformes",
+      "une-architecture-pensée-pour-la-performance-sémantique",
+      "une-stabilité-sur-5-ans",
+      "votre-arsenal-de-défense",
+      "éco-conception--ce-que-ça-signifie-concrètement",
       "éditeur-du-site"
     ]
   }
