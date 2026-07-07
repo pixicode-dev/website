@@ -13,19 +13,9 @@
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "autoprefixer": "^10.5.2",
     "jquery": "^3.7.1",
-<<<<<<< Updated upstream
-    "popper.js": "^1.16.1",
-    "postcss": "^8.5.16",
-    "postcss-cli": "^11.0.1"
-=======
-<<<<<<< Updated upstream
-    "popper.js": "^1.16.1"
-=======
     "node-fetch": "^3.3.2",
     "popper.js": "^1.16.1",
     "postcss": "^8.5.16",
     "postcss-cli": "^11.0.1"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   }
 }
