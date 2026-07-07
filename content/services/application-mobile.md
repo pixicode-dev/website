@@ -102,6 +102,11 @@ pricing:
       button_text: "Sécuriser mon application"
       button_link: "/contact/?pack=mobile-tma"
 
+# 4.5 Éligibilité CII (Levier fiscal)
+pricing_notice:
+  title: "Ces projets sont éligibles au Crédit Impôt Innovation."
+  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception d'application mobile **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles — soit 900€ récupérables sur un Pack Mobile MVP à 4 500€ HT. Peu de prestataires sont agréés — c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
+
 # 5. CTA SERVICE
 service_cta:
   title: "L'EXPERTISE MOBILE SANS LA COMPLEXITÉ"

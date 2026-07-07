@@ -95,11 +95,6 @@ pricing:
       button_text: "Demander une étude"
       button_link: "https://evokea.pixicode.dev/"
 
-# 4.5 Éligibilité CII (Levier fiscal)
-pricing_notice:
-  title: "Ces projets sont éligibles au Crédit Impôt Innovation."
-  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception de site web ou web app **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles. Peu de prestataires sont agréés — c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
-
 # 5. CTA SERVICE
 service_cta:
   title: "BESOIN D'UNE SOLUTION COMPLEXE ?"
@@ -116,9 +111,9 @@ faq:
       answer: >-
         Nos formules démarrent à **750 € HT** pour une landing page haute
         performance, **2 800 € HT** pour un site vitrine 4 pages avec CMS, et
-        **dès 3 500 € HT** pour un site complet avec blog et stratégie SEO. Pour
-        les projets innovants, notre **agrément CII 2026-2030** permet aux PME
-        éligibles de récupérer 20 % des dépenses de conception.
+        **dès 3 500 € HT** pour un site complet avec blog et stratégie SEO.
+        Chaque projet démarre par un cadrage qui fixe précisément le périmètre
+        et le budget avant tout développement.
 
     - question: "En combien de temps mon site sera-t-il en ligne ?"
       answer: >-

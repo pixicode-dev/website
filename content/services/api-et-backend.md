@@ -94,6 +94,11 @@ pricing:
       button_text: "Lancer mon SaaS"
       button_link: "/contact/?pack=saas"
 
+# 4.5 Éligibilité CII (Levier fiscal)
+pricing_notice:
+  title: "Ces projets sont éligibles au Crédit Impôt Innovation."
+  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception de logiciel métier, d'API ou de plateforme SaaS **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles. Peu de prestataires sont agréés — c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
+
 # 5. CTA SERVICE
 service_cta:
   title: "TRANSFORMEZ VOTRE FAÇON DE TRAVAILLER"
