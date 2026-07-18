@@ -14,7 +14,7 @@ sections:
   - overline: "LA MÉTHODE"
     title: "Comment se calcule le prix d'une application mobile"
     text: |
-      Les fourchettes qu'on trouve en ligne vont de 10 000 à 80 000 €. C'est exact et inutile. La vraie logique est plus simple : une application se chiffre au temps de développement, multiplié par le taux journalier du prestataire.
+      Les fourchettes qu'on trouve en ligne vont de 10 000 à 80 000 €. C'est exact et inutile. La vraie logique est plus simple : une application se chiffre au temps de développement, multiplié par le taux journalier du prestataire. Ce qui fait la note, c'est donc le périmètre, et lui se décrit précisément.
 
       Un MVP ciblé représente une douzaine de jours de travail, soit un budget qui démarre autour de 5 800 € HT. Une application métier de 5 à 15 écrans demande 25 jours et plus, selon les fonctionnalités. Une plateforme complète avec abonnements, back-office et intégrations dépasse les 50 jours. Ce qui fait varier la note, ce n'est pas la négociation : c'est le périmètre.
 
@@ -42,7 +42,7 @@ faq:
     - question: "Combien coûte une application mobile simple ?"
       answer: >-
         Un MVP avec les fonctionnalités essentielles démarre autour de
-        **5 800 € HT**,
+        **5 800 € HT** (une douzaine de jours de développement),
         publication sur l'App Store et Google Play incluse. Les comptes
         utilisateurs, le paiement ou un back-office d'administration ajoutent
         chacun quelques jours au périmètre.

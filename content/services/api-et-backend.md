@@ -64,7 +64,7 @@ extra_section:
   overline: "COMBIEN ÇA COÛTE ?"
   title: "Des repères de prix clairs, même pour du sur mesure"
   text: |
-    Un logiciel métier se chiffre au temps de développement. Une automatisation ciblée tient en une dizaine de jours, une API ou un backend en 20 à 30, un ERP ou une plateforme SaaS complète en 35 à 75 selon le périmètre. Après la livraison, la maintenance applicative (TMA) démarre à 120 € HT par mois, monitoring et sauvegardes quotidiennes compris, et les petites évolutions passent par des carnets d'heures prépayés dès 58 € HT de l'heure.
+    Un logiciel métier se chiffre au temps de développement, sur un périmètre écrit noir sur blanc. Une automatisation ciblée démarre autour de 5 000 € HT, une API ou un backend complet autour de 10 000 € HT, un ERP ou une plateforme SaaS complète au-delà de 17 000 € HT selon le périmètre. Après la livraison, la maintenance applicative (TMA) démarre à 120 € HT par mois, monitoring et sauvegardes quotidiennes compris, et les petites évolutions passent par des carnets d'heures prépayés dès 58 € HT de l'heure.
 
     Pour situer votre projet, notre [estimateur en ligne](/devis-en-ligne/) vous donne une fourchette en 2 minutes. Et si vous hésitez encore entre un abonnement SaaS et un outil à vous, notre article [logiciel sur mesure ou SaaS : le calcul du point de bascule](/blog/logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable/) pose les chiffres.
 
@@ -123,8 +123,8 @@ faq:
   items:
     - question: "Combien coûte un logiciel métier sur mesure ?"
       answer: >-
-        Le prix se construit sur le temps de développement : jours prévus × taux
-        journalier. Une automatisation ciblée démarre autour de
+        Le prix se construit sur le temps de développement prévu au périmètre.
+        Une automatisation ciblée démarre autour de
         5 000 € HT, un backend complet autour de 10 000 € HT, une plateforme SaaS
         au-delà de 17 000 € HT. Notre [estimateur en ligne](/devis-en-ligne/) vous
         donne une fourchette en 2 minutes. En tant que prestataire **agréé CII
