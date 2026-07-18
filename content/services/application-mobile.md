@@ -69,7 +69,7 @@ extra_section:
   overline: "COMBIEN ÇA COÛTE ?"
   title: "Un prix construit sur le temps réel, pas sur votre budget supposé"
   text: |
-    Une application mobile se chiffre à partir du temps de développement prévisible. Notre base de calcul est simple et publique : un taux journalier de 480 € HT, multiplié par le nombre de jours que représente votre périmètre. Un MVP ciblé tient en une douzaine de jours, une application métier complète en demande 25 à 50 selon les fonctionnalités (comptes utilisateurs, paiement, back-office, temps réel).
+    Une application mobile se chiffre à partir du temps de développement prévisible. Un MVP ciblé tient en une douzaine de jours, une application métier complète en demande 25 à 50 selon les fonctionnalités (comptes utilisateurs, paiement, back-office, temps réel).
 
     Cette transparence vous protège : deux périmètres identiques donnent deux estimations identiques. Pour connaître la vôtre, décrivez votre projet à notre [estimateur en ligne](/devis-en-ligne/), ou consultez notre [guide des prix d'une application mobile](/devis-application-mobile/) pour comprendre chaque poste d'un devis.
 
@@ -133,8 +133,7 @@ faq:
   items:
     - question: "Combien coûte le développement d'une application mobile ?"
       answer: >-
-        Nous chiffrons au temps réel : jours de développement × taux journalier
-        de **480 € HT**. Un **MVP** démarre autour de **5 800 € HT** et une
+        Nous chiffrons au temps réel : jours de développement × taux journalier. Un **MVP** démarre autour de **5 800 € HT** et une
         application sur mesure complète autour de **12 000 € HT**, selon les
         fonctionnalités. Notre [estimateur en ligne](/devis-en-ligne/) vous donne
         une fourchette pour votre projet en 2 minutes, et notre **agrément CII
