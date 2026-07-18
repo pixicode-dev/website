@@ -9,4 +9,4 @@ form_heading: "PARLEZ NOUS DE VOS BESOIN"
 ---
 
 Avant de coder quoi que ce soit, on comprend votre besoin. Ce premier échange ne vous engage à rien : il nous permet de vérifier ensemble si on est le bon partenaire pour votre projet.  
-Nous répondons sous 48h ouvrées. Et si vous voulez d'abord un ordre de grandeur budgétaire, notre [devis en ligne](/estimation/) vous donne une fourchette en 2 minutes.
+Nous répondons sous 48h ouvrées. Et si vous voulez d'abord un ordre de grandeur budgétaire, notre [devis en ligne](/devis-en-ligne/) vous donne une fourchette en 2 minutes.

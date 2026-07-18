@@ -71,7 +71,7 @@ extra_section:
   text: |
     Une application mobile se chiffre à partir du temps de développement prévisible. Notre base de calcul est simple et publique : un taux journalier de 480 € HT, multiplié par le nombre de jours que représente votre périmètre. Un MVP ciblé tient en une douzaine de jours, une application métier complète en demande 25 à 50 selon les fonctionnalités (comptes utilisateurs, paiement, back-office, temps réel).
 
-    Cette transparence vous protège : deux périmètres identiques donnent deux estimations identiques. Pour connaître la vôtre, décrivez votre projet à notre [estimateur en ligne](/estimation/), ou consultez notre [guide des prix d'une application mobile](/devis-application-mobile/) pour comprendre chaque poste d'un devis.
+    Cette transparence vous protège : deux périmètres identiques donnent deux estimations identiques. Pour connaître la vôtre, décrivez votre projet à notre [estimateur en ligne](/devis-en-ligne/), ou consultez notre [guide des prix d'une application mobile](/devis-application-mobile/) pour comprendre chaque poste d'un devis.
 
 # 4. TARIFS (Qualification des Leads)
 pricing:
@@ -79,7 +79,7 @@ pricing:
   headline: "Des forfaits clairs pour une vision à long terme"
   items:
     - title: "Pack Mobile MVP"
-      price: "Dès 5 800€ HT"
+      price: "Dès 5 800€ HT*"
       features:
         - "App iOS & Android (Flutter)"
         - "Fonctionnalités essentielles"
@@ -87,10 +87,10 @@ pricing:
         - "Publication sur les Stores incluse"
         - "Code 100% propriétaire"
       button_text: "Estimer mon MVP en 2 min"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Pack App Custom"
-      price: "Dès 12 000€ HT"
+      price: "Dès 12 000€ HT*"
       features:
         - "Design UI/UX personnalisé"
         - "Intégrations API & Paiements"
@@ -98,7 +98,7 @@ pricing:
         - "Architecture scalable & sécurisée"
         - "Optimisation Green IT (INR)"
       button_text: "Estimer mon app sur mesure"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Maintenance & TMA"
       price: "Dès 120€ HT /mois"
@@ -110,6 +110,8 @@ pricing:
         - "Hébergement backend sécurisé"
       button_text: "Sécuriser mon application"
       button_link: "/contact/?pack=mobile-tma"
+
+  footnote: "* Tarifs indicatifs de base, constatés pour de petits projets (moyenne basse). Le budget final dépend du périmètre exact de votre application."
 
 # 4.5 Éligibilité CII (Levier fiscal)
 pricing_notice:
@@ -134,7 +136,7 @@ faq:
         Nous chiffrons au temps réel : jours de développement × taux journalier
         de **480 € HT**. Un **MVP** démarre autour de **5 800 € HT** et une
         application sur mesure complète autour de **12 000 € HT**, selon les
-        fonctionnalités. Notre [estimateur en ligne](/estimation/) vous donne
+        fonctionnalités. Notre [estimateur en ligne](/devis-en-ligne/) vous donne
         une fourchette pour votre projet en 2 minutes, et notre **agrément CII
         2026-2030** permet aux PME éligibles de récupérer 20 % des dépenses de
         conception.

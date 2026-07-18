@@ -5,7 +5,7 @@ import fetch from "node-fetch";
 
 // ENV config
 const STRAPI_URL = process.env.STRAPI_URL || "https://cms.pixicode.dev";
-const STRAPI_TOKEN = process.env.STRAPI_TOKEN || "58c3a1a50faeaa7ed09c08ab1fac1e01420a241afe34f9c86e8d99fe790582a303d89486935b2582d43bd027c8254943c1dfd30567c09750743f05c15146c7a8b798aacdbc746616288f3680bd803d79ebb3c572019c214ad6e8e9b7704e4d541566a53549c365a861a177f883868be42a98a2c5ea8753455048e2d05689e761";
+const STRAPI_TOKEN = process.env.STRAPI_TOKEN || "";
 const DRY_RUN = (process.env.DRY_RUN || "false").toLowerCase() === "true";
 const PRUNE_MEDIA =
   (process.env.PRUNE_MEDIA || "false").toLowerCase() === "true";

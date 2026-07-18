@@ -35,7 +35,7 @@ enableGitInfo = true
     weight = 4
   [[menu.nav]]
     name = "Devis en ligne"
-    url = "estimation/"
+    url = "devis-en-ligne/"
     weight = 5
   [[menu.nav]]
     name = "Contact"
@@ -86,14 +86,14 @@ enableGitInfo = true
   url    = "https://pixicode.dev"
   slogan = "Expert en éco-conception web"
 
-# --- ESTIMATEUR DE DEVIS EN LIGNE (/estimation/) ---
+# --- ESTIMATEUR DE DEVIS EN LIGNE (/devis-en-ligne/) ---
 [params.estimateur]
   # URL du webhook n8n qui reçoit le formulaire et renvoie l'estimation.
   # Tant que ce champ est vide, l'estimateur tourne en MODE DÉMO (chiffres
   # illustratifs, aucun envoi) — pratique pour prévisualiser l'interface.
-  webhook = ""
+  webhook = "https://n8n.pixicode.dev/webhook/estimation"
   # Clé de site reCAPTCHA v3 (optionnel). Laisser vide pour désactiver.
-  recaptcha_key = ""
+  recaptcha_key = "6Lda03EqAAAAAJLVnbQpaUz_PzgYZEy0Acz68icf"
 
 # --- SECTION HERO (Accueil) ---
 [params.hero]
@@ -113,7 +113,7 @@ enableGitInfo = true
   primary_btn      = "Parlons de votre projet "
   primary_link     = "contact/"
   secondary_btn    = "Estimer mon projet en 2 min "
-  secondary_link   = "estimation/"
+  secondary_link   = "devis-en-ligne/"
 
 # --- AUTRES SECTIONS ---
 [params.contactForm]
@@ -155,54 +155,62 @@ enableGitInfo = true
       name = "Discord"
       url = "https://discord.gg/tzgBnm3dAc"
 
-  # 3. Sitemap Footer
+  # 3. Sitemap Footer (colonnes thématiques)
   [params.footer.sitemap]
-    title = "Sitemap"
-    [[params.footer.sitemap.link]]
-      name = "A propos"
-      url = "about/"
-    [[params.footer.sitemap.link]]
-      name = "Nos services"
-      url = "services/"
-    [[params.footer.sitemap.link]]
-      name = "Création de site web"
-      url = "services/site-internet/"
-    [[params.footer.sitemap.link]]
-      name = "Application mobile Flutter"
-      url = "services/application-mobile/"
-    [[params.footer.sitemap.link]]
-      name = "Logiciel métier & API"
-      url = "services/api-et-backend/"
-    [[params.footer.sitemap.link]]
-      name = "DevOps & hébergement"
-      url = "services/devops-hebergement/"
-    [[params.footer.sitemap.link]]
-      name = "Devis en ligne"
-      url = "estimation/"
-    [[params.footer.sitemap.link]]
-      name = "Devis application mobile"
-      url = "devis-application-mobile/"
-    [[params.footer.sitemap.link]]
-      name = "Collectivités"
-      url = "collectivites/"
-    [[params.footer.sitemap.link]]
-      name = "Associations"
-      url = "associations/"
-    [[params.footer.sitemap.link]]
-      name = "Crédit Impôt Innovation"
-      url = "blog/cii-2026-2030-le-guide-complet-pour-les-pme/"
-    [[params.footer.sitemap.link]]
-      name = "Agence web Angoulême"
-      url = "agence-web-angouleme/"
-    [[params.footer.sitemap.link]]
-      name = "Site internet Cognac"
-      url = "creation-site-internet-cognac/"
-    [[params.footer.sitemap.link]]
-      name = "Portfolio"
-      url = "portfolio/"
-    [[params.footer.sitemap.link]]
-      name = "Contact"
-      url = "contact/"
+
+    [[params.footer.sitemap.group]]
+      title = "Services"
+      [[params.footer.sitemap.group.link]]
+        name = "Nos services"
+        url = "services/"
+      [[params.footer.sitemap.group.link]]
+        name = "Création de site web"
+        url = "services/site-internet/"
+      [[params.footer.sitemap.group.link]]
+        name = "Application mobile Flutter"
+        url = "services/application-mobile/"
+      [[params.footer.sitemap.group.link]]
+        name = "Logiciel métier & API"
+        url = "services/api-et-backend/"
+      [[params.footer.sitemap.group.link]]
+        name = "DevOps & hébergement"
+        url = "services/devops-hebergement/"
+
+    [[params.footer.sitemap.group]]
+      title = "Devis & Secteurs"
+      [[params.footer.sitemap.group.link]]
+        name = "Devis en ligne"
+        url = "devis-en-ligne/"
+      [[params.footer.sitemap.group.link]]
+        name = "Devis application mobile"
+        url = "devis-application-mobile/"
+      [[params.footer.sitemap.group.link]]
+        name = "Collectivités"
+        url = "collectivites/"
+      [[params.footer.sitemap.group.link]]
+        name = "Associations"
+        url = "associations/"
+      [[params.footer.sitemap.group.link]]
+        name = "Crédit Impôt Innovation"
+        url = "blog/cii-2026-2030-le-guide-complet-pour-les-pme/"
+
+    [[params.footer.sitemap.group]]
+      title = "L'agence"
+      [[params.footer.sitemap.group.link]]
+        name = "A propos"
+        url = "about/"
+      [[params.footer.sitemap.group.link]]
+        name = "Portfolio"
+        url = "portfolio/"
+      [[params.footer.sitemap.group.link]]
+        name = "Agence web Angoulême"
+        url = "agence-web-angouleme/"
+      [[params.footer.sitemap.group.link]]
+        name = "Site internet Cognac"
+        url = "creation-site-internet-cognac/"
+      [[params.footer.sitemap.group.link]]
+        name = "Contact"
+        url = "contact/"
 
   # 4. Partenaires
   [params.footer.partners]

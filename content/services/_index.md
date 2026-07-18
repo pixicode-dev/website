@@ -89,7 +89,7 @@ faq:
       answer: "Vous travaillez directement avec les personnes qui conçoivent et codent votre projet. Pas de chef de projet intermédiaire qui relaie des informations déformées. Chaque décision technique est expliquée, chaque choix est justifié."
 
     - question: "Combien de temps faut-il pour concevoir un site ou une application ?"
-      answer: "Le délai dépend de la complexité du projet (ex: blog dynamique vs landing page). Une landing page ou un site vitrine : 3 à 6 semaines selon le contenu fourni. Une application mobile ou un logiciel métier : 2 à 4 mois selon la complexité fonctionnelle. Chaque projet commence par un cadrage qui fixe le périmètre et le délai ; rien n'est lancé sans cette étape. Pour le budget, notre [devis en ligne](/estimation/) vous donne une première fourchette en 2 minutes."
+      answer: "Le délai dépend de la complexité du projet (ex: blog dynamique vs landing page). Une landing page ou un site vitrine : 3 à 6 semaines selon le contenu fourni. Une application mobile ou un logiciel métier : 2 à 4 mois selon la complexité fonctionnelle. Chaque projet commence par un cadrage qui fixe le périmètre et le délai ; rien n'est lancé sans cette étape. Pour le budget, notre [devis en ligne](/devis-en-ligne/) vous donne une première fourchette en 2 minutes."
 
 cta_block:
   title: "Bâtissons votre actif numérique : une solution éco-conçue, performante et 100% souveraine."

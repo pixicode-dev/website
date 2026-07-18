@@ -31,7 +31,7 @@ estimation_cta:
   title: "Votre association mérite un site qui lui appartient"
   text: "Estimez le budget en 2 minutes, puis parlons subventions et calendrier avec votre bureau."
   button_text: "Estimer notre site"
-  button_link: "/estimation/"
+  button_link: "/devis-en-ligne/"
 
 # --- FAQ ---
 faq:
@@ -76,6 +76,7 @@ cta_block:
   button_text: "Demander un devis"
   button_link: "/contact/"
   cta_background: "#fbeeac"
+  hand_frame: "/images/hand.webp"
 ---
 
 ## Une agence certifiée Numérique Responsable, au service du monde associatif

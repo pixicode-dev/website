@@ -453,7 +453,7 @@ h3,
 
     .btn-pixi {
       width: 100%; // Pleine largeur sur mobile
-      max-width: 300px;
+      max-width: 350px;
     }
   }
 
@@ -1765,6 +1765,39 @@ h3,
 }
 
 /* ========================
+   LANDING : rythme des fonds de section
+   1ʳᵉ blanche · 2ᵉ dégradé blanc → jaune pâle · suivantes jaune pâle plein
+   ======================== */
+.landing-alt {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    var(--clr-yellow-light) 100%
+  );
+}
+.landing-solid {
+  background-color: var(--clr-yellow-light);
+}
+
+/* Bandeau estimation : bande bleue pleine largeur, bouton jaune du site */
+.estimation-cta {
+  background-color: var(--clr-blue-dark);
+  color: #fff;
+}
+.estimation-cta h2 {
+  color: #fff;
+}
+.estimation-cta .overline-dash {
+  color: #fff;
+}
+.estimation-cta-text {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================
    2. SERVICES GRID (2x2)
    ======================== */
 .service-card {
@@ -2021,10 +2054,33 @@ h3,
 }
 
 /* ========================
+   SECTION LIBRE (extra_section)
+   ======================== */
+.extra-section {
+  background-color: var(--clr-yellow-light); /* Fond jaune pâle */
+}
+
+/* ========================
    SECTION TARIFS (Style "Carte Service")
    ======================== */
 .pricing-section {
-  background-color: var(--clr-yellow-light); /* Fond de section jaune pâle */
+  background-color: var(--clr-blue-dark); /* Fond de section bleu foncé */
+  color: var(--clr-white); /* Texte blanc sur le fond bleu */
+}
+
+.pricing-section .section-headline {
+  color: var(--clr-white);
+}
+
+.pricing-section .overline-dash {
+  color: var(--clr-white);
+}
+
+.pricing-footnote {
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.8; /* Blanc légèrement atténué sur le fond bleu foncé */
+  color: var(--clr-white);
 }
 
 .pricing-notice {
@@ -2121,7 +2177,7 @@ h3,
 }
 
 .lead {
-  color: var(--clr-white);
+  color: var(--clr-black);
   font-family: var(--ff-heading);
 }
 
@@ -2411,6 +2467,12 @@ h3,
 }
 
 /* --- 5. ANIMATION FILTRE JS --- */
+/* Le bootstrap du thème (v4) n'implémente pas le gutter vertical de `g-4` :
+   on rétablit l'espace entre les lignes de projets (desktop & mobile). */
+#portfolio-grid {
+  row-gap: 30px;
+}
+
 .portfolio-item {
   display: block;
   opacity: 1;
@@ -3266,8 +3328,9 @@ h3,
    DESIGN TABLEAUX (Ciblage automatique)
    ========================================= */
 
-/* On cible tous les tableaux dans vos articles */
-.post-content table {
+/* On cible tous les tableaux dans vos articles + sections libres (extra-section) */
+.post-content table,
+.extra-section table {
   width: min-content;
   max-width: 100%;
   border-collapse: separate; /* Permet les border-radius */
@@ -3288,7 +3351,8 @@ h3,
 }
 
 /* --- EN-TÊTE (THEAD) --- */
-.post-content thead th {
+.post-content thead th,
+.extra-section thead th {
   background-color: var(--clr-blue-dark); /* Votre Bleu #1d5d9b */
   color: #fff;
   font-family: var(--ff-heading); /* Josefin Sans */
@@ -3302,7 +3366,8 @@ h3,
 }
 
 /* --- CORPS (TBODY) --- */
-.post-content tbody td {
+.post-content tbody td,
+.extra-section tbody td {
   padding: 16px 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   color: #555;
@@ -3310,19 +3375,28 @@ h3,
 }
 
 /* Suppression de la bordure du bas pour la dernière ligne */
-.post-content tbody tr:last-child td {
+.post-content tbody tr:last-child td,
+.extra-section tbody tr:last-child td {
   border-bottom: none;
+}
+
+/* Première colonne = libellés de lignes (tableaux comparatifs) */
+.extra-section tbody td:first-child {
+  font-weight: 600;
+  color: var(--clr-black);
 }
 
 /* --- EFFET ZÉBRÉ & SURVOL --- */
 
 /* Ligne paire légèrement grisée (optionnel, pour lisibilité) */
-.post-content tbody tr:nth-child(even) {
+.post-content tbody tr:nth-child(even),
+.extra-section tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
 /* Survol de la ligne en Jaune très pâle */
-.post-content tbody tr:hover {
+.post-content tbody tr:hover,
+.extra-section tbody tr:hover {
   background-color: rgba(244, 209, 96, 0.15); /* Votre jaune à 15% d'opacité */
   transition: background-color 0.2s ease;
 }

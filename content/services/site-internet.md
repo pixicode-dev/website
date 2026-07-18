@@ -69,9 +69,8 @@ pricing:
         - "Design adapté à votre identité (Evokea Studio)"
         - "Architecture statique ultra-rapide"
         - "Éco-conception INR & socle SEO inclus"
-        - "Mise en ligne et garantie 3 mois incluses"
       button_text: "Estimer mon site one-page"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Formule Pro"
       price: "3 150€ HT"
@@ -80,9 +79,9 @@ pricing:
         - "Formulaire de contact standard"
         - "Design personnalisé & unique"
         - "Optimisation SEO sémantique"
-        - "Responsive, éco-conçu, garanti 3 mois"
+        - "Responsive, éco-conçu"
       button_text: "Estimer mon site vitrine"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Formule Premium"
       price: "4 080€ HT"
@@ -93,15 +92,13 @@ pricing:
         - "Page contact + 4 pages libres"
         - "Formation complète à l'autonomie"
       button_text: "Estimer mon site complet"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
 pricing_notice:
   title: "Un besoin qui sort des formules ?"
   text: >-
-    Le sur mesure démarre à **3 840 € HT** pour un site WordPress,
-    **4 800 € HT** pour un site à CMS autonome (Strapi) et **5 760 € HT** pour
-    un site de commune ou de collectivité. Obtenez une fourchette adaptée à
-    votre projet en 2 minutes avec notre [devis en ligne](/estimation/).
+    Le sur mesure démarre à **3 150 € HT** pour un site à CMS autonome (Strapi), **3 840 € HT** pour un site WordPress. Obtenez une fourchette adaptée à
+    votre projet en 2 minutes avec notre [devis en ligne](/devis-en-ligne/).
 
 # 4.5 SECTION STACK (Hugo + Strapi)
 extra_section:
@@ -111,7 +108,6 @@ extra_section:
     Strapi est un CMS headless open source : une interface d'administration moderne, découplée du site public. Associé à Hugo, il donne le meilleur des deux mondes. Vos équipes publient en autonomie dans une interface claire, et le site servi aux visiteurs reste un ensemble de pages statiques, rapides et sans base de données exposée.
 
     Nous maîtrisons cette architecture de bout en bout : modélisation des contenus, rôles et permissions, webhooks de reconstruction automatique, migration depuis WordPress ou un autre CMS. La preuve la plus simple de cette expertise Strapi : le site que vous lisez fonctionne exactement ainsi, tout comme celui de notre partenaire [Evokea Studio](/portfolio/evokea-studio/).
-  image: "images/code.svg"
 
 # 5. CTA SERVICE
 service_cta:
@@ -131,7 +127,7 @@ faq:
         performance, **3 150 € HT** pour un site vitrine 4 pages avec formulaire
         de contact, et **4 080 € HT** pour un site complet avec blog. Le sur
         mesure (CMS autonome Strapi, WordPress, collectivité) démarre entre
-        3 840 et 5 760 € HT. Notre [devis en ligne](/estimation/) vous donne
+        3 840 et 5 760 € HT. Notre [devis en ligne](/devis-en-ligne/) vous donne
         une fourchette adaptée à votre projet en 2 minutes.
 
     - question: "Combien coûte l'hébergement ensuite ?"

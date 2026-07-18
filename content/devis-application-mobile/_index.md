@@ -32,7 +32,7 @@ estimation_cta:
   title: "Votre fourchette de prix en 2 minutes"
   text: "Décrivez votre projet : plateformes, écrans, fonctionnalités. Notre estimateur vous répond immédiatement, et nous vous rappelons sous 24 h ouvrées pour affiner."
   button_text: "Estimer mon application"
-  button_link: "/estimation/"
+  button_link: "/devis-en-ligne/"
 
 # --- FAQ (JSON-LD FAQPage automatique) ---
 faq:
@@ -76,6 +76,7 @@ cta_block:
   button_text: "Parlons de votre projet"
   button_link: "/contact/"
   cta_background: "#fbeeac"
+  hand_frame: "/images/hand.webp"
 ---
 
 ## Les postes d'un devis d'application mobile

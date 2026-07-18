@@ -23,7 +23,7 @@ sections:
     text: |
       Nos tarifs sont les mêmes pour tous et affichés publiquement : site one-page à 900 € HT, site vitrine de 4 pages avec formulaire à 3 150 € HT, site complet avec blog à 4 080 € HT, et du sur mesure dès 4 800 € HT pour un site à gestion de contenu autonome. Chaque création inclut l'adaptation mobile, l'éco-conception certifiée INR, le socle SEO technique, la mise en ligne et une garantie de 3 mois.
 
-      Ensuite, pas d'abonnement de plateforme : l'hébergement supervisé démarre à 15 € HT par mois, sauvegardes comprises. Notre [devis en ligne](/estimation/) vous donne une fourchette adaptée à votre projet en 2 minutes.
+      Ensuite, pas d'abonnement de plateforme : l'hébergement supervisé démarre à 15 € HT par mois, sauvegardes comprises. Notre [devis en ligne](/devis-en-ligne/) vous donne une fourchette adaptée à votre projet en 2 minutes.
     reverse: true
 
 # --- Bandeau estimation ---
@@ -31,7 +31,7 @@ estimation_cta:
   title: "Un projet de site à Cognac ou dans l'ouest Charente ?"
   text: "Estimez votre budget en ligne, puis rencontrons-nous à Cognac, chez vous ou au Technoparc."
   button_text: "Estimer mon site"
-  button_link: "/estimation/"
+  button_link: "/devis-en-ligne/"
 
 # --- FAQ ---
 faq:
@@ -43,7 +43,7 @@ faq:
         Les mêmes prix que partout chez nous, publics et sans surprise : site
         one-page à **900 € HT**, site vitrine 4 pages à **3 150 € HT**, site
         complet avec blog à **4 080 € HT**. Notre [devis en
-        ligne](/estimation/) affine la fourchette selon votre projet.
+        ligne](/devis-en-ligne/) affine la fourchette selon votre projet.
     - question: "Vous déplacez-vous à Cognac ?"
       answer: >-
         Oui. Cognac est à une quarantaine de minutes de notre bureau du
@@ -68,6 +68,7 @@ cta_block:
   button_text: "Prendre contact"
   button_link: "/contact/"
   cta_background: "#fbeeac"
+  hand_frame: "/images/hand.webp"
 ---
 
 ## Ce que « éco-conçu » change pour un site à Cognac

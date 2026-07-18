@@ -77,7 +77,7 @@ extra_section:
     | Crédit mensuel inclus | Support email | 30 min | 45 min |
     | GTI | 2 jours ouvrés | 1 jour ouvré | 1 jour ouvré |
 
-    Le règlement annuel vous offre un mois. Les collectivités disposent d'une gamme dédiée avec réversibilité incluse et gestion de contenu déléguée ou autonome : voyez notre offre pour les [communes et collectivités](/collectivites/).
+    Les collectivités disposent d'une gamme dédiée avec réversibilité incluse et gestion de contenu déléguée ou autonome : voyez notre offre pour les [communes et collectivités](/collectivites/).
 
 # 4. TARIFS (Infogérance & Expertise)
 pricing:
@@ -92,7 +92,7 @@ pricing:
         - "CMS Strapi autonome (dès 55 €)"
         - "Sauvegardes & crédit d'heures inclus"
       button_text: "Choisir mon pack"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Expert WordPress"
       price: "85€ HT /mois"
@@ -103,16 +103,6 @@ pricing:
         - "Sauvegarde intégrale quotidienne (14 j)"
       button_text: "Héberger mon WordPress"
       button_link: "/contact/?pack=hosting-wp"
-
-    - title: "TMA & Maintenance applicative"
-      price: "Dès 120€ HT /mois"
-      features:
-        - "Monitoring & alertes en continu"
-        - "Mises à jour de sécurité mensuelles"
-        - "Sauvegardes quotidiennes (14 j)"
-        - "Version Critique : GTI 4 h (190 €/mois)"
-      button_text: "Confier mon application"
-      button_link: "/contact/?pack=hosting-app"
 
     - title: "Architecture & DevOps"
       price: "Forfait dès 950€ HT"

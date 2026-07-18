@@ -57,7 +57,7 @@ audiences:
     - title: "PME & Entreprises"
       description: "Sites, applications mobiles et logiciels métiers qui vous appartiennent à la livraison. Des prix transparents, un agrément CII qui rembourse 20 % de vos dépenses de conception éligibles, et un estimateur en ligne pour cadrer votre budget en 2 minutes."
       link_text: "Estimer mon projet"
-      link_url: "/estimation/"
+      link_url: "/devis-en-ligne/"
 
     - title: "Communes & Collectivités"
       description: "Sites de mairie et de collectivité éco-conçus, accessibles (RGAA) et réversibles : le code, les contenus et les données restent la propriété de la collectivité, avec une gestion de contenu déléguée ou autonome selon vos équipes."

@@ -28,7 +28,7 @@ sections:
   - overline: "MARCHÉS PUBLICS"
     title: "Sur devis, sur consultation ou en co-traitance"
     text: |
-      Pour les projets sous les seuils de dispense, un simple devis suffit : notre [estimateur en ligne](/estimation/) vous donne un premier ordre de grandeur, les sites de commune démarrant à 5 760 € HT. Pour les consultations formalisées, nous répondons seuls ou en co-traitance avec notre partenaire design [Evokea Studio](/portfolio/evokea-studio/), avec qui nous menons actuellement un projet pour une collectivité.
+      Pour les projets sous les seuils de dispense, un simple devis suffit : notre [estimateur en ligne](/devis-en-ligne/) vous donne un premier ordre de grandeur, les sites de commune démarrant à 5 760 € HT. Pour les consultations formalisées, nous répondons seuls ou en co-traitance avec notre partenaire design [Evokea Studio](/portfolio/evokea-studio/), avec qui nous menons actuellement un projet pour une collectivité.
 
       Vous préparez votre consultation ? Écrivez-nous pour recevoir notre modèle de cahier des charges de site de commune : il structure votre besoin rubrique par rubrique, RGAA et réversibilité comprises, et vous garantit des réponses comparables entre prestataires.
 
@@ -37,7 +37,7 @@ estimation_cta:
   title: "Un projet de site pour votre commune ?"
   text: "Estimation immédiate en ligne, ou envoyez-nous votre cahier des charges : nous répondons sous 24 h ouvrées."
   button_text: "Estimer le projet"
-  button_link: "/estimation/"
+  button_link: "/devis-en-ligne/"
 
 # --- FAQ ---
 faq:
@@ -81,6 +81,8 @@ cta_block:
   button_text: "Contacter PixiCode"
   button_link: "/contact/"
   cta_background: "#fbeeac"
+  hand_frame: "/images/hand.webp"
+  cta_image: "/images/app-screen-example.jpg"
 ---
 
 ## Une agence de Charente qui connaît le terrain

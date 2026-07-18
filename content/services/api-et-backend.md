@@ -66,7 +66,7 @@ extra_section:
   text: |
     Un logiciel métier se chiffre au temps de développement : notre taux journalier est public, 480 € HT. Une automatisation ciblée tient en une dizaine de jours, une API ou un backend en 20 à 30, un ERP ou une plateforme SaaS complète en 35 à 75 selon le périmètre. Après la livraison, la maintenance applicative (TMA) démarre à 120 € HT par mois, monitoring et sauvegardes quotidiennes compris, et les petites évolutions passent par des carnets d'heures prépayés dès 58 € HT de l'heure.
 
-    Pour situer votre projet, notre [estimateur en ligne](/estimation/) vous donne une fourchette en 2 minutes. Et si vous hésitez encore entre un abonnement SaaS et un outil à vous, notre article [logiciel sur mesure ou SaaS : le calcul du point de bascule](/blog/logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable/) pose les chiffres.
+    Pour situer votre projet, notre [estimateur en ligne](/devis-en-ligne/) vous donne une fourchette en 2 minutes. Et si vous hésitez encore entre un abonnement SaaS et un outil à vous, notre article [logiciel sur mesure ou SaaS : le calcul du point de bascule](/blog/logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable/) pose les chiffres.
 
 # 4. TYPOLOGIES DE PROJETS (Réassurance Expert)
 pricing:
@@ -81,7 +81,7 @@ pricing:
         - "Synchronisation de bases de données"
         - "Micro-optimisation des performances"
       button_text: "Estimer mon projet API"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Logiciel Interne Native"
       price: "Sur estimation"
@@ -91,7 +91,7 @@ pricing:
         - "Mode Hors-ligne (Offline First)"
         - "Automatisation de processus RH/Stock"
       button_text: "Estimer mon outil interne"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
     - title: "Plateforme SaaS & Cloud"
       price: "Sur estimation"
@@ -101,7 +101,7 @@ pricing:
         - "Tableaux de bord & Analytics"
         - "Paiements récurrents (Stripe)"
       button_text: "Estimer mon SaaS"
-      button_link: "/estimation/"
+      button_link: "/devis-en-ligne/"
 
 # 4.5 Éligibilité CII (Levier fiscal)
 pricing_notice:
@@ -126,7 +126,7 @@ faq:
         Le prix se construit sur le temps de développement : jours prévus × taux
         journalier de **480 € HT**. Une automatisation ciblée démarre autour de
         5 000 € HT, un backend complet autour de 10 000 € HT, une plateforme SaaS
-        au-delà de 17 000 € HT. Notre [estimateur en ligne](/estimation/) vous
+        au-delà de 17 000 € HT. Notre [estimateur en ligne](/devis-en-ligne/) vous
         donne une fourchette en 2 minutes. En tant que prestataire **agréé CII
         2026-2030**, les dépenses de conception d'un logiciel innovant ouvrent
         droit à un crédit d'impôt de **20 %** pour les PME éligibles.

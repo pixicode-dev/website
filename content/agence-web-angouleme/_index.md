@@ -33,7 +33,7 @@ estimation_cta:
   title: "Un projet web ou mobile en Charente ?"
   text: "Obtenez une fourchette de prix immédiate avec notre devis en ligne, puis rencontrons-nous au Technoparc ou chez vous."
   button_text: "Estimer mon projet"
-  button_link: "/estimation/"
+  button_link: "/devis-en-ligne/"
 
 # --- FAQ ---
 faq:
@@ -45,7 +45,7 @@ faq:
         Nos formules sont les mêmes pour tous, affichées publiquement : site
         one-page à **900 € HT**, site vitrine 4 pages à **3 150 € HT**, site
         complet avec blog à **4 080 € HT**, sur mesure dès 4 800 € HT. Notre
-        [devis en ligne](/estimation/) vous donne une fourchette adaptée en
+        [devis en ligne](/devis-en-ligne/) vous donne une fourchette adaptée en
         2 minutes.
     - question: "Vous déplacez-vous chez vos clients en Charente ?"
       answer: >-
@@ -72,6 +72,7 @@ cta_block:
   button_text: "Prendre contact"
   button_link: "/contact/"
   cta_background: "#fbeeac"
+  hand_frame: "/images/hand.webp"
 ---
 
 ## Pourquoi choisir une agence web locale à Angoulême
