@@ -2,7 +2,7 @@
 # --- SEO & METADATA (Système) ---
 title: "Hébergement Managé, Infogérance & DevOps à Angoulême"
 breadcrumb_label: "DevOps & Hébergement"
-description: "Hébergement managé, infogérance et CI/CD : Docker, monitoring 24/7, sauvegardes chiffrées. Expertise DevOps éco-responsable — PixiCode, Angoulême."
+description: "Hébergement managé, infogérance et CI/CD : Docker, monitoring 24/7, sauvegardes chiffrées. Expertise DevOps éco-responsable. PixiCode, Angoulême."
 keywords: "hébergement managé angoulême, infogérance charente, expert devops france, maintenance serveur docker, déploiement continu cicd, sécurité cloud pme, hébergement éco-responsable"
 date: 2026-01-25
 
@@ -16,7 +16,7 @@ layout: "single"
 service_intro:
   title: "Le DevOps au service de votre sérénité opérationnelle"
   text: |
-    Mettre un logiciel en production est une étape critique — mais garantir sa disponibilité constante est le véritable défi. Les pannes arrivent quand l'infrastructure est traitée comme une afterthought, ajoutée à la fin d'un projet. Chez PixiCode, nous faisons du DevOps une priorité dès la conception.
+    Mettre un logiciel en production est une étape critique, mais garantir sa disponibilité constante est le véritable défi. Les pannes arrivent quand l'infrastructure est traitée comme une pièce rapportée, ajoutée à la fin du projet. Chez PixiCode, nous faisons du DevOps une priorité dès la conception.
       
     Notre agence prend en charge l'intégralité de votre infrastructure (serveurs, Docker, sécurité, monitoring) pour transformer vos serveurs en un actif agile, sécurisé et sobre en énergie. Fini le stress des déploiements : nous automatisons, nous surveillons, vous développez votre activité.
   image: "images/cloud.webp"
@@ -50,7 +50,7 @@ service_benefits:
 service_process:
   title: "L'INFRASTRUCTURE AS CODE (IaC)"
   text: |
-    PixiCode applique les standards du DevOps moderne : l'infrastructure est traitée comme du code — versionnée, documentée et reproductible. Nous commençons par conteneuriser vos applications avec Docker pour garantir une portabilité totale sur tout type d'environnement.
+    PixiCode applique les standards du DevOps moderne : l'infrastructure est traitée comme du code : versionnée, documentée et reproductible. Nous commençons par conteneuriser vos applications avec Docker pour garantir une portabilité totale sur tout type d'environnement.
       
     Les pipelines CI/CD automatisent ensuite chaque déploiement : du commit au serveur de production, chaque étape est testée, tracée et réversible. Vous gagnez en fiabilité sans perdre en agilité.
       
@@ -58,31 +58,59 @@ service_process:
       
     À la livraison, l'infrastructure est documentée et les accès vous appartiennent. Vous pouvez la reprendre en interne, la confier à un autre prestataire ou continuer avec nous en TMA. Vous gardez les clés.
       
-    Cette expertise héberge aussi les [sites web éco-conçus](/services/site-internet/) et les backends des [applications mobiles](/services/application-mobile/) que nous développons — un seul interlocuteur du code à la production.
+    Cette expertise héberge aussi les [sites web éco-conçus](/services/site-internet/) et les backends des [applications mobiles](/services/application-mobile/) que nous développons : un seul interlocuteur, du code à la production.
   image: "images/image_team.webp"
+
+# 3.5 SECTION PACKS STATIQUES (grille détaillée)
+extra_section:
+  overline: "NOS PACKS SITES STATIQUES"
+  title: "Une gamme cumulative, du site vitrine au CMS autonome"
+  text: |
+    Chaque pack inclut l'intégralité du précédent. Tous comprennent l'infrastructure statique sur CDN, le certificat SSL, la protection anti-DDoS et une disponibilité de 99,9 %.
+
+    | | L'Essentiel | Le Connecté | Le Manager |
+    |---|---|---|---|
+    | **Tarif mensuel HT** | 15 € | 25 € | 55 € |
+    | Pour quel site | Vitrine sans formulaire | Formulaires en production | CMS Strapi autonome |
+    | Mises à jour | Domaine + SSL | + connecteurs tiers | + moteur CMS |
+    | Sauvegardes | Code versionné | + configuration des flux | + base de données quotidienne |
+    | Crédit mensuel inclus | Support email | 30 min | 45 min |
+    | GTI | 2 jours ouvrés | 1 jour ouvré | 1 jour ouvré |
+
+    Le règlement annuel vous offre un mois. Les collectivités disposent d'une gamme dédiée avec réversibilité incluse et gestion de contenu déléguée ou autonome : voyez notre offre pour les [communes et collectivités](/collectivites/).
 
 # 4. TARIFS (Infogérance & Expertise)
 pricing:
   title: "OFFRES D'INFOGÉRANCE"
   headline: "La tranquillité d'esprit, forfaitisée et transparente"
   items:
-    - title: "Hosting WordPress Pro"
-      price: "Dès 75€ HT /mois"
+    - title: "Hébergement statique & Infogérance"
+      price: "Dès 15€ HT /mois"
       features:
-        - "Hébergement éco-conçu (Vitesse++)"
-        - "Mises à jour techniques & plugins"
-        - "WAF & Protection Anti-DDoS"
-        - "Sauvegardes quotidiennes déportées"
-      button_text: "Héberger mon site"
+        - "Statique CDN, SSL, anti-DDoS, 99,9 %"
+        - "Formulaires & flux supervisés (dès 25 €)"
+        - "CMS Strapi autonome (dès 55 €)"
+        - "Sauvegardes & crédit d'heures inclus"
+      button_text: "Choisir mon pack"
+      button_link: "/estimation/"
+
+    - title: "Expert WordPress"
+      price: "85€ HT /mois"
+      features:
+        - "Hébergement managé WordPress"
+        - "WAF, scans anti-malware quotidiens"
+        - "Mises à jour hebdomadaires testées"
+        - "Sauvegarde intégrale quotidienne (14 j)"
+      button_text: "Héberger mon WordPress"
       button_link: "/contact/?pack=hosting-wp"
 
-    - title: "Infogérance App & Cloud"
-      price: "Dès 150€ HT /mois"
+    - title: "TMA & Maintenance applicative"
+      price: "Dès 120€ HT /mois"
       features:
-        - "Monitoring proactif 24/7"
-        - "Maintenance Backend (Node/Go/Python)"
-        - "Gestion de base de données managée"
-        - "Support technique prioritaire"
+        - "Monitoring & alertes en continu"
+        - "Mises à jour de sécurité mensuelles"
+        - "Sauvegardes quotidiennes (14 j)"
+        - "Version Critique : GTI 4 h (190 €/mois)"
       button_text: "Confier mon application"
       button_link: "/contact/?pack=hosting-app"
 
@@ -114,8 +142,10 @@ faq:
         Contrairement à un hébergeur classique qui loue un serveur nu, nous
         gérons tout : mises à jour techniques, certificats SSL, protection
         anti-DDoS, **sauvegardes quotidiennes chiffrées et déportées**, et
-        monitoring proactif. L'offre Hosting WordPress Pro démarre à
-        **75 € HT/mois**, l'infogérance applicative à **150 € HT/mois**.
+        monitoring proactif. Les packs statiques démarrent à **15 € HT/mois**,
+        l'hébergement WordPress managé est à **85 € HT/mois** et la TMA
+        applicative démarre à **120 € HT/mois**. Un mois est offert pour tout
+        règlement annuel.
 
     - question: "Mon site ou mon application sera-t-il surveillé en continu ?"
       answer: >-
@@ -142,7 +172,7 @@ faq:
       answer: >-
         Non. L'infrastructure est **documentée, versionnée (Infrastructure as
         Code)** et les accès vous appartiennent. Vous pouvez à tout moment la
-        reprendre en interne ou la confier à un autre prestataire — c'est le
+        reprendre en interne ou la confier à un autre prestataire, selon le
         même principe de souveraineté que pour le code de nos
         [sites](/services/site-internet/) et [logiciels](/services/api-et-backend/).
 

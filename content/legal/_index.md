@@ -17,7 +17,7 @@ Bureau & adresse de correspondance : Technoparc Krysalide, 70 Rue Jean Doucet, 1
 RCS : Inscrite au RCS de Nantes sous le numéro 980 083 786
 
 Directeur de la publication : Emric Pichonnier  
-Contact : contact@pixicode.dev — 05 45 91 38 57
+Contact : contact@pixicode.dev, 05 45 91 38 57
 
 ## Hébergeur
 

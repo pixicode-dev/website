@@ -146,7 +146,7 @@ Chaque partie s'engage à respecter le RGPD. Le Prestataire n'utilise les donné
 Les présentes CGV sont soumises au droit français.
 
 - **Client Professionnel :** tout litige relève de la compétence exclusive du **Tribunal de Commerce de Nantes**, même en cas de pluralité de défendeurs.
-- **Client Particulier (Consommateur) :** en cas de litige, le Client doit d'abord contacter le Prestataire. En cas d'échec, le Client peut recourir gratuitement au médiateur de la consommation dont relève le Prestataire, à savoir l'association **CM2C** : par voie électronique via [www.cm2c.net](https://www.cm2c.net) ou par voie postale à CM2C — 49 Rue de Ponthieu, 75008 Paris.
+- **Client Particulier (Consommateur) :** en cas de litige, le Client doit d'abord contacter le Prestataire. En cas d'échec, le Client peut recourir gratuitement au médiateur de la consommation dont relève le Prestataire, à savoir l'association **CM2C** : par voie électronique via [www.cm2c.net](https://www.cm2c.net) ou par voie postale à CM2C, 49 rue de Ponthieu, 75008 Paris.
 
 ## Article 18 : Non-sollicitation de personnel
 

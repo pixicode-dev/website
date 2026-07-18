@@ -1,8 +1,8 @@
 ---
 # --- SEO & METADATA (Système) ---
-title: "Logiciel Métier Sur Mesure & API Java C# Python"
+title: "Logiciel métier & API sur mesure (Java, C#, Python)"
 breadcrumb_label: "API & Backend"
-description: "Logiciels métiers, API REST et plateformes SaaS sur mesure (Java, C#, Python). Code 100% propriétaire, agréé CII — PixiCode, Angoulême."
+description: "Logiciel métier, API REST ou SaaS sur mesure : l'outil exact dont vos équipes ont besoin. Code 100 % propriétaire, agréé CII. PixiCode, Angoulême & France."
 keywords: "développement logiciel sur mesure angoulême, création api rest, logiciel métier charente, application desktop flutter, erp sur mesure pme, saas éco-conçu"
 date: 2026-01-25
 
@@ -54,10 +54,19 @@ service_process:
       
     Nous choisissons ensuite la technologie en fonction de votre cas d'usage, pas de nos habitudes. Java & Spring Boot pour les backends critiques à forte charge (référence Finaxy Group). C# & .NET pour les environnements Microsoft et les intégrations Windows. Python pour les projets data, l'automatisation et les traitements complexes. JavaScript pour les APIs légères et les interfaces en temps réel.
       
-    Le développement avance par itérations (méthode Agile) : vos collaborateurs testent régulièrement l'outil pour s'assurer qu'il répond à l'usage terrain. Cette co-construction garantit l'adoption immédiate du logiciel par vos équipes — et évite les mois de formation post-livraison.
+    Le développement avance par itérations (méthode Agile) : vos collaborateurs testent régulièrement l'outil pour s'assurer qu'il répond à l'usage terrain. Cette co-construction garantit l'adoption immédiate du logiciel par vos équipes et évite les mois de formation après la livraison.
       
     Une fois en production, votre logiciel peut être hébergé et supervisé par notre offre [DevOps & hébergement managé](/services/devops-hebergement/) : monitoring 24/7, sauvegardes chiffrées et déploiement continu.
   image: "images/image_team.webp"
+
+# 3.5 SECTION PRIX (méthode transparente)
+extra_section:
+  overline: "COMBIEN ÇA COÛTE ?"
+  title: "Des repères de prix clairs, même pour du sur mesure"
+  text: |
+    Un logiciel métier se chiffre au temps de développement : notre taux journalier est public, 480 € HT. Une automatisation ciblée tient en une dizaine de jours, une API ou un backend en 20 à 30, un ERP ou une plateforme SaaS complète en 35 à 75 selon le périmètre. Après la livraison, la maintenance applicative (TMA) démarre à 120 € HT par mois, monitoring et sauvegardes quotidiennes compris, et les petites évolutions passent par des carnets d'heures prépayés dès 58 € HT de l'heure.
+
+    Pour situer votre projet, notre [estimateur en ligne](/estimation/) vous donne une fourchette en 2 minutes. Et si vous hésitez encore entre un abonnement SaaS et un outil à vous, notre article [logiciel sur mesure ou SaaS : le calcul du point de bascule](/blog/logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable/) pose les chiffres.
 
 # 4. TYPOLOGIES DE PROJETS (Réassurance Expert)
 pricing:
@@ -65,39 +74,39 @@ pricing:
   headline: "Des solutions techniques taillées pour vos ambitions"
   items:
     - title: "API & Connectivité"
-      price: "Sur Devis"
+      price: "Sur estimation"
       features:
         - "Conception d'API REST / GraphQL"
         - "Documentation OpenAPI (Swagger)"
         - "Synchronisation de bases de données"
         - "Micro-optimisation des performances"
-      button_text: "Connecter mes données"
-      button_link: "/contact/?pack=api"
+      button_text: "Estimer mon projet API"
+      button_link: "/estimation/"
 
     - title: "Logiciel Interne Native"
-      price: "Sur Devis"
+      price: "Sur estimation"
       features:
         - "Application Windows / Mac / Linux"
         - "Architecture Flutter Desktop"
         - "Mode Hors-ligne (Offline First)"
         - "Automatisation de processus RH/Stock"
-      button_text: "Créer mon outil interne"
-      button_link: "/contact/?pack=logiciel"
+      button_text: "Estimer mon outil interne"
+      button_link: "/estimation/"
 
     - title: "Plateforme SaaS & Cloud"
-      price: "Sur Devis"
+      price: "Sur estimation"
       features:
         - "Architecture Cloud Native (Docker)"
         - "Gestion Multi-tenant sécurisée"
         - "Tableaux de bord & Analytics"
         - "Paiements récurrents (Stripe)"
-      button_text: "Lancer mon SaaS"
-      button_link: "/contact/?pack=saas"
+      button_text: "Estimer mon SaaS"
+      button_link: "/estimation/"
 
 # 4.5 Éligibilité CII (Levier fiscal)
 pricing_notice:
   title: "Ces projets sont éligibles au Crédit Impôt Innovation."
-  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception de logiciel métier, d'API ou de plateforme SaaS **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles. Peu de prestataires sont agréés — c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
+  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception de logiciel métier, d'API ou de plateforme SaaS **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles. Peu de prestataires sont agréés : c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
 
 # 5. CTA SERVICE
 service_cta:
@@ -114,11 +123,22 @@ faq:
   items:
     - question: "Combien coûte un logiciel métier sur mesure ?"
       answer: >-
-        Chaque projet fait l'objet d'un devis après une phase de cadrage, car le prix
-        dépend du périmètre fonctionnel réel. En tant que prestataire **agréé CII
-        2026-2030**, les dépenses de conception d'un logiciel innovant peuvent ouvrir
-        droit à un crédit d'impôt de **20 %** pour les PME éligibles — nous qualifions
-        l'éligibilité de votre projet dès le premier échange.
+        Le prix se construit sur le temps de développement : jours prévus × taux
+        journalier de **480 € HT**. Une automatisation ciblée démarre autour de
+        5 000 € HT, un backend complet autour de 10 000 € HT, une plateforme SaaS
+        au-delà de 17 000 € HT. Notre [estimateur en ligne](/estimation/) vous
+        donne une fourchette en 2 minutes. En tant que prestataire **agréé CII
+        2026-2030**, les dépenses de conception d'un logiciel innovant ouvrent
+        droit à un crédit d'impôt de **20 %** pour les PME éligibles.
+
+    - question: "Que coûte la maintenance après la livraison ?"
+      answer: >-
+        Notre **TMA** démarre à **120 € HT/mois** par application (monitoring,
+        mises à jour de sécurité mensuelles, sauvegardes quotidiennes, GTI 1 jour
+        ouvré) et **190 € HT/mois** en version Critique (correctifs sous 2 jours
+        ouvrés, GTI 4 h). Les évolutions passent par des **carnets d'heures**
+        prépayés, dès 58 € HT de l'heure. Réversibilité incluse : vos données et
+        votre code restent à vous.
 
     - question: "Quelles technologies utilisez-vous pour les backends et les API ?"
       answer: >-

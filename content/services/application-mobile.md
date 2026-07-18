@@ -1,13 +1,13 @@
 ---
 # --- SEO & METADATA (Système) ---
-title: "Développement Application Mobile Flutter iOS & Android"
+title: "Développement d'application mobile sur mesure (Flutter)"
 breadcrumb_label: "Application Mobile"
-description: "Application iOS & Android avec Flutter. Un seul codebase, performances natives, code propriétaire. Agréé CII — PixiCode, Angoulême."
+description: "Votre app iOS & Android en un seul développement Flutter. Performances natives, code propriétaire, agréé CII (−20 %). Devis clair. Angoulême & toute la France."
 keywords: "développement application mobile angoulême, agence flutter france, expert ios android charente, création app mobile sur mesure, maintenance application mobile, expert numérique responsable"
 date: 2026-01-25
 
 # --- AFFICHAGE PAGE ---
-title_content: "Développement Application Mobile Flutter — iOS & Android sur mesure"
+title_content: "Développement d'application mobile Flutter, iOS & Android sur mesure"
 description_content: "L'agence PixiCode déploie vos idées sur l'App Store et Google Play. Grâce à Flutter, nous divisons vos coûts de développement par deux sans jamais sacrifier la fluidité ni l'expérience utilisateur native."
 type: "services"
 layout: "single"
@@ -33,12 +33,12 @@ service_benefits:
 
     - number: "02"
       title: "Éco-conception Mobile"
-      description: "Flutter compile en code natif — pas en WebView, pas en interpréteur. Les applications consomment moins de batterie et de données qu'une app hybride classique. Nous appliquons en plus les principes INR à l'architecture backend pour réduire l'empreinte des appels serveur."
+      description: "Flutter compile en code natif, pas en WebView ni en interpréteur. Les applications consomment moins de batterie et de données qu'une app hybride classique. Nous appliquons en plus les principes INR à l'architecture backend pour réduire l'empreinte des appels serveur."
       icon: "images/papper_note.svg"
 
     - number: "03"
       title: "Fonctionnalités Critiques"
-      description: "Géolocalisation, notifications push, authentification biométrique, paiements Stripe et Apple Pay, mode hors-ligne — nous intégrons les fonctionnalités mobiles avancées avec les standards de sécurité appropriés à chaque cas."
+      description: "Géolocalisation, notifications push, authentification biométrique, paiements Stripe et Apple Pay, mode hors-ligne : nous intégrons les fonctionnalités mobiles avancées avec les standards de sécurité appropriés à chaque cas."
       icon: "images/papper_note.svg"
 
     - number: "04"
@@ -59,10 +59,19 @@ service_process:
       
     Le développement se fait par cycles de deux semaines (sprints Agile). Vous testez des versions bêta via TestFlight (iOS) ou Google Play Console (Android) à chaque itération. Vous voyez votre application prendre forme et vous orientez les priorités en temps réel.
       
-    De la gestion des certificats Apple à la validation Google Play, nous gérons l'intégralité du processus de publication — y compris les règles qui changent plusieurs fois par an. À la livraison, vous recevez le code source complet et les accès aux comptes développeurs. L'application vous appartient, vous êtes libre de la faire évoluer avec nous ou indépendamment.
+    De la gestion des certificats Apple à la validation Google Play, nous gérons l'intégralité du processus de publication, y compris les règles qui changent plusieurs fois par an. À la livraison, vous recevez le code source complet et les accès aux comptes développeurs. L'application vous appartient, vous êtes libre de la faire évoluer avec nous ou indépendamment.
       
     Le backend qui alimente votre application (comptes utilisateurs, paiements, données) relève de notre expertise [logiciels métiers & API](/services/api-et-backend/), et son hébergement de notre offre [DevOps & hébergement managé](/services/devops-hebergement/).
   image: "images/image_team.webp"
+
+# 3.5 SECTION PRIX (méthode transparente)
+extra_section:
+  overline: "COMBIEN ÇA COÛTE ?"
+  title: "Un prix construit sur le temps réel, pas sur votre budget supposé"
+  text: |
+    Une application mobile se chiffre à partir du temps de développement prévisible. Notre base de calcul est simple et publique : un taux journalier de 480 € HT, multiplié par le nombre de jours que représente votre périmètre. Un MVP ciblé tient en une douzaine de jours, une application métier complète en demande 25 à 50 selon les fonctionnalités (comptes utilisateurs, paiement, back-office, temps réel).
+
+    Cette transparence vous protège : deux périmètres identiques donnent deux estimations identiques. Pour connaître la vôtre, décrivez votre projet à notre [estimateur en ligne](/estimation/), ou consultez notre [guide des prix d'une application mobile](/devis-application-mobile/) pour comprendre chaque poste d'un devis.
 
 # 4. TARIFS (Qualification des Leads)
 pricing:
@@ -70,34 +79,34 @@ pricing:
   headline: "Des forfaits clairs pour une vision à long terme"
   items:
     - title: "Pack Mobile MVP"
-      price: "Dès 4 500€ HT"
+      price: "Dès 5 800€ HT"
       features:
         - "App iOS & Android (Flutter)"
         - "Fonctionnalités essentielles"
         - "Design épuré & performant"
         - "Publication sur les Stores incluse"
         - "Code 100% propriétaire"
-      button_text: "Lancer mon MVP (6-8 sem.)"
-      button_link: "/contact/?pack=mobile-mvp"
+      button_text: "Estimer mon MVP en 2 min"
+      button_link: "/estimation/"
 
     - title: "Pack App Custom"
-      price: "Dès 8 000€ HT"
+      price: "Dès 12 000€ HT"
       features:
         - "Design UI/UX personnalisé"
         - "Intégrations API & Paiements"
         - "Système de Push & Offline"
         - "Architecture scalable & sécurisée"
         - "Optimisation Green IT (INR)"
-      button_text: "Créer une app sur mesure"
-      button_link: "/contact/?pack=mobile-pro"
+      button_text: "Estimer mon app sur mesure"
+      button_link: "/estimation/"
 
     - title: "Maintenance & TMA"
-      price: "Sur devis"
+      price: "Dès 120€ HT /mois"
       features:
         - "Mises à jour OS obligatoires"
         - "Suivi des crashs & Correctifs"
-        - "Évolutions fonctionnelles"
-        - "Support technique prioritaire"
+        - "Monitoring & sauvegardes quotidiennes"
+        - "GTI 1 jour ouvré (4 h en TMA Critique)"
         - "Hébergement backend sécurisé"
       button_text: "Sécuriser mon application"
       button_link: "/contact/?pack=mobile-tma"
@@ -105,7 +114,7 @@ pricing:
 # 4.5 Éligibilité CII (Levier fiscal)
 pricing_notice:
   title: "Ces projets sont éligibles au Crédit Impôt Innovation."
-  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception d'application mobile **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles — soit 900€ récupérables sur un Pack Mobile MVP à 4 500€ HT. Peu de prestataires sont agréés — c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
+  text: "En tant que prestataire agréé CII jusqu'en 2030, vos dépenses de conception d'application mobile **innovante** peuvent ouvrir droit à un crédit d'impôt de 20% pour les PME éligibles, soit 1 160 € récupérables sur un MVP à 5 800 € HT. Peu de prestataires sont agréés : c'est un levier fiscal concret à intégrer dans votre décision d'investissement."
 
 # 5. CTA SERVICE
 service_cta:
@@ -122,11 +131,13 @@ faq:
   items:
     - question: "Combien coûte le développement d'une application mobile ?"
       answer: >-
-        Le **Pack Mobile MVP** démarre à **4 500 € HT** (fonctionnalités
-        essentielles, publication sur les deux stores incluse) et le **Pack App
-        Custom** à **8 000 € HT** (design sur mesure, paiements, push, offline).
-        Grâce à notre **agrément CII 2026-2030**, une PME éligible récupère 20 %
-        de ces dépenses — soit 900 € sur un MVP à 4 500 €.
+        Nous chiffrons au temps réel : jours de développement × taux journalier
+        de **480 € HT**. Un **MVP** démarre autour de **5 800 € HT** et une
+        application sur mesure complète autour de **12 000 € HT**, selon les
+        fonctionnalités. Notre [estimateur en ligne](/estimation/) vous donne
+        une fourchette pour votre projet en 2 minutes, et notre **agrément CII
+        2026-2030** permet aux PME éligibles de récupérer 20 % des dépenses de
+        conception.
 
     - question: "Quel est le délai pour lancer une application mobile ?"
       answer: >-

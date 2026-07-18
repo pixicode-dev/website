@@ -1,4 +1,66 @@
 {
-  "articles": {},
-  "projects": {}
+  "articles": {
+    "c7b751ehl5u3vp1ouv1zxbfv": [
+      "ingenierie-web-l-architecture-derriere-la-performance-de-pixi-code"
+    ],
+    "d0qan8i6bfv354zm3rmlakui": [
+      "mots-de-passe-pourquoi-la-complexite-est-l-ennemie-de-la-robustesse"
+    ],
+    "e8wbrlsmd69spy7jitiua5pg": [
+      "green-it-comment-mesurer-l-impact-carbone-de-vos-outils-numeriques"
+    ],
+    "fppeft9kdtetv2tnpzv0vj6u": [
+      "cii-2026-2030-le-guide-complet-pour-les-pme"
+    ],
+    "gg44bq29iimpa6hdnls55aai": [
+      "app-mobile-ce-qu-il-faut-preparer-avant-de-demander-un-devis"
+    ],
+    "ibxc1lxa5c6v16b4fldp883g": [
+      "ia-generative-developpement-sur-mesure"
+    ],
+    "j1rgffla4eercwtgrgqtb74r": [
+      "phishing-and-ingenierie-sociale-comprendre-la-mecanique-pour-ne-plus-se-faire-pieger"
+    ],
+    "leauys5i2s702hms4g06xunp": [
+      "sitemap-xml-le-plan-indispensable-pour-que-google-ne-vous-ignore-pas"
+    ],
+    "q5yiixuh7erxycei1nghp0x6": [
+      "pixi-quiz-lancement-de-la-beta-publique"
+    ],
+    "qsw6pz3hfa8sfidebxvmnmtx": [
+      "noms-de-domaine-le-guide-strategique-pour-ne-pas-se-faire-pieger"
+    ],
+    "rjv9npwnj2yf8yxkvckcjj1r": [
+      "pixi-code-x-evokea-studio-design-et-ingenierie-livres-ensemble"
+    ],
+    "v7gq99v6kxuvdpub2fb6cu5i": [
+      "pourquoi-l-excellence-technique-ne-doit-plus-etre-une-option"
+    ],
+    "xlhmb1fisk17g5520fjp2xm8": [
+      "logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable"
+    ],
+    "ya9mp38n8vgydizlxdyi777k": [
+      "pixi-code-agree-cii-2026-2030-financez-20-de-votre-projet-numerique"
+    ],
+    "yrstvjtma1wwykcrdcs0ddst": [
+      "flutter-le-choix-strategique-pour-developper-votre-application-mobile"
+    ]
+  },
+  "projects": {
+    "af7u4k23zemsdetj2dgsjnr9": [
+      "odyssee-sante"
+    ],
+    "iyd7vrk6b1st997pyztp1b0w": [
+      "accompagnement-parentalite"
+    ],
+    "mrbzr310mjaxvngs8lyeyx4c": [
+      "evokea-studio"
+    ],
+    "t1ze4oearl8ogxvqpdfgitsa": [
+      "carter-coaching"
+    ],
+    "wokhz728ay03yn74xfbgvv4x": [
+      "finaxy-group"
+    ]
+  }
 }

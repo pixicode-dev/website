@@ -7,7 +7,7 @@ date: 2026-02-02
 layout: single
 ---
 
-**Dernière mise à jour : 02/02/2026**
+**Dernière mise à jour : 17/07/2026**
 
 La société **PIXICODE** (EURL au capital de 1 000 €, RCS Nantes n° 980 083 786, dont le siège est situé 2 Place Jean V, 44000 Nantes) accorde une importance majeure à la protection de votre vie privée.
 
@@ -24,6 +24,7 @@ Nous collectons uniquement les données strictement nécessaires à nos activit�
 ### A. Données collectées via le site internet (formulaires & navigation)
 
 - **Identité & contact :** nom, prénom, email (via le formulaire de contact ou de devis).
+- **Estimateur de devis en ligne :** nom, prénom, email, téléphone, entreprise, fonction, ainsi que la description de votre projet et vos réponses au questionnaire.
 - **Données techniques :** adresse IP, logs de connexion, données de navigation (cookies).
 
 ### B. Données liées à nos services (clients & facturation)
@@ -40,6 +41,7 @@ Nous collectons uniquement les données strictement nécessaires à nos activit�
 Nous traitons vos données pour les finalités suivantes, sur la base légale de l'exécution contractuelle, de l'obligation légale ou de notre intérêt légitime :
 
 1. **Gestion de la relation client :** réponse aux demandes de contact, envoi de devis, gestion des contrats.
+1. **Estimation de devis en ligne :** calcul et envoi de votre estimation tarifaire, puis recontact commercial au sujet de votre demande. Ce traitement repose sur votre **consentement explicite** (case à cocher au moment de la demande), que vous pouvez retirer à tout moment. La description de votre projet est traitée automatiquement par un outil d'assistance au chiffrage afin de produire la fourchette de prix ; aucune décision automatisée produisant des effets juridiques n'est prise sur cette base, et un membre de l'équipe reprend systématiquement contact avec vous.
 2. **Fourniture des services :** hébergement de sites, maintenance, accès aux applications (PixiQuiz).
 3. **Facturation et comptabilité :** respect de nos obligations fiscales et légales.
 4. **Sécurité et amélioration :** surveillance des logs serveurs pour prévenir les attaques informatiques, statistiques anonymes de fréquentation.
@@ -68,7 +70,7 @@ Tous nos serveurs et prestataires sont situés au sein de l'**Union Européenne*
 
 Nous appliquons des durées de conservation strictes :
 
-- **Données de prospection (contact site web) :** 3 ans après le dernier contact.
+- **Données de prospection (contact site web et estimateur de devis) :** 3 ans après le dernier contact.
 - **Données clients & facturation :** 10 ans (obligation légale comptable).
 - **Comptes utilisateurs (applis) :** jusqu'à suppression du compte ou après 24 mois d'inactivité.
 - **Logs techniques & sécurité :** 12 mois glissants.

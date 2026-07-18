@@ -34,9 +34,13 @@ enableGitInfo = true
     url = "blog/"
     weight = 4
   [[menu.nav]]
+    name = "Devis en ligne"
+    url = "estimation/"
+    weight = 5
+  [[menu.nav]]
     name = "Contact"
     url = "contact/"
-    weight = 5
+    weight = 6
 
 # --- PARAMÈTRES GLOBAUX ---
 [params]
@@ -66,10 +70,12 @@ enableGitInfo = true
   city        = "Saint-Michel"
   postal_code = "16470"
   region      = "Nouvelle-Aquitaine"
-  # latitude / longitude : à renseigner depuis Google Maps (clic droit sur le
-  # bureau → copier les coordonnées) pour activer le bloc geo du LocalBusiness
-  # latitude  = 45.64
-  # longitude = 0.10
+  # Coordonnées du bureau (Technoparc Krysalide) — activent le bloc geo du
+  # LocalBusiness dans le schema.
+  latitude  = 45.6306889
+  longitude = 0.1163791
+  # Lien de la fiche d'établissement Google — émis en hasMap dans le schema.
+  map_url = "https://share.google/L0ZdGB24VNhbarSpS"
   founder       = "Emric Pichonnier"
   founding_date = "2023"
   price_range   = "€€"
@@ -80,6 +86,15 @@ enableGitInfo = true
   url    = "https://pixicode.dev"
   slogan = "Expert en éco-conception web"
 
+# --- ESTIMATEUR DE DEVIS EN LIGNE (/estimation/) ---
+[params.estimateur]
+  # URL du webhook n8n qui reçoit le formulaire et renvoie l'estimation.
+  # Tant que ce champ est vide, l'estimateur tourne en MODE DÉMO (chiffres
+  # illustratifs, aucun envoi) — pratique pour prévisualiser l'interface.
+  webhook = ""
+  # Clé de site reCAPTCHA v3 (optionnel). Laisser vide pour désactiver.
+  recaptcha_key = ""
+
 # --- SECTION HERO (Accueil) ---
 [params.hero]
   enable           = true
@@ -89,7 +104,7 @@ enableGitInfo = true
   title = "INGÉNIERIE LOGICIELLE SUR MESURE : LA PERFORMANCE DURABLE"
   
   # DESCRIPTION : On cible les décideurs (PME/Startup) avec les preuves techniques (Hugo, Flutter) et éthiques (INR)
-  description = "Basée à Angoulême, PixiCode conçoit des solutions numériques architecturées pour durer. Sites, applications mobiles, logiciels métiers : chaque livrable est propriétaire, éco-conçu, et pensé pour que vous restiez maître de votre outil — sans abonnement captif ni dépendance tierce."
+  description = "Basée à Angoulême, PixiCode conçoit des solutions numériques architecturées pour durer. Sites, applications mobiles, logiciels métiers : chaque livrable est propriétaire, éco-conçu, et pensé pour que vous restiez maître de votre outil, sans abonnement captif ni dépendance tierce."
   
   image            = "images/screens.webp"
   image_alt        = "Aperçu d'applications mobiles Flutter et sites web éco-conçus par PixiCode"
@@ -97,8 +112,8 @@ enableGitInfo = true
   # BOUTONS D'ACTION : Plus orientés "Partenaire" que "Prestataire"
   primary_btn      = "Parlons de votre projet "
   primary_link     = "contact/"
-  secondary_btn    = "Voir nos réalisations "
-  secondary_link   = "portfolio/"
+  secondary_btn    = "Estimer mon projet en 2 min "
+  secondary_link   = "estimation/"
 
 # --- AUTRES SECTIONS ---
 [params.contactForm]
@@ -135,7 +150,7 @@ enableGitInfo = true
       url = "https://www.instagram.com/pixicode_dev/"
     [[params.footer.social.link]]
       name = "Notre fiche Google"
-      url = "https://www.google.com/search?sca_esv=8382d0de9abbe68c&hl=fr&authuser=1&kgmid=/g/11vqzs6fyb&q=PixiCode&shndl=30&shem=lcuae,lspt8,uaasie&source=sh/x/loc/uni/m1/1&kgs=c85961deea9437e6"
+      url = "https://share.google/L0ZdGB24VNhbarSpS"
     [[params.footer.social.link]]
       name = "Discord"
       url = "https://discord.gg/tzgBnm3dAc"
@@ -161,6 +176,27 @@ enableGitInfo = true
     [[params.footer.sitemap.link]]
       name = "DevOps & hébergement"
       url = "services/devops-hebergement/"
+    [[params.footer.sitemap.link]]
+      name = "Devis en ligne"
+      url = "estimation/"
+    [[params.footer.sitemap.link]]
+      name = "Devis application mobile"
+      url = "devis-application-mobile/"
+    [[params.footer.sitemap.link]]
+      name = "Collectivités"
+      url = "collectivites/"
+    [[params.footer.sitemap.link]]
+      name = "Associations"
+      url = "associations/"
+    [[params.footer.sitemap.link]]
+      name = "Crédit Impôt Innovation"
+      url = "blog/cii-2026-2030-le-guide-complet-pour-les-pme/"
+    [[params.footer.sitemap.link]]
+      name = "Agence web Angoulême"
+      url = "agence-web-angouleme/"
+    [[params.footer.sitemap.link]]
+      name = "Site internet Cognac"
+      url = "creation-site-internet-cognac/"
     [[params.footer.sitemap.link]]
       name = "Portfolio"
       url = "portfolio/"
