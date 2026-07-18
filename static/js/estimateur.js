@@ -1023,14 +1023,6 @@
     getRecaptchaToken(function (token) {
       var payload = buildPayload(token);
 
-      if (CONFIG.demo || !CONFIG.webhook) {
-        window.setTimeout(function () {
-          setLoading(false);
-          showResult(mockEstimate(), true);
-        }, 900);
-        return;
-      }
-
       fetch(CONFIG.webhook, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -1042,7 +1034,7 @@
         })
         .then(function (data) {
           setLoading(false);
-          showResult(data, false);
+          showResult(data);
         })
         .catch(function () {
           setLoading(false);
@@ -1109,7 +1101,7 @@
     return out;
   }
 
-  function showResult(data, isDemo) {
+  function showResult(data) {
     clear(root);
     data = data || {};
     var card = el("div", {
@@ -1222,7 +1214,7 @@
     card.appendChild(
       el("p", { class: "est-result-disclaimer" }, [
         data.disclaimer ||
-          "Estimation indicative HT, hors taxes, sous réserve d'un cadrage. Elle ne constitue pas un devis contractuel. Valable 30 jours.",
+          "Estimation indicative, hors taxes (TVA de 20 % à ajouter), sous réserve d'un cadrage. Elle ne constitue en rien un devis contractuel ni un engagement.",
       ]),
     );
 
@@ -1239,17 +1231,6 @@
         ]),
       ]),
     );
-
-    if (isDemo) {
-      card.appendChild(
-        el("p", {
-          class: "est-demo-note",
-          html:
-            ICONS.info +
-            "<span>Aperçu de démonstration (n8n non connecté) — chiffres illustratifs.</span>",
-        }),
-      );
-    }
 
     root.appendChild(card);
     card.scrollIntoView({ behavior: "smooth", block: "start" });
