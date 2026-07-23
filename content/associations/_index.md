@@ -2,7 +2,7 @@
 # --- SEO & METADATA ---
 title: "Site internet pour association : sans abonnement, à vous pour de bon"
 breadcrumb_label: "Associations"
-description: "Création de site internet pour association : payez une fois, hébergez pour quelques euros par mois, restez propriétaire. PixiCode, agence certifiée INR en Charente."
+description: "Site internet pour association : payez une fois, hébergez pour quelques euros par mois, restez propriétaire. PixiCode, agence certifiée INR en Charente."
 keywords: "création site internet association, prix site internet association, site association sans abonnement, site club sportif, site asso"
 date: 2026-07-17
 type: "landing"

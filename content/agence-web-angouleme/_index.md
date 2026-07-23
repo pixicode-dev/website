@@ -2,7 +2,7 @@
 # --- SEO & METADATA ---
 title: "Agence web à Angoulême : création de site internet & application"
 breadcrumb_label: "Agence web Angoulême"
-description: "Agence web à Angoulême (Technoparc Krysalide) : création de site internet éco-conçu, application mobile, logiciel métier. Code propriétaire, agréé CII. Devis en 2 min."
+description: "Agence web à Angoulême : création de site internet éco-conçu, application mobile, logiciel métier. Code propriétaire, agréé CII. Devis en 2 min."
 keywords: "agence web angouleme, création site internet angouleme, développement application angouleme, agence web charente, développeur web angouleme"
 date: 2026-07-17
 type: "landing"

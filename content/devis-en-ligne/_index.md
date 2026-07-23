@@ -2,7 +2,7 @@
 # --- SEO & METADATA ---
 title: "Devis en ligne : site, application mobile, logiciel & collectivité"
 breadcrumb_label: "Devis en ligne"
-description: "Devis en ligne gratuit pour votre site internet, application mobile, logiciel métier, site de collectivité ou hébergement. Estimation immédiate, agréé CII. PixiCode, Angoulême & France."
+description: "Devis en ligne gratuit pour votre site internet, application mobile, logiciel métier ou hébergement. Estimation immédiate, agréé CII. PixiCode, Angoulême."
 keywords: "devis en ligne, devis site internet en ligne, devis application mobile en ligne, devis logiciel sur mesure, devis site collectivité, estimation projet web, devis hébergement site"
 date: 2026-07-17
 

@@ -2,7 +2,7 @@
 # --- SEO & METADATA ---
 title: "Devis application mobile : prix réels et estimation en ligne"
 breadcrumb_label: "Devis application mobile"
-description: "Combien coûte une application mobile ? Fourchettes réelles, postes d'un devis expliqués, et estimation en ligne immédiate. Agréé CII, PixiCode, Angoulême & France."
+description: "Combien coûte une application mobile ? Fourchettes réelles, postes d'un devis expliqués, estimation en ligne immédiate. Agréé CII. PixiCode, Angoulême."
 keywords: "devis application mobile, prix application mobile, combien coûte une application mobile, coût développement application, estimation application mobile"
 date: 2026-07-17
 type: "landing"

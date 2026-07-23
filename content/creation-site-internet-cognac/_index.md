@@ -2,7 +2,7 @@
 # --- SEO & METADATA ---
 title: "Création de site internet à Cognac : éco-conçu et sans abonnement"
 breadcrumb_label: "Site internet Cognac"
-description: "Création de site internet à Cognac et dans l'ouest Charente : sites éco-conçus dès 900 € HT, code propriétaire, déplacements inclus. PixiCode, basée près d'Angoulême."
+description: "Création de site internet à Cognac : sites éco-conçus dès 900 € HT, code propriétaire, déplacements inclus. PixiCode, basée près d'Angoulême."
 keywords: "création site internet cognac, agence web cognac, site internet cognac, création site web cognac, développeur web cognac"
 date: 2026-07-17
 type: "landing"
