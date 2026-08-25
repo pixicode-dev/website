@@ -1,8 +1,8 @@
 ---
 # --- SEO & METADATA (Système) ---
-title: "Développement d'application mobile sur mesure (Flutter)"
+title: "Agence Flutter : votre application iOS & Android"
 breadcrumb_label: "Application Mobile"
-description: "Votre app iOS & Android en un seul développement Flutter. Performances natives, code propriétaire, agréé CII (−20 %). Devis clair. Angoulême & toute la France."
+description: "Agence Flutter : une seule base de code pour iOS et Android. Packs dès 5 800 € HT, code propriétaire, agréé CII (−20 %). PixiCode, Angoulême & toute la France."
 keywords: "développement application mobile angoulême, agence flutter france, expert ios android charente, création app mobile sur mesure, maintenance application mobile, expert numérique responsable"
 date: 2026-01-25
 
@@ -19,6 +19,8 @@ service_intro:
     Lancer une application mobile, c'est choisir une technologie pour les cinq prochaines années. Ce choix conditionne vos coûts de maintenance, votre vitesse de mise sur le marché et la qualité d'expérience de vos utilisateurs. Avec Flutter (propulsé par Google), PixiCode conçoit une base de code unique qui s'exécute nativement sur iPhone et Android, interfaces sur mesure, expérience identique au développement natif, pour un budget maîtrisé.
 
     Notre référence : [Carter Coaching](/portfolio/carter-coaching/), un écosystème SaaS mobile complet livré en production, avec gestion multi-rôles, abonnements Stripe et publication sur les deux stores.
+
+    Votre projet passe aussi par le web ? Voyez nos [offres de création de site internet](/services/site-internet/), pensées avec la même exigence.
   image: "images/app.avif"
 
 # 2. BÉNÉFICES (Expertise & Éthique)
@@ -48,7 +50,7 @@ service_benefits:
 
     - number: "05"
       title: "CII : 20% récupérables sur votre MVP"
-      description: "PixiCode est agréé Crédit Impôt Innovation 2026-2030. Le développement d'une application mobile innovante est l'un des cas d'usage les plus courants du dispositif. Sur un Pack Mobile MVP à 4 500€ HT, cela représente 900€ récupérables. Nous qualifions votre projet avec vous dès le premier échange."
+      description: "PixiCode est agréé Crédit Impôt Innovation 2026-2030. Le développement d'une application mobile innovante est l'un des cas d'usage les plus courants du dispositif. Sur un Pack Mobile MVP à 5 800€ HT, cela représente 1 160€ récupérables. Nous qualifions votre projet avec vous dès le premier échange."
       icon: "images/papper_note.svg"
 
 # 3. APPROCHE SERVICE

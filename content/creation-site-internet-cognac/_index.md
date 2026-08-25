@@ -21,7 +21,7 @@ sections:
   - overline: "PRIX TRANSPARENTS"
     title: "Des formules publiques, du one-page au site complet"
     text: |
-      Nos tarifs sont les mêmes pour tous et affichés publiquement : site one-page à 900 € HT, site vitrine de 4 pages avec formulaire à 3 150 € HT, site complet avec blog à 4 080 € HT, et du sur mesure dès 4 800 € HT pour un site à gestion de contenu autonome. Chaque création inclut l'adaptation mobile, l'éco-conception certifiée INR, le socle SEO technique, la mise en ligne et une garantie de 3 mois.
+      Nos tarifs sont les mêmes pour tous et affichés publiquement dans [nos offres de création de site internet](/services/site-internet/) : site one-page à 900 € HT, site vitrine de 4 pages avec formulaire à 3 150 € HT, site complet avec blog à 4 080 € HT, et du sur mesure dès 4 800 € HT pour un site à gestion de contenu autonome. Chaque création inclut l'adaptation mobile, l'éco-conception certifiée INR, le socle SEO technique, la mise en ligne et une garantie de 3 mois.
 
       Ensuite, pas d'abonnement de plateforme : l'hébergement supervisé démarre à 15 € HT par mois, sauvegardes comprises. Notre [devis en ligne](/devis-en-ligne/) vous donne une fourchette adaptée à votre projet en 2 minutes.
     reverse: true

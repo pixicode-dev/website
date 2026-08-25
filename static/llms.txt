@@ -17,10 +17,13 @@ Contact : contact@pixicode.dev — 05 45 91 38 57 — https://pixicode.dev/conta
 ## Services
 
 - [Nos services (vue d'ensemble + FAQ)](https://pixicode.dev/services/) : les 4 expertises, méthode de travail, questions fréquentes
-- [Création de site web sur mesure](https://pixicode.dev/services/site-internet/) : sites vitrines et web apps JAMstack (Hugo + Strapi), éco-conçus, dès 750 € HT
-- [Application mobile Flutter](https://pixicode.dev/services/application-mobile/) : iOS & Android avec une seule base de code, MVP dès 4 500 € HT
-- [Logiciels métiers & API](https://pixicode.dev/services/api-et-backend/) : ERP, CRM, backends et API sur mesure (Java, C#, Python, Node.js)
-- [DevOps & hébergement managé](https://pixicode.dev/services/devops-hebergement/) : infogérance dès 75 € HT/mois, CI/CD, Docker, monitoring 24/7
+- [Création de site web sur mesure](https://pixicode.dev/services/site-internet/) : sites vitrines et web apps JAMstack (Hugo + Strapi), éco-conçus — one-page 900 € HT, vitrine 4 pages 3 150 € HT, site complet 4 080 € HT, sur mesure dès 4 800 € HT
+- [Application mobile Flutter](https://pixicode.dev/services/application-mobile/) : iOS & Android avec une seule base de code — Pack MVP dès 5 800 € HT, app complète dès 12 000 € HT, TMA dès 120 € HT/mois
+- [Logiciels métiers & API](https://pixicode.dev/services/api-et-backend/) : ERP, CRM, backends et API sur mesure (Java, C#, Python, Node.js) — sur estimation, TMA de 120 à 190 € HT/mois
+- [DevOps & hébergement managé](https://pixicode.dev/services/devops-hebergement/) : hébergement supervisé dès 15 € HT/mois, infogérance WordPress 85 € HT/mois, CI/CD, Docker
+- [Sites internet pour communes & collectivités](https://pixicode.dev/collectivites/) : Ma Commune Essentiel 2 370 € HT (mairies < 2 000 habitants, mise en ligne 2-3 semaines), Ma Commune Portail 10 850 € HT (sur mesure, 8-12 semaines) — conformité RGAA, réversibilité incluse, abonnement de 45 à 75 € HT/mois
+- [Sites internet pour associations](https://pixicode.dev/associations/) : one-page dès 900 € HT, hébergement dès 15 € HT/mois, sans abonnement captif
+- [Devis en ligne](https://pixicode.dev/devis-en-ligne/) : estimation immédiate et gratuite pour site, application mobile, logiciel ou hébergement
 
 ## Entreprise
 

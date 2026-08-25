@@ -387,22 +387,27 @@
         ],
       },
       {
+        id: "habitants",
+        label: "Combien d'habitants compte votre commune ?",
+        type: "single",
+        help: "Nos deux formules Communes sont pensées selon la taille : Ma Commune Essentiel (moins de 2 000 habitants) sur nos modèles, Ma Commune Portail (plus de 2 000) sur mesure. Conformité RGAA incluse dans les deux.",
+        options: [
+          { value: "moins2000", label: "Moins de 2 000 habitants" },
+          { value: "plus2000", label: "Plus de 2 000 habitants" },
+          { value: "nsp", label: "Je ne sais pas / autre structure" },
+        ],
+      },
+      {
         id: "gestion",
         label: "Qui mettra le site à jour au quotidien ?",
         type: "single",
         required: true,
-        help: "Soit vous nous envoyez vos actualités et nous publions, soit vos agents publient eux-mêmes (formation incluse).",
+        help: "Soit vous nous envoyez vos actualités et nous publions, soit vos agents publient eux-mêmes via le CMS Strapi (formation incluse).",
         options: [
           { value: "pixicode", label: "PixiCode s'en charge" },
           { value: "autonome", label: "Nos agents, en autonomie" },
           { value: "nsp", label: "À discuter" },
         ],
-      },
-      {
-        id: "rgaa",
-        label: "Souhaitez-vous la mise en conformité accessibilité (RGAA) ?",
-        type: "bool",
-        help: "L'accessibilité est une obligation légale pour les sites publics ; nous auditons et mettons en conformité.",
       },
       {
         id: "volume",
@@ -1319,24 +1324,75 @@
               label: "Hébergement & infogérance",
             };
     } else if (state.type === "site_collectivite") {
-      var lo = 5760,
-        hi = 8000;
-      if (a.rgaa === "oui") {
-        lines.push({ label: "Audit & conformité RGAA", amount: 1440 });
-        lo += 1440;
-        hi += 1440;
+      // Grille Communes 2026 : Ma Commune Essentiel 2 370 € HT (< 2 000 hab.),
+      // Ma Commune Portail 10 850 € HT (> 2 000 hab.). Conformité RGAA incluse
+      // dans les deux formules ; CMS Strapi en option (1 250 € + abonnement à
+      // 60 €/mois au lieu de 75 €).
+      var communeConnue = a.structure === "commune" || !a.structure;
+      var cmsStrapi = a.gestion === "autonome";
+      var lo, hi;
+      if (communeConnue && a.habitants === "moins2000") {
+        lines.push({
+          label: "Ma Commune Essentiel — mise en service (RGAA inclus)",
+          amount: 2370,
+        });
+        lo = 2370;
+        hi = 2370;
+        recurring = cmsStrapi
+          ? { low: 60, high: 60, period: "mois", label: "Abonnement avec CMS Strapi" }
+          : {
+              low: 75,
+              high: 75,
+              period: "mois",
+              label: "Abonnement tout compris, mises à jour incluses",
+            };
+      } else if (communeConnue && a.habitants === "plus2000") {
+        lines.push({
+          label: "Ma Commune Portail — création sur mesure (RGAA & RGPD inclus)",
+          amount: 10850,
+        });
+        lo = 10850;
+        hi = 10850;
+        if (a.volume === "complet") {
+          lines.push({
+            label: "Famille de sections supplémentaire (indicatif)",
+            amount: 2100,
+          });
+          hi += 2100;
+        }
+        recurring = cmsStrapi
+          ? { low: 60, high: 60, period: "mois", label: "Abonnement avec CMS Strapi" }
+          : {
+              low: 45,
+              high: 75,
+              period: "mois",
+              label: "Abonnement selon la gestion des contenus",
+            };
+      } else {
+        // EPCI, office de tourisme, autre structure ou taille inconnue :
+        // fourchette de la gamme, affinée sur devis.
+        lines.push({
+          label: "Site de collectivité — de la formule Essentiel au portail sur mesure",
+          amount: null,
+        });
+        lo = 2370;
+        hi = 10850;
+        recurring = {
+          low: 45,
+          high: 75,
+          period: "mois",
+          label: "Abonnement gamme Communes",
+        };
       }
-      lines.unshift({
-        label: "Site de collectivité (sur mesure)",
-        amount: 5760,
-      });
+      if (cmsStrapi) {
+        lines.push({
+          label: "Option CMS Strapi, formation d'une demi-journée comprise",
+          amount: 1250,
+        });
+        lo += 1250;
+        hi += 1250;
+      }
       range = { low: lo, high: hi };
-      recurring = {
-        low: 30,
-        high: 95,
-        period: "mois",
-        label: "Hébergement gamme Communes",
-      };
     } else if (state.type === "hebergement") {
       if (a.techno === "wordpress")
         recurring = {

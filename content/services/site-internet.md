@@ -1,8 +1,8 @@
 ---
 # --- SEO & METADATA (Système) ---
-title: "Création de site internet éco-conçu à Angoulême"
+title: "Offres de création de site internet éco-conçu"
 breadcrumb_label: "Site Internet"
-description: "Création de site internet éco-conçu (Hugo + Strapi) : rapide, sécurisé, sans abonnement. Code propriétaire, agréé CII. PixiCode, Angoulême & toute la France."
+description: "Nos offres de création de site internet éco-conçu : dès 900 € HT, sans abonnement, code propriétaire, agréé CII. Hugo + Strapi, rapide et sécurisé."
 keywords: "création site web angoulême, agence web charente, site internet éco-conçu, expert hugo strapi, site web sans abonnement, refonte site internet professionnel"
 date: 2026-01-25
 
@@ -19,6 +19,8 @@ service_intro:
     La majorité des sites livrés par des agences fonctionnent sur un modèle dynamique hérité des années 2000 : à chaque visite, un serveur interroge une base de données, assemble une page et vous l'envoie. C'est lent, énergivore, et la base de données exposée est une surface d'attaque permanente.  
       
     Chez PixiCode, nous travaillons autrement. Chaque site est construit sur une architecture JAMstack : Hugo pour la génération statique, Strapi pour la gestion de contenu. Les pages sont pré-calculées avant que le visiteur arrive. Résultat : chargement quasi instantané, aucune base de données exposée sur le web, empreinte énergétique réduite. Et à la livraison, le code vous appartient intégralement.
+
+    Votre projet est plutôt une application ? Découvrez notre [offre de développement mobile Flutter](/services/application-mobile/), construite sur les mêmes principes.
   image: "images/web.webp"
 
 # 2. BÉNÉFICES (Expertise & Impact)
@@ -97,7 +99,8 @@ pricing:
 pricing_notice:
   title: "Un besoin qui sort des formules ?"
   text: >-
-    Le sur mesure démarre à **3 150 € HT** pour un site à CMS autonome (Strapi), **3 840 € HT** pour un site WordPress. Obtenez une fourchette adaptée à
+    Le sur mesure démarre à **4 800 € HT** pour un site à gestion de contenu
+    autonome (Strapi ou WordPress). Obtenez une fourchette adaptée à
     votre projet en 2 minutes avec notre [devis en ligne](/devis-en-ligne/).
 
 # 4.5 SECTION STACK (Hugo + Strapi)
@@ -126,9 +129,11 @@ faq:
         Nos formules démarrent à **900 € HT** pour un site one-page haute
         performance, **3 150 € HT** pour un site vitrine 4 pages avec formulaire
         de contact, et **4 080 € HT** pour un site complet avec blog. Le sur
-        mesure (CMS autonome Strapi, WordPress, collectivité) démarre entre
-        3 840 et 5 760 € HT. Notre [devis en ligne](/devis-en-ligne/) vous donne
-        une fourchette adaptée à votre projet en 2 minutes.
+        mesure (CMS autonome Strapi ou WordPress) démarre à **4 800 € HT**.
+        Pour les communes et collectivités, voyez [nos formules
+        dédiées](/collectivites/), dès 2 370 € HT. Notre [devis en
+        ligne](/devis-en-ligne/) vous donne une fourchette adaptée à votre
+        projet en 2 minutes.
 
     - question: "Combien coûte l'hébergement ensuite ?"
       answer: >-

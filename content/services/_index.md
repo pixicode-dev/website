@@ -83,7 +83,7 @@ faq:
       answer: "C'est notre spécialité avec le framework **Flutter**. Nous développons une base de code unique pour toutes vos plateformes. Cela permet de diviser vos coûts de maintenance par deux tout en offrant des performances identiques aux applications natives. Un choix stratégique pour les entreprises qui visent une scalabilité rapide."
 
     - question: "Que comprend votre offre d'hébergement géré ?"
-      answer: "Nous proposons un hébergement optimisé à partir de **10€ HT/mois**. Contrairement aux hébergeurs classiques, nous gérons pour vous le nom de domaine, les certificats de sécurité SSL et la maintenance technique pour garantir une disponibilité maximale de vos services."
+      answer: "Nous proposons un hébergement optimisé à partir de **15 € HT/mois**. Contrairement aux hébergeurs classiques, nous gérons pour vous le nom de domaine, les certificats de sécurité SSL et la maintenance technique pour garantir une disponibilité maximale de vos services."
 
     - question: "Travailler avec PixiCode, c'est travailler avec qui ?"
       answer: "Vous travaillez directement avec les personnes qui conçoivent et codent votre projet. Pas de chef de projet intermédiaire qui relaie des informations déformées. Chaque décision technique est expliquée, chaque choix est justifié."

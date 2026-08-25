@@ -1,7 +1,7 @@
 ---
 # Le template ajoute le suffixe " | PixiCode" (mot-clé d'abord, marque à la
 # fin) — ne pas remettre la marque ici (sinon elle apparaît deux fois)
-title: "Agence web, mobile & logiciel sur mesure à Angoulême"
+title: "Agence web, mobile & logiciel sur mesure"
 title_content: "L'Artisanat Logiciel pour digitaliser et optimiser votre métier"
 description_content: "Expert en éco-conception numérique à Angoulême. PixiCode développe vos sites Web (Hugo), apps mobiles (Flutter) et logiciels métiers sans template. Performance, code propriétaire et certification INR."
 description: "Sites éco-conçus, apps Flutter, logiciels métiers : du sur mesure 100 % propriétaire, agréé CII (−20 %). PixiCode, Angoulême & toute la France."
