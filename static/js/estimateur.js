@@ -92,12 +92,12 @@
       icon: ICONS.logiciel_metier,
       desc: "Gestion, automatisation, connexion d'outils",
     },
-    /*{
+    {
       value: "site_collectivite",
       label: "Site de collectivité",
       icon: ICONS.site_collectivite,
       desc: "Commune, EPCI, office de tourisme",
-    },*/
+    },
     {
       value: "hebergement",
       label: "Hébergement / maintenance",
@@ -1339,7 +1339,12 @@
         lo = 2370;
         hi = 2370;
         recurring = cmsStrapi
-          ? { low: 60, high: 60, period: "mois", label: "Abonnement avec CMS Strapi" }
+          ? {
+              low: 60,
+              high: 60,
+              period: "mois",
+              label: "Abonnement avec CMS Strapi",
+            }
           : {
               low: 75,
               high: 75,
@@ -1348,7 +1353,8 @@
             };
       } else if (communeConnue && a.habitants === "plus2000") {
         lines.push({
-          label: "Ma Commune Portail — création sur mesure (RGAA & RGPD inclus)",
+          label:
+            "Ma Commune Portail — création sur mesure (RGAA & RGPD inclus)",
           amount: 10850,
         });
         lo = 10850;
@@ -1361,7 +1367,12 @@
           hi += 2100;
         }
         recurring = cmsStrapi
-          ? { low: 60, high: 60, period: "mois", label: "Abonnement avec CMS Strapi" }
+          ? {
+              low: 60,
+              high: 60,
+              period: "mois",
+              label: "Abonnement avec CMS Strapi",
+            }
           : {
               low: 45,
               high: 75,
@@ -1372,7 +1383,8 @@
         // EPCI, office de tourisme, autre structure ou taille inconnue :
         // fourchette de la gamme, affinée sur devis.
         lines.push({
-          label: "Site de collectivité — de la formule Essentiel au portail sur mesure",
+          label:
+            "Site de collectivité — de la formule Essentiel au portail sur mesure",
           amount: null,
         });
         lo = 2370;
