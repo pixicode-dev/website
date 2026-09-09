@@ -32,6 +32,11 @@ export default {
                 "fade",
                 /^variant-/, // variantes de couleur des cartes blog (JS)
                 "btn-page", // pagination JS du blog
+                "visually-hidden",
+                "visually-hidden-focusable",
+                "skip-link",
+                "contenu", // cible du lien d'évitement (#contenu:focus)
+                /^pixi-(label|required)/, // étiquettes du formulaire de contact
               ],
               // greedy : conserve tout sélecteur contenant ce motif, y compris
               // les combinateurs (accordéon FAQ : [aria-expanded="true"]+…).

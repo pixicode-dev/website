@@ -1,3 +1,5 @@
+@import "a11y";
+
 :root {
   /* --- Palette de Couleurs --- */
   --clr-blue-light: #75c2f6;
@@ -2229,6 +2231,29 @@ h3,
   padding-left: 10px;
 }
 
+/* Étiquettes de formulaire (RGAA 11.1) — le placeholder ne fait pas office
+   d'étiquette : il disparaît à la saisie. */
+.pixi-label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--ff-body);
+  font-size: 0.9rem;
+  font-weight: var(--fw-semibold);
+  color: var(--clr-black);
+}
+
+.pixi-required {
+  /* #b3261e : 6,54:1 sur blanc. Le rouge pur tombait à 4,00:1. */
+  color: #b3261e;
+  font-weight: var(--fw-bold);
+}
+
+.pixi-required-note {
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
 /* 4. Inputs Stylisés (Gris clair, arrondis) */
 .pixi-input {
   background-color: #f0f2f5; /* Gris très clair */
@@ -2242,14 +2267,16 @@ h3,
 
 .pixi-input:focus {
   background-color: white;
-  border-color: var(--clr-blue-light);
-  box-shadow: 0 0 0 3px rgba(117, 194, 246, 0.2);
-  outline: none;
+  /* Bordure à 6,79:1 sur blanc (l'ancien #75c2f6 tombait à 1,94:1, sous le
+     seuil de 3:1 exigé pour les composants d'interface — RGAA 3.3 / 10.7). */
+  border-color: var(--clr-blue-dark);
+  box-shadow: 0 0 0 3px rgba(29, 93, 155, 0.25);
 }
 
-/* Placeholder color */
+/* Placeholder color — #6b6b6b donne 4,75:1 sur le fond #f0f2f5 du champ.
+   L'ancien #999 tombait à 2,54:1. */
 .pixi-input::placeholder {
-  color: #999;
+  color: #6b6b6b;
   font-size: 0.9rem;
 }
 
@@ -2837,10 +2864,16 @@ h3,
   padding: 12px 45px 12px 20px;
   font-size: 0.95rem;
   color: #555;
-  outline: none;
   transition: background 0.3s;
 }
 
+.search-input::placeholder {
+  /* 4,71:1 sur le fond #f0f4f8 du champ. */
+  color: #6b6b6b;
+}
+
+/* L'anneau de focus vient de _a11y.scss ; l'ancien `outline: none` ne
+   laissait qu'un passage de #f0f4f8 à #e8ecf1, soit un écart de 1,06:1. */
 .search-input:focus {
   background-color: #e8ecf1;
 }
