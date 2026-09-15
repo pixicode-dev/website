@@ -29,6 +29,8 @@ export default {
                 "collapsing",
                 "collapsed",
                 "active", // filtres portfolio, pagination
+                "mobile-active", // overlay des cartes projet au tap (JS)
+                "hidden", // cartes projet masquées par les filtres (JS)
                 "fade",
                 /^variant-/, // variantes de couleur des cartes blog (JS)
                 "btn-page", // pagination JS du blog

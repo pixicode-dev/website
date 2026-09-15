@@ -2388,14 +2388,55 @@ h3,
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  /* Toutes les cartes ont la même hauteur, quel que soit le format du
+     visuel : c'est le ratio de la carte qui commande, plus celui de l'image. */
+  aspect-ratio: 4 / 3;
+  background-color: var(--clr-white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Lien de couverture : rend toute la carte cliquable vers la fiche projet.
+   Placé sous les icônes de l'overlay pour que le lien "site du client"
+   reste atteignable. */
+.project-cover-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.project-cover-link:focus-visible {
+  outline: 3px solid var(--clr-yellow-dark);
+  outline-offset: -3px;
+}
+
+/* Sur écran tactile il n'y a pas de survol : le premier appui révèle
+   l'overlay (classe .mobile-active posée par le JS), le second navigue. */
+@media (hover: none) {
+  .project-card:not(.mobile-active) .project-cover-link {
+    pointer-events: none;
+  }
 }
 
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* `scale-down` = le plus petit entre la taille naturelle et l'ajustement
+     au cadre : un grand visuel est réduit pour tenir entier, un petit
+     logo/icône garde sa taille réelle. Dans les deux cas il est centré et
+     jamais rogné. */
+  object-fit: scale-down;
+  object-position: center;
+  padding: 10%;
   display: block;
   transition: transform 0.5s ease;
+}
+
+/* Visuel plein cadre (capture d'écran, photo) : `image_fill: true` dans le
+   front matter du projet. */
+.project-card--fill .project-img {
+  object-fit: cover;
+  padding: 0;
 }
 
 /* Zoom image au survol */
@@ -2419,6 +2460,11 @@ h3,
   opacity: 0;
   transition: opacity 0.3s ease;
 
+  /* Au-dessus du lien de couverture (z-index 1) : comme l'overlay est en
+     pointer-events none, le clic le traverse pour atteindre ce lien, mais
+     ses enfants cliquables (bouton "site du client") captent le leur. */
+  z-index: 2;
+
   /* Flex pour centrer le contenu */
   display: flex;
   flex-direction: column;
@@ -2426,10 +2472,15 @@ h3,
   align-items: center;
   padding: 20px;
   text-align: center;
+
+  /* L'overlay laisse passer les clics vers le lien de couverture ; seuls
+     les liens qu'il contient les interceptent (cf. .icon-circle--external). */
+  pointer-events: none;
 }
 
-/* Affichage Overlay : Hover (Desktop) OU Classe Active (Mobile) */
+/* Affichage Overlay : Hover (Desktop), focus clavier OU Classe Active (Mobile) */
 .project-card:hover .project-overlay,
+.project-card:focus-within .project-overlay,
 .project-card.mobile-active .project-overlay {
   opacity: 1;
 }
@@ -2444,6 +2495,7 @@ h3,
 }
 
 .project-card:hover .overlay-icons,
+.project-card:focus-within .overlay-icons,
 .project-card.mobile-active .overlay-icons {
   transform: translateY(0);
 }
@@ -2458,9 +2510,27 @@ h3,
   justify-content: center;
   color: white;
   transition: all 0.3s ease;
+  pointer-events: none; /* décoratif par défaut : le clic va à la carte */
 }
 
-.icon-circle:hover {
+/* Le lien vers le site du client passe au-dessus du lien de couverture —
+   mais seulement quand l'overlay est visible, sinon un appui dans cette
+   zone ouvrirait le site externe alors que l'icône est invisible. */
+.icon-circle--external {
+  position: relative;
+  z-index: 2;
+}
+
+.project-card:hover .icon-circle--external,
+.project-card:focus-within .icon-circle--external,
+.project-card.mobile-active .icon-circle--external {
+  pointer-events: auto;
+}
+
+.icon-circle--external:hover,
+.icon-circle--external:focus-visible,
+.project-card:hover .icon-circle--plus,
+.project-card:focus-within .icon-circle--plus {
   background-color: white;
   color: var(--clr-blue-dark); /* L'icône devient bleue */
 }
@@ -2484,6 +2554,7 @@ h3,
 }
 
 .project-card:hover .project-title,
+.project-card:focus-within .project-title,
 .project-card.mobile-active .project-title {
   transform: translateY(0);
 }
