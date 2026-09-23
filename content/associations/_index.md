@@ -8,7 +8,7 @@ date: 2026-07-17
 type: "landing"
 
 # --- AFFICHAGE ---
-title_content: "Sites internet pour associations"
+title_content: "Site internet d'association : sans abonnement"
 
 sections:
   - overline: "LE VRAI CALCUL"

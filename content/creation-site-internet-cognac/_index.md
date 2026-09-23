@@ -8,7 +8,7 @@ date: 2026-07-17
 type: "landing"
 
 # --- AFFICHAGE ---
-title_content: "Création de site internet à Cognac"
+title_content: "Création site internet à Cognac : dès 900 € HT"
 
 sections:
   - overline: "COGNAC & OUEST CHARENTE"

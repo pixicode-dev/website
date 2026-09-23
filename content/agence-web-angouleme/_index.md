@@ -8,7 +8,7 @@ date: 2026-07-17
 type: "landing"
 
 # --- AFFICHAGE ---
-title_content: "Votre agence web à Angoulême, au Technoparc Krysalide"
+title_content: "Agence web à Angoulême : sites & apps sur mesure"
 
 sections:
   - overline: "UNE AGENCE D'ICI"

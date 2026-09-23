@@ -8,7 +8,7 @@ date: 2026-07-17
 type: "landing"
 
 # --- AFFICHAGE ---
-title_content: "Devis d'application mobile : les prix réels, sans détour"
+title_content: "Devis application mobile : prix réels en 2 min"
 
 sections:
   - overline: "LA MÉTHODE"
