@@ -1,0 +1,132 @@
+/* ======================================================================
+   SOCLE ACCESSIBILITÉ (RGAA)
+   Importé en tête de custom.scss. Ce fichier ne contient que des règles
+   transverses : variables manquantes, utilitaires pour lecteurs d'écran,
+   indicateur de focus global, respect des préférences de mouvement.
+   ====================================================================== */
+
+:root {
+  /* --- Variables référencées ailleurs mais jamais définies ---
+     Sans elles, `background-color: var(--clr-yellow-btn)` retombe sur
+     `unset` : le fond de survol des liens d'article, plusieurs séparateurs
+     et la bordure de .pricing-notice ne s'affichaient pas du tout. */
+  --clr-yellow-btn: #f4d160;
+  --clr-yellow: #f4d160;
+  --fs-legend-1: 15px;
+  --lh-heading: 1.2;
+
+  /* Jaune lisible en TEXTE sur fond clair : 4,92:1 sur blanc.
+     Le #f4d160 de marque tombe à 1,49:1 et reste réservé aux aplats. */
+  --clr-yellow-text: #8a6d00;
+
+  /* Couleur de l'anneau de focus. Redéfinie plus bas sur les sections
+     sombres pour conserver un contraste >= 3:1 dans les deux cas. */
+  --clr-focus: #1d5d9b; /* 6,79:1 sur blanc */
+}
+
+/* ----------------------------------------------------------------------
+   1. Contenu réservé aux technologies d'assistance
+   ---------------------------------------------------------------------- */
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ----------------------------------------------------------------------
+   2. Lien d'évitement (RGAA 12.7)
+   ---------------------------------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  padding: 12px 20px;
+  background-color: var(--clr-blue-dark);
+  color: #fff;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus,
+.skip-link:hover {
+  color: #fff;
+}
+
+/* La cible du lien reçoit tabindex="-1" : ne pas lui dessiner d'anneau. */
+#contenu:focus {
+  outline: none;
+}
+
+/* ----------------------------------------------------------------------
+   3. Indicateur de focus visible (RGAA 10.7)
+   Bootstrap pose `outline: 0` sur `.btn:focus` et `.form-control:focus`
+   (spécificité 0,2,0). On réplique donc la spécificité sur les sélecteurs
+   concernés : custom.scss est concaténé APRÈS bootstrap.css, la dernière
+   règle l'emporte à spécificité égale — pas besoin de !important.
+   ---------------------------------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+details:focus-visible,
+[tabindex]:focus-visible,
+.btn:focus-visible,
+.btn-pixi:focus-visible,
+.btn-page:focus-visible,
+.btn-filter:focus-visible,
+.btn-cookie:focus-visible,
+.navbar-toggler:focus-visible,
+.faq-btn:focus-visible,
+.embla__dot:focus-visible,
+.form-control:focus-visible,
+.pixi-input:focus-visible,
+.search-input:focus-visible,
+.search-btn:focus-visible,
+.est-input:focus-visible,
+.est-textarea:focus-visible,
+.est-chip:focus-visible,
+.est-btn:focus-visible {
+  outline: 3px solid var(--clr-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Sections à fond sombre : anneau blanc (6,79:1 sur #1d5d9b). */
+.faq-section,
+.portfolio-section,
+.cookie-banner,
+.site-counter,
+.estimation-cta {
+  --clr-focus: #ffffff;
+}
+
+/* ----------------------------------------------------------------------
+   4. Préférence « réduire les animations » (RGAA 13.8 / WCAG 2.3.3)
+   ---------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

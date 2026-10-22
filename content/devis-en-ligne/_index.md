@@ -7,7 +7,7 @@ keywords: "devis en ligne, devis site internet en ligne, devis application mobil
 date: 2026-07-17
 
 # --- AFFICHAGE ---
-title_content: "Votre devis en ligne, estimé en 2 minutes"
+title_content: "Devis en ligne : votre prix en 2 minutes"
 
 # Bloc au-dessus de l'estimateur
 estimateur_overline: "Devis en ligne"

@@ -89,6 +89,20 @@ team:
       bio: ""
       photo: "images/team/laura.webp"
 
+# 5. Partenaires (anciennement dans le footer)
+partners:
+  title: "NOS PARTENAIRES"
+  headline: "Ceux avec qui nous construisons"
+  items:
+    - name: "Evokea Studio"
+      description: "Studio de design avec lequel nous livrons des projets web complets : identité visuelle et UI/UX côté Evokea, architecture et développement côté PixiCode. Un seul interlocuteur, aucun sous-traitant inconnu."
+      url: "https://evokeastudio.fr/"
+      link_text: "Découvrir Evokea Studio"
+    - name: "Je suis numérique"
+      description: "Annuaire des experts du numérique sur lequel PixiCode est référencée parmi les agences de développement web et mobile."
+      url: "https://www.jesuisnumerique.fr"
+      link_text: "Voir l'annuaire"
+
 cta_block:
   title: "Prêt à bâtir un actif numérique durable qui vous appartient vraiment ? Collaborons sur vos défis métiers."
   button_text: "CONTACTEZ-NOUS"
