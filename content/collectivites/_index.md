@@ -10,6 +10,15 @@ type: "landing"
 # --- AFFICHAGE ---
 title_content: "Sites internet de communes & collectivités"
 
+# --- L'essentiel (synthèse citable, rendue en tête de page) ---
+essentiel: >-
+  PixiCode propose deux formules de site internet pour les communes : Ma
+  Commune Essentiel à 2 370 € HT pour les mairies de moins de 2 000 habitants,
+  en ligne en 2 à 3 semaines, et Ma Commune Portail à 10 850 € HT, sur mesure,
+  en 8 à 12 semaines. La conformité RGAA, la déclaration d'accessibilité et la
+  réversibilité sans frais sont incluses. L'abonnement mensuel va ensuite de 45
+  à 75 € HT, hébergement en France, sauvegardes et support compris.
+
 sections:
   - overline: "VOS OBLIGATIONS, NOTRE MÉTIER"
     title: "Un site public doit être accessible, sobre et souverain"

@@ -10,6 +10,16 @@ type: "landing"
 # --- AFFICHAGE ---
 title_content: "Devis application mobile : prix réels en 2 min"
 
+# --- L'essentiel (synthèse citable, rendue en tête de page) ---
+essentiel: >-
+  PixiCode chiffre une application mobile sur le temps de développement de son
+  périmètre. Un MVP ciblé démarre autour de 5 800 € HT et une application sur
+  mesure à partir de 12 000 € HT, pour iPhone et Android avec une seule base de
+  code Flutter. Les PME récupèrent 20 % des dépenses de conception éligibles
+  grâce à notre agrément Crédit Impôt Innovation, soit 1 160 € sur un MVP.
+  Notre [estimateur en ligne](/devis-en-ligne/) vous donne votre fourchette en
+  2 minutes.
+
 sections:
   - overline: "LA MÉTHODE"
     title: "Comment se calcule le prix d'une application mobile"

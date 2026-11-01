@@ -1774,6 +1774,19 @@ h3,
   background-color: var(--clr-yellow-light);
 }
 
+/* L'essentiel : encadré de synthèse en tête de landing */
+.landing-essentiel {
+  position: relative;
+  z-index: 10;
+  padding-top: 60px;
+}
+.landing-essentiel-text {
+  border-left: 4px solid var(--clr-blue-dark);
+  border-radius: 0 12px 12px 0;
+  background-color: var(--clr-gray-light);
+  padding: 1.25rem 1.5rem;
+}
+
 /* Bandeau estimation : bande bleue pleine largeur, bouton jaune du site */
 .estimation-cta {
   background-color: var(--clr-blue-dark);

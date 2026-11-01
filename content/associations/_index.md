@@ -10,20 +10,30 @@ type: "landing"
 # --- AFFICHAGE ---
 title_content: "Site internet d'association : sans abonnement"
 
+# --- L'essentiel (synthèse citable, rendue en tête de page) ---
+essentiel: >-
+  PixiCode crée des sites internet d'association payés une seule fois :
+  900 € HT pour un site one-page, 3 150 € HT pour un site vitrine de 4 pages.
+  L'hébergement coûte ensuite 15 € HT par mois, surveillance et sauvegardes
+  comprises, sans abonnement de plateforme. L'association reste propriétaire du
+  code, du domaine et des contenus, et gère dons et adhésions via HelloAsso.
+  Une plateforme à 30 € par mois coûte 1 800 € sur cinq ans, sans rien laisser
+  à l'association.
+
 sections:
   - overline: "LE VRAI CALCUL"
     title: "Ce que coûte vraiment un site d'association sur 5 ans"
     text: |
       Les plateformes « faciles » séduisent les trésoriers pressés, puis la facture s'installe : 20 à 40 € par mois, tous les mois, pour toujours. Sur cinq ans, un abonnement à 30 € représente 1 800 €, sans que l'association possède quoi que ce soit à la fin. Le site est loué, les données aussi.
 
-      Notre modèle est l'inverse. Vous investissez une fois dans un site qui vous appartient, à partir de 900 € HT pour un site one-page et 3 150 € HT pour un site complet de 4 pages. Ensuite, l'hébergement d'un site statique coûte 15 € HT par mois, surveillance et sauvegardes comprises. Sur cinq ans, l'écart se chiffre en centaines d'euros, et vous restez propriétaire du code, du domaine et des contenus.
+      Notre modèle est l'inverse. Vous investissez une fois dans un site qui vous appartient, à partir de 900 € HT pour un site one-page et 3 150 € HT pour un site vitrine de 4 pages. Ensuite, l'hébergement d'un site statique coûte 15 € HT par mois, surveillance et sauvegardes comprises. Sur cinq ans, l'écart se chiffre en centaines d'euros, et vous restez propriétaire du code, du domaine et des contenus.
 
   - overline: "PENSÉ POUR LA VIE ASSOCIATIVE"
     title: "Simple pour les bénévoles, durable pour la structure"
     text: |
       Les bureaux changent, les bénévoles se relaient. Votre site doit survivre aux passations : nous livrons une documentation claire, une formation à la prise en main et une interface de mise à jour accessible à des non-techniciens. Les adhésions et les dons s'intègrent proprement via HelloAsso, sans commission cachée de notre part.
 
-      Deux associations nous font déjà confiance : [Odyssée Santé](/portfolio/odyssee-sante/), accompagnée sur son site vitrine en Nouvelle-Aquitaine, et [Parentalité Jeunesse](/portfolio/accompagnement-parentalite/), dont nous avons sauvé et stabilisé le site WordPress sans refonte coûteuse.
+      Deux associations nous font déjà confiance : [Odyssée Santé](/portfolio/odyssee-sante/), association post-cancer bordelaise dont nous racontons le projet dans [une étude de cas détaillée](/blog/etude-de-cas-odyssee-sante-site-association/), et [Parentalité Jeunesse](/portfolio/accompagnement-parentalite/), dont nous avons sauvé et stabilisé le site WordPress sans refonte coûteuse.
     reverse: true
 
 # --- Bandeau estimation ---
@@ -40,7 +50,7 @@ faq:
   items:
     - question: "Quel est le prix d'un site internet pour une association ?"
       answer: >-
-        Un site one-page démarre à **900 € HT**, un site complet de 4 pages avec
+        Un site one-page démarre à **900 € HT**, un site vitrine de 4 pages avec
         formulaire de contact à **3 150 € HT**. L'hébergement revient ensuite à
         **15 € HT par mois**, sauvegardes et surveillance comprises. Aucun
         abonnement de plateforme : le site vous appartient dès la livraison.
@@ -83,4 +93,4 @@ cta_block:
 
 L'éco-conception n'est pas un luxe de grande entreprise. Pour une association, un site sobre, c'est un site rapide sur tous les téléphones, un hébergement à quelques euros et une empreinte réduite, en cohérence avec les valeurs que beaucoup de structures défendent. PixiCode est certifiée par l'Institut du Numérique Responsable et applique ces principes à chaque projet, du club sportif à la structure d'accompagnement social.
 
-Basés près d'Angoulême, nous nous déplaçons volontiers pour présenter le projet à votre conseil d'administration, en Charente et alentours. Et si votre besoin dépasse le site vitrine, agenda partagé, espace adhérents, outil interne, notre équipe conçoit aussi des [outils sur mesure](/services/api-et-backend/) au même principe : ce que nous livrons vous appartient.
+Basés près d'Angoulême, nous nous déplaçons volontiers pour présenter le projet à votre conseil d'administration, en Charente et alentours, y compris [à Bordeaux et en Nouvelle-Aquitaine](/creation-site-internet-bordeaux/), où nous accompagnons Odyssée Santé. Et si votre besoin dépasse le site vitrine, agenda partagé, espace adhérents, outil interne, notre équipe conçoit aussi des [outils sur mesure](/services/api-et-backend/) au même principe : ce que nous livrons vous appartient.

@@ -209,6 +209,9 @@ enableGitInfo = true
         name = "Site internet Cognac"
         url = "creation-site-internet-cognac/"
       [[params.footer.sitemap.group.link]]
+        name = "Site internet Bordeaux"
+        url = "creation-site-internet-bordeaux/"
+      [[params.footer.sitemap.group.link]]
         name = "Contact"
         url = "contact/"
 

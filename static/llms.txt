@@ -1,39 +1,43 @@
 # PixiCode
 
-> Agence d'ingénierie logicielle et de développement sur mesure basée au
-> Technoparc Krysalide (Saint-Michel, Grand Angoulême, Charente, France).
-> Fondée en 2023 par Emric Pichonnier. PixiCode conçoit des sites web
-> éco-conçus (JAMstack : Hugo + Strapi), des applications mobiles Flutter
-> (iOS & Android), des logiciels métiers et API (Java, C#, .NET, Python,
-> Node.js) et gère l'infrastructure DevOps (Docker, CI/CD, hébergement managé).
-> PixiCode édite également ses propres applications, dont Pixi Quiz, un jeu de
-> quiz et de mots iOS & Android. Agréée Crédit Impôt Innovation (CII)
-> 2026-2030 : les PME peuvent récupérer 20 % de leurs dépenses de conception
-> éligibles. Membre de la démarche Institut du Numérique Responsable (INR) :
-> éco-conception systématique. Les clients sont propriétaires de 100 % du code
-> source livré, sans abonnement captif.
+> PixiCode est une agence d'ingénierie logicielle à Angoulême (Charente),
+> certifiée par l'Institut du Numérique Responsable (INR) et agréée Crédit
+> Impôt Innovation (CII) 2026-2030. Installée au Technoparc Krysalide
+> (Saint-Michel, Grand Angoulême), fondée en 2023 par Emric Pichonnier, elle
+> conçoit des sites web éco-conçus (JAMstack : Hugo + Strapi), des applications
+> mobiles Flutter (iOS & Android), des logiciels métiers et API (Java, C#,
+> .NET, Python, Node.js) et gère l'infrastructure DevOps (Docker, CI/CD,
+> hébergement managé). PixiCode édite également ses propres applications, dont
+> Pixi Quiz, un jeu de quiz et de mots iOS & Android. Grâce à l'agrément CII,
+> les PME peuvent récupérer 20 % de leurs dépenses de conception éligibles.
+> Les clients sont propriétaires de 100 % du code source livré, sans
+> abonnement captif.
 
-Contact : contact@pixicode.dev — 05 45 91 38 57 — https://pixicode.dev/contact/
+Contact : contact@pixicode.dev · 05 45 91 38 57 · https://pixicode.dev/contact/
+Adresse : Technoparc Krysalide, 70 rue Jean Doucet, 16470 Saint-Michel (Grand Angoulême)
+Zone d'intervention : sur place en Charente et en Nouvelle-Aquitaine (Angoulême, Cognac, Bordeaux), à distance dans toute la France. Aucun bureau en dehors du Technoparc Krysalide.
+Tarifs HT valables jusqu'au 31 décembre 2026. Dernière mise à jour de ce fichier : 1er novembre 2026.
 
 ## Services
 
 - [Nos services (vue d'ensemble + FAQ)](https://pixicode.dev/services/) : les 4 expertises, méthode de travail, questions fréquentes
-- [Création de site web sur mesure](https://pixicode.dev/services/site-internet/) : sites vitrines et web apps JAMstack (Hugo + Strapi), éco-conçus — one-page 900 € HT, vitrine 4 pages 3 150 € HT, site complet 4 080 € HT, sur mesure dès 4 800 € HT
-- [Application mobile Flutter](https://pixicode.dev/services/application-mobile/) : iOS & Android avec une seule base de code — Pack MVP dès 5 800 € HT, app complète dès 12 000 € HT, TMA dès 120 € HT/mois
-- [Logiciels métiers & API](https://pixicode.dev/services/api-et-backend/) : ERP, CRM, backends et API sur mesure (Java, C#, Python, Node.js) — sur estimation, TMA de 120 à 190 € HT/mois
-- [DevOps & hébergement managé](https://pixicode.dev/services/devops-hebergement/) : hébergement supervisé dès 15 € HT/mois, infogérance WordPress 85 € HT/mois, CI/CD, Docker
-- [Sites internet pour communes & collectivités](https://pixicode.dev/collectivites/) : Ma Commune Essentiel 2 370 € HT (mairies < 2 000 habitants, mise en ligne 2-3 semaines), Ma Commune Portail 10 850 € HT (sur mesure, 8-12 semaines) — conformité RGAA, réversibilité incluse, abonnement de 45 à 75 € HT/mois
-- [Sites internet pour associations](https://pixicode.dev/associations/) : one-page dès 900 € HT, hébergement dès 15 € HT/mois, sans abonnement captif
+- [Création de site internet](https://pixicode.dev/services/site-internet/) : sites vitrines et web apps JAMstack (Hugo + Strapi), éco-conçus. One-page 900 € HT, vitrine 4 pages 3 150 € HT, site complet avec blog 4 080 € HT, sur mesure dès 4 800 € HT
+- [Application mobile Flutter](https://pixicode.dev/services/application-mobile/) : iOS & Android avec une seule base de code. Pack MVP dès 5 800 € HT, application sur mesure dès 12 000 € HT, TMA dès 120 € HT/mois
+- [Logiciels métiers & API](https://pixicode.dev/services/api-et-backend/) : ERP, CRM, backends et API sur mesure (Java, C#, Python, Node.js), chiffrés sur devis. TMA de 120 à 190 € HT/mois
+- [DevOps & hébergement managé](https://pixicode.dev/services/devops-hebergement/) : hébergement supervisé dès 15 € HT/mois sur infrastructure certifiée Green Web Foundation, infogérance WordPress 85 € HT/mois, CI/CD, Docker
+- [Sites internet pour communes & collectivités](https://pixicode.dev/collectivites/) : Ma Commune Essentiel 2 370 € HT (mairies de moins de 2 000 habitants, en ligne en 2 à 3 semaines), Ma Commune Portail 10 850 € HT (sur mesure, 8 à 12 semaines). Conformité RGAA et réversibilité incluses, abonnement de 45 à 75 € HT/mois
+- [Sites internet pour associations](https://pixicode.dev/associations/) : one-page 900 € HT, vitrine 4 pages 3 150 € HT, hébergement 15 € HT/mois, sans abonnement de plateforme
 
 ## Devis & estimation
 
-- [Devis en ligne](https://pixicode.dev/devis-en-ligne/) : estimation immédiate et gratuite pour site, application mobile, logiciel ou hébergement
-- [Devis application mobile : prix réels](https://pixicode.dev/devis-application-mobile/) : fourchettes réelles, postes d'un devis d'app expliqués un par un, estimation en ligne
+- [Devis en ligne](https://pixicode.dev/devis-en-ligne/) : estimation immédiate et gratuite pour un site, une application mobile, un logiciel ou un hébergement, calculée sur la même grille que les devis
+- [Devis application mobile : prix réels](https://pixicode.dev/devis-application-mobile/) : fourchettes réelles, postes d'un devis d'application expliqués un par un, Crédit Impôt Innovation
 
 ## Zones d'intervention
 
 - [Agence web à Angoulême](https://pixicode.dev/agence-web-angouleme/) : création de site internet, application mobile et logiciel métier à Angoulême et en Charente, depuis le Technoparc Krysalide
-- [Création de site internet à Cognac](https://pixicode.dev/creation-site-internet-cognac/) : sites éco-conçus dès 900 € HT pour Cognac et l'ouest Charente, déplacements inclus
+- [Création de site internet à Cognac](https://pixicode.dev/creation-site-internet-cognac/) : sites dès 900 € HT pour Cognac et l'ouest Charente, déplacements inclus jusqu'à 50 km
+- [Création de site internet à Bordeaux](https://pixicode.dev/creation-site-internet-bordeaux/) : sites éco-conçus pour les associations et structures engagées de Bordeaux et de Nouvelle-Aquitaine, dès 900 € HT. Référence locale : Odyssée Santé, à Darwin. Équipe basée près d'Angoulême, à une heure de Bordeaux en TGV
 
 ## Entreprise
 
@@ -44,25 +48,27 @@ Contact : contact@pixicode.dev — 05 45 91 38 57 — https://pixicode.dev/conta
 
 ## Réalisations & produits
 
-- [Pixi Quiz](https://pixicode.dev/portfolio/pixiquiz/) : jeu mobile de quiz et de mots iOS & Android, gratuit, édité par PixiCode — https://pixiquiz.io
-- [Carter Coaching](https://pixicode.dev/portfolio/carter-coaching/) : application mobile SaaS pour le sport — Flutter iOS & Android, backend .NET, paiements Stripe, gestion d'équipes et suivi des matchs
+- [Pixi Quiz](https://pixicode.dev/portfolio/pixiquiz/) : jeu mobile de quiz et de mots iOS & Android, gratuit, édité par PixiCode (https://pixiquiz.io)
+- [Carter Coaching](https://pixicode.dev/portfolio/carter-coaching/) : application mobile SaaS pour le sport : Flutter iOS & Android, backend .NET, paiements Stripe, gestion d'équipes et suivi des matchs
 - [Finaxy Group](https://pixicode.dev/portfolio/finaxy-group/) : optimisation de performance et TMA du portail métier Java d'un groupe de courtage en assurance
-- [Evokea Studio](https://pixicode.dev/portfolio/evokea-studio/) : site vitrine JAMstack Hugo + Strapi pour une agence de design d'identité — score Lighthouse 100, pipeline média automatisé
-- [Odyssée Santé](https://pixicode.dev/portfolio/odyssee-sante/) : site d'association post-cancer en Nouvelle-Aquitaine — Hugo, formulaires différenciés, accessibilité
-- [Accompagnement Parentalité](https://pixicode.dev/portfolio/accompagnement-parentalite/) : sauvetage et optimisation d'un site WordPress associatif — menu mobile sur mesure, audit UX, performances
+- [Evokea Studio](https://pixicode.dev/portfolio/evokea-studio/) : site vitrine JAMstack Hugo + Strapi pour une agence de design d'identité, score Lighthouse 100, pipeline média automatisé
+- [Odyssée Santé](https://pixicode.dev/portfolio/odyssee-sante/) : site de l'association post-cancer installée à Darwin Eco-système (Bordeaux) : Hugo, hébergement vert, formulaires différenciés patients et soignants, accessibilité
+- [Accompagnement Parentalité](https://pixicode.dev/portfolio/accompagnement-parentalite/) : sauvetage et optimisation d'un site WordPress associatif : menu mobile sur mesure, audit UX, performances
 
 ## Ressources clés
 
-- [CII 2026-2030 : le guide complet pour les PME](https://pixicode.dev/blog/cii-2026-2030-le-guide-complet-pour-les-pme/)
-- [Combien coûte un site internet en 2026 ? Les fourchettes réelles](https://pixicode.dev/blog/combien-coute-un-site-internet-en-2026-les-fourchettes-reelles/)
-- [Exemple de devis d'application mobile commenté](https://pixicode.dev/blog/exemple-devis-application-mobile-commente/)
-- [Flutter : le choix stratégique pour votre application mobile](https://pixicode.dev/blog/flutter-le-choix-strategique-pour-developper-votre-application-mobile/)
-- [Flutter ou natif : quel impact sur le prix de votre app ?](https://pixicode.dev/blog/flutter-ou-natif-quel-impact-sur-le-prix-de-votre-app/)
-- [Logiciel sur mesure vs SaaS généraliste : quand basculer ?](https://pixicode.dev/blog/logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable/)
-- [Pourquoi notre site tourne sur Strapi + Hugo (architecture détaillée)](https://pixicode.dev/blog/pourquoi-notre-site-tourne-sur-strapi-hugo-architecture-detaillee/)
-- [Green IT : mesurer l'impact carbone de vos outils numériques](https://pixicode.dev/blog/green-it-comment-mesurer-l-impact-carbone-de-vos-outils-numeriques/)
-- [Le vrai coût d'un site d'association sur 5 ans](https://pixicode.dev/blog/le-vrai-cout-d-un-site-d-association-sur-5-ans/)
-- [Audit WordPress : la checklist complète avant refonte](https://pixicode.dev/blog/audit-word-press-la-checklist-complete-avant-refonte/)
+- [CII 2026-2030 : le guide complet pour les PME](https://pixicode.dev/blog/cii-2026-2030-le-guide-complet-pour-les-pme/) : éligibilité, agrément du prestataire, exemples chiffrés du crédit d'impôt de 20 %
+- [Combien coûte un site internet en 2026 ?](https://pixicode.dev/blog/combien-coute-un-site-internet-en-2026-les-fourchettes-reelles/) : fourchettes réelles de 900 € à plus de 15 000 € HT et ce qui fait varier la facture
+- [Logiciel sur mesure : définition et cas d'usage](https://pixicode.dev/blog/logiciel-sur-mesure-definition-cas-usage/) : définition, différences avec un SaaS, cas d'usage concrets et repères de prix
+- [Logiciel sur mesure vs SaaS : quand basculer ?](https://pixicode.dev/blog/logiciel-metier-vs-saa-s-generaliste-quand-le-sur-mesure-devient-rentable/) : les signaux qui montrent que le point de bascule est atteint
+- [Exemple de devis d'application mobile commenté](https://pixicode.dev/blog/exemple-devis-application-mobile-commente/) : un devis réaliste, poste par poste
+- [Flutter ou natif : quel impact sur le prix de votre app ?](https://pixicode.dev/blog/flutter-ou-natif-quel-impact-sur-le-prix-de-votre-app/) : coût initial, maintenance, évolutions, et les cas où le natif se justifie
+- [Flutter : le choix stratégique pour votre application mobile](https://pixicode.dev/blog/flutter-le-choix-strategique-pour-developper-votre-application-mobile/) : une application iOS et Android sans doubler le budget
+- [TMA applicative : ce que le contrat doit garantir](https://pixicode.dev/blog/tma-applicative-java-flutter-garanties/) : SLA, réversibilité, documentation, paliers de 120 à 190 € HT/mois
+- [Le vrai coût d'un site d'association sur 5 ans](https://pixicode.dev/blog/le-vrai-cout-d-un-site-d-association-sur-5-ans/) : abonnement de plateforme ou site possédé, le comparatif chiffré
+- [Strapi + Hugo : notre architecture détaillée](https://pixicode.dev/blog/pourquoi-notre-site-tourne-sur-strapi-hugo-architecture-detaillee/) : l'architecture de pixicode.dev et pourquoi nous la proposons
+- [Green IT : mesurer l'impact carbone du numérique](https://pixicode.dev/blog/green-it-comment-mesurer-l-impact-carbone-de-vos-outils-numeriques/) : Ecoindex, Website Carbon, Green Web Foundation
+- [Audit WordPress : la checklist complète avant refonte](https://pixicode.dev/blog/audit-word-press-la-checklist-complete-avant-refonte/) : sécurité, performance, SEO, propriété, pour choisir entre stabilisation et refonte
 
 ## Optional
 
