@@ -20,6 +20,8 @@ intro:
     **Agréé CII 2026-2030.** Vos dépenses de conception sont récupérables à 20 % via [ce dispositif fiscal](/blog/cii-2026-2030-le-guide-complet-pour-les-pme/). Peu de prestataires sont agréés ; nous le sommes jusqu'en 2030.
       
     **Code 100 % propriétaire.** Nous livrons le code source, pas un accès à une plateforme. Votre outil numérique vous appartient le jour de la livraison. Zéro frais de sortie.
+
+    Pour situer votre budget avant même un premier échange, notre [estimateur en ligne](/devis-en-ligne/) vous donne une fourchette en 2 minutes. Un projet d'application ? Notre page [devis application mobile](/devis-application-mobile/) détaille les prix poste par poste.
 # Section Approche (Expertises)
 approach:
   title: "NOS EXPERTISES"

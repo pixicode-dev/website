@@ -1,6 +1,6 @@
 ---
 # --- SEO & METADATA ---
-title: "Devis application mobile : prix réels et estimation en ligne"
+title: "Devis application mobile : prix réels en 2 min"
 breadcrumb_label: "Devis application mobile"
 description: "Combien coûte une application mobile ? Fourchettes réelles, postes d'un devis expliqués, estimation en ligne immédiate. Agréé CII. PixiCode, Angoulême."
 keywords: "devis application mobile, prix application mobile, combien coûte une application mobile, coût développement application, estimation application mobile"
@@ -14,7 +14,7 @@ sections:
   - overline: "LA MÉTHODE"
     title: "Comment se calcule le prix d'une application mobile"
     text: |
-      Les fourchettes qu'on trouve en ligne vont de 10 000 à 80 000 €. C'est exact et inutile. La vraie logique est plus simple : une application se chiffre au temps de développement, multiplié par le taux journalier du prestataire. Ce qui fait la note, c'est donc le périmètre, et lui se décrit précisément.
+      Chez PixiCode, le prix d'une application mobile se calcule sur le temps de développement réel de votre périmètre, et notre [estimateur en ligne](/devis-en-ligne/) vous donne votre fourchette en 2 minutes, sur la même grille que nos devis. Les fourchettes qu'on trouve ailleurs, de 10 000 à 80 000 €, sont exactes mais inutiles pour décider : ce qui fait la note, c'est le périmètre, et lui se décrit précisément.
 
       Un MVP ciblé représente une douzaine de jours de travail, soit un budget qui démarre autour de 5 800 € HT. Une application métier de 5 à 15 écrans demande 25 jours et plus, selon les fonctionnalités. Une plateforme complète avec abonnements, back-office et intégrations dépasse les 50 jours. Ce qui fait varier la note, ce n'est pas la négociation : c'est le périmètre.
 
@@ -39,13 +39,38 @@ faq:
   title: "FAQ DEVIS MOBILE"
   subtitle: "Les questions qu'on nous pose avant de signer"
   items:
-    - question: "Combien coûte une application mobile simple ?"
+    - question: "Combien coûte une application mobile ?"
       answer: >-
         Un MVP avec les fonctionnalités essentielles démarre autour de
         **5 800 € HT** (une douzaine de jours de développement),
-        publication sur l'App Store et Google Play incluse. Les comptes
+        publication sur l'App Store et Google Play incluse. Une application sur
+        mesure plus complète démarre autour de **12 000 € HT**. Les comptes
         utilisateurs, le paiement ou un back-office d'administration ajoutent
         chacun quelques jours au périmètre.
+    - question: "Combien de temps faut-il pour développer une application mobile ?"
+      answer: >-
+        Un MVP est livré en **6 à 8 semaines** après le cadrage. Une application
+        plus complète demande **2 à 4 mois** selon les fonctionnalités. Le
+        développement avance par sprints de deux semaines, avec une version de
+        test à chaque itération sur iPhone et Android.
+    - question: "Comment fonctionne le Crédit Impôt Innovation pour une application ?"
+      answer: >-
+        Si votre entreprise est une PME et que l'application comporte une part
+        d'innovation, **20 % des dépenses de conception** éligibles vous
+        reviennent en crédit d'impôt, à condition de passer par un prestataire
+        agréé. PixiCode est agréé jusqu'en 2030 : sur un MVP à 5 800 € HT, cela
+        représente **1 160 €** récupérables. Notre [guide du
+        CII](/blog/cii-2026-2030-le-guide-complet-pour-les-pme/) détaille les
+        conditions.
+    - question: "Que contient un devis sérieux, et que faut-il budgéter en plus ?"
+      answer: >-
+        Un devis sérieux détaille chaque poste : cadrage, design (nombre
+        d'écrans précisé), développement Flutter, backend dès que l'application
+        a des comptes utilisateurs, back-office d'administration, tests et
+        publication sur les stores, avec la propriété du code écrite noir sur
+        blanc. À budgéter en plus : les comptes développeur (99 $/an Apple, 25 $
+        une fois Google), l'hébergement du backend, et la **maintenance TMA dès
+        120 € HT/mois**.
     - question: "Pourquoi les devis d'application varient-ils autant d'un prestataire à l'autre ?"
       answer: >-
         Parce que chaque prestataire imagine un périmètre différent à partir du
@@ -58,12 +83,6 @@ faq:
         Non. C'est une **fourchette indicative** calculée à partir de votre
         périmètre et de notre grille publique. Le devis ferme est établi après
         un échange de cadrage, gratuit et sans engagement.
-    - question: "Que comprend le prix, et que faut-il budgéter en plus ?"
-      answer: >-
-        Le développement comprend le cadrage, le design, le code (livré et
-        propriétaire), les tests et la publication sur les stores. À budgéter en
-        plus : les comptes développeur (99 $/an Apple, 25 $ une fois Google),
-        l'hébergement du backend, et la **maintenance TMA dès 120 € HT/mois**.
     - question: "iOS et Android coûtent-ils deux fois plus cher ?"
       answer: >-
         Pas chez nous. [Flutter](/services/application-mobile/) compile une base

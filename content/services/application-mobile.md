@@ -73,7 +73,7 @@ extra_section:
   text: |
     Une application mobile se chiffre à partir du temps de développement prévisible : c'est le périmètre qui fait le prix, pas votre budget supposé. Un MVP ciblé tient en une douzaine de jours et démarre autour de 5 800 € HT, une application métier complète demande 25 à 50 jours selon les fonctionnalités (comptes utilisateurs, paiement, back-office, temps réel).
 
-    Cette transparence vous protège : deux périmètres identiques donnent deux estimations identiques. Pour connaître la vôtre, décrivez votre projet à notre [estimateur en ligne](/devis-en-ligne/), ou consultez notre [guide des prix d'une application mobile](/devis-application-mobile/) pour comprendre chaque poste d'un devis.
+    Cette transparence vous protège : deux périmètres identiques donnent deux estimations identiques. Pour connaître la vôtre, décrivez votre projet à notre [estimateur en ligne](/devis-en-ligne/), ou consultez notre page [devis application mobile](/devis-application-mobile/) : chaque poste d'un devis y est expliqué, chiffres à l'appui.
 
 # 4. TARIFS (Qualification des Leads)
 pricing:

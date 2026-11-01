@@ -14,16 +14,16 @@ sections:
   - overline: "COGNAC & OUEST CHARENTE"
     title: "Un site à la hauteur de votre maison, sans dépendance"
     text: |
-      Cognac vit d'un écosystème exigeant : maisons et négoces de spiritueux, sous-traitants de la filière, tourisme, artisans et professions libérales. Des activités où l'image compte, et où un site lent ou daté coûte des clients. C'est exactement le terrain de notre méthode : des sites rapides, éco-conçus, au design travaillé avec notre partenaire [Evokea Studio](/portfolio/evokea-studio/), et dont vous restez propriétaire.
+      PixiCode crée des sites internet éco-conçus pour les entreprises de Cognac et de l'ouest Charente, à partir de 900 € HT. Le Cognaçais vit d'un écosystème exigeant, des maisons et négoces de spiritueux aux sous-traitants de la filière, en passant par le tourisme, les artisans et les professions libérales : des activités où l'image compte, et où un site lent ou daté coûte des clients. C'est exactement le terrain de notre méthode : des sites rapides, au design travaillé avec notre partenaire [Evokea Studio](/portfolio/evokea-studio/), et dont vous restez propriétaire.
 
-      Nous sommes installés au Technoparc Krysalide, près d'Angoulême, à une quarantaine de minutes de Cognac. Le cadrage, la formation et les points d'étape peuvent se faire dans vos locaux : les déplacements sont inclus jusqu'à 50 km. Vous travaillez avec une équipe de Charente, pas avec un guichet à l'autre bout de la France.
+      Nous sommes installés au Technoparc Krysalide, près d'Angoulême, à une quarantaine de minutes de Cognac. Le cadrage, la formation et les points d'étape peuvent se faire dans vos locaux : les déplacements sont inclus jusqu'à 50 km. Vous travaillez avec une équipe de Charente, pas avec un guichet à l'autre bout de la France. Et pour situer votre budget avant même un premier rendez-vous, notre [estimateur en ligne](/devis-en-ligne/) vous donne une fourchette en 2 minutes, calculée sur la même grille que nos devis.
 
   - overline: "PRIX TRANSPARENTS"
     title: "Des formules publiques, du one-page au site complet"
     text: |
       Nos tarifs sont les mêmes pour tous et affichés publiquement dans [nos offres de création de site internet](/services/site-internet/) : site one-page à 900 € HT, site vitrine de 4 pages avec formulaire à 3 150 € HT, site complet avec blog à 4 080 € HT, et du sur mesure dès 4 800 € HT pour un site à gestion de contenu autonome. Chaque création inclut l'adaptation mobile, l'éco-conception certifiée INR, le socle SEO technique, la mise en ligne et une garantie de 3 mois.
 
-      Ensuite, pas d'abonnement de plateforme : l'hébergement supervisé démarre à 15 € HT par mois, sauvegardes comprises. Notre [devis en ligne](/devis-en-ligne/) vous donne une fourchette adaptée à votre projet en 2 minutes.
+      Ensuite, pas d'abonnement de plateforme : l'hébergement supervisé démarre à 15 € HT par mois, sauvegardes comprises.
     reverse: true
 
 # --- Bandeau estimation ---

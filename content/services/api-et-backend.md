@@ -138,7 +138,9 @@ faq:
         ouvré) et **190 € HT/mois** en version Critique (correctifs sous 2 jours
         ouvrés, GTI 4 h). Les évolutions passent par des **carnets d'heures**
         prépayés, dès 58 € HT de l'heure. Réversibilité incluse : vos données et
-        votre code restent à vous.
+        votre code restent à vous. Ce qu'un contrat de [TMA
+        applicative](/blog/tma-applicative-java-flutter-garanties/) doit vous
+        garantir est détaillé dans notre guide.
 
     - question: "Quelles technologies utilisez-vous pour les backends et les API ?"
       answer: >-

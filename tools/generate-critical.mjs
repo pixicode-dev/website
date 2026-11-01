@@ -61,7 +61,13 @@ console.log(`🚀 Génération du CSS Critique pour ${allPages.length} pages...`
         base: "public/",
         src: page,
         target: page, // Écrase le fichier original avec la version optimisée
-        inline: true,
+        inline: {
+          strategy: "media", // Équivalent de `inline: true`
+          // Sélecteur explicite OBLIGATOIRE : sans lui, inline-critical construit
+          // ",:not(noscript) > link[...]" (virgule en tête) et nwsapi >= 2.2.28
+          // résout ça sur <html> → "Regular expression too large" sur chaque page.
+          selector: ':not(noscript) > link[rel="stylesheet"]',
+        },
         extract: false,
         css: localCssFiles,
 

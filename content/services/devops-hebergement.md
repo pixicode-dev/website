@@ -56,7 +56,7 @@ service_process:
       
     Pour les projets qui le nécessitent, nous configurons des environnements multi-services avec orchestration, base de données managée, stockage objet et CDN. Qu'il s'agisse d'un VPS dédié, d'un Cloud public ou d'une infrastructure hybride, nous choisissons l'architecture adaptée à votre usage réel pas à la mode du moment.
       
-    À la livraison, l'infrastructure est documentée et les accès vous appartiennent. Vous pouvez la reprendre en interne, la confier à un autre prestataire ou continuer avec nous en TMA. Vous gardez les clés.
+    À la livraison, l'infrastructure est documentée et les accès vous appartiennent. Vous pouvez la reprendre en interne, la confier à un autre prestataire ou continuer avec nous en TMA. Vous gardez les clés. Ce qu'un contrat de maintenance sérieux doit vous garantir, nous l'avons détaillé pour la [TMA WordPress](/blog/tma-word-press-ce-qu-une-agence-serieuse-doit-vous-garantir/) comme pour la [TMA applicative](/blog/tma-applicative-java-flutter-garanties/) de vos logiciels Java, Flutter ou .NET.
       
     Cette expertise héberge aussi les [sites web éco-conçus](/services/site-internet/) et les backends des [applications mobiles](/services/application-mobile/) que nous développons : un seul interlocuteur, du code à la production.
   image: "images/image_team.webp"
