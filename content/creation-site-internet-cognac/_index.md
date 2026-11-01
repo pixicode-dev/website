@@ -10,15 +10,6 @@ type: "landing"
 # --- AFFICHAGE ---
 title_content: "Création site internet à Cognac : dès 900 € HT"
 
-# --- L'essentiel (synthèse citable, rendue en tête de page) ---
-essentiel: >-
-  PixiCode crée des sites internet à Cognac et dans l'ouest Charente à prix
-  publics : 900 € HT pour un site one-page, 3 150 € HT pour un site vitrine de
-  4 pages, 4 080 € HT pour un site complet avec blog et du sur mesure dès
-  4 800 € HT. L'hébergement démarre à 15 € HT par mois, sans abonnement de
-  plateforme, et le code vous appartient. Notre équipe, basée à 40 minutes au
-  Technoparc Krysalide, se déplace sans frais jusqu'à 50 km.
-
 sections:
   - overline: "COGNAC & OUEST CHARENTE"
     title: "Un site à la hauteur de votre maison, sans dépendance"

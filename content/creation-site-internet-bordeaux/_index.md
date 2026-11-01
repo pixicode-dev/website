@@ -10,16 +10,6 @@ type: "landing"
 # --- AFFICHAGE ---
 title_content: "Création de site internet éco-conçu à Bordeaux"
 
-# --- L'essentiel (synthèse citable, rendue en tête de page) ---
-essentiel: >-
-  PixiCode crée des sites internet éco-conçus pour les associations et les
-  structures engagées de Bordeaux et de Nouvelle-Aquitaine. Un site one-page à
-  900 € HT, un site vitrine de 4 pages à 3 150 € HT, puis un hébergement vert
-  facturé à part, dès 15 € HT par mois. Pas d'abonnement de plateforme : le
-  code vous appartient. Notre référence bordelaise est Odyssée Santé,
-  association post-cancer installée à Darwin Eco-système. Nous travaillons
-  depuis Angoulême, à une heure de Bordeaux en TGV.
-
 sections:
   - overline: "ÉCO-CONCEPTION"
     title: "Un site sobre, à l'image de ce que vous défendez"
