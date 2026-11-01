@@ -1780,10 +1780,12 @@ h3,
   z-index: 10;
   padding-top: 60px;
 }
+/* Carte blanche ombrée : elle chevauche la vague bleue du page-header */
 .landing-essentiel-text {
   border-left: 4px solid var(--clr-blue-dark);
   border-radius: 0 12px 12px 0;
-  background-color: var(--clr-gray-light);
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   padding: 1.25rem 1.5rem;
 }
 
@@ -1865,6 +1867,12 @@ h3,
   background-color: var(--clr-blue-dark); /* Bleu foncé PixiCode */
   padding: 80px 0;
   color: #fff;
+}
+
+/* Texte d'aide personnalisé (faq.help) : lien blanc souligné sur le fond bleu */
+.faq-help a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media (min-width: 966px) {
@@ -3439,7 +3447,8 @@ h3,
 
 /* On cible tous les tableaux dans vos articles + sections libres (extra-section) */
 .post-content table,
-.extra-section table {
+.extra-section table,
+.landing-text table {
   width: min-content;
   max-width: 100%;
   border-collapse: separate; /* Permet les border-radius */
@@ -3461,7 +3470,8 @@ h3,
 
 /* --- EN-TÊTE (THEAD) --- */
 .post-content thead th,
-.extra-section thead th {
+.extra-section thead th,
+.landing-text thead th {
   background-color: var(--clr-blue-dark); /* Votre Bleu #1d5d9b */
   color: #fff;
   font-family: var(--ff-heading); /* Josefin Sans */
@@ -3476,7 +3486,8 @@ h3,
 
 /* --- CORPS (TBODY) --- */
 .post-content tbody td,
-.extra-section tbody td {
+.extra-section tbody td,
+.landing-text tbody td {
   padding: 16px 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   color: #555;
@@ -3485,12 +3496,14 @@ h3,
 
 /* Suppression de la bordure du bas pour la dernière ligne */
 .post-content tbody tr:last-child td,
-.extra-section tbody tr:last-child td {
+.extra-section tbody tr:last-child td,
+.landing-text tbody tr:last-child td {
   border-bottom: none;
 }
 
 /* Première colonne = libellés de lignes (tableaux comparatifs) */
-.extra-section tbody td:first-child {
+.extra-section tbody td:first-child,
+.landing-text tbody td:first-child {
   font-weight: 600;
   color: var(--clr-black);
 }
@@ -3499,15 +3512,30 @@ h3,
 
 /* Ligne paire légèrement grisée (optionnel, pour lisibilité) */
 .post-content tbody tr:nth-child(even),
-.extra-section tbody tr:nth-child(even) {
+.extra-section tbody tr:nth-child(even),
+.landing-text tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
 /* Survol de la ligne en Jaune très pâle */
 .post-content tbody tr:hover,
-.extra-section tbody tr:hover {
+.extra-section tbody tr:hover,
+.landing-text tbody tr:hover {
   background-color: rgba(244, 209, 96, 0.15); /* Votre jaune à 15% d'opacité */
   transition: background-color 0.2s ease;
+}
+
+/* Tableaux des sections de landing (ex. tarifs) : pleine largeur et texte
+   des cellules à la ligne (placé après les règles communes pour les surcharger) */
+.landing-text table {
+  width: 100%;
+  white-space: normal;
+}
+@media (max-width: 575.98px) {
+  .landing-text thead th,
+  .landing-text tbody td {
+    padding: 12px 14px;
+  }
 }
 
 /* =========================================

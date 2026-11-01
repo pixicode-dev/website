@@ -14,7 +14,7 @@ title_content: "Site internet d'association : sans abonnement"
 essentiel: >-
   PixiCode crée des sites internet d'association payés une seule fois :
   900 € HT pour un site one-page, 3 150 € HT pour un site vitrine de 4 pages.
-  L'hébergement coûte ensuite 15 € HT par mois, surveillance et sauvegardes
+  L'hébergement démarre ensuite à 15 € HT par mois, surveillance et sauvegardes
   comprises, sans abonnement de plateforme. L'association reste propriétaire du
   code, du domaine et des contenus, et gère dons et adhésions via HelloAsso.
   Une plateforme à 30 € par mois coûte 1 800 € sur cinq ans, sans rien laisser
