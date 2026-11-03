@@ -25,7 +25,7 @@ Tarifs HT valables jusqu'au 31 décembre 2026. Dernière mise à jour de ce fich
 - [Application mobile Flutter](https://pixicode.dev/services/application-mobile/) : iOS & Android avec une seule base de code. Pack MVP dès 5 800 € HT, application sur mesure dès 12 000 € HT, TMA dès 120 € HT/mois
 - [Logiciels métiers & API](https://pixicode.dev/services/api-et-backend/) : ERP, CRM, backends et API sur mesure (Java, C#, Python, Node.js), chiffrés sur devis. TMA de 120 à 190 € HT/mois
 - [DevOps & hébergement managé](https://pixicode.dev/services/devops-hebergement/) : hébergement supervisé dès 15 € HT/mois sur infrastructure certifiée Green Web Foundation, infogérance WordPress 85 € HT/mois, CI/CD, Docker
-- [Sites internet pour communes & collectivités](https://pixicode.dev/collectivites/) : Ma Commune Essentiel 2 370 € HT (mairies de moins de 2 000 habitants, en ligne en 2 à 3 semaines), Ma Commune Portail 10 850 € HT (sur mesure, 8 à 12 semaines). Conformité RGAA et réversibilité incluses, abonnement de 45 à 75 € HT/mois
+- [Sites internet pour communes & collectivités](https://pixicode.dev/collectivites/) : Ma Commune Essentiel 2 470 € HT (mairies de moins de 2 000 habitants, en ligne en 2 à 3 semaines), Ma Commune Portail 10 850 € HT (sur mesure, 8 à 12 semaines). Conformité RGAA et réversibilité incluses, abonnement de 45 à 75 € HT/mois
 - [Sites internet pour associations](https://pixicode.dev/associations/) : one-page 900 € HT, vitrine 4 pages 3 150 € HT, hébergement 15 € HT/mois, sans abonnement de plateforme
 
 ## Devis & estimation

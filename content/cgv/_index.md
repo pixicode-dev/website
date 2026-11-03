@@ -9,7 +9,7 @@ layout: single
 
 ## Article 1 : Champ d'application et Clientèle
 
-Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les relations contractuelles entre la société **PIXICODE**, EURL au capital de 1 000 €, dont le siège est situé 2 Place Jean V, 44000 Nantes, immatriculée au RCS de Nantes sous le n° 980 083 786 (ci-après « le Prestataire ») et ses clients (ci-après « le Client »).
+Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les relations contractuelles entre la société **PIXICODE**, EURL au capital de 1 000 €, dont le siège est situé Technoparc Krysalide, 70 Rue Jean Doucet, 16470 Saint-Michel, immatriculée au RCS d'Angoulême sous le n° 980 083 786 (ci-après « le Prestataire ») et ses clients (ci-après « le Client »).
 
 Le Client peut être un professionnel ou un **consommateur (particulier)**. Certaines clauses des présentes s'appliquent spécifiquement selon la qualité du Client.
 
@@ -145,7 +145,7 @@ Chaque partie s'engage à respecter le RGPD. Le Prestataire n'utilise les donné
 
 Les présentes CGV sont soumises au droit français.
 
-- **Client Professionnel :** tout litige relève de la compétence exclusive du **Tribunal de Commerce de Nantes**, même en cas de pluralité de défendeurs.
+- **Client Professionnel :** tout litige relève de la compétence exclusive du **Tribunal de Commerce d'Angoulême**, même en cas de pluralité de défendeurs.
 - **Client Particulier (Consommateur) :** en cas de litige, le Client doit d'abord contacter le Prestataire. En cas d'échec, le Client peut recourir gratuitement au médiateur de la consommation dont relève le Prestataire, à savoir l'association **CM2C** : par voie électronique via [www.cm2c.net](https://www.cm2c.net) ou par voie postale à CM2C, 49 rue de Ponthieu, 75008 Paris.
 
 ## Article 18 : Non-sollicitation de personnel

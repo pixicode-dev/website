@@ -21,7 +21,7 @@
       new URLSearchParams(window.location.search).has("demo"),
   };
 
-  var TJM = 480; // Taux journalier moyen (grille §1) — sert au mode démo.
+  var TJM = 520; // Taux journalier moyen (grille §1) — sert au mode démo.
 
   /* ---------------------------------------------------------------------------
    * 0. Icônes SVG (style PixiCode — traits, couleur héritée via currentColor).
@@ -1324,7 +1324,7 @@
               label: "Hébergement & infogérance",
             };
     } else if (state.type === "site_collectivite") {
-      // Grille Communes 2026 : Ma Commune Essentiel 2 370 € HT (< 2 000 hab.),
+      // Grille Communes 2026 : Ma Commune Essentiel 2 470 € HT (< 2 000 hab.),
       // Ma Commune Portail 10 850 € HT (> 2 000 hab.). Conformité RGAA incluse
       // dans les deux formules ; CMS Strapi en option (1 250 € + abonnement à
       // 60 €/mois au lieu de 75 €).
@@ -1334,10 +1334,10 @@
       if (communeConnue && a.habitants === "moins2000") {
         lines.push({
           label: "Ma Commune Essentiel — mise en service (RGAA inclus)",
-          amount: 2370,
+          amount: 2470,
         });
-        lo = 2370;
-        hi = 2370;
+        lo = 2470;
+        hi = 2470;
         recurring = cmsStrapi
           ? {
               low: 60,
@@ -1387,7 +1387,7 @@
             "Site de collectivité — de la formule Essentiel au portail sur mesure",
           amount: null,
         });
-        lo = 2370;
+        lo = 2470;
         hi = 10850;
         recurring = {
           low: 45,

@@ -131,7 +131,7 @@ faq:
         de contact, et **4 080 € HT** pour un site complet avec blog. Le sur
         mesure (CMS autonome Strapi ou WordPress) démarre à **4 800 € HT**.
         Pour les communes et collectivités, voyez [nos formules
-        dédiées](/collectivites/), dès 2 370 € HT. Notre [devis en
+        dédiées](/collectivites/), dès 2 470 € HT. Notre [devis en
         ligne](/devis-en-ligne/) vous donne une fourchette adaptée à votre
         projet en 2 minutes.
 

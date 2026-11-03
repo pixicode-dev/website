@@ -1,8 +1,8 @@
 ---
 # --- SEO & METADATA ---
-title: "Site internet de mairie : dès 2 370 € HT"
+title: "Site internet de mairie : dès 2 470 € HT"
 breadcrumb_label: "Collectivités"
-description: "Deux formules de site internet pour votre commune : Essentiel à 2 370 € HT, Portail sur mesure à 10 850 € HT. RGAA et réversibilité incluses. Dès 45 € HT/mois."
+description: "Deux formules de site internet pour votre commune : Essentiel à 2 470 € HT, Portail sur mesure à 10 850 € HT. RGAA et réversibilité incluses. Dès 45 € HT/mois."
 keywords: "création site internet mairie, site internet collectivité, prix site internet mairie, refonte site mairie, site internet office de tourisme, accessibilité rgaa mairie"
 date: 2026-07-17
 type: "landing"
@@ -28,7 +28,7 @@ sections:
   - overline: "MARCHÉS PUBLICS"
     title: "Sur devis, sur consultation ou en co-traitance"
     text: |
-      Pour les projets sous les seuils de dispense, un simple devis suffit : nos deux formules à prix affichés — Ma Commune Essentiel à 2 370 € HT, Ma Commune Portail à 10 850 € HT — couvrent l'essentiel des besoins communaux, et notre [estimateur en ligne](/devis-en-ligne/) vous donne un ordre de grandeur immédiat. Pour les consultations formalisées, nous répondons seuls ou en co-traitance avec notre partenaire design [Evokea Studio](/portfolio/evokea-studio/), avec qui nous menons actuellement un projet pour une collectivité.
+      Pour les projets sous les seuils de dispense, un simple devis suffit : nos deux formules à prix affichés — Ma Commune Essentiel à 2 470 € HT, Ma Commune Portail à 10 850 € HT — couvrent l'essentiel des besoins communaux, et notre [estimateur en ligne](/devis-en-ligne/) vous donne un ordre de grandeur immédiat. Pour les consultations formalisées, nous répondons seuls ou en co-traitance avec notre partenaire design [Evokea Studio](/portfolio/evokea-studio/), avec qui nous menons actuellement un projet pour une collectivité.
 
       Vous préparez votre consultation ? Écrivez-nous pour recevoir notre modèle de cahier des charges de site de commune : il structure votre besoin rubrique par rubrique, RGAA et réversibilité comprises, et vous garantit des réponses comparables entre prestataires.
 
@@ -38,9 +38,9 @@ pricing:
   headline: "Deux formules, selon la taille de votre commune"
   items:
     - title: "Ma Commune Essentiel"
-      price: "2 370 € HT"
+      price: "2 470 € HT"
       features:
-        - "Pour les mairies de moins de 2 000 habitants — facturé une seule fois (soit 2 844 € TTC)"
+        - "Pour les mairies de moins de 2 000 habitants — facturé une seule fois (soit 2 964 € TTC)"
         - "Un modèle de notre catalogue, trois variantes de design habillées de votre logo et de vos couleurs"
         - "Page d'accueil tout-en-un : actualités, agenda, bulletin municipal"
         - "Page Ma Mairie : infos pratiques, conseil municipal, PV des conseils"
@@ -102,7 +102,7 @@ faq:
     - question: "Combien coûte le site internet d'une mairie ?"
       answer: >-
         Deux formules à prix affichés, facturées une seule fois à la mise en
-        ligne : **Ma Commune Essentiel** à **2 370 € HT** (mairies de moins de
+        ligne : **Ma Commune Essentiel** à **2 470 € HT** (mairies de moins de
         2 000 habitants, mise en ligne en 2 à 3 semaines) et **Ma Commune
         Portail** à **10 850 € HT** (site sur mesure, projet mené en 8 à
         12 semaines). Les deux incluent la conformité RGAA avec sa déclaration

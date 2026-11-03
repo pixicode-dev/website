@@ -7,9 +7,9 @@ date: 2026-02-02
 layout: single
 ---
 
-**Dernière mise à jour : 17/07/2026**
+**Dernière mise à jour : 03/11/2026**
 
-La société **PIXICODE** (EURL au capital de 1 000 €, RCS Nantes n° 980 083 786, dont le siège est situé 2 Place Jean V, 44000 Nantes) accorde une importance majeure à la protection de votre vie privée.
+La société **PIXICODE** (EURL au capital de 1 000 €, RCS Angoulême n° 980 083 786, dont le siège est situé Technoparc Krysalide, 70 Rue Jean Doucet, 16470 Saint-Michel) accorde une importance majeure à la protection de votre vie privée.
 
 Cette politique vise à vous informer en toute transparence sur la manière dont nous collectons, utilisons et protégeons vos données personnelles, conformément au RGPD (Règlement Général sur la Protection des Données) et à la Loi Informatique et Libertés.
 
